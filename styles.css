@@ -121,18 +121,18 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(64px, 13vw, 180px);
+  font-size: clamp(52px, 10vw, 132px);
   font-weight: 900;
 }
 
 h2 {
-  font-size: clamp(32px, 5vw, 72px);
+  font-size: clamp(28px, 4.2vw, 56px);
   max-width: 880px;
 }
 
 h3 {
   font-family: "Songti SC", SimSun, Georgia, serif;
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(28px, 4.2vw, 50px);
   margin-top: 20px;
 }
 
@@ -144,7 +144,7 @@ h4 {
 .lead {
   color: var(--muted);
   font-family: "Songti SC", SimSun, Georgia, serif;
-  font-size: clamp(22px, 3vw, 38px);
+  font-size: clamp(19px, 2.4vw, 30px);
   font-weight: 700;
   max-width: 980px;
 }
@@ -201,7 +201,7 @@ h4 {
 }
 
 .signal-panel strong {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .section {
@@ -228,7 +228,7 @@ h4 {
 .brief-lead {
   border-left: 4px solid var(--accent-2);
   color: var(--ink);
-  font-size: clamp(20px, 2.4vw, 30px);
+  font-size: clamp(18px, 2vw, 24px);
   font-weight: 700;
   margin: 28px 0 0;
   max-width: 980px;
@@ -306,14 +306,14 @@ h4 {
 }
 
 .article-title {
-  font-size: clamp(42px, 8vw, 96px);
+  font-size: clamp(34px, 6vw, 68px);
   margin-top: 24px;
 }
 
 .article-deck {
   color: var(--muted);
   font-family: "Songti SC", SimSun, Georgia, serif;
-  font-size: clamp(22px, 3vw, 34px);
+  font-size: clamp(19px, 2.4vw, 26px);
   font-weight: 700;
   margin: 28px 0 0;
 }
@@ -325,13 +325,14 @@ h4 {
 }
 
 .article-section h2 {
-  font-size: clamp(26px, 4vw, 44px);
+  font-size: clamp(24px, 3.4vw, 36px);
   margin-bottom: 18px;
 }
 
 .article-section p {
   color: #303635;
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.82;
 }
 
 .article-table {
