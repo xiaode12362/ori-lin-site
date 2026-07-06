@@ -57,6 +57,11 @@ Required GitHub repository secrets:
 
 An example Nginx config is included at `deploy/tencent-hk-nginx.conf`.
 
+Server setup helper:
+
+- `deploy/setup-tencent-hk.sh`: run once on the Tencent HK server to install Nginx and create the site path
+- `deploy/deploy-once.ps1`: one-time manual deploy helper from Windows after SSH access is ready
+
 This folder already includes:
 
 - `vercel.json` for Vercel static deployment settings
