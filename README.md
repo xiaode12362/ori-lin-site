@@ -35,6 +35,28 @@ For `www.ori-lin.com`, point the domain DNS to the hosting provider:
 5. In your domain registrar DNS, create the `www` record exactly as Vercel instructs.
 6. After DNS verifies, every GitHub update will trigger a Vercel deployment automatically.
 
+## Recommended China / WeChat chain
+
+For better WeChat access from China, deploy the same GitHub repository to a Tencent Cloud Hong Kong server.
+
+Suggested chain:
+
+1. Codex updates the site locally.
+2. Codex commits and pushes to GitHub `main`.
+3. GitHub Actions deploys the static files to the Tencent HK server over SSH.
+4. Nginx serves the files from `/var/www/ori-lin-site`.
+5. DNS points `www.ori-lin.com` to the Tencent HK server IP, or use `hk.ori-lin.com` as a China-friendly mirror.
+
+Required GitHub repository secrets:
+
+- `TENCENT_HOST`: Tencent HK server IP address
+- `TENCENT_USER`: SSH user, usually `root` or `ubuntu`
+- `TENCENT_PORT`: SSH port, usually `22`
+- `TENCENT_SSH_PRIVATE_KEY`: private key allowed to log in to the server
+- `TENCENT_SITE_PATH`: deployment path, suggested `/var/www/ori-lin-site`
+
+An example Nginx config is included at `deploy/tencent-hk-nginx.conf`.
+
 This folder already includes:
 
 - `vercel.json` for Vercel static deployment settings

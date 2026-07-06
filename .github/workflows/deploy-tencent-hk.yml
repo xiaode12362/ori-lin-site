@@ -1,0 +1,25 @@
+name: Deploy to Tencent HK Server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy static site
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.TENCENT_HOST }}
+          REMOTE_USER: ${{ secrets.TENCENT_USER }}
+          REMOTE_PORT: ${{ secrets.TENCENT_PORT || 22 }}
+          SOURCE: "./"
+          TARGET: ${{ secrets.TENCENT_SITE_PATH }}
+          EXCLUDE: "/.git/, /.github/, .gitignore, README.md"
