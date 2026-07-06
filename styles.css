@@ -254,6 +254,10 @@ h4 {
   margin: 0;
 }
 
+.article-link-row {
+  margin-top: 28px;
+}
+
 .split {
   display: grid;
   gap: 36px;
@@ -295,6 +299,75 @@ h4 {
   padding: 28px clamp(20px, 6vw, 84px);
 }
 
+.article-shell {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 56px);
+}
+
+.article-title {
+  font-size: clamp(42px, 8vw, 96px);
+  margin-top: 24px;
+}
+
+.article-deck {
+  color: var(--muted);
+  font-family: "Songti SC", SimSun, Georgia, serif;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 700;
+  margin: 28px 0 0;
+}
+
+.article-section {
+  border-top: 1px solid var(--line);
+  margin-top: 44px;
+  padding-top: 32px;
+}
+
+.article-section h2 {
+  font-size: clamp(26px, 4vw, 44px);
+  margin-bottom: 18px;
+}
+
+.article-section p {
+  color: #303635;
+  font-size: 18px;
+}
+
+.article-table {
+  border: 1px solid var(--line);
+  display: grid;
+}
+
+.article-table div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 120px minmax(0, 1fr);
+  padding: 18px;
+}
+
+.article-table div + div {
+  border-top: 1px solid var(--line);
+}
+
+.podcast-box {
+  background: #eef1ea;
+  border: 1px solid var(--line);
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.script-list {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0 0;
+  padding-left: 22px;
+}
+
+.script-list li {
+  color: #303635;
+  font-size: 17px;
+}
+
 @media (max-width: 860px) {
   .topbar {
     height: auto;
@@ -321,6 +394,10 @@ h4 {
   }
 
   .archive-item {
+    grid-template-columns: 1fr;
+  }
+
+  .article-table div {
     grid-template-columns: 1fr;
   }
 }
