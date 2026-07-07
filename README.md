@@ -61,6 +61,7 @@ Server setup helper:
 
 - `deploy/setup-tencent-hk.sh`: run once on the Tencent HK server to install Nginx and create the site path
 - `deploy/deploy-once.ps1`: one-time manual deploy helper from Windows after SSH access is ready
+- `deploy/setup-comments.sh`: run once on the Tencent HK server to enable public comments, replies, and likes
 
 This folder already includes:
 
