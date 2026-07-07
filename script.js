@@ -6,13 +6,19 @@ function setLanguage(lang) {
   translatable.forEach((node) => {
     node.textContent = node.dataset[lang];
   });
-  toggle.textContent = lang === "zh" ? "EN" : "中";
+
+  if (toggle) {
+    toggle.textContent = lang === "zh" ? "EN" : "中文";
+  }
+
   localStorage.setItem("ori-lin-lang", lang);
 }
 
-toggle.addEventListener("click", () => {
-  const next = document.documentElement.lang === "zh-CN" ? "en" : "zh";
-  setLanguage(next);
-});
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    const next = document.documentElement.lang === "zh-CN" ? "en" : "zh";
+    setLanguage(next);
+  });
+}
 
 setLanguage(localStorage.getItem("ori-lin-lang") || "zh");
