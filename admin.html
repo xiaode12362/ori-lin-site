@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORI-LIN 后台</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="mark">OL</span>
+      <span>ORI-LIN</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">首页</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article-shell">
+      <p class="eyebrow">Admin</p>
+      <h1 class="article-title">申请后台</h1>
+      <p class="article-deck">输入管理密码，直接查看最新申请。</p>
+
+      <section class="article-section">
+        <form class="application-form" id="adminForm">
+          <label>
+            <span>管理密码</span>
+            <input name="token" type="password" required>
+          </label>
+          <button class="button primary" type="submit">查看申请</button>
+          <p class="form-status" id="adminStatus"></p>
+        </form>
+      </section>
+
+      <section class="article-section">
+        <div class="admin-list" id="adminList"></div>
+      </section>
+    </article>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

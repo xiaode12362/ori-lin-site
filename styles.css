@@ -518,6 +518,22 @@ h4 {
   margin: 0;
 }
 
+.admin-list {
+  display: grid;
+  gap: 14px;
+}
+
+.admin-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 18px;
+}
+
+.admin-item p {
+  color: #303635;
+  margin: 10px 0 0;
+}
+
 .watch-list {
   display: grid;
   gap: 18px;

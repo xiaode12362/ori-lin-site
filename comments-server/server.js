@@ -6,6 +6,7 @@ import { open } from "sqlite";
 const app = express();
 const port = process.env.PORT || 3100;
 const dbPath = process.env.COMMENTS_DB || "/var/lib/ori-lin/comments.sqlite";
+const adminToken = process.env.ADMIN_TOKEN || "ori-lin-admin";
 
 const db = await open({
   filename: dbPath,
@@ -98,6 +99,18 @@ app.post("/api/applications", async (req, res) => {
   );
 
   res.status(201).json({ ok: true });
+});
+
+app.get("/api/applications", async (req, res) => {
+  const token = cleanText(req.query.token, 120);
+  if (token !== adminToken) {
+    return res.status(401).json({ error: "unauthorized" });
+  }
+
+  const rows = await db.all(
+    "select id, name, contact, asset_range, note, created_at from applications order by id desc limit 200"
+  );
+  res.json(rows);
 });
 
 app.listen(port, "127.0.0.1", () => {
