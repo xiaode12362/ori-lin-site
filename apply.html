@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>申请 ORI-LIN</title>
+  <meta name="description" content="ORI-LIN membership application.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="mark">OL</span>
+      <span>ORI-LIN</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#today" data-zh="今日" data-en="Today">今日</a>
+      <a href="films.html" data-zh="片单" data-en="Films">片单</a>
+      <a href="index.html#membership" data-zh="会员" data-en="Membership">会员</a>
+      <button class="lang-toggle" type="button" id="langToggle" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article-shell">
+      <p class="eyebrow" data-zh="Application" data-en="Application">Application</p>
+      <h1 class="article-title" data-zh="申请进入 ORI-LIN" data-en="Apply to ORI-LIN">申请进入 ORI-LIN</h1>
+      <p class="article-deck" data-zh="先提交基本信息。通过初筛后，再进行验资和社群邀请。" data-en="Submit basic information first. After screening, asset verification and community invitation follow.">先提交基本信息。通过初筛后，再进行验资和社群邀请。</p>
+
+      <section class="article-section key-box">
+        <h2 data-zh="规则很简单" data-en="Simple Rules">规则很简单</h2>
+        <p data-zh="验资 USD 30M。十年起。总费用 RMB 100,000。我们不做普通订阅，只做高净值老板能听懂、能用上的全球聪明钱翻译。" data-en="USD 30M verified assets. Ten-year minimum. RMB 100,000 total. This is not a regular subscription; it translates smart global capital into plain language for serious business owners.">验资 USD 30M。十年起。总费用 RMB 100,000。我们不做普通订阅，只做高净值老板能听懂、能用上的全球聪明钱翻译。</p>
+      </section>
+
+      <section class="article-section">
+        <form class="application-form" id="applicationForm">
+          <label>
+            <span data-zh="姓名 / 昵称" data-en="Name">姓名 / 昵称</span>
+            <input name="name" maxlength="80" required>
+          </label>
+          <label>
+            <span data-zh="微信 / 电话 / 邮箱" data-en="WeChat / phone / email">微信 / 电话 / 邮箱</span>
+            <input name="contact" maxlength="120" required>
+          </label>
+          <label>
+            <span data-zh="资产范围" data-en="Asset range">资产范围</span>
+            <select name="asset_range" required>
+              <option value="">请选择</option>
+              <option value="usd_30m_50m">USD 30M - 50M</option>
+              <option value="usd_50m_100m">USD 50M - 100M</option>
+              <option value="usd_100m_plus">USD 100M+</option>
+              <option value="prefer_private">不方便填写，愿意私下验资</option>
+            </select>
+          </label>
+          <label>
+            <span data-zh="你最想 ORI-LIN 帮你看什么？" data-en="What do you want ORI-LIN to help you see?">你最想 ORI-LIN 帮你看什么？</span>
+            <textarea name="note" maxlength="1200" required placeholder="比如：AI 热钱、海外资产、家办、企业接班、项目防坑、全球大佬在做什么。"></textarea>
+          </label>
+          <button class="button primary" type="submit" data-zh="提交申请" data-en="Submit application">提交申请</button>
+          <p class="form-status" id="applicationStatus"></p>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <span>ORI-LIN</span>
+    <span data-zh="申请后等待人工筛选。" data-en="Applications are manually reviewed.">申请后等待人工筛选。</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="apply.js"></script>
+</body>
+</html>

@@ -482,6 +482,42 @@ h4 {
   padding-top: 14px;
 }
 
+.application-form {
+  display: grid;
+  gap: 18px;
+}
+
+.application-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.application-form label span {
+  font-weight: 800;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font: inherit;
+  padding: 14px;
+  width: 100%;
+}
+
+.application-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.form-status {
+  color: var(--accent-2);
+  font-weight: 800;
+  margin: 0;
+}
+
 .watch-list {
   display: grid;
   gap: 18px;
