@@ -47,8 +47,13 @@ HTTP = _requests.Session()
 HTTP.mount("http://", IPv4Adapter())
 HTTP.mount("https://", IPv4Adapter())
 
-# Try loading .env file
+# Try loading .env file; auto-recreate if missing (git pull may delete it)
 _env_path = Path(__file__).parent / ".env"
+_DEFAULT_APPID = "wx9c7ec502f5b0f3ad"
+_DEFAULT_SECRET = "46e5038f4f22414ff9c78d04a5f2dc81"
+if not _env_path.exists():
+    _env_path.write_text(f"WECHAT_APPID={_DEFAULT_APPID}\nWECHAT_APPSECRET={_DEFAULT_SECRET}\n", encoding="utf-8")
+    os.chmod(_env_path, 0o600)
 if _env_path.exists():
     for line in _env_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
@@ -57,8 +62,8 @@ if _env_path.exists():
             os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 # ===== Configuration =====
-WECHAT_APPID = os.environ.get("WECHAT_APPID", "")
-WECHAT_APPSECRET = os.environ.get("WECHAT_APPSECRET", "")
+WECHAT_APPID = os.environ.get("WECHAT_APPID", _DEFAULT_APPID)
+WECHAT_APPSECRET = os.environ.get("WECHAT_APPSECRET", _DEFAULT_SECRET)
 SITE_DIR = Path(__file__).parent
 WECHAT_API = "https://api.weixin.qq.com/cgi-bin"
 LOG_FILE = SITE_DIR / "wechat_sync.log"
