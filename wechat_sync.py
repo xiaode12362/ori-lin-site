@@ -24,28 +24,11 @@ import re
 import sys
 import time
 import glob
-import socket
 from pathlib import Path
 from datetime import datetime
 
-# Force IPv4 for WeChat API to avoid IPv4-mapped IPv6 whitelist issues
-import requests as _requests
-from requests.adapters import HTTPAdapter
-from urllib3.poolmanager import PoolManager
-
-class IPv4Adapter(HTTPAdapter):
-    def init_poolmanager(self, connections, maxsize, block=False, **pool_kwargs):
-        self.poolmanager = PoolManager(
-            family=socket.AF_INET,
-            num_pools=connections,
-            maxsize=maxsize,
-            block=block,
-            **pool_kwargs,
-        )
-
-HTTP = _requests.Session()
-HTTP.mount("http://", IPv4Adapter())
-HTTP.mount("https://", IPv4Adapter())
+# IPv6 is disabled at OS level (sysctl), so regular requests will use IPv4
+import requests as HTTP
 
 # Try loading .env file; auto-recreate if missing (git pull may delete it)
 _env_path = Path(__file__).parent / ".env"
