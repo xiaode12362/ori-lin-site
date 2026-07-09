@@ -24,8 +24,28 @@ import re
 import sys
 import time
 import glob
+import socket
 from pathlib import Path
 from datetime import datetime
+
+# Force IPv4 for WeChat API to avoid IPv4-mapped IPv6 whitelist issues
+import requests as _requests
+from requests.adapters import HTTPAdapter
+from urllib3.poolmanager import PoolManager
+
+class IPv4Adapter(HTTPAdapter):
+    def init_poolmanager(self, connections, maxsize, block=False, **pool_kwargs):
+        self.poolmanager = PoolManager(
+            family=socket.AF_INET,
+            num_pools=connections,
+            maxsize=maxsize,
+            block=block,
+            **pool_kwargs,
+        )
+
+HTTP = _requests.Session()
+HTTP.mount("http://", IPv4Adapter())
+HTTP.mount("https://", IPv4Adapter())
 
 # Try loading .env file
 _env_path = Path(__file__).parent / ".env"
@@ -303,11 +323,9 @@ def truncate_utf8(text, max_bytes=64):
 def post_json(url, params=None, payload=None, timeout=30):
     """POST JSON with ensure_ascii=False so Chinese chars are sent as UTF-8 bytes,
     not \\uXXXX escapes (WeChat counts escaped length for size limits)."""
-    import requests as req
-
     headers = {"Content-Type": "application/json; charset=utf-8"}
     data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-    resp = req.post(url, params=params, data=data, headers=headers, timeout=timeout)
+    resp = HTTP.post(url, params=params, data=data, headers=headers, timeout=timeout)
     return resp.json()
 
 
@@ -315,15 +333,13 @@ def post_json(url, params=None, payload=None, timeout=30):
 
 def get_access_token():
     """Get WeChat MP access token."""
-    import requests as req
-
     url = f"{WECHAT_API}/token"
     params = {
         "grant_type": "client_credential",
         "appid": WECHAT_APPID,
         "secret": WECHAT_APPSECRET,
     }
-    resp = req.get(url, params=params, timeout=10)
+    resp = HTTP.get(url, params=params, timeout=10)
     data = resp.json()
     if "access_token" not in data:
         raise Exception(f"Failed to get access token: {json.dumps(data, ensure_ascii=False)}")
@@ -332,13 +348,11 @@ def get_access_token():
 
 def upload_cover_image(access_token, image_path):
     """Upload a permanent material image for article cover."""
-    import requests as req
-
     url = f"{WECHAT_API}/material/add_material"
     params = {"access_token": access_token, "type": "image"}
     with open(image_path, "rb") as f:
         files = {"media": (Path(image_path).name, f, "image/png")}
-        resp = req.post(url, params=params, files=files, timeout=30)
+        resp = HTTP.post(url, params=params, files=files, timeout=30)
     data = resp.json()
     if "media_id" not in data:
         raise Exception(f"Failed to upload cover image: {json.dumps(data, ensure_ascii=False)}")
