@@ -290,6 +290,27 @@ def create_cover_image(article, output_path):
     return output_path
 
 
+def truncate_utf8(text, max_bytes=64):
+    """Truncate text to fit within max_bytes when UTF-8 encoded."""
+    encoded = text.encode("utf-8")
+    if len(encoded) <= max_bytes:
+        return text
+    # Truncate bytes, then decode carefully to avoid splitting a multi-byte char
+    truncated = encoded[:max_bytes]
+    return truncated.decode("utf-8", errors="ignore").rstrip()
+
+
+def post_json(url, params=None, payload=None, timeout=30):
+    """POST JSON with ensure_ascii=False so Chinese chars are sent as UTF-8 bytes,
+    not \\uXXXX escapes (WeChat counts escaped length for size limits)."""
+    import requests as req
+
+    headers = {"Content-Type": "application/json; charset=utf-8"}
+    data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    resp = req.post(url, params=params, data=data, headers=headers, timeout=timeout)
+    return resp.json()
+
+
 # ===== WeChat API functions =====
 
 def get_access_token():
@@ -326,16 +347,17 @@ def upload_cover_image(access_token, image_path):
 
 def create_draft(access_token, title, content, thumb_media_id, digest=""):
     """Create a draft article in WeChat MP."""
-    import requests as req
-
     url = f"{WECHAT_API}/draft/add"
     params = {"access_token": access_token}
+    # Truncate title/digest by UTF-8 bytes (WeChat limit: 64 bytes for title, 120 for digest)
+    title = truncate_utf8(title, 64)
+    digest = truncate_utf8(digest or title, 120)
     payload = {
         "articles": [
             {
-                "title": title[:64],
+                "title": title,
                 "author": "ORI-LIN",
-                "digest": (digest[:120] if digest else title[:120]),
+                "digest": digest,
                 "content": content,
                 "content_source_url": "https://www.ori-lin.com",
                 "thumb_media_id": thumb_media_id,
@@ -344,8 +366,7 @@ def create_draft(access_token, title, content, thumb_media_id, digest=""):
             }
         ]
     }
-    resp = req.post(url, params=params, json=payload, timeout=30)
-    data = resp.json()
+    data = post_json(url, params, payload)
     if "media_id" not in data:
         raise Exception(f"Failed to create draft: {json.dumps(data, ensure_ascii=False)}")
     return data["media_id"]
@@ -353,13 +374,10 @@ def create_draft(access_token, title, content, thumb_media_id, digest=""):
 
 def publish_draft(access_token, media_id):
     """Publish a draft article."""
-    import requests as req
-
     url = f"{WECHAT_API}/freepublish/submit"
     params = {"access_token": access_token}
     payload = {"media_id": media_id}
-    resp = req.post(url, params=params, json=payload, timeout=30)
-    data = resp.json()
+    data = post_json(url, params, payload)
     if data.get("errcode", 0) != 0:
         raise Exception(f"Failed to publish: {json.dumps(data, ensure_ascii=False)}")
     return data
