@@ -390,13 +390,13 @@ a.archive-item:hover strong {
 }
 
 .script-list {
-  display: grid;
-  gap: 14px;
   margin: 24px 0 0;
   padding-left: 22px;
+  list-style: decimal;
 }
 
 .script-list li {
+  margin-bottom: 14px;
   color: #303635;
   font-size: 17px;
 }
