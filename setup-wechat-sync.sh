@@ -5,29 +5,31 @@
 
 set -e
 
-SITE_DIR="/var/www/ori-lin"
+SITE_DIR="/var/www/ori-lin-site"
 ENV_FILE="$SITE_DIR/.env"
 CRON_SCRIPT="/usr/local/bin/wechat-sync.sh"
+GIT_REPO="https://github.com/xiaode12362/ori-lin-site.git"
 
 echo "========================================="
 echo "  ORI-LIN WeChat Sync Setup"
 echo "========================================="
 
-# 1. Check if site directory exists
+# 1. Check if site directory exists, clone if not
 if [ ! -d "$SITE_DIR" ]; then
-    echo "ERROR: Site directory $SITE_DIR not found"
-    echo "Please check your Nginx config for the correct path"
-    exit 1
+    echo "Site directory not found, cloning from GitHub..."
+    mkdir -p "$(dirname "$SITE_DIR")"
+    git clone "$GIT_REPO" "$SITE_DIR"
+    echo "[OK] Site cloned to $SITE_DIR"
+else
+    echo "[OK] Site directory: $SITE_DIR"
+    # Pull latest code
+    echo ""
+    echo "--- Pulling latest code from GitHub ---"
+    cd "$SITE_DIR"
+    git pull origin main 2>/dev/null || echo "[WARN] git pull failed, continuing anyway"
 fi
-echo "[OK] Site directory: $SITE_DIR"
 
-# 2. Pull latest code (includes wechat_sync.py)
-echo ""
-echo "--- Pulling latest code from GitHub ---"
-cd "$SITE_DIR"
-git pull origin main 2>/dev/null || echo "[WARN] git pull failed, continuing anyway"
-
-# 3. Check wechat_sync.py exists
+# 2. Check wechat_sync.py exists
 if [ ! -f "$SITE_DIR/wechat_sync.py" ]; then
     echo "ERROR: wechat_sync.py not found in $SITE_DIR"
     echo "Make sure git pull succeeded"
@@ -35,7 +37,7 @@ if [ ! -f "$SITE_DIR/wechat_sync.py" ]; then
 fi
 echo "[OK] wechat_sync.py found"
 
-# 4. Install Python 3 and pip
+# 3. Install Python 3 and pip
 echo ""
 echo "--- Checking Python 3 ---"
 if command -v python3 &>/dev/null; then
@@ -47,6 +49,8 @@ else
         apt-get update -qq && apt-get install -y -qq python3 python3-pip
     elif command -v yum &>/dev/null; then
         yum install -y python3 python3-pip
+    elif command -v dnf &>/dev/null; then
+        dnf install -y python3 python3-pip
     else
         echo "ERROR: Cannot install Python 3 - unknown package manager"
         exit 1
@@ -54,7 +58,7 @@ else
     echo "[OK] Python 3 installed"
 fi
 
-# 5. Install Python packages
+# 4. Install Python packages
 echo ""
 echo "--- Installing Python packages ---"
 pip3 install --quiet requests Pillow 2>/dev/null || pip3 install --break-system-packages --quiet requests Pillow 2>/dev/null || {
@@ -63,7 +67,7 @@ pip3 install --quiet requests Pillow 2>/dev/null || pip3 install --break-system-
 }
 echo "[OK] Python packages installed"
 
-# 6. Create .env file
+# 5. Create .env file
 echo ""
 echo "--- Setting up .env file ---"
 APPID="wx9c7ec502f5b0f3ad"
@@ -77,7 +81,7 @@ EOF
 chmod 600 "$ENV_FILE"
 echo "[OK] .env file created at $ENV_FILE"
 
-# 7. Get server public IP
+# 6. Get server public IP
 echo ""
 echo "--- Server Public IP ---"
 SERVER_IP=$(curl -s https://ifconfig.me 2>/dev/null || curl -s https://api.ipify.org 2>/dev/null || curl -s https://checkip.amazonaws.com 2>/dev/null)
@@ -89,37 +93,37 @@ else
     echo "[WARN] Could not auto-detect public IP. Check manually."
 fi
 
-# 8. Create cron wrapper script
+# 7. Create cron wrapper script
 echo ""
 echo "--- Creating sync script ---"
-cat > "$CRON_SCRIPT" << 'CRON_EOF'
+cat > "$CRON_SCRIPT" << CRON_EOF
 #!/bin/bash
 # WeChat sync - called by cron daily
-SITE_DIR="/var/www/ori-lin"
-LOG_FILE="$SITE_DIR/wechat_sync.log"
+SITE_DIR="$SITE_DIR"
+LOG_FILE="\$SITE_DIR/wechat_sync.log"
 
-cd "$SITE_DIR"
+cd "\$SITE_DIR"
 
 # Pull latest code
-/usr/bin/git pull origin main >> "$LOG_FILE" 2>&1
+/usr/bin/git pull origin main >> "\$LOG_FILE" 2>&1
 
 # Run sync
-/usr/bin/python3 wechat_sync.py >> "$LOG_FILE" 2>&1
+/usr/bin/python3 wechat_sync.py >> "\$LOG_FILE" 2>&1
 
 # Clean up cover image
-rm -f "$SITE_DIR/wechat_cover.png" 2>/dev/null
+rm -f "\$SITE_DIR/wechat_cover.png" 2>/dev/null
 CRON_EOF
 chmod +x "$CRON_SCRIPT"
 echo "[OK] Sync script created at $CRON_SCRIPT"
 
-# 9. Add cron job (daily at 22:00)
+# 8. Add cron job (daily at 22:00)
 echo ""
 echo "--- Setting up cron job ---"
 # Remove existing entry if any
 (crontab -l 2>/dev/null | grep -v "wechat-sync" ; echo "0 22 * * * $CRON_SCRIPT") | crontab -
 echo "[OK] Cron job added: daily at 22:00 (server time)"
 
-# 10. Test run
+# 9. Test run
 echo ""
 echo "--- Testing sync (dry-run) ---"
 cd "$SITE_DIR"
