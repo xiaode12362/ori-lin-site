@@ -13,13 +13,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare static files
+        run: |
+          mkdir -p _site
+          cp *.html styles.css script.js comments.js CNAME vercel.json _site/
+
       - name: Deploy static site
-        uses: easingthemes/ssh-deploy@v5.1.0
+        uses: appleboy/scp-action@v0.1.7
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.TENCENT_HOST }}
-          REMOTE_USER: ${{ secrets.TENCENT_USER }}
-          REMOTE_PORT: ${{ secrets.TENCENT_PORT || 22 }}
-          SOURCE: "./"
-          TARGET: ${{ secrets.TENCENT_SITE_PATH }}
-          EXCLUDE: "/.git/, /.github/, .gitignore, README.md"
+          host: ${{ secrets.TENCENT_HOST }}
+          username: ${{ secrets.TENCENT_USER }}
+          port: ${{ secrets.TENCENT_PORT || 22 }}
+          key: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
+          source: "_site/*"
+          target: ${{ secrets.TENCENT_SITE_PATH }}
+          strip_components: 1
