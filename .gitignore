@@ -2,3 +2,10 @@
 .DS_Store
 Thumbs.db
 node_modules
+
+# WeChat sync
+.env
+wechat_cover.png
+wechat_sync.log
+wechat_preview.html
+__pycache__/

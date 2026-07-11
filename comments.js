@@ -19,12 +19,20 @@
         <textarea name="body" maxlength="1000" placeholder="写下你的看法。越具体越好。" required></textarea>
         <button class="button primary" type="submit">发布评论</button>
       </form>
+      <p class="comments-empty" data-role="comment-status" hidden></p>
       <div class="comments-list" data-role="comments-list"></div>
     </section>
   `;
 
   const list = mount.querySelector("[data-role='comments-list']");
   const form = mount.querySelector("[data-role='new-comment']");
+  const status = mount.querySelector("[data-role='comment-status']");
+
+  function setStatus(message, isError) {
+    status.hidden = !message;
+    status.textContent = message || "";
+    status.style.color = isError ? "#8c1d18" : "";
+  }
 
   function escapeHtml(value) {
     return String(value)
@@ -78,6 +86,7 @@
   async function loadComments() {
     list.innerHTML = "<p class='comments-empty'>正在加载评论...</p>";
     const response = await fetch(`${api}?page=${encodeURIComponent(page)}`);
+    if (!response.ok) throw new Error(`load_failed_${response.status}`);
     const items = await response.json();
     const roots = groupComments(items);
     list.innerHTML = roots.length
@@ -86,23 +95,39 @@
   }
 
   async function postComment(data) {
-    await fetch(api, {
+    const response = await fetch(api, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
+    if (!response.ok) {
+      const detail = await response.text().catch(() => "");
+      throw new Error(detail || `post_failed_${response.status}`);
+    }
     await loadComments();
   }
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const formData = new FormData(form);
-    await postComment({
-      page,
-      name: formData.get("name"),
-      body: formData.get("body"),
-    });
-    form.reset();
+    const button = form.querySelector("button[type='submit']");
+    button.disabled = true;
+    setStatus("正在发布...", false);
+    try {
+      await postComment({
+        page,
+        name: formData.get("name"),
+        body: formData.get("body"),
+      });
+      form.reset();
+      setStatus("已发布。", false);
+      setTimeout(() => setStatus("", false), 1800);
+    } catch (error) {
+      console.error(error);
+      setStatus("发布失败。请刷新页面后再试，或者稍后再发。", true);
+    } finally {
+      button.disabled = false;
+    }
   });
 
   list.addEventListener("click", async (event) => {
@@ -119,8 +144,15 @@
     }
 
     if (button.dataset.action === "like") {
-      await fetch(`${api}/${id}/like`, { method: "POST" });
-      await loadComments();
+      try {
+        setStatus("", false);
+        const response = await fetch(`${api}/${id}/like`, { method: "POST" });
+        if (!response.ok) throw new Error(`like_failed_${response.status}`);
+        await loadComments();
+      } catch (error) {
+        console.error(error);
+        setStatus("点赞失败。请稍后再试。", true);
+      }
     }
   });
 
@@ -130,12 +162,24 @@
     event.preventDefault();
     const item = replyForm.closest(".comment-item");
     const formData = new FormData(replyForm);
-    await postComment({
-      page,
-      parent_id: Number(item.dataset.id),
-      name: formData.get("name"),
-      body: formData.get("body"),
-    });
+    const button = replyForm.querySelector("button[type='submit']");
+    button.disabled = true;
+    setStatus("正在发布回复...", false);
+    try {
+      await postComment({
+        page,
+        parent_id: Number(item.dataset.id),
+        name: formData.get("name"),
+        body: formData.get("body"),
+      });
+      setStatus("回复已发布。", false);
+      setTimeout(() => setStatus("", false), 1800);
+    } catch (error) {
+      console.error(error);
+      setStatus("回复失败。请刷新页面后再试。", true);
+    } finally {
+      button.disabled = false;
+    }
   });
 
   loadComments().catch(() => {

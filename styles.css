@@ -275,6 +275,19 @@ h4 {
   gap: 16px;
   grid-template-columns: 160px minmax(0, 1fr);
   padding: 22px 0;
+  transition: background 0.2s ease;
+}
+
+a.archive-item {
+  cursor: pointer;
+}
+
+a.archive-item:hover {
+  background: #f1f2ec;
+}
+
+a.archive-item:hover strong {
+  color: var(--accent);
 }
 
 .membership {
@@ -377,13 +390,13 @@ h4 {
 }
 
 .script-list {
-  display: grid;
-  gap: 14px;
   margin: 24px 0 0;
   padding-left: 22px;
+  list-style: decimal;
 }
 
 .script-list li {
+  margin-bottom: 14px;
   color: #303635;
   font-size: 17px;
 }
