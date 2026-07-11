@@ -19,12 +19,16 @@ jobs:
           cp *.html styles.css script.js comments.js CNAME vercel.json _site/
 
       - name: Deploy static site
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.TENCENT_HOST }}
-          username: ${{ secrets.TENCENT_USER }}
-          port: ${{ secrets.TENCENT_PORT || 22 }}
-          key: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
-          source: "_site/*"
-          target: ${{ secrets.TENCENT_SITE_PATH }}
-          strip_components: 1
+        env:
+          TENCENT_HOST: ${{ secrets.TENCENT_HOST }}
+          TENCENT_USER: ${{ secrets.TENCENT_USER }}
+          TENCENT_PORT: ${{ secrets.TENCENT_PORT || 22 }}
+          TENCENT_SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
+          TENCENT_SITE_PATH: ${{ secrets.TENCENT_SITE_PATH }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
+          chmod 600 ~/.ssh/ori_linin_deploy_key
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
+          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/"
