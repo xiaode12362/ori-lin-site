@@ -19,7 +19,6 @@ jobs:
           cp *.html styles.css script.js comments.js CNAME vercel.json _site/
 
       - name: Deploy static site
-        if: ${{ secrets.TENCENT_HOST != '' && secrets.TENCENT_USER != '' && secrets.TENCENT_SSH_PRIVATE_KEY != '' && secrets.TENCENT_SITE_PATH != '' }}
         env:
           TENCENT_HOST: ${{ secrets.TENCENT_HOST }}
           TENCENT_USER: ${{ secrets.TENCENT_USER }}
@@ -28,6 +27,10 @@ jobs:
           TENCENT_SITE_PATH: ${{ secrets.TENCENT_SITE_PATH }}
         run: |
           set -euo pipefail
+          if [ -z "$TENCENT_HOST" ] || [ -z "$TENCENT_USER" ] || [ -z "$TENCENT_SSH_PRIVATE_KEY" ] || [ -z "$TENCENT_SITE_PATH" ]; then
+            echo "Tencent SSH secrets are not configured; skipping SSH upload."
+            exit 0
+          fi
           install -m 700 -d ~/.ssh
           printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
           chmod 600 ~/.ssh/ori_linin_deploy_key
