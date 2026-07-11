@@ -1,6 +1,9 @@
 name: Deploy to Tencent HK Server
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -10,13 +13,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare static files
+        run: |
+          mkdir -p _site
+          cp *.html styles.css script.js comments.js CNAME vercel.json _site/
+
       - name: Deploy static site
-        uses: easingthemes/ssh-deploy@v5.1.0
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.TENCENT_HOST }}
-          REMOTE_USER: ${{ secrets.TENCENT_USER }}
-          REMOTE_PORT: ${{ secrets.TENCENT_PORT || 22 }}
-          SOURCE: "./"
-          TARGET: ${{ secrets.TENCENT_SITE_PATH }}
-          EXCLUDE: "/.git/, /.github/, .gitignore, README.md"
+        env:
+          TENCENT_HOST: ${{ secrets.TENCENT_HOST }}
+          TENCENT_USER: ${{ secrets.TENCENT_USER }}
+          TENCENT_PORT: ${{ secrets.TENCENT_PORT || 22 }}
+          TENCENT_SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
+          TENCENT_SITE_PATH: ${{ secrets.TENCENT_SITE_PATH }}
+        run: |
+          set -euo pipefail
+          if [ -z "$TENCENT_HOST" ] || [ -z "$TENCENT_USER" ] || [ -z "$TENCENT_SSH_PRIVATE_KEY" ] || [ -z "$TENCENT_SITE_PATH" ]; then
+            echo "Tencent SSH secrets are not configured; skipping SSH upload."
+            exit 0
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
+          chmod 600 ~/.ssh/ori_linin_deploy_key
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
+          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/" || true
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-021.html'"
+
+      - name: Verify public site
+        run: |
+          set -euo pipefail
+          curl -fsSL https://www.ori-lin.com/ | grep -q 'day-021.html'
+          curl -fsSL https://www.ori-lin.com/day-021.html | grep -q 'Day 021'

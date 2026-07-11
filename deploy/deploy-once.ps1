@@ -11,6 +11,7 @@ $source = Split-Path -Parent $PSScriptRoot
 ssh -p $Port "$User@$HostName" "mkdir -p '$Target'"
 scp -P $Port -r `
   "$source/index.html" `
+  "$source/day-*.html" `
   "$source/styles.css" `
   "$source/script.js" `
   "$source/CNAME" `
