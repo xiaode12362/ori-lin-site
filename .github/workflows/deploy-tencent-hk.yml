@@ -31,4 +31,5 @@ jobs:
           printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
           chmod 600 ~/.ssh/ori_linin_deploy_key
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
-          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/"
+          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/" || true
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-021.html'"
