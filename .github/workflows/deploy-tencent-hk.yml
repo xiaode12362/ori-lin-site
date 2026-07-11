@@ -1,6 +1,9 @@
 name: Deploy to Tencent HK Server
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
