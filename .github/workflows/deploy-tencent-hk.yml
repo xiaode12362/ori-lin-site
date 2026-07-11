@@ -19,6 +19,7 @@ jobs:
           cp *.html styles.css script.js comments.js CNAME vercel.json _site/
 
       - name: Deploy static site
+        if: ${{ secrets.TENCENT_HOST != '' && secrets.TENCENT_USER != '' && secrets.TENCENT_SSH_PRIVATE_KEY != '' && secrets.TENCENT_SITE_PATH != '' }}
         env:
           TENCENT_HOST: ${{ secrets.TENCENT_HOST }}
           TENCENT_USER: ${{ secrets.TENCENT_USER }}
@@ -33,3 +34,9 @@ jobs:
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
           scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/" || true
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-021.html'"
+
+      - name: Verify public site
+        run: |
+          set -euo pipefail
+          curl -fsSL https://www.ori-lin.com/ | grep -q 'day-021.html'
+          curl -fsSL https://www.ori-lin.com/day-021.html | grep -q 'Day 021'
