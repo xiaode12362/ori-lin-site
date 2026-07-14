@@ -24,7 +24,8 @@ jobs:
           TENCENT_USER: ${{ secrets.TENCENT_USER }}
           TENCENT_PORT: ${{ secrets.TENCENT_PORT || 22 }}
           TENCENT_SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
-          TENCENT_SITE_PATH: ${{ secrets.TENCENT_SITE_PATH }}
+          # Keep deployment aligned with deploy/tencent-hk-nginx.conf.
+          TENCENT_SITE_PATH: /var/www/ori-lin-site
         run: |
           set -euo pipefail
           if [ -z "$TENCENT_HOST" ] || [ -z "$TENCENT_USER" ] || [ -z "$TENCENT_SSH_PRIVATE_KEY" ] || [ -z "$TENCENT_SITE_PATH" ]; then
