@@ -35,7 +35,7 @@ jobs:
           printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
           chmod 600 ~/.ssh/ori_linin_deploy_key
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
-          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/" || true
+          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/"
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -n '$TENCENT_SITE_PATH' && test '$TENCENT_SITE_PATH' != '/' && rm -f '$TENCENT_SITE_PATH/day-021.html' '$TENCENT_SITE_PATH/day-022.html'"
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-020.html'"
 
@@ -43,4 +43,4 @@ jobs:
         run: |
           set -euo pipefail
           curl -fsSL https://www.ori-lin.com/ | grep -q 'day-020.html'
-          curl -fsSL https://www.ori-lin.com/day-020.html | grep -q 'Day 020'
+          curl -fsSL -H 'Cache-Control: no-cache' "https://www.ori-lin.com/day-020.html?deploy=${GITHUB_SHA}" | grep -q '从细木数子到曲曲：谁在替东亚社会生产确定性？'
