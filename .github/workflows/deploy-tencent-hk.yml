@@ -20,7 +20,8 @@ jobs:
 
       - name: Deploy static site
         env:
-          TENCENT_HOST: ${{ secrets.TENCENT_HOST }}
+          # Public origin for www.ori-lin.com; keep automation on the serving host.
+          TENCENT_HOST: 43.132.148.35
           TENCENT_USER: ${{ secrets.TENCENT_USER }}
           TENCENT_PORT: ${{ secrets.TENCENT_PORT || 22 }}
           TENCENT_SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
