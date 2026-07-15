@@ -24,13 +24,16 @@
           <span class="news-verdict ${escapeHtml(item.verdictTone || '')}">${escapeHtml(item.verdict)}</span>
         </div>
         <h3>${escapeHtml(item.title)}</h3>
-        <p class="news-plain">${escapeHtml(item.plain)}</p>
+        <p class="news-plain"><strong>新闻是风：</strong>${escapeHtml(item.plain)}</p>
         <dl class="news-analysis">
+          <div><dt>钱在怎么动</dt><dd>${escapeHtml(item.capitalAction || '尚未看到可验证的资金动作。')}</dd></div>
+          <div><dt>周期位置</dt><dd>${escapeHtml(item.cycle || '等待确认')}</dd></div>
           <div><dt>ORI 判断</dt><dd>${escapeHtml(item.judgment)}</dd></div>
-          <div><dt>谁希望你怎么理解</dt><dd>${escapeHtml(item.publisherGoal)} <small>ORI 推断</small></dd></div>
-          <div><dt>对谁有影响</dt><dd>${escapeHtml(item.impact)}</dd></div>
-          <div class="news-advice"><dt>ORI 建议</dt><dd>${escapeHtml(item.advice)}</dd></div>
-          <div><dt>下一步看什么</dt><dd>${escapeHtml(item.watch)}</dd></div>
+          <div><dt>可能涨跌路径</dt><dd>${escapeHtml(item.marketPath || item.impact)}</dd></div>
+          <div><dt>ORI 观察标的</dt><dd>${escapeHtml(item.targets || '暂无。')}</dd></div>
+          <div class="news-advice"><dt>ORI 动作</dt><dd>${escapeHtml(item.advice)}</dd></div>
+          <div><dt>验证信号</dt><dd>${escapeHtml(item.watch)}</dd></div>
+          <div><dt>失效条件</dt><dd>${escapeHtml(item.invalidation || '核心假设被后续数据否定。')}</dd></div>
         </dl>
         <a class="news-source" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source)} · ${escapeHtml(item.publishedAt)} ↗</a>
       </article>
