@@ -4,6 +4,7 @@
   const title = document.querySelector('#editionTitle');
   const note = document.querySelector('#editionNote');
   const trackingSummary = document.querySelector('#trackingSummary');
+  const learningPanel = document.querySelector('#learningPanel');
   const filters = document.querySelectorAll('[data-filter]');
   let items = [];
 
@@ -76,12 +77,14 @@
     render(button.dataset.filter);
   }));
 
-  fetch(`news.json?v=${Date.now()}`)
-    .then((response) => {
+  Promise.all([
+    fetch(`news.json?v=${Date.now()}`).then((response) => {
       if (!response.ok) throw new Error('news data unavailable');
       return response.json();
-    })
-    .then((data) => {
+    }),
+    fetch(`news-learning.json?v=${Date.now()}`).then((response) => response.ok ? response.json() : null)
+  ])
+    .then(([data, learning]) => {
       const edition = data.editions?.[0];
       if (!edition) throw new Error('no edition');
       items = edition.items || [];
@@ -92,6 +95,15 @@
       date.dateTime = edition.date;
       title.textContent = edition.title || '今日新闻判断';
       note.textContent = edition.note || '';
+      if (learning) {
+        const metrics = learning.metrics || {};
+        learningPanel.innerHTML = `
+          <div class="learning-meta"><strong>方法版本 ${escapeHtml(learning.methodologyVersion)}</strong><span>${escapeHtml(metrics.eligibleReviews || 0)} 次有效复盘</span><span>至少 ${escapeHtml(learning.minimumIndependentSamples || 3)} 个独立样本才改规则</span></div>
+          <div class="learning-rules">${(learning.activeRules || []).map((item) => `
+            <article><span>${escapeHtml(item.scope)}</span><p>${escapeHtml(item.rule)}</p><small>${escapeHtml(item.reason)}</small></article>
+          `).join('')}</div>
+        `;
+      }
       render();
     })
     .catch(() => {

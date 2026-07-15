@@ -1219,6 +1219,57 @@ a.archive-item:hover strong {
   padding-top: 24px;
 }
 
+.news-learning {
+  border-top: 1px solid var(--ink);
+  margin-top: 72px;
+  padding-top: 24px;
+}
+
+.news-learning h2 {
+  font-family: "Songti SC", SimSun, Georgia, serif;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.learning-meta {
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 24px 0;
+}
+
+.learning-meta strong {
+  color: var(--ink);
+}
+
+.learning-rules {
+  border-top: 1px solid var(--line);
+}
+
+.learning-rules article {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 100px minmax(0, 1fr) minmax(220px, .6fr);
+  padding: 20px 0;
+}
+
+.learning-rules article span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.learning-rules article p,
+.learning-rules article small {
+  line-height: 1.65;
+  margin: 0;
+}
+
+.learning-rules article small {
+  color: var(--muted);
+}
+
 .news-method h2 {
   font-family: "Songti SC", SimSun, Georgia, serif;
   font-size: clamp(28px, 4vw, 42px);
@@ -1284,6 +1335,11 @@ a.archive-item:hover strong {
 
   .tracking-body p {
     gap: 4px;
+    grid-template-columns: 1fr;
+  }
+
+  .learning-rules article {
+    gap: 8px;
     grid-template-columns: 1fr;
   }
 }
