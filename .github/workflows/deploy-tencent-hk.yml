@@ -16,7 +16,7 @@ jobs:
       - name: Prepare static files
         run: |
           mkdir -p _site
-          cp *.html content.json styles.css script.js comments.js CNAME vercel.json _site/
+          cp *.html content.json news.json styles.css script.js news.js comments.js CNAME vercel.json _site/
 
       - name: Deploy static site
         env:

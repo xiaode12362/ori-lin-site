@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORI 新闻判断｜金融与社会新闻，说人话</title>
+  <meta name="description" content="ORI-LIN 每日筛选国内外金融与社会新闻，用人话说明事实、信号、发布目的与实际影响。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">OL</span><span>ORI-LIN</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#today">今日</a>
+      <a href="news.html" aria-current="page">新闻</a>
+      <a href="films.html">片单</a>
+      <a href="index.html#archive">档案</a>
+    </nav>
+  </header>
+
+  <main class="news-shell">
+    <header class="news-hero">
+      <p class="eyebrow">ORI NEWS JUDGMENT</p>
+      <h1>金融与社会新闻，<br>说人话。</h1>
+      <p>不追热搜，不堆消息。只选会影响钱、工作、行业和普通人生活的国内外新闻。</p>
+      <div class="news-principles" aria-label="编辑原则">
+        <span>权威来源</span><span>事实与推断分开</span><span>宁少勿滥</span>
+      </div>
+    </header>
+
+    <section class="news-edition" aria-live="polite">
+      <div class="news-edition-head">
+        <div>
+          <p class="eyebrow">DAILY BRIEF</p>
+          <h2 id="editionTitle">今日新闻判断</h2>
+        </div>
+        <time id="editionDate"></time>
+      </div>
+      <p class="news-note" id="editionNote"></p>
+      <div class="news-filter" aria-label="筛选新闻">
+        <button class="is-active" type="button" data-filter="all">全部</button>
+        <button type="button" data-filter="金融">金融</button>
+        <button type="button" data-filter="社会">社会</button>
+      </div>
+      <div id="newsList" class="news-list">
+        <p class="news-loading">正在读取今日内容……</p>
+      </div>
+    </section>
+
+    <section class="news-method">
+      <p class="eyebrow">SOURCE RULES</p>
+      <h2>来源不够硬，今天就少发一条。</h2>
+      <p>国内优先央视、新华社、中国政府网、央行、统计局及监管部门；国际优先彭博、路透、AP、FT、WSJ及央行、监管机构、国际组织。自媒体、搬运号和无法回到原始出处的内容，不采用。</p>
+      <p class="news-disclaimer">“发布目标”是 ORI 根据发布主体、时点和措辞作出的推断，不冒充已证实事实；“烟雾弹”只表示叙事可能大于新增事实，不等于假新闻。</p>
+    </section>
+  </main>
+
+  <footer class="footer"><span>ORI-LIN</span><span>看事实，也看谁希望你相信什么。</span></footer>
+  <script src="news.js"></script>
+</body>
+</html>
