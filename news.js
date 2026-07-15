@@ -24,6 +24,11 @@
           <span class="news-verdict ${escapeHtml(item.verdictTone || '')}">${escapeHtml(item.verdict)}</span>
         </div>
         <h3>${escapeHtml(item.title)}</h3>
+        <div class="original-news">
+          <span>原新闻</span>
+          <a href="${escapeHtml(item.originalUrl || item.sources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.originalNews || item.title)} ↗</a>
+          <small>${escapeHtml(item.originalSource || item.source || '')} · ${escapeHtml(item.publishedAt || '')}</small>
+        </div>
         <p class="ori-essence"><span>ORI 看见</span>${escapeHtml(item.essence || item.judgment)}</p>
         <div class="market-conditions">
           <p><strong>板块会动：</strong>${escapeHtml(item.upCondition)}</p>

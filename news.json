@@ -1,103 +1,191 @@
 {
-  "updatedAt": "2026-07-15T14:00:00+08:00",
-  "sourcePolicy": "每个股票理由必须能回到政策原文、公司公告、财报或资金数据。",
-  "editions": [
-    {
-      "date": "2026-07-15",
-      "title": "ORI 标的卡：政策怎样变成板块行情",
-      "note": "删掉新闻复述，只保留本质、触发条件、具体股票与推荐原因。",
-      "items": [
-        {
-          "group": "政府动作",
-          "region": "国内",
-          "category": "电网与储能",
-          "title": "碳达峰方案真正指向的不是碳概念，而是电网、储能和工业改造订单",
-          "verdict": "正式文件",
-          "verdictTone": "solid",
-          "essence": "政府不是在奖励所有绿色公司，而是在逼高耗能行业花钱改造。最先拿到钱的会是电网设备、储能系统和工业自动化供应商。",
-          "upCondition": "未来 90 天出现地方预算或央国企招标；电网设备招标金额同比增长超过 15%；龙头公司订单增速快于收入且回款没有恶化。三个条件出现两个，板块可能从一周主题行情进入一到两个季度的订单行情。",
-          "downCondition": "只有政策标题、90 天内没有预算和招标；或公司应收账款增速明显快于收入、毛利率下降超过 2 个百分点，概念行情容易回吐。",
-          "stocks": [
-            {
-              "name": "国电南瑞",
-              "ticker": "600406.SH",
-              "reason": "电网自动化和调度系统龙头，政策最终要通过国家电网、南方电网的数字化和配网项目落地。公司披露 2025 年新签合同 758.68 亿元，同比增长 14.40%，已有订单基础，不只是概念。",
-              "trigger": "后续电网批次招标继续增长，公司新签合同保持 15% 左右增速，经营现金流不弱于利润。"
-            },
-            {
-              "name": "许继电气",
-              "ticker": "000400.SZ",
-              "reason": "特高压、继电保护和配网设备直接对应电网扩容，政策转成输配电投资时弹性通常比纯运营资产更直接。",
-              "trigger": "两批以上特高压或配网招标连续放量，且公司中标份额没有下降。"
-            },
-            {
-              "name": "阳光电源",
-              "ticker": "300274.SZ",
-              "reason": "储能是真实收入来源。公司披露 2025 年储能收入 372 亿元、同比增长 49%，毛利率 36.5%；但国内低毛利项目被主动放弃，所以要看海外储能，而不是只看国内政策。",
-              "trigger": "下一期储能收入仍增长 25% 以上、毛利率保持 30% 以上，海外发货继续快于行业。"
-            },
-            {
-              "name": "汇川技术",
-              "ticker": "300124.SZ",
-              "reason": "变频器和伺服系统直接用于工业节能与自动化改造，受益点是企业真实资本开支，不是碳交易故事。",
-              "trigger": "通用自动化收入连续两个季度增长超过 15%，制造业设备投资同步回升。"
-            }
-          ],
-          "oriCall": "优先看国电南瑞的订单确定性；想要更高弹性看许继电气；阳光电源必须用海外储能增速验证；汇川技术要等制造业资本开支回升。政策发布当天不追。",
-          "sources": [
-            {"label": "国务院碳达峰行动方案", "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml"},
-            {"label": "国电南瑞 2025 年行动方案与经营数据", "url": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225258037.PDF"},
-            {"label": "许继电气 2025 年半年度报告", "url": "https://static.cninfo.com.cn/finalpage/2025-08-21/1224525622.PDF"},
-            {"label": "阳光电源 2025 年经营交流记录", "url": "https://static.cninfo.com.cn/finalpage/2026-04-01/1225069456.PDF"},
-            {"label": "汇川技术 2025 年年度报告", "url": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225208487.PDF"}
-          ]
-        },
-        {
-          "group": "政府动作",
-          "region": "国内",
-          "category": "消费政策",
-          "title": "消费规划不是普涨信号：家电先看补贴，免税必须等收入反转",
-          "verdict": "政策信号",
-          "verdictTone": "signal",
-          "essence": "消费政策真正能让股票持续上涨的只有两件事：政府补贴变成销售额，销售额又变成利润。只有规划、没有预算，最多是一轮几天到几周的主题反弹。",
-          "upCondition": "中央和地方公布可执行补贴；家电或服务消费月度销售连续两个月改善；龙头公司收入增长同时毛利率不降。满足后，板块才可能从情绪反弹进入一个到两个季度的盈利修复。",
-          "downCondition": "补贴延后或额度低于上一轮；社零增速连续两个月低于 3%；公司靠降价换销量、利润率下降，板块容易在政策高开后回落。",
-          "stocks": [
-            {
-              "name": "美的集团",
-              "ticker": "000333.SZ",
-              "reason": "家电补贴最容易直接转成收入。公司披露 2025 年收入 4,585 亿元、增长 12%，净利润增长 14%，证明补贴期不仅有销量，也保住了利润。",
-              "trigger": "新补贴强度不低于上一轮，国内收入保持两位数增长，毛利率不下降。"
-            },
-            {
-              "name": "海尔智家",
-              "ticker": "600690.SH",
-              "reason": "高端家电和渠道覆盖适合承接以旧换新，但公司年报也明确 2025 年政策效果下半年衰减，因此它是补贴重新加码的验证标的。",
-              "trigger": "补贴额度重新提高，线下零售和高端产品均价连续两个月改善。"
-            },
-            {
-              "name": "海信家电",
-              "ticker": "000921.SZ",
-              "reason": "政策弹性比白电龙头更高，同时海外自主品牌收入增长能分散国内补贴退坡风险。",
-              "trigger": "国内以旧换新销售继续增长，同时海外自主品牌收入保持 20% 以上增速。"
-            },
-            {
-              "name": "中国中免",
-              "ticker": "601888.SH",
-              "reason": "它不是政策一出就买的标的。2025 年上半年收入下降 9.96%、净利润下降 20.81%，只有免税政策与实际销售共同反转时，才可能形成盈利修复。",
-              "trigger": "季度收入恢复正增长、净利润降幅收窄至个位数，并且海南免税销售连续两个月同比转正。"
-            }
-          ],
-          "oriCall": "消费政策里先看美的，原因是利润已经验证；海尔和海信看补贴弹性；中国中免只做反转观察，不在收入仍下降时抢跑。",
-          "sources": [
-            {"label": "商务部消费规划", "url": "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/gnmygl/art/2026/art_c9b4c4851de94b18809007ff90d9cce0.html"},
-            {"label": "美的集团 2025 年董事会工作报告", "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225058138.PDF"},
-            {"label": "海尔智家 2025 年年度报告", "url": "https://static.cninfo.com.cn/finalpage/2026-03-27/1225038309.PDF"},
-            {"label": "海信家电 2025 年年度报告", "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225050277.PDF"},
-            {"label": "中国中免 2025 年半年度业绩快报", "url": "https://static.cninfo.com.cn/finalpage/2025-07-26/1224299960.PDF"}
-          ]
-        }
-      ]
-    }
-  ]
+  "updatedAt": "2026-07-15T15:30:00+08:00",
+  "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
+  "editions": [{
+    "date": "2026-07-15",
+    "title": "今日 20 条一手新闻标的卡",
+    "note": "国内 10 条，国际 10 条。信息窗口为最近 7 天；全部链接到政府、央行、监管机构或国际组织原文。",
+    "items": [
+      {
+        "group":"国内社会金融","region":"国内","category":"电网与储能","title":"碳达峰真正指向电网、储能和工业改造订单","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"国务院关于印发《“十五五”碳达峰行动方案》的通知","originalSource":"中国政府网／生态环境部","publishedAt":"2026-07-14","originalUrl":"https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml",
+        "essence":"政府不是奖励所有绿色公司，而是要求高耗能行业花钱改造；先拿钱的是电网、储能与工业自动化供应商。",
+        "upCondition":"90天内出现地方预算或央企招标，电网设备招标同比增长超15%，板块可能从主题炒作进入1—2个季度订单行情。",
+        "downCondition":"90天无预算招标，或应收增速快于收入、毛利率下降超2个百分点，概念行情易回吐。",
+        "stocks":[{"name":"国电南瑞","ticker":"600406.SH","reason":"电网自动化龙头，2025年新签合同758.68亿元，已有订单基础。","trigger":"新签合同保持约15%增长，经营现金流不弱于利润。"},{"name":"许继电气","ticker":"000400.SZ","reason":"特高压、继保和配网设备直接承接电网扩容投资。","trigger":"两批以上特高压或配网招标连续放量且份额稳定。"}],
+        "oriCall":"首选国电南瑞看确定性，许继电气看招标弹性；发布日不追。","sources":[{"label":"原新闻：中国政府网／生态环境部","url":"https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"消费","title":"消费规划只有变成补贴和收入，家电行情才走得远","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"国务院关于《扩大消费“十五五”规划》的批复","originalSource":"国务院／商务部","publishedAt":"2026-07-13","originalUrl":"https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/gnmygl/art/2026/art_c9b4c4851de94b18809007ff90d9cce0.html",
+        "essence":"规划不是现金。家电最容易把补贴变收入；免税、文旅必须等客流和利润反转。",
+        "upCondition":"补贴强度不低于上一轮，家电零售连续两月改善且龙头毛利率不降，板块可走1—2个季度盈利修复。",
+        "downCondition":"社零连续两月低于3%，或企业靠降价换销量导致利润率下降，政策高开后易回落。",
+        "stocks":[{"name":"美的集团","ticker":"000333.SZ","reason":"补贴最容易直接变成销量，且盈利能力比纯渠道公司稳定。","trigger":"国内收入两位数增长且毛利率不下降。"},{"name":"海尔智家","ticker":"600690.SH","reason":"高端家电与线下渠道覆盖完整，是补贴加码的验证标的。","trigger":"高端产品均价和线下零售连续两月改善。"}],
+        "oriCall":"先看美的的利润确定性，海尔看补贴弹性；没有预算不交易规划。","sources":[{"label":"原新闻：国务院／商务部","url":"https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/gnmygl/art/2026/art_c9b4c4851de94b18809007ff90d9cce0.html"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"水治理","title":"县乡水治理把环保订单从大江大河下沉到园区和农村","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"国务院办公厅转发《群众身边水体保护治理行动方案》","originalSource":"中国政府网／生态环境部","publishedAt":"2026-07-14","originalUrl":"https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161754.shtml",
+        "essence":"新增量不是大型污水厂，而是工业园区排查、县乡黑臭水体和分散式治理。",
+        "upCondition":"地方专项债和水治理采购连续两月同比增长20%以上，环保工程板块才可能形成季度订单行情。",
+        "downCondition":"只有排查没有财政资金，或项目回款周期继续拉长，环保股冲高后会回落。",
+        "stocks":[{"name":"碧水源","ticker":"300070.SZ","reason":"膜处理和分散式污水治理更贴近县乡与工业园区场景。","trigger":"新签水处理订单转正且经营现金流改善。"},{"name":"首创环保","ticker":"600008.SH","reason":"城市水务运营底盘稳定，可承接地方存量水环境项目。","trigger":"新增项目回报率不降、应收增速低于收入。"}],
+        "oriCall":"碧水源看订单弹性，首创环保看回款确定性；财政资金不到位就不追。","sources":[{"label":"原新闻：中国政府网／生态环境部","url":"https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161754.shtml"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"自然资源数字化","title":"自然资源确权和年度更新，真正利好时空数据与遥感采购","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"关于完善自然资源资产管理制度体系的意见","originalSource":"中办、国办／中国政府网","publishedAt":"2026-07-14","originalUrl":"https://www.mee.gov.cn/zcwj/zyygwj/202607/t20260714_1161683.shtml",
+        "essence":"政策要把土地、矿产、森林、水和海洋做成持续更新的一张图，订单会落到GIS、遥感和数据平台。",
+        "upCondition":"自然资源部及省级平台采购密集发布，龙头中标额同比增长20%以上，软件板块才有业绩行情。",
+        "downCondition":"只做确权不做系统升级，或政府采购延迟超过两个季度，主题行情失效。",
+        "stocks":[{"name":"超图软件","ticker":"300036.SZ","reason":"GIS平台直接用于自然资源一张图与确权管理。","trigger":"政府GIS订单连续两季双位数增长。"},{"name":"中科星图","ticker":"688568.SH","reason":"卫星遥感与时空数据适合资源动态监测。","trigger":"特种及政府订单增长且回款改善。"}],
+        "oriCall":"超图看软件落地，中科星图看遥感增量；先等采购公告。","sources":[{"label":"原新闻：中办、国办／中国政府网","url":"https://www.mee.gov.cn/zcwj/zyygwj/202607/t20260714_1161683.shtml"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"医疗设备","title":"健康规划的投资增量在基层设备更新，不在医院故事","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"国务院关于印发《国民健康“十五五”规划》的通知","originalSource":"国务院／中国政府网","publishedAt":"2026-07-13","originalUrl":"https://www.gov.cn/zhengce/content/202607/content_7075213.htm",
+        "essence":"真正能形成利润的是基层医疗、影像、检验和家用设备采购，先看财政和医院招标。",
+        "upCondition":"医疗设备更新专项资金落地，医院招标连续两月增长20%以上，板块可进入订单修复。",
+        "downCondition":"设备更新预算削减，或医院应收回款继续恶化，政策行情只剩一周情绪。",
+        "stocks":[{"name":"迈瑞医疗","ticker":"300760.SZ","reason":"监护、检验和影像产品覆盖基层与大型医院，产品线最完整。","trigger":"国内医疗设备收入恢复双位数增长。"},{"name":"联影医疗","ticker":"688271.SH","reason":"国产高端影像设备直接承接设备更新与进口替代。","trigger":"高端CT/MR招标份额提升且毛利率稳定。"}],
+        "oriCall":"迈瑞看确定性，联影看高端替代弹性；只认招标和回款。","sources":[{"label":"原新闻：国务院／中国政府网","url":"https://www.gov.cn/zhengce/content/202607/content_7075213.htm"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"中医药","title":"中医药规划要变成医保目录和院内采购才是行情","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"国务院关于《中医药振兴发展“十五五”规划》的批复","originalSource":"国务院／中国政府网","publishedAt":"2026-07-10","originalUrl":"https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
+        "essence":"行业不会普涨，真正受益的是有品牌、医院渠道和可进入医保目录的标准化产品。",
+        "upCondition":"核心品种进入医保或基药目录、医院采购量连续两季增长15%以上，才有盈利行情。",
+        "downCondition":"集采降价超过销量增长，或原材料涨价压低毛利率2个百分点，板块回落。",
+        "stocks":[{"name":"华润三九","ticker":"000999.SZ","reason":"品牌OTC与处方药渠道兼具，能把政策转成终端销售。","trigger":"核心品种销量双位数增长且毛利率稳定。"},{"name":"同仁堂","ticker":"600085.SH","reason":"品牌壁垒强，受益中药消费与院外渠道扩张。","trigger":"同店增长转强且原料成本受控。"}],
+        "oriCall":"华润三九看业绩，同仁堂看品牌溢价；目录未落地前不追。","sources":[{"label":"原新闻：国务院／中国政府网","url":"https://www.gov.cn/zhengce/content/202607/content_7074930.htm"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"电力保供","title":"用电负荷创新高，短线看调峰，长线还是看电网扩容","verdict":"官方数据","verdictTone":"solid",
+        "originalNews":"全国用电负荷首创历史新高","originalSource":"国家能源局","publishedAt":"2026-07-10","originalUrl":"https://www.nea.gov.cn/20260710/02dd0d866ecd4e12855f69848a350181/c.html",
+        "essence":"高温只是导火索，电网调度、输变电和储能调峰才是持续资本开支。",
+        "upCondition":"负荷纪录继续刷新且省级电网启动追加投资，输变电招标同比增15%以上。",
+        "downCondition":"气温回落后负荷快速下降，且电网没有追加预算，短线保供行情结束。",
+        "stocks":[{"name":"思源电气","ticker":"002028.SZ","reason":"输变电一次设备受益电网扩容，海外业务提供第二增长点。","trigger":"国内外订单保持20%左右增长。"},{"name":"平高电气","ticker":"600312.SH","reason":"高压开关和特高压设备直接对应主网投资。","trigger":"特高压核准和国网中标连续增加。"}],
+        "oriCall":"思源看内外订单，平高看特高压弹性；单日高温不构成买点。","sources":[{"label":"原新闻：国家能源局","url":"https://www.nea.gov.cn/20260710/02dd0d866ecd4e12855f69848a350181/c.html"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"零售","title":"零售创新政策只奖励同店和供应链改善，不奖励开更多亏损门店","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"商务部等9部门关于加快零售业创新发展的意见","originalSource":"商务部","publishedAt":"2026-07-09","originalUrl":"https://www.mofcom.gov.cn/zwgk/gztz/art/2026/art_833243f78f844d8680db3cbb98822b43.html",
+        "essence":"政策方向是门店改造、供应链和线上线下一体化，判断核心仍是同店销售与现金流。",
+        "upCondition":"同店销售连续两季转正、库存周转改善且经营现金流为正，零售股才可能走反转。",
+        "downCondition":"销售增长来自新开店但同店继续下降，或毛利率降超1个百分点，反弹失败。",
+        "stocks":[{"name":"永辉超市","ticker":"601933.SH","reason":"门店调改弹性大，但必须用同店和现金流验证，不是政策确定性标的。","trigger":"同店连续两个季度正增长且亏损收窄。"},{"name":"红旗连锁","ticker":"002697.SZ","reason":"社区门店密度高、现金流模式更稳，适合一刻钟零售场景。","trigger":"同店增长超过5%且毛利率稳定。"}],
+        "oriCall":"红旗看防守，永辉只做反转观察；政策标题不能替代同店数据。","sources":[{"label":"原新闻：商务部","url":"https://www.mofcom.gov.cn/zwgk/gztz/art/2026/art_833243f78f844d8680db3cbb98822b43.html"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"数字基础设施","title":"国务院要求超前建算力网，真正标的是光模块和网络设备订单","verdict":"政策信号","verdictTone":"signal",
+        "originalNews":"国务院常务会议听取数字中国建设情况汇报","originalSource":"新华社／商务部转载","publishedAt":"2026-07-11","originalUrl":"https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html",
+        "essence":"“数字中国”太大，能最快进利润表的是数据中心互联、光模块和交换机采购。",
+        "upCondition":"运营商和云厂资本开支上调，800G/1.6T订单连续两季增长30%以上。",
+        "downCondition":"云厂资本开支下修，或订单增长但产品价格下降更快，估值先跌。",
+        "stocks":[{"name":"中际旭创","ticker":"300308.SZ","reason":"高速光模块直接受益算力中心互联，订单验证最直接。","trigger":"高速产品收入增长超30%且毛利率稳定。"},{"name":"紫光股份","ticker":"000938.SZ","reason":"交换机、服务器和政企网络覆盖数字基础设施核心环节。","trigger":"运营商与政企订单恢复双位数增长。"}],
+        "oriCall":"中际看高弹性，紫光看政企落地；没有资本开支上调就不追。","sources":[{"label":"原新闻：国务院常务会议","url":"https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"}]
+      },
+      {
+        "group":"国内社会金融","region":"国内","category":"体育消费","title":"全民健身计划的订单在场馆设备和赛事运营，不在泛消费概念","verdict":"政策信号","verdictTone":"signal",
+        "originalNews":"国务院常务会议审议通过《全民健身计划（2026—2030年）》","originalSource":"新华社／商务部转载","publishedAt":"2026-07-11","originalUrl":"https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html",
+        "essence":"先看地方场馆采购和群众赛事预算，服装品牌只有销量改善才算受益。",
+        "upCondition":"地方体育设施采购同比增20%以上，龙头订单连续两季改善，板块才有订单行情。",
+        "downCondition":"规划没有财政预算，或赛事热度不转成销售，主题行情一周内结束。",
+        "stocks":[{"name":"舒华体育","ticker":"605299.SH","reason":"健身器材和公共健身设施直接对应政府与场馆采购。","trigger":"政府及商用订单连续两季双位数增长。"},{"name":"金陵体育","ticker":"300651.SZ","reason":"体育场馆设施和赛事器材更直接承接新增场地投资。","trigger":"中标金额增长20%以上且回款改善。"}],
+        "oriCall":"舒华看全民健身设备，金陵看场馆弹性；先等地方采购。","sources":[{"label":"原新闻：国务院常务会议","url":"https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"美国通胀","title":"美国CPI月降0.4%，利率敏感科技股获得短线估值窗口","verdict":"官方数据","verdictTone":"solid",
+        "originalNews":"Consumer Price Index — June 2026","originalSource":"U.S. Bureau of Labor Statistics","publishedAt":"2026-07-14","originalUrl":"https://www.bls.gov/news.release/cpi.htm",
+        "essence":"月度通胀降温，但同比仍3.5%；市场会先交易降息，再验证能源回落是否可持续。",
+        "upCondition":"美国10年期收益率5日下降15个基点以上、核心CPI连续两月不高于0.2%，成长股可走数周估值修复。",
+        "downCondition":"能源反弹令下月核心CPI高于0.3%，或10年期收益率重新上行20个基点，科技股回吐。",
+        "stocks":[{"name":"Amazon","ticker":"AMZN","reason":"现金流久期长且电商融资环境受利率影响，降息预期提升估值。","trigger":"收益率下行同时AWS增速不降。"},{"name":"NVIDIA","ticker":"NVDA","reason":"高增长使其对实际利率变化敏感，但必须由AI订单支撑。","trigger":"收益率下行且数据中心收入指引不下修。"}],
+        "oriCall":"AMZN看利率弹性，NVDA还要看订单；只交易连续数据，不交易单月CPI。","sources":[{"label":"原新闻：美国劳工统计局","url":"https://www.bls.gov/news.release/cpi.htm"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"美联储","title":"贴现率会议纪要公布，银行股关键仍是收益率曲线而非口风","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"Minutes of the Board's discount rate meetings on June 8 and June 17, 2026","originalSource":"Federal Reserve","publishedAt":"2026-07-14","originalUrl":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+        "essence":"贴现率不等于联邦基金利率；对银行利润最重要的是短端下降、长端稳定，曲线变陡。",
+        "upCondition":"2年期收益率下降而10年期稳定，2s10s曲线一个月变陡20个基点以上，银行净息差预期改善。",
+        "downCondition":"衰退交易令长短端一起急跌、信用利差扩大，银行股先跌。",
+        "stocks":[{"name":"JPMorgan","ticker":"JPM","reason":"存款基础和投行业务强，曲线变陡时盈利韧性最好。","trigger":"净息收入指引上修且信用成本稳定。"},{"name":"Bank of America","ticker":"BAC","reason":"资产负债表对利率更敏感，曲线改善时弹性更高。","trigger":"证券组合压力下降且净息差回升。"}],
+        "oriCall":"JPM看确定性，BAC看利率弹性；信用利差扩大时两者都不做。","sources":[{"label":"原新闻：美联储","url":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"美联储框架","title":"美联储重做政策工具，CME与数据基础设施比方向押注更稳","verdict":"政策信号","verdictTone":"signal",
+        "originalNews":"Federal Reserve announces task forces to advance the conduct of monetary policy","originalSource":"Federal Reserve","publishedAt":"2026-07-09","originalUrl":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+        "essence":"政策框架调整会增加利率和数据交易需求，卖交易工具比押一次降息方向更稳。",
+        "upCondition":"利率波动率与期货成交连续一个月同比增长20%以上，交易所收入预期上修。",
+        "downCondition":"政策框架没有实质变化、利率波动率回落，交易量红利消失。",
+        "stocks":[{"name":"CME Group","ticker":"CME","reason":"全球主要利率期货平台，政策不确定性直接转成成交量。","trigger":"利率期货日均成交量双位数增长。"},{"name":"Intercontinental Exchange","ticker":"ICE","reason":"交易、清算和固定收益数据业务受益市场复杂度上升。","trigger":"固定收益数据与交易收入加速。"}],
+        "oriCall":"CME更直接，ICE更分散；这是波动率标的，不是降息方向标的。","sources":[{"label":"原新闻：美联储","url":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"IPO监管","title":"SEC讨论简化IPO，先利好投行和交易所，不等于所有新股上涨","verdict":"政策信号","verdictTone":"signal",
+        "originalNews":"SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets","originalSource":"U.S. SEC","publishedAt":"2026-07-08","originalUrl":"https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets",
+        "essence":"规则若降低上市成本，最先赚钱的是承销、交易和数据平台，而不是质量未知的新股。",
+        "upCondition":"IPO申报和募资额连续两季增长30%以上，投行承销收入随之上修。",
+        "downCondition":"圆桌讨论没有转成正式规则，或新股破发率超过50%，IPO交易降温。",
+        "stocks":[{"name":"Goldman Sachs","ticker":"GS","reason":"股权承销和资本市场业务对IPO周期弹性高。","trigger":"股权承销积压项目与收入双增。"},{"name":"Nasdaq","ticker":"NDAQ","reason":"新上市、交易和市场数据共同受益IPO回暖。","trigger":"新上市数量连续两季增长。"}],
+        "oriCall":"GS看承销弹性，NDAQ看平台收费；正式规则前只观察。","sources":[{"label":"原新闻：美国SEC","url":"https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"零售监管","title":"SEC组建零售欺诈工作组，合规强的平台相对受益","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"SEC Forms New Retail Fraud Working Group","originalSource":"U.S. SEC","publishedAt":"2026-07-07","originalUrl":"https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group",
+        "essence":"监管会打击操纵与荐股欺诈，合规系统强的券商份额可能提升，小平台成本上升。",
+        "upCondition":"执法案件增加而头部券商客户资产仍增长，行业份额向头部集中。",
+        "downCondition":"合规成本增速高于客户收入，或零售交易量明显下滑。",
+        "stocks":[{"name":"Interactive Brokers","ticker":"IBKR","reason":"自动化风控和全球合规能力强，监管收紧时相对优势扩大。","trigger":"客户账户和净新增资产保持双位数增长。"},{"name":"Robinhood","ticker":"HOOD","reason":"零售交易弹性大，但同时是监管敏感标的。","trigger":"合规费用受控且客户资产继续增长。"}],
+        "oriCall":"IBKR偏确定性，HOOD只看高弹性且必须盯合规成本。","sources":[{"label":"原新闻：美国SEC","url":"https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"美国贸易","title":"美国贸易逆差扩大，进口与物流链强于出口制造链","verdict":"官方数据","verdictTone":"solid",
+        "originalNews":"U.S. International Trade in Goods and Services, May 2026","originalSource":"U.S. BEA／Census Bureau","publishedAt":"2026-07-07","originalUrl":"https://www.bea.gov/news/2026/us-international-trade-goods-and-services-may-2026",
+        "essence":"逆差扩大来自出口降、进口升；短期利好进口物流和消费供应链，压制出口制造叙事。",
+        "upCondition":"进口连续三月增长且消费品库存周转改善，物流与零售链收入上修。",
+        "downCondition":"关税或需求走弱令进口环比转负，物流量同步下降。",
+        "stocks":[{"name":"FedEx","ticker":"FDX","reason":"跨境货量和贸易流直接影响网络利用率。","trigger":"国际优先件量与单票收入同步改善。"},{"name":"Walmart","ticker":"WMT","reason":"进口消费品规模大，供应链效率可吸收部分成本波动。","trigger":"库存增长低于销售增长。"}],
+        "oriCall":"WMT看防守，FDX看贸易量弹性；逆差本身不是买点。","sources":[{"label":"原新闻：美国经济分析局","url":"https://www.bea.gov/news/2026/us-international-trade-goods-and-services-may-2026"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"全球增长","title":"IMF维持3%全球增长，真正变量仍是能源与金融条件","verdict":"权威预测","verdictTone":"signal",
+        "originalNews":"World Economic Outlook Update, July 2026","originalSource":"International Monetary Fund","publishedAt":"2026-07-08","originalUrl":"https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf",
+        "essence":"全球没有立即衰退，但通胀下行停滞；周期股要靠订单，成长股要靠利率。",
+        "upCondition":"全球PMI连续两月高于50、油价稳定且信用利差不扩大，工业与科技可共振。",
+        "downCondition":"油价再冲高并推动核心通胀回升，央行重新收紧，估值和周期股一起受压。",
+        "stocks":[{"name":"Caterpillar","ticker":"CAT","reason":"全球资本开支和资源投资的直接温度计。","trigger":"订单积压与经销商库存同时改善。"},{"name":"Microsoft","ticker":"MSFT","reason":"云与AI收入能抵抗低增长，但估值仍受利率约束。","trigger":"Azure增速不降且长端收益率回落。"}],
+        "oriCall":"CAT看真实周期，MSFT看结构增长；IMF预测只做框架不做买点。","sources":[{"label":"原新闻：国际货币基金组织","url":"https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"原油","title":"IEA称原油转松、成品油仍紧，炼化利润强于上游油价","verdict":"官方数据","verdictTone":"solid",
+        "originalNews":"Oil Market Report — July 2026","originalSource":"International Energy Agency","publishedAt":"2026-07-10","originalUrl":"https://www.iea.org/reports/oil-market-report-july-2026",
+        "essence":"原油供应恢复压油价，但成品油裂解价差在高位；当前更有利炼化，不是纯上游。",
+        "upCondition":"汽柴油裂解价差维持四年高位、炼厂开工恢复慢，炼化利润可持续一个季度。",
+        "downCondition":"中东炼厂快速复产、成品油库存连续四周上升，裂解价差回落。",
+        "stocks":[{"name":"Valero Energy","ticker":"VLO","reason":"美国独立炼厂，对汽柴油裂解价差最敏感。","trigger":"炼化利润率保持高位且利用率提升。"},{"name":"Marathon Petroleum","ticker":"MPC","reason":"炼化规模大并有中游现金流缓冲。","trigger":"产品价差稳定且回购继续。"}],
+        "oriCall":"VLO看高弹性，MPC看现金流；油价上涨不等于炼厂上涨。","sources":[{"label":"原新闻：国际能源署","url":"https://www.iea.org/reports/oil-market-report-july-2026"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"能源预测","title":"EIA下调远期油价，低成本油企与天然气资产更抗压","verdict":"权威预测","verdictTone":"signal",
+        "originalNews":"Short-Term Energy Outlook — July 2026","originalSource":"U.S. Energy Information Administration","publishedAt":"2026-07-07","originalUrl":"https://www.eia.gov/outlooks/steo/report/global_oil.php",
+        "essence":"供给恢复令远期油价承压，高成本上游风险上升，低成本综合油企更稳。",
+        "upCondition":"现货油价企稳、远期曲线不再走弱且企业自由现金流覆盖分红回购。",
+        "downCondition":"Brent跌破企业盈亏平衡并维持一个月，资本开支和回购预期下修。",
+        "stocks":[{"name":"Exxon Mobil","ticker":"XOM","reason":"上游成本低且炼化、化工分散油价风险。","trigger":"自由现金流覆盖资本开支与股东回报。"},{"name":"Chevron","ticker":"CVX","reason":"资产质量高、股息支撑强，但仍需并购协同兑现。","trigger":"产量增长且单位成本下降。"}],
+        "oriCall":"XOM更稳，CVX看整合弹性；不要把能源预测当即时油价。","sources":[{"label":"原新闻：美国能源信息署","url":"https://www.eia.gov/outlooks/steo/report/global_oil.php"}]
+      },
+      {
+        "group":"国际重大一手新闻","region":"国际","category":"欧洲利率","title":"欧洲央行加息后仍担心能源，银行强于高负债成长股","verdict":"正式文件","verdictTone":"solid",
+        "originalNews":"Account of the ECB monetary policy meeting of 10–11 June 2026","originalSource":"European Central Bank","publishedAt":"2026-07-09","originalUrl":"https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html",
+        "essence":"欧洲利率维持更高更久，先改善银行息差，同时压制高负债地产与成长估值。",
+        "upCondition":"欧元区收益率曲线变陡、贷款损失不升，银行净息差保持改善。",
+        "downCondition":"能源冲击引发衰退和坏账上升，银行的息差利好被信用成本吞掉。",
+        "stocks":[{"name":"Banco Santander","ticker":"SAN","reason":"利率收益与地域分散兼具，欧洲单一区域风险较低。","trigger":"净息收入增长且信用成本稳定。"},{"name":"Deutsche Bank","ticker":"DB","reason":"欧洲利率与资本市场活动回暖时盈利弹性更高。","trigger":"净息收入和投行业务同时改善。"}],
+        "oriCall":"SAN看分散确定性，DB看欧洲周期弹性；坏账上升即撤销判断。","sources":[{"label":"原新闻：欧洲央行","url":"https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html"}]
+      }
+    ]
+  }]
 }

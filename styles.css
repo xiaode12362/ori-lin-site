@@ -1031,6 +1031,35 @@ a.archive-item:hover strong {
   padding: 22px 24px;
 }
 
+.original-news {
+  border-left: 3px solid var(--accent);
+  display: grid;
+  gap: 6px;
+  margin-top: 24px;
+  padding-left: 16px;
+}
+
+.original-news > span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.original-news a {
+  font-family: "Songti SC", SimSun, Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.original-news a:hover {
+  text-decoration: underline;
+}
+
+.original-news small {
+  color: var(--muted);
+}
+
 .ori-essence span,
 .ori-call span {
   color: #efb45f;
