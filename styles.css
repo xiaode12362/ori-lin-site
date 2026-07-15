@@ -386,27 +386,34 @@ a.archive-item:hover strong {
 }
 
 .judgment-box {
-  background: var(--ink);
-  border: 0;
-  color: var(--paper);
+  background: #eee9df;
+  border: 1px solid #cfc7b8;
+  border-top: 6px solid var(--accent);
+  color: var(--ink);
   margin-left: clamp(-56px, -5vw, -20px);
   margin-right: clamp(-56px, -5vw, -20px);
   padding: clamp(30px, 5vw, 56px);
 }
 
 .judgment-box .eyebrow {
-  color: #e6b86e;
+  color: var(--accent);
 }
 
 .judgment-box h2,
 .judgment-box h3,
 .judgment-box strong {
-  color: var(--paper);
+  color: var(--ink);
 }
 
 .judgment-box p,
 .judgment-box li {
-  color: #d8ddd8;
+  color: #303635;
+}
+
+.article-section.judgment-box p,
+.article-section.judgment-box li,
+.article-section.judgment-box a {
+  color: #303635;
 }
 
 .action-box {
