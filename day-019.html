@@ -1,137 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Day 019 | 哪些 AI 真正赚大钱？20 个产品背后的利润结构 | ORI-LIN</title>
-  <meta name="description" content="ORI-LIN Day 019: 20 个真正能赚大钱的 AI 产品，财务情况、赚钱方式、共同需求和利润结构。">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Day 019 | 哪些 AI 真正赚大钱？20 个产品背后的利润结构 | ORI-LIN</title>
+<meta content="ORI-LIN Day 019: 20 个真正能赚大钱的 AI 产品，财务情况、赚钱方式、共同需求和利润结构。" name="description"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">
-      <span class="mark">OL</span>
-      <span>ORI-LIN</span>
-    </a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html#today" data-zh="今日" data-en="Today">今日</a>
-      <a href="films.html" data-zh="片单" data-en="Films">片单</a>
-      <a href="index.html#archive" data-zh="档案" data-en="Archive">档案</a>
-      <button class="lang-toggle" type="button" id="langToggle" aria-label="Switch language">EN</button>
-    </nav>
-  </header>
-
-  <main>
-    <article class="article-shell">
-      <div class="brief-meta">
-        <time datetime="2026-07-24">2026-07-24</time>
-        <span data-zh="Day 019 / AI 应用 / 真收入 / 利润结构 / 陪伴 / 编程 / 企业软件 / 定价权" data-en="Day 019 / AI Apps / Real Revenue / Profit Structure / Companion / Coding / Enterprise Software / Pricing Power">Day 019 / AI 应用 / 真收入 / 利润结构 / 陪伴 / 编程 / 企业软件 / 定价权</span>
-      </div>
-
-      <h1 class="article-title" data-zh="哪些 AI 真正赚大钱？不要看模型多聪明，要看它占住了哪种不愿放弃的需求。" data-en="Which AI products really make big money? Do not look at how smart the model is. Look at which need it owns.">哪些 AI 真正赚大钱？不要看模型多聪明，要看它占住了哪种不愿放弃的需求。</h1>
-      <p class="article-deck" data-zh="AI 时代最容易误判的一件事，是把热度当成利润，把调用量当成生意，把融资估值当成现金流。真正赚钱的 AI 应用，大多不是在卖“更聪明的回答”，而是在卖六种老需求的新包装：陪伴、表达、创作、编程、搜索、企业流程。需求很旧，AI 很新。利润不在模型本身，利润在入口、工作流、订阅、席位和定价权。" data-en="The easiest mistake in AI is treating attention as profit, usage as business, and valuation as cash flow. The AI products that really make money sell old needs in new packaging: companionship, expression, creation, coding, search, and enterprise workflow.">AI 时代最容易误判的一件事，是把热度当成利润，把调用量当成生意，把融资估值当成现金流。真正赚钱的 AI 应用，大多不是在卖“更聪明的回答”，而是在卖六种老需求的新包装：陪伴、表达、创作、编程、搜索、企业流程。需求很旧，AI 很新。利润不在模型本身，利润在入口、工作流、订阅、席位和定价权。</p>
-
-      <section class="article-section key-box">
-        <p class="eyebrow" data-zh="今天一句大白话" data-en="Plain Sentence">今天一句大白话</p>
-        <h2 data-zh="真正赚大钱的 AI，不是最会聊天的 AI，而是让用户每月继续付钱、让企业每年继续续约、让离开它变得很疼的 AI。Replika 赚的是孤独，Cursor 赚的是程序员时间，Midjourney 赚的是想象力，Copilot 赚的是企业席位，Palantir 赚的是复杂组织里的决策权。AI 不是一个行业，AI 是一层新能力；谁把这层能力塞进高频、高痛、高预算的需求里，谁才有利润。" data-en="The AI products that make big money are not the ones that chat best. They are the ones users keep paying monthly, enterprises keep renewing yearly, and customers feel pain leaving.">真正赚大钱的 AI，不是最会聊天的 AI，而是让用户每月继续付钱、让企业每年继续续约、让离开它变得很疼的 AI。Replika 赚的是孤独，Cursor 赚的是程序员时间，Midjourney 赚的是想象力，Copilot 赚的是企业席位，Palantir 赚的是复杂组织里的决策权。AI 不是一个行业，AI 是一层新能力；谁把这层能力塞进高频、高痛、高预算的需求里，谁才有利润。</h2>
-      </section>
-
-      <section class="article-section scenario-box">
-        <p class="eyebrow" data-zh="真实局" data-en="Real Situation">真实局</p>
-        <h2 data-zh="你在饭局上听到一个项目：我们要做下一个 Replika，或者下一个 Cursor。" data-en="At dinner, someone pitches you: we are building the next Replika, or the next Cursor.">你在饭局上听到一个项目：我们要做下一个 Replika，或者下一个 Cursor。</h2>
-        <p data-zh="对方给你看 DAU、留存、模型能力和一堆用户聊天截图。你先别激动。你要问四个问题：第一，用户为什么付费，是因为好奇，还是因为不想失去？第二，收入是一次性冲动，还是每个月自然续费？第三，推理成本、渠道抽成、获客成本会不会把毛利吃掉？第四，它控制的是用户入口，还是只是租别人的流量？这四个问题问完，很多 AI 项目就露底了：有些是产品，有些是功能，有些只是一次热闹。" data-en="Ask four questions: why users pay, whether revenue repeats, whether inference and acquisition costs eat margin, and whether the product owns the entry point or rents traffic.">对方给你看 DAU、留存、模型能力和一堆用户聊天截图。你先别激动。你要问四个问题：第一，用户为什么付费，是因为好奇，还是因为不想失去？第二，收入是一次性冲动，还是每个月自然续费？第三，推理成本、渠道抽成、获客成本会不会把毛利吃掉？第四，它控制的是用户入口，还是只是租别人的流量？这四个问题问完，很多 AI 项目就露底了：有些是产品，有些是功能，有些只是一次热闹。</p>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="先说明口径：私营 AI 公司很少披露纯利润" data-en="First, the accounting caveat">先说明口径：私营 AI 公司很少披露纯利润</h2>
-        <p data-zh="上市公司可以看净利润、经营利润和自由现金流。私营 AI 公司多数只披露 ARR、营收、下载收入、付费用户或估值，不披露净利润。所以今天的 20 个案例分两类：一类是母公司公开财报已经证明能赚大钱；另一类是收入规模、团队规模、软件毛利和商业模式显示，具备年利润千万美元以上能力，或高度可能已经达到。真正做投资时，还要继续看银行流水、云成本、模型调用成本、渠道费、退款率、留存和获客成本。本文不是投资建议，是商业结构拆解。" data-en="Public companies disclose profit and cash flow. Private AI companies usually disclose ARR, revenue, app revenue, paid users, or valuation, not net profit.">上市公司可以看净利润、经营利润和自由现金流。私营 AI 公司多数只披露 ARR、营收、下载收入、付费用户或估值，不披露净利润。所以今天的 20 个案例分两类：一类是母公司公开财报已经证明能赚大钱；另一类是收入规模、团队规模、软件毛利和商业模式显示，具备年利润千万美元以上能力，或高度可能已经达到。真正做投资时，还要继续看银行流水、云成本、模型调用成本、渠道费、退款率、留存和获客成本。本文不是投资建议，是商业结构拆解。</p>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="20 个真正能收钱的 AI 产品" data-en="20 AI products that can really collect money">20 个真正能收钱的 AI 产品</h2>
-        <ol class="script-list">
-          <li data-zh="OpenAI ChatGPT：订阅、团队版、企业版、API。它赚的是通用智力入口，把写作、搜索、分析、编程、客服前台合到一个入口。收入规模极大，但公司整体利润受训练成本、推理成本和竞争投入影响。" data-en="OpenAI ChatGPT: subscription, team, enterprise, API. It monetizes the general intelligence entry point.">OpenAI ChatGPT：订阅、团队版、企业版、API。它赚的是通用智力入口，把写作、搜索、分析、编程、客服前台合到一个入口。收入规模极大，但公司整体利润受训练成本、推理成本和竞争投入影响。</li>
-          <li data-zh="Microsoft Copilot：Office、Windows、GitHub、Azure 的企业席位。它不是单独卖一个机器人，而是让原本就高利润的软件套餐变得更贵、更粘、更难取消。" data-en="Microsoft Copilot: enterprise seats across Office, Windows, GitHub, and Azure.">Microsoft Copilot：Office、Windows、GitHub、Azure 的企业席位。它不是单独卖一个机器人，而是让原本就高利润的软件套餐变得更贵、更粘、更难取消。</li>
-          <li data-zh="Adobe Firefly / Photoshop AI：创意云订阅、生成积分、企业版权安全。它解决的是设计师和内容团队“不想从零开始”的需求，背后是 Adobe 已经很赚钱的创意软件池。" data-en="Adobe Firefly and Photoshop AI: Creative Cloud subscription, generative credits, enterprise-safe creation.">Adobe Firefly / Photoshop AI：创意云订阅、生成积分、企业版权安全。它解决的是设计师和内容团队“不想从零开始”的需求，背后是 Adobe 已经很赚钱的创意软件池。</li>
-          <li data-zh="Intuit Assist：TurboTax、QuickBooks、Credit Karma 里的 AI。它卖的是省税、省账务时间、小企业现金流判断。AI 不一定单独收费，但会提高转化、留存和高价套餐占比。" data-en="Intuit Assist: AI inside TurboTax, QuickBooks, and Credit Karma.">Intuit Assist：TurboTax、QuickBooks、Credit Karma 里的 AI。它卖的是省税、省账务时间、小企业现金流判断。AI 不一定单独收费，但会提高转化、留存和高价套餐占比。</li>
-          <li data-zh="Palantir AIP：政府和大型企业合同。它赚的是复杂组织里的数据权限、决策流程和执行闭环。客单价高、销售周期长，但一旦嵌入就很难替换。" data-en="Palantir AIP: government and enterprise contracts around data, authority, decisions, and execution.">Palantir AIP：政府和大型企业合同。它赚的是复杂组织里的数据权限、决策流程和执行闭环。客单价高、销售周期长，但一旦嵌入就很难替换。</li>
-          <li data-zh="ServiceNow Now Assist：IT、客服、HR 工单自动化。它替企业减少等待、减少人工流转、减少重复回复，收入来自原有企业平台上的增购。" data-en="ServiceNow Now Assist: IT, service, and HR workflow automation.">ServiceNow Now Assist：IT、客服、HR 工单自动化。它替企业减少等待、减少人工流转、减少重复回复，收入来自原有企业平台上的增购。</li>
-          <li data-zh="Salesforce Einstein / Agentforce：CRM AI、销售助理、客服代理。它解决的是销售线索、客户总结、客服回复这些直接影响收入和成本的事情。" data-en="Salesforce Einstein and Agentforce: CRM AI, sales assistants, service agents.">Salesforce Einstein / Agentforce：CRM AI、销售助理、客服代理。它解决的是销售线索、客户总结、客服回复这些直接影响收入和成本的事情。</li>
-          <li data-zh="Duolingo Max：AI 角色扮演、解释答案、高价订阅。它解决语言学习里最贵的一环：练习、反馈和陪练。公司本身已经证明可以盈利。" data-en="Duolingo Max: AI roleplay, answer explanation, premium subscription.">Duolingo Max：AI 角色扮演、解释答案、高价订阅。它解决语言学习里最贵的一环：练习、反馈和陪练。公司本身已经证明可以盈利。</li>
-          <li data-zh="Grammarly：个人订阅、企业席位。它赚的不是“写文章”，而是职场表达里的安全感：少出错、更专业、更快交付。" data-en="Grammarly: personal subscription and enterprise seats around professional writing confidence.">Grammarly：个人订阅、企业席位。它赚的不是“写文章”，而是职场表达里的安全感：少出错、更专业、更快交付。</li>
-          <li data-zh="Canva Magic Studio：设计订阅、团队版、素材生态。它把非设计师的海报、PPT、短视频和社媒图变成可交付成品。" data-en="Canva Magic Studio: design subscription, teams, asset ecosystem.">Canva Magic Studio：设计订阅、团队版、素材生态。它把非设计师的海报、PPT、短视频和社媒图变成可交付成品。</li>
-          <li data-zh="Midjourney：图片生成订阅。它的特点是团队很小、社区传播强、付费意愿高。它赚的是创作者把想象力快速变成图像的需求。" data-en="Midjourney: image generation subscription, small team, strong community, high willingness to pay.">Midjourney：图片生成订阅。它的特点是团队很小、社区传播强、付费意愿高。它赚的是创作者把想象力快速变成图像的需求。</li>
-          <li data-zh="Cursor / Anysphere：开发者订阅、团队版、企业版。它卖的是程序员每天都要用的时间杠杆，一旦进入代码库和工作流，替换成本很高。" data-en="Cursor / Anysphere: developer subscription, team, enterprise; daily coding leverage.">Cursor / Anysphere：开发者订阅、团队版、企业版。它卖的是程序员每天都要用的时间杠杆，一旦进入代码库和工作流，替换成本很高。</li>
-          <li data-zh="GitHub Copilot：开发者席位和企业版。它靠 GitHub 和微软分发，把 AI 编程变成企业软件预算的一部分。" data-en="GitHub Copilot: developer seats and enterprise plans distributed through GitHub and Microsoft.">GitHub Copilot：开发者席位和企业版。它靠 GitHub 和微软分发，把 AI 编程变成企业软件预算的一部分。</li>
-          <li data-zh="Perplexity：AI 搜索订阅、企业搜索、广告潜力。它解决的是“我不想自己在十个网页里拼答案”。利润取决于查询成本和付费转化。" data-en="Perplexity: AI search subscription, enterprise search, and ad potential.">Perplexity：AI 搜索订阅、企业搜索、广告潜力。它解决的是“我不想自己在十个网页里拼答案”。利润取决于查询成本和付费转化。</li>
-          <li data-zh="Character.AI：角色聊天、陪伴、创作和订阅。它像 Replika 一样抓住情绪陪伴和角色互动，但监管、未成年人安全和留存质量决定利润能不能稳定。" data-en="Character.AI: character chat, companionship, creation, subscriptions; safety and retention decide durability.">Character.AI：角色聊天、陪伴、创作和订阅。它像 Replika 一样抓住情绪陪伴和角色互动，但监管、未成年人安全和留存质量决定利润能不能稳定。</li>
-          <li data-zh="Replika：AI 陪伴订阅。它赚钱的核心不是信息效率，而是稳定陪伴、情感投射、身份定制和私密对话。" data-en="Replika: AI companion subscriptions around emotional continuity and private conversation.">Replika：AI 陪伴订阅。它赚钱的核心不是信息效率，而是稳定陪伴、情感投射、身份定制和私密对话。</li>
-          <li data-zh="QuillBot：改写、润色、查重、写作订阅。它解决学生、移民、职场新人和内容团队“写得像母语者”的需求。" data-en="QuillBot: paraphrasing, polishing, plagiarism tools, writing subscription.">QuillBot：改写、润色、查重、写作订阅。它解决学生、移民、职场新人和内容团队“写得像母语者”的需求。</li>
-          <li data-zh="Jasper：营销文案和品牌内容平台。它从早期通用写作转向企业营销工作流，真正的钱在团队协作、品牌一致性和内容生产线。" data-en="Jasper: marketing copy and brand content platform; money is in enterprise marketing workflows.">Jasper：营销文案和品牌内容平台。它从早期通用写作转向企业营销工作流，真正的钱在团队协作、品牌一致性和内容生产线。</li>
-          <li data-zh="ElevenLabs：AI 语音、配音、本地化、API。它卖的是声音生产成本下降，客户包括创作者、游戏、影视、本地化和企业内容团队。" data-en="ElevenLabs: AI voice, dubbing, localization, API; lower voice production cost.">ElevenLabs：AI 语音、配音、本地化、API。它卖的是声音生产成本下降，客户包括创作者、游戏、影视、本地化和企业内容团队。</li>
-          <li data-zh="Synthesia：AI 视频、企业培训、销售和内宣。它把拍摄、演员、棚、剪辑变成模板化视频生产，收入来自企业内容预算。" data-en="Synthesia: AI video for training, sales, and internal communication; monetizes enterprise video budgets.">Synthesia：AI 视频、企业培训、销售和内宣。它把拍摄、演员、棚、剪辑变成模板化视频生产，收入来自企业内容预算。</li>
-        </ol>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="它们怎么赚大钱：四种收费方式" data-en="How they make big money">它们怎么赚大钱：四种收费方式</h2>
-        <ol class="script-list">
-          <li data-zh="第一，订阅。ChatGPT、Midjourney、Replika、Grammarly、Duolingo、Cursor 都是这个逻辑。用户每月付费，产品每天出现。订阅赚钱的关键不是首月转化，而是第六个月还在不在。" data-en="First, subscription. Users pay monthly and return daily; the key is sixth-month retention.">第一，订阅。ChatGPT、Midjourney、Replika、Grammarly、Duolingo、Cursor 都是这个逻辑。用户每月付费，产品每天出现。订阅赚钱的关键不是首月转化，而是第六个月还在不在。</li>
-          <li data-zh="第二，企业席位。Microsoft、Adobe、ServiceNow、Salesforce、GitHub Copilot、Palantir 都是这个逻辑。企业按人、按部门、按合同买。席位赚钱的关键不是模型炫技，而是进入预算、权限和流程。" data-en="Second, enterprise seats. The key is entering budget, permission, and workflow.">第二，企业席位。Microsoft、Adobe、ServiceNow、Salesforce、GitHub Copilot、Palantir 都是这个逻辑。企业按人、按部门、按合同买。席位赚钱的关键不是模型炫技，而是进入预算、权限和流程。</li>
-          <li data-zh="第三，用量。OpenAI API、ElevenLabs、Perplexity、Synthesia 都有用量收费。越用越付费，但也越考验成本控制。用量模式最怕收入涨了，推理成本也一起涨，最后变成替用户打工。" data-en="Third, usage. Usage revenue grows with consumption, but so do inference costs if unmanaged.">第三，用量。OpenAI API、ElevenLabs、Perplexity、Synthesia 都有用量收费。越用越付费，但也越考验成本控制。用量模式最怕收入涨了，推理成本也一起涨，最后变成替用户打工。</li>
-          <li data-zh="第四，嵌入原有利润池。Microsoft、Adobe、Intuit、Salesforce 最强。AI 不一定单独赚钱，但会让原来的软件更贵、更粘、更难取消。Day 010 讲过，GPT 本身未必是好行业，但微软需要它，因为它能保护 Office 和 Azure 的利润池。" data-en="Fourth, embedding into existing profit pools. AI may not earn alone, but it makes existing software more expensive, sticky, and harder to cancel.">第四，嵌入原有利润池。Microsoft、Adobe、Intuit、Salesforce 最强。AI 不一定单独赚钱，但会让原来的软件更贵、更粘、更难取消。Day 010 讲过，GPT 本身未必是好行业，但微软需要它，因为它能保护 Office 和 Azure 的利润池。</li>
-        </ol>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="背后的共性：需求很旧，入口很新" data-en="Shared pattern: old needs, new entry points">背后的共性：需求很旧，入口很新</h2>
-        <p data-zh="这些产品的共同点不是都用了大模型，而是都占住了一个旧需求的新入口。Replika 和 Character.AI 占住孤独和被回应。Grammarly 和 QuillBot 占住表达焦虑。Midjourney、Canva、Adobe 占住把想象变成作品。Cursor 和 Copilot 占住程序员的时间。Perplexity 占住答案入口。Palantir、ServiceNow、Salesforce 占住复杂组织里的流程。需求越高频、越痛、越靠近钱和情绪，付费越强。" data-en="The common point is not that they use large models. It is that they own a new entry point into an old need.">这些产品的共同点不是都用了大模型，而是都占住了一个旧需求的新入口。Replika 和 Character.AI 占住孤独和被回应。Grammarly 和 QuillBot 占住表达焦虑。Midjourney、Canva、Adobe 占住把想象变成作品。Cursor 和 Copilot 占住程序员的时间。Perplexity 占住答案入口。Palantir、ServiceNow、Salesforce 占住复杂组织里的流程。需求越高频、越痛、越靠近钱和情绪，付费越强。</p>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="最容易错：把收入当利润，把热度当留存" data-en="Common mistake: revenue is not profit, heat is not retention">最容易错：把收入当利润，把热度当留存</h2>
-        <p data-zh="AI 应用有三个利润黑洞。第一，模型成本。用户越爱用，账单越高。第二，获客成本。很多消费 AI 靠广告买量，最后可能跟短剧一样，收入在自己手里过一遍，利润留给平台。第三，新鲜感衰退。很多人愿意为第一周的惊艳付费，不一定愿意为第六个月的日常付费。陪伴类产品还多一层风险：监管、伦理、未成年人安全、心理依赖和平台抽成。企业 AI 相反，慢一点，但合同大、预算稳、替换成本高。" data-en="AI apps have three profit holes: model cost, acquisition cost, and novelty decay.">AI 应用有三个利润黑洞。第一，模型成本。用户越爱用，账单越高。第二，获客成本。很多消费 AI 靠广告买量，最后可能跟短剧一样，收入在自己手里过一遍，利润留给平台。第三，新鲜感衰退。很多人愿意为第一周的惊艳付费，不一定愿意为第六个月的日常付费。陪伴类产品还多一层风险：监管、伦理、未成年人安全、心理依赖和平台抽成。企业 AI 相反，慢一点，但合同大、预算稳、替换成本高。</p>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="老板照着问的 7 个问题" data-en="Seven questions to ask">老板照着问的 7 个问题</h2>
-        <ol class="script-list">
-          <li data-zh="第一，用户为什么付费？是好奇，还是痛点？好奇付费很短，痛点付费很长。" data-en="First, why do users pay: curiosity or pain?">第一，用户为什么付费？是好奇，还是痛点？好奇付费很短，痛点付费很长。</li>
-          <li data-zh="第二，使用频率是什么？每天用、每周用、每月用，对估值和利润完全不同。" data-en="Second, what is the usage frequency?">第二，使用频率是什么？每天用、每周用、每月用，对估值和利润完全不同。</li>
-          <li data-zh="第三，谁掌握入口？自己有用户入口，还是靠 App Store、抖音、Google、Meta 买量？" data-en="Third, who owns the entry point?">第三，谁掌握入口？自己有用户入口，还是靠 App Store、抖音、Google、Meta 买量？</li>
-          <li data-zh="第四，推理成本会不会吃掉毛利？AI 产品不是 SaaS 自动高毛利，模型账单要单独看。" data-en="Fourth, will inference cost eat gross margin?">第四，推理成本会不会吃掉毛利？AI 产品不是 SaaS 自动高毛利，模型账单要单独看。</li>
-          <li data-zh="第五，离开它会不会疼？用户数据、工作流、习惯、团队协作越深，替换成本越高。" data-en="Fifth, does leaving hurt?">第五，离开它会不会疼？用户数据、工作流、习惯、团队协作越深，替换成本越高。</li>
-          <li data-zh="第六，收入靠个人冲动，还是企业预算？个人增长快但波动大，企业慢但合同稳。" data-en="Sixth, does revenue come from consumer impulse or enterprise budget?">第六，收入靠个人冲动，还是企业预算？个人增长快但波动大，企业慢但合同稳。</li>
-          <li data-zh="第七，它是在创造新利润池，还是保护旧利润池？微软、Adobe、Intuit 赚钱，是因为 AI 保护并抬高了原有利润池。" data-en="Seventh, does it create a new profit pool or protect an old one?">第七，它是在创造新利润池，还是保护旧利润池？微软、Adobe、Intuit 赚钱，是因为 AI 保护并抬高了原有利润池。</li>
-        </ol>
-      </section>
-
-      <section class="article-section podcast-box">
-        <p class="eyebrow" data-zh="饭局版播客稿" data-en="Dinner Podcast Script">饭局版播客稿</p>
-        <h2 data-zh="五分钟讲给老板听" data-en="Five-minute version">五分钟讲给老板听</h2>
-        <ol class="script-list">
-          <li data-zh="第一句：真正赚大钱的 AI，不是模型最强，而是需求最硬。Replika 赚孤独，Cursor 赚程序员时间，Midjourney 赚想象力，Copilot 赚企业席位，Palantir 赚复杂组织里的决策权。" data-en="First: AI products make big money when the need is hard, not when the model is merely strong.">第一句：真正赚大钱的 AI，不是模型最强，而是需求最硬。Replika 赚孤独，Cursor 赚程序员时间，Midjourney 赚想象力，Copilot 赚企业席位，Palantir 赚复杂组织里的决策权。</li>
-          <li data-zh="第二句：AI 不是一个行业，是一层能力。把它放进低频、低痛、低预算的需求里，就是玩具；放进高频、高痛、高预算的需求里，就是生意。" data-en="Second: AI is not an industry. It is a capability layer.">第二句：AI 不是一个行业，是一层能力。把它放进低频、低痛、低预算的需求里，就是玩具；放进高频、高痛、高预算的需求里，就是生意。</li>
-          <li data-zh="第三句：收费方式只有四种：订阅、企业席位、用量、嵌入旧利润池。最稳的是企业席位和旧利润池，最刺激的是消费订阅，最危险的是用量模式成本失控。" data-en="Third: monetization is subscription, enterprise seats, usage, or embedding into old profit pools.">第三句：收费方式只有四种：订阅、企业席位、用量、嵌入旧利润池。最稳的是企业席位和旧利润池，最刺激的是消费订阅，最危险的是用量模式成本失控。</li>
-          <li data-zh="第四句：不要把收入当利润。AI 应用最怕三个洞：模型成本、获客成本、新鲜感衰退。很多消费 AI 看起来热闹，最后利润可能被云厂商、模型厂商、应用商店和广告平台拿走。" data-en="Fourth: do not confuse revenue with profit.">第四句：不要把收入当利润。AI 应用最怕三个洞：模型成本、获客成本、新鲜感衰退。很多消费 AI 看起来热闹，最后利润可能被云厂商、模型厂商、应用商店和广告平台拿走。</li>
-          <li data-zh="第五句：这跟 Day 015 到 Day 018 是同一条线。需求真实不等于行业好，规模大不等于公司赚钱。定价权在谁手里，谁就赚钱。AI 时代也一样。" data-en="Fifth: this continues the logic from Day 015 to Day 018. Real demand does not equal a good industry. Pricing power determines profit.">第五句：这跟 Day 015 到 Day 018 是同一条线。需求真实不等于行业好，规模大不等于公司赚钱。定价权在谁手里，谁就赚钱。AI 时代也一样。</li>
-        </ol>
-      </section>
-
-      <section class="article-section">
-        <h2 data-zh="公开资料底稿" data-en="Source Notes">公开资料底稿</h2>
-        <p data-zh="公开资料底稿包括：上市公司 Microsoft、Adobe、Intuit、Palantir、ServiceNow、Salesforce、Duolingo 的年度报告和季度财报；OpenAI、Midjourney、Cursor/Anysphere、Character.AI、Replika、Perplexity、ElevenLabs、Synthesia、Jasper、Grammarly、Canva、QuillBot 等公司的公开报道、融资材料、应用收入追踪、ARR 披露和行业研究；Sensor Tower、a16z、Menlo Ventures 等对消费 AI、企业 AI 和生成式 AI 应用收入的统计。由于多数私营公司不披露净利润，本文对私营公司的利润判断采用收入规模、团队规模、软件毛利、商业模式和公开资料交叉推演，不构成投资建议。" data-en="Source notes include public filings of listed companies, public reporting and industry research on private AI companies, app revenue tracking, ARR disclosures, and research from Sensor Tower, a16z, and Menlo Ventures.">公开资料底稿包括：上市公司 Microsoft、Adobe、Intuit、Palantir、ServiceNow、Salesforce、Duolingo 的年度报告和季度财报；OpenAI、Midjourney、Cursor/Anysphere、Character.AI、Replika、Perplexity、ElevenLabs、Synthesia、Jasper、Grammarly、Canva、QuillBot 等公司的公开报道、融资材料、应用收入追踪、ARR 披露和行业研究；Sensor Tower、a16z、Menlo Ventures 等对消费 AI、企业 AI 和生成式 AI 应用收入的统计。由于多数私营公司不披露净利润，本文对私营公司的利润判断采用收入规模、团队规模、软件毛利、商业模式和公开资料交叉推演，不构成投资建议。</p>
-      </section>
-    </article>
-    <div data-comments-page="/day-019.html"></div>
-  </main>
-
-  <footer class="footer">
-    <span>ORI-LIN</span>
-    <span data-zh="Day 019" data-en="Day 019">Day 019</span>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="comments.js?v=20260724"></script>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">OL</span>
+<span>ORI-LIN</span>
+</a>
+<nav aria-label="Main navigation" class="nav">
+<a data-en="Today" data-zh="今日" href="index.html#today">今日</a>
+<a data-en="Films" data-zh="片单" href="films.html">片单</a>
+<a data-en="Archive" data-zh="档案" href="index.html#archive">档案</a>
+<button aria-label="Switch language" class="lang-toggle" id="langToggle" type="button">EN</button>
+</nav>
+</header>
+<main>
+<article class="article-shell ori-structure">
+<div class="brief-meta">
+<time datetime="2026-07-24">2026-07-24</time>
+<span data-en="Day 019 / AI Apps / Real Revenue / Profit Structure / Companion / Coding / Enterprise Software / Pricing Power" data-zh="Day 019 / AI 应用 / 真收入 / 利润结构 / 陪伴 / 编程 / 企业软件 / 定价权">Day 019 / AI 应用 / 真收入 / 利润结构 / 陪伴 / 编程 / 企业软件 / 定价权</span>
+</div>
+<h1 class="article-title" data-en="Which AI products really make big money? Do not look at how smart the model is. Look at which need it owns." data-zh="哪些 AI 真正赚大钱？不要看模型多聪明，要看它占住了哪种不愿放弃的需求。">哪些 AI 真正赚大钱？不要看模型多聪明，要看它占住了哪种不愿放弃的需求。</h1>
+<p class="eyebrow insight-label" data-en="01 / ORI INSIGHT" data-zh="01 / ORI 洞察本质">01 / ORI 洞察本质</p><p class="article-deck" data-en="The AI products that make big money are not the ones that chat best. They are the ones users keep paying monthly, enterprises keep renewing yearly, and customers feel pain leaving." data-zh="真正赚大钱的 AI，不是最会聊天的 AI，而是让用户每月继续付钱、让企业每年继续续约、让离开它变得很疼的 AI。Replika 赚的是孤独，Cursor 赚的是程序员时间，Midjourney 赚的是想象力，Copilot 赚的是企业席位，Palantir 赚的是复杂组织里的决策权。">真正赚大钱的 AI，不是最会聊天的 AI，而是让用户每月继续付钱、让企业每年继续续约、让离开它变得很疼的 AI。Replika 赚的是孤独，Cursor 赚的是程序员时间，Midjourney 赚的是想象力，Copilot 赚的是企业席位，Palantir 赚的是复杂组织里的决策权。</p><nav aria-label="文章结构" class="article-outline"><a data-en="02 Facts" data-zh="02 事实" href="#facts">02 事实</a><a data-en="03 ORI Judgment" data-zh="03 ORI 判断" href="#judgment">03 ORI 判断</a><a data-en="Use It" data-zh="怎么用" href="#action">怎么用</a></nav>
+<details class="article-disclosure scenario-disclosure"><summary data-en="Open decision scenario (optional)" data-zh="展开问题场景（可选）">展开问题场景（可选）</summary><section class="article-section scenario-box">
+<p class="eyebrow" data-en="DECISION SCENARIO" data-zh="问题场景（推演）">问题场景（推演）</p>
+<h2 data-en="At dinner, someone pitches you: we are building the next Replika, or the next Cursor." data-zh="你在饭局上听到一个项目：我们要做下一个 Replika，或者下一个 Cursor。">你在饭局上听到一个项目：我们要做下一个 Replika，或者下一个 Cursor。</h2>
+<p data-en="Ask four questions: why users pay, whether revenue repeats, whether inference and acquisition costs eat margin, and whether the product owns the entry point or rents traffic." data-zh="对方给你看 DAU、留存、模型能力和一堆用户聊天截图。你先别激动。你要问四个问题：第一，用户为什么付费，是因为好奇，还是因为不想失去？第二，收入是一次性冲动，还是每个月自然续费？第三，推理成本、渠道抽成、获客成本会不会把毛利吃掉？第四，它控制的是用户入口，还是只是租别人的流量？这四个问题问完，很多 AI 项目就露底了：有些是产品，有些是功能，有些只是一次热闹。">对方给你看 DAU、留存、模型能力和一堆用户聊天截图。你先别激动。你要问四个问题：第一，用户为什么付费，是因为好奇，还是因为不想失去？第二，收入是一次性冲动，还是每个月自然续费？第三，推理成本、渠道抽成、获客成本会不会把毛利吃掉？第四，它控制的是用户入口，还是只是租别人的流量？这四个问题问完，很多 AI 项目就露底了：有些是产品，有些是功能，有些只是一次热闹。</p>
+</section></details>
+<section class="article-section facts-start" id="facts"><p class="eyebrow" data-en="02 / FACTS" data-zh="02 / 事实">02 / 事实</p>
+<h2 data-en="First, the accounting caveat" data-zh="先说明口径：私营 AI 公司很少披露纯利润">先说明口径：私营 AI 公司很少披露纯利润</h2>
+<p data-en="Public companies disclose profit and cash flow. Private AI companies usually disclose ARR, revenue, app revenue, paid users, or valuation, not net profit." data-zh="上市公司可以看净利润、经营利润和自由现金流。私营 AI 公司多数只披露 ARR、营收、下载收入、付费用户或估值，不披露净利润。所以今天的 20 个案例分两类：一类是母公司公开财报已经证明能赚大钱；另一类是收入规模、团队规模、软件毛利和商业模式显示，具备年利润千万美元以上能力，或高度可能已经达到。真正做投资时，还要继续看银行流水、云成本、模型调用成本、渠道费、退款率、留存和获客成本。本文不是投资建议，是商业结构拆解。">上市公司可以看净利润、经营利润和自由现金流。私营 AI 公司多数只披露 ARR、营收、下载收入、付费用户或估值，不披露净利润。所以今天的 20 个案例分两类：一类是母公司公开财报已经证明能赚大钱；另一类是收入规模、团队规模、软件毛利和商业模式显示，具备年利润千万美元以上能力，或高度可能已经达到。真正做投资时，还要继续看银行流水、云成本、模型调用成本、渠道费、退款率、留存和获客成本。本文不是投资建议，是商业结构拆解。</p>
+</section>
+<section class="article-section">
+<h2 data-en="20 AI products that can really collect money" data-zh="20 个真正能收钱的 AI 产品">20 个真正能收钱的 AI 产品</h2>
+<ol class="script-list">
+<li data-en="OpenAI ChatGPT: subscription, team, enterprise, API. It monetizes the general intelligence entry point." data-zh="OpenAI ChatGPT：订阅、团队版、企业版、API。它赚的是通用智力入口，把写作、搜索、分析、编程、客服前台合到一个入口。收入规模极大，但公司整体利润受训练成本、推理成本和竞争投入影响。">OpenAI ChatGPT：订阅、团队版、企业版、API。它赚的是通用智力入口，把写作、搜索、分析、编程、客服前台合到一个入口。收入规模极大，但公司整体利润受训练成本、推理成本和竞争投入影响。</li>
+<li data-en="Microsoft Copilot: enterprise seats across Office, Windows, GitHub, and Azure." data-zh="Microsoft Copilot：Office、Windows、GitHub、Azure 的企业席位。它不是单独卖一个机器人，而是让原本就高利润的软件套餐变得更贵、更粘、更难取消。">Microsoft Copilot：Office、Windows、GitHub、Azure 的企业席位。它不是单独卖一个机器人，而是让原本就高利润的软件套餐变得更贵、更粘、更难取消。</li>
+<li data-en="Adobe Firefly and Photoshop AI: Creative Cloud subscription, generative credits, enterprise-safe creation." data-zh="Adobe Firefly / Photoshop AI：创意云订阅、生成积分、企业版权安全。它解决的是设计师和内容团队“不想从零开始”的需求，背后是 Adobe 已经很赚钱的创意软件池。">Adobe Firefly / Photoshop AI：创意云订阅、生成积分、企业版权安全。它解决的是设计师和内容团队“不想从零开始”的需求，背后是 Adobe 已经很赚钱的创意软件池。</li>
+<li data-en="Intuit Assist: AI inside TurboTax, QuickBooks, and Credit Karma." data-zh="Intuit Assist：TurboTax、QuickBooks、Credit Karma 里的 AI。它卖的是省税、省账务时间、小企业现金流判断。AI 不一定单独收费，但会提高转化、留存和高价套餐占比。">Intuit Assist：TurboTax、QuickBooks、Credit Karma 里的 AI。它卖的是省税、省账务时间、小企业现金流判断。AI 不一定单独收费，但会提高转化、留存和高价套餐占比。</li>
+<li data-en="Palantir AIP: government and enterprise contracts around data, authority, decisions, and execution." data-zh="Palantir AIP：政府和大型企业合同。它赚的是复杂组织里的数据权限、决策流程和执行闭环。客单价高、销售周期长，但一旦嵌入就很难替换。">Palantir AIP：政府和大型企业合同。它赚的是复杂组织里的数据权限、决策流程和执行闭环。客单价高、销售周期长，但一旦嵌入就很难替换。</li>
+<li data-en="ServiceNow Now Assist: IT, service, and HR workflow automation." data-zh="ServiceNow Now Assist：IT、客服、HR 工单自动化。它替企业减少等待、减少人工流转、减少重复回复，收入来自原有企业平台上的增购。">ServiceNow Now Assist：IT、客服、HR 工单自动化。它替企业减少等待、减少人工流转、减少重复回复，收入来自原有企业平台上的增购。</li>
+<li data-en="Salesforce Einstein and Agentforce: CRM AI, sales assistants, service agents." data-zh="Salesforce Einstein / Agentforce：CRM AI、销售助理、客服代理。它解决的是销售线索、客户总结、客服回复这些直接影响收入和成本的事情。">Salesforce Einstein / Agentforce：CRM AI、销售助理、客服代理。它解决的是销售线索、客户总结、客服回复这些直接影响收入和成本的事情。</li>
+<li data-en="Duolingo Max: AI roleplay, answer explanation, premium subscription." data-zh="Duolingo Max：AI 角色扮演、解释答案、高价订阅。它解决语言学习里最贵的一环：练习、反馈和陪练。公司本身已经证明可以盈利。">Duolingo Max：AI 角色扮演、解释答案、高价订阅。它解决语言学习里最贵的一环：练习、反馈和陪练。公司本身已经证明可以盈利。</li>
+<li data-en="Grammarly: personal subscription and enterprise seats around professional writing confidence." data-zh="Grammarly：个人订阅、企业席位。它赚的不是“写文章”，而是职场表达里的安全感：少出错、更专业、更快交付。">Grammarly：个人订阅、企业席位。它赚的不是“写文章”，而是职场表达里的安全感：少出错、更专业、更快交付。</li>
+<li data-en="Canva Magic Studio: design subscription, teams, asset ecosystem." data-zh="Canva Magic Studio：设计订阅、团队版、素材生态。它把非设计师的海报、PPT、短视频和社媒图变成可交付成品。">Canva Magic Studio：设计订阅、团队版、素材生态。它把非设计师的海报、PPT、短视频和社媒图变成可交付成品。</li>
+<li data-en="Midjourney: image generation subscription, small team, strong community, high willingness to pay." data-zh="Midjourney：图片生成订阅。它的特点是团队很小、社区传播强、付费意愿高。它赚的是创作者把想象力快速变成图像的需求。">Midjourney：图片生成订阅。它的特点是团队很小、社区传播强、付费意愿高。它赚的是创作者把想象力快速变成图像的需求。</li>
+<li data-en="Cursor / Anysphere: developer subscription, team, enterprise; daily coding leverage." data-zh="Cursor / Anysphere：开发者订阅、团队版、企业版。它卖的是程序员每天都要用的时间杠杆，一旦进入代码库和工作流，替换成本很高。">Cursor / Anysphere：开发者订阅、团队版、企业版。它卖的是程序员每天都要用的时间杠杆，一旦进入代码库和工作流，替换成本很高。</li>
+<li data-en="GitHub Copilot: developer seats and enterprise plans distributed through GitHub and Microsoft." data-zh="GitHub Copilot：开发者席位和企业版。它靠 GitHub 和微软分发，把 AI 编程变成企业软件预算的一部分。">GitHub Copilot：开发者席位和企业版。它靠 GitHub 和微软分发，把 AI 编程变成企业软件预算的一部分。</li>
+<li data-en="Perplexity: AI search subscription, enterprise search, and ad potential." data-zh="Perplexity：AI 搜索订阅、企业搜索、广告潜力。它解决的是“我不想自己在十个网页里拼答案”。利润取决于查询成本和付费转化。">Perplexity：AI 搜索订阅、企业搜索、广告潜力。它解决的是“我不想自己在十个网页里拼答案”。利润取决于查询成本和付费转化。</li>
+<li data-en="Character.AI: character chat, companionship, creation, subscriptions; safety and retention decide durability." data-zh="Character.AI：角色聊天、陪伴、创作和订阅。它像 Replika 一样抓住情绪陪伴和角色互动，但监管、未成年人安全和留存质量决定利润能不能稳定。">Character.AI：角色聊天、陪伴、创作和订阅。它像 Replika 一样抓住情绪陪伴和角色互动，但监管、未成年人安全和留存质量决定利润能不能稳定。</li>
+<li data-en="Replika: AI companion subscriptions around emotional continuity and private conversation." data-zh="Replika：AI 陪伴订阅。它赚钱的核心不是信息效率，而是稳定陪伴、情感投射、身份定制和私密对话。">Replika：AI 陪伴订阅。它赚钱的核心不是信息效率，而是稳定陪伴、情感投射、身份定制和私密对话。</li>
+<li data-en="QuillBot: paraphrasing, polishing, plagiarism tools, writing subscription." data-zh="QuillBot：改写、润色、查重、写作订阅。它解决学生、移民、职场新人和内容团队“写得像母语者”的需求。">QuillBot：改写、润色、查重、写作订阅。它解决学生、移民、职场新人和内容团队“写得像母语者”的需求。</li>
+<li data-en="Jasper: marketing copy and brand content platform; money is in enterprise marketing workflows." data-zh="Jasper：营销文案和品牌内容平台。它从早期通用写作转向企业营销工作流，真正的钱在团队协作、品牌一致性和内容生产线。">Jasper：营销文案和品牌内容平台。它从早期通用写作转向企业营销工作流，真正的钱在团队协作、品牌一致性和内容生产线。</li>
+<li data-en="ElevenLabs: AI voice, dubbing, localization, API; lower voice production cost." data-zh="ElevenLabs：AI 语音、配音、本地化、API。它卖的是声音生产成本下降，客户包括创作者、游戏、影视、本地化和企业内容团队。">ElevenLabs：AI 语音、配音、本地化、API。它卖的是声音生产成本下降，客户包括创作者、游戏、影视、本地化和企业内容团队。</li>
+<li data-en="Synthesia: AI video for training, sales, and internal communication; monetizes enterprise video budgets." data-zh="Synthesia：AI 视频、企业培训、销售和内宣。它把拍摄、演员、棚、剪辑变成模板化视频生产，收入来自企业内容预算。">Synthesia：AI 视频、企业培训、销售和内宣。它把拍摄、演员、棚、剪辑变成模板化视频生产，收入来自企业内容预算。</li>
+</ol>
+</section>
+<section class="article-section">
+<h2 data-en="How they make big money" data-zh="它们怎么赚大钱：四种收费方式">它们怎么赚大钱：四种收费方式</h2>
+<ol class="script-list">
+<li data-en="First, subscription. Users pay monthly and return daily; the key is sixth-month retention." data-zh="第一，订阅。ChatGPT、Midjourney、Replika、Grammarly、Duolingo、Cursor 都是这个逻辑。用户每月付费，产品每天出现。订阅赚钱的关键不是首月转化，而是第六个月还在不在。">第一，订阅。ChatGPT、Midjourney、Replika、Grammarly、Duolingo、Cursor 都是这个逻辑。用户每月付费，产品每天出现。订阅赚钱的关键不是首月转化，而是第六个月还在不在。</li>
+<li data-en="Second, enterprise seats. The key is entering budget, permission, and workflow." data-zh="第二，企业席位。Microsoft、Adobe、ServiceNow、Salesforce、GitHub Copilot、Palantir 都是这个逻辑。企业按人、按部门、按合同买。席位赚钱的关键不是模型炫技，而是进入预算、权限和流程。">第二，企业席位。Microsoft、Adobe、ServiceNow、Salesforce、GitHub Copilot、Palantir 都是这个逻辑。企业按人、按部门、按合同买。席位赚钱的关键不是模型炫技，而是进入预算、权限和流程。</li>
+<li data-en="Third, usage. Usage revenue grows with consumption, but so do inference costs if unmanaged." data-zh="第三，用量。OpenAI API、ElevenLabs、Perplexity、Synthesia 都有用量收费。越用越付费，但也越考验成本控制。用量模式最怕收入涨了，推理成本也一起涨，最后变成替用户打工。">第三，用量。OpenAI API、ElevenLabs、Perplexity、Synthesia 都有用量收费。越用越付费，但也越考验成本控制。用量模式最怕收入涨了，推理成本也一起涨，最后变成替用户打工。</li>
+<li data-en="Fourth, embedding into existing profit pools. AI may not earn alone, but it makes existing software more expensive, sticky, and harder to cancel." data-zh="第四，嵌入原有利润池。Microsoft、Adobe、Intuit、Salesforce 最强。AI 不一定单独赚钱，但会让原来的软件更贵、更粘、更难取消。Day 010 讲过，GPT 本身未必是好行业，但微软需要它，因为它能保护 Office 和 Azure 的利润池。">第四，嵌入原有利润池。Microsoft、Adobe、Intuit、Salesforce 最强。AI 不一定单独赚钱，但会让原来的软件更贵、更粘、更难取消。Day 010 讲过，GPT 本身未必是好行业，但微软需要它，因为它能保护 Office 和 Azure 的利润池。</li>
+</ol>
+</section>
+<section class="article-section">
+<h2 data-en="Shared pattern: old needs, new entry points" data-zh="背后的共性：需求很旧，入口很新">背后的共性：需求很旧，入口很新</h2>
+<p data-en="The common point is not that they use large models. It is that they own a new entry point into an old need." data-zh="这些产品的共同点不是都用了大模型，而是都占住了一个旧需求的新入口。Replika 和 Character.AI 占住孤独和被回应。Grammarly 和 QuillBot 占住表达焦虑。Midjourney、Canva、Adobe 占住把想象变成作品。Cursor 和 Copilot 占住程序员的时间。Perplexity 占住答案入口。Palantir、ServiceNow、Salesforce 占住复杂组织里的流程。需求越高频、越痛、越靠近钱和情绪，付费越强。">这些产品的共同点不是都用了大模型，而是都占住了一个旧需求的新入口。Replika 和 Character.AI 占住孤独和被回应。Grammarly 和 QuillBot 占住表达焦虑。Midjourney、Canva、Adobe 占住把想象变成作品。Cursor 和 Copilot 占住程序员的时间。Perplexity 占住答案入口。Palantir、ServiceNow、Salesforce 占住复杂组织里的流程。需求越高频、越痛、越靠近钱和情绪，付费越强。</p>
+</section>
+<section class="article-section judgment-box" id="judgment"><p class="eyebrow" data-en="03 / ORI JUDGMENT" data-zh="03 / ORI 判断">03 / ORI 判断</p>
+<h2 data-en="Common mistake: revenue is not profit, heat is not retention" data-zh="最容易错：把收入当利润，把热度当留存">最容易错：把收入当利润，把热度当留存</h2>
+<p data-en="AI apps have three profit holes: model cost, acquisition cost, and novelty decay." data-zh="AI 应用有三个利润黑洞。第一，模型成本。用户越爱用，账单越高。第二，获客成本。很多消费 AI 靠广告买量，最后可能跟短剧一样，收入在自己手里过一遍，利润留给平台。第三，新鲜感衰退。很多人愿意为第一周的惊艳付费，不一定愿意为第六个月的日常付费。陪伴类产品还多一层风险：监管、伦理、未成年人安全、心理依赖和平台抽成。企业 AI 相反，慢一点，但合同大、预算稳、替换成本高。">AI 应用有三个利润黑洞。第一，模型成本。用户越爱用，账单越高。第二，获客成本。很多消费 AI 靠广告买量，最后可能跟短剧一样，收入在自己手里过一遍，利润留给平台。第三，新鲜感衰退。很多人愿意为第一周的惊艳付费，不一定愿意为第六个月的日常付费。陪伴类产品还多一层风险：监管、伦理、未成年人安全、心理依赖和平台抽成。企业 AI 相反，慢一点，但合同大、预算稳、替换成本高。</p>
+</section>
+<section class="article-section action-box" id="action"><p class="eyebrow" data-en="USE IT" data-zh="怎么用">怎么用</p>
+<h2 data-en="Seven questions to ask" data-zh="老板照着问的 7 个问题">老板照着问的 7 个问题</h2>
+<ol class="script-list">
+<li data-en="First, why do users pay: curiosity or pain?" data-zh="第一，用户为什么付费？是好奇，还是痛点？好奇付费很短，痛点付费很长。">第一，用户为什么付费？是好奇，还是痛点？好奇付费很短，痛点付费很长。</li>
+<li data-en="Second, what is the usage frequency?" data-zh="第二，使用频率是什么？每天用、每周用、每月用，对估值和利润完全不同。">第二，使用频率是什么？每天用、每周用、每月用，对估值和利润完全不同。</li>
+<li data-en="Third, who owns the entry point?" data-zh="第三，谁掌握入口？自己有用户入口，还是靠 App Store、抖音、Google、Meta 买量？">第三，谁掌握入口？自己有用户入口，还是靠 App Store、抖音、Google、Meta 买量？</li>
+<li data-en="Fourth, will inference cost eat gross margin?" data-zh="第四，推理成本会不会吃掉毛利？AI 产品不是 SaaS 自动高毛利，模型账单要单独看。">第四，推理成本会不会吃掉毛利？AI 产品不是 SaaS 自动高毛利，模型账单要单独看。</li>
+<li data-en="Fifth, does leaving hurt?" data-zh="第五，离开它会不会疼？用户数据、工作流、习惯、团队协作越深，替换成本越高。">第五，离开它会不会疼？用户数据、工作流、习惯、团队协作越深，替换成本越高。</li>
+<li data-en="Sixth, does revenue come from consumer impulse or enterprise budget?" data-zh="第六，收入靠个人冲动，还是企业预算？个人增长快但波动大，企业慢但合同稳。">第六，收入靠个人冲动，还是企业预算？个人增长快但波动大，企业慢但合同稳。</li>
+<li data-en="Seventh, does it create a new profit pool or protect an old one?" data-zh="第七，它是在创造新利润池，还是保护旧利润池？微软、Adobe、Intuit 赚钱，是因为 AI 保护并抬高了原有利润池。">第七，它是在创造新利润池，还是保护旧利润池？微软、Adobe、Intuit 赚钱，是因为 AI 保护并抬高了原有利润池。</li>
+</ol>
+</section>
+<details class="article-disclosure podcast-disclosure"><summary data-en="Open five-minute spoken version" data-zh="展开五分钟口述版">展开五分钟口述版</summary><section class="article-section podcast-box">
+<p class="eyebrow" data-en="Dinner Podcast Script" data-zh="饭局版播客稿">饭局版播客稿</p>
+<h2 data-en="Five-minute version" data-zh="五分钟讲给老板听">五分钟讲给老板听</h2>
+<ol class="script-list">
+<li data-en="First: AI products make big money when the need is hard, not when the model is merely strong." data-zh="第一句：真正赚大钱的 AI，不是模型最强，而是需求最硬。Replika 赚孤独，Cursor 赚程序员时间，Midjourney 赚想象力，Copilot 赚企业席位，Palantir 赚复杂组织里的决策权。">第一句：真正赚大钱的 AI，不是模型最强，而是需求最硬。Replika 赚孤独，Cursor 赚程序员时间，Midjourney 赚想象力，Copilot 赚企业席位，Palantir 赚复杂组织里的决策权。</li>
+<li data-en="Second: AI is not an industry. It is a capability layer." data-zh="第二句：AI 不是一个行业，是一层能力。把它放进低频、低痛、低预算的需求里，就是玩具；放进高频、高痛、高预算的需求里，就是生意。">第二句：AI 不是一个行业，是一层能力。把它放进低频、低痛、低预算的需求里，就是玩具；放进高频、高痛、高预算的需求里，就是生意。</li>
+<li data-en="Third: monetization is subscription, enterprise seats, usage, or embedding into old profit pools." data-zh="第三句：收费方式只有四种：订阅、企业席位、用量、嵌入旧利润池。最稳的是企业席位和旧利润池，最刺激的是消费订阅，最危险的是用量模式成本失控。">第三句：收费方式只有四种：订阅、企业席位、用量、嵌入旧利润池。最稳的是企业席位和旧利润池，最刺激的是消费订阅，最危险的是用量模式成本失控。</li>
+<li data-en="Fourth: do not confuse revenue with profit." data-zh="第四句：不要把收入当利润。AI 应用最怕三个洞：模型成本、获客成本、新鲜感衰退。很多消费 AI 看起来热闹，最后利润可能被云厂商、模型厂商、应用商店和广告平台拿走。">第四句：不要把收入当利润。AI 应用最怕三个洞：模型成本、获客成本、新鲜感衰退。很多消费 AI 看起来热闹，最后利润可能被云厂商、模型厂商、应用商店和广告平台拿走。</li>
+<li data-en="Fifth: this continues the logic from Day 015 to Day 018. Real demand does not equal a good industry. Pricing power determines profit." data-zh="第五句：这跟 Day 015 到 Day 018 是同一条线。需求真实不等于行业好，规模大不等于公司赚钱。定价权在谁手里，谁就赚钱。AI 时代也一样。">第五句：这跟 Day 015 到 Day 018 是同一条线。需求真实不等于行业好，规模大不等于公司赚钱。定价权在谁手里，谁就赚钱。AI 时代也一样。</li>
+</ol>
+</section></details>
+<details class="article-disclosure source-disclosure"><summary data-en="View sources and limits" data-zh="查看事实来源与判断边界">查看事实来源与判断边界</summary><section class="article-section" id="sources">
+<h2 data-en="SOURCES AND LIMITS" data-zh="事实来源与判断边界">事实来源与判断边界</h2>
+<p data-en="Source notes include public filings of listed companies, public reporting and industry research on private AI companies, app revenue tracking, ARR disclosures, and research from Sensor Tower, a16z, and Menlo Ventures." data-zh="公开资料底稿包括：上市公司 Microsoft、Adobe、Intuit、Palantir、ServiceNow、Salesforce、Duolingo 的年度报告和季度财报；OpenAI、Midjourney、Cursor/Anysphere、Character.AI、Replika、Perplexity、ElevenLabs、Synthesia、Jasper、Grammarly、Canva、QuillBot 等公司的公开报道、融资材料、应用收入追踪、ARR 披露和行业研究；Sensor Tower、a16z、Menlo Ventures 等对消费 AI、企业 AI 和生成式 AI 应用收入的统计。由于多数私营公司不披露净利润，本文对私营公司的利润判断采用收入规模、团队规模、软件毛利、商业模式和公开资料交叉推演，不构成投资建议。">公开资料底稿包括：上市公司 Microsoft、Adobe、Intuit、Palantir、ServiceNow、Salesforce、Duolingo 的年度报告和季度财报；OpenAI、Midjourney、Cursor/Anysphere、Character.AI、Replika、Perplexity、ElevenLabs、Synthesia、Jasper、Grammarly、Canva、QuillBot 等公司的公开报道、融资材料、应用收入追踪、ARR 披露和行业研究；Sensor Tower、a16z、Menlo Ventures 等对消费 AI、企业 AI 和生成式 AI 应用收入的统计。由于多数私营公司不披露净利润，本文对私营公司的利润判断采用收入规模、团队规模、软件毛利、商业模式和公开资料交叉推演，不构成投资建议。</p>
+</section></details>
+</article>
+<div data-comments-page="/day-019.html"></div>
+</main>
+<footer class="footer">
+<span>ORI-LIN</span>
+<span data-en="Day 019" data-zh="Day 019">Day 019</span>
+</footer>
+<script src="script.js"></script>
+<script src="comments.js?v=20260724"></script>
 </body>
 </html>
