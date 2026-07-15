@@ -24,18 +24,24 @@
           <span class="news-verdict ${escapeHtml(item.verdictTone || '')}">${escapeHtml(item.verdict)}</span>
         </div>
         <h3>${escapeHtml(item.title)}</h3>
-        <p class="news-plain"><strong>新闻是风：</strong>${escapeHtml(item.plain)}</p>
-        <dl class="news-analysis">
-          <div><dt>钱在怎么动</dt><dd>${escapeHtml(item.capitalAction || '尚未看到可验证的资金动作。')}</dd></div>
-          <div><dt>周期位置</dt><dd>${escapeHtml(item.cycle || '等待确认')}</dd></div>
-          <div><dt>ORI 判断</dt><dd>${escapeHtml(item.judgment)}</dd></div>
-          <div><dt>可能涨跌路径</dt><dd>${escapeHtml(item.marketPath || item.impact)}</dd></div>
-          <div><dt>ORI 观察标的</dt><dd>${escapeHtml(item.targets || '暂无。')}</dd></div>
-          <div class="news-advice"><dt>ORI 动作</dt><dd>${escapeHtml(item.advice)}</dd></div>
-          <div><dt>验证信号</dt><dd>${escapeHtml(item.watch)}</dd></div>
-          <div><dt>失效条件</dt><dd>${escapeHtml(item.invalidation || '核心假设被后续数据否定。')}</dd></div>
-        </dl>
-        <a class="news-source" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source)} · ${escapeHtml(item.publishedAt)} ↗</a>
+        <p class="ori-essence"><span>ORI 看见</span>${escapeHtml(item.essence || item.judgment)}</p>
+        <div class="market-conditions">
+          <p><strong>板块会动：</strong>${escapeHtml(item.upCondition)}</p>
+          <p><strong>板块会跌：</strong>${escapeHtml(item.downCondition)}</p>
+        </div>
+        <div class="stock-list">
+          ${(item.stocks || []).map((stock) => `
+            <div class="stock-row">
+              <div class="stock-name"><strong>${escapeHtml(stock.name)}</strong><span>${escapeHtml(stock.ticker)}</span></div>
+              <p>${escapeHtml(stock.reason)}</p>
+              <p><b>触发：</b>${escapeHtml(stock.trigger)}</p>
+            </div>
+          `).join('')}
+        </div>
+        <p class="ori-call"><span>ORI 结论</span>${escapeHtml(item.oriCall || item.advice)}</p>
+        <div class="news-sources">
+          ${(item.sources || [{ label: `${item.source} · ${item.publishedAt}`, url: item.sourceUrl }]).map((source) => `<a class="news-source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('')}
+        </div>
       </article>
     `).join('');
   };

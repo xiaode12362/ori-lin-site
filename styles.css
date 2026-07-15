@@ -1020,6 +1020,85 @@ a.archive-item:hover strong {
   text-decoration: underline;
 }
 
+.ori-essence,
+.ori-call {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "Songti SC", SimSun, Georgia, serif;
+  font-size: clamp(19px, 2.4vw, 24px);
+  line-height: 1.65;
+  margin: 28px 0 0;
+  padding: 22px 24px;
+}
+
+.ori-essence span,
+.ori-call span {
+  color: #efb45f;
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  margin-bottom: 8px;
+}
+
+.market-conditions {
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+}
+
+.market-conditions p {
+  margin: 8px 0;
+}
+
+.stock-list {
+  border-top: 1px solid var(--ink);
+  margin-top: 30px;
+}
+
+.stock-row {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 150px minmax(0, 1.25fr) minmax(0, 1fr);
+  padding: 20px 0;
+}
+
+.stock-row p {
+  line-height: 1.65;
+  margin: 0;
+}
+
+.stock-name strong,
+.stock-name span {
+  display: block;
+}
+
+.stock-name span {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.ori-call {
+  background: #f0eee5;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.ori-call span {
+  color: var(--accent);
+}
+
+.news-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 22px;
+}
+
 .news-method {
   margin-top: 72px;
   max-width: 760px;
@@ -1082,5 +1161,10 @@ a.archive-item:hover strong {
 
   .news-card h3 {
     overflow-wrap: anywhere;
+  }
+
+  .stock-row {
+    gap: 10px;
+    grid-template-columns: 1fr;
   }
 }
