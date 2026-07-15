@@ -985,6 +985,22 @@ a.archive-item:hover strong {
   margin: 0;
 }
 
+.news-analysis .news-advice {
+  background: #f0eee5;
+  border-top-color: #d5d0bf;
+  margin: 0 -18px;
+  padding: 20px 18px;
+}
+
+.news-analysis .news-advice dt {
+  color: var(--accent);
+}
+
+.news-analysis .news-advice dd {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .news-analysis small {
   border: 1px solid var(--line);
   color: var(--muted);

@@ -11,7 +11,7 @@
   }[char]));
 
   const render = (filter = 'all') => {
-    const visible = filter === 'all' ? items : items.filter((item) => item.category === filter);
+    const visible = filter === 'all' ? items : items.filter((item) => item.group === filter);
     if (!visible.length) {
       list.innerHTML = '<p class="news-empty">这一栏今天没有足够可靠的消息。宁可空着，不拿噪音凑数。</p>';
       return;
@@ -20,7 +20,7 @@
       <article class="news-card">
         <div class="news-card-meta">
           <span>${String(index + 1).padStart(2, '0')}</span>
-          <span>${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
+          <span>${escapeHtml(item.group)} · ${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
           <span class="news-verdict ${escapeHtml(item.verdictTone || '')}">${escapeHtml(item.verdict)}</span>
         </div>
         <h3>${escapeHtml(item.title)}</h3>
@@ -29,6 +29,7 @@
           <div><dt>ORI 判断</dt><dd>${escapeHtml(item.judgment)}</dd></div>
           <div><dt>谁希望你怎么理解</dt><dd>${escapeHtml(item.publisherGoal)} <small>ORI 推断</small></dd></div>
           <div><dt>对谁有影响</dt><dd>${escapeHtml(item.impact)}</dd></div>
+          <div class="news-advice"><dt>ORI 建议</dt><dd>${escapeHtml(item.advice)}</dd></div>
           <div><dt>下一步看什么</dt><dd>${escapeHtml(item.watch)}</dd></div>
         </dl>
         <a class="news-source" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source)} · ${escapeHtml(item.publishedAt)} ↗</a>
