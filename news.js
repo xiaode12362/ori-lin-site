@@ -29,6 +29,7 @@
           <a href="${escapeHtml(item.originalUrl || item.sources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.originalNews || item.title)} ↗</a>
           <small>${escapeHtml(item.originalSource || item.source || '')} · ${escapeHtml(item.publishedAt || '')}</small>
         </div>
+        <p class="government-intent"><span>政府为什么这样做 · ORI 推断</span>${escapeHtml(item.governmentIntent || '该动作的政策用意仍需结合后续文件判断。')}</p>
         <p class="ori-essence"><span>ORI 看见</span>${escapeHtml(item.essence || item.judgment)}</p>
         <div class="market-conditions">
           <p><strong>板块会动：</strong>${escapeHtml(item.upCondition)}</p>

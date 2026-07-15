@@ -1060,6 +1060,23 @@ a.archive-item:hover strong {
   color: var(--muted);
 }
 
+.government-intent {
+  background: #ebe8dc;
+  color: #30342f;
+  line-height: 1.7;
+  margin: 20px 0 0;
+  padding: 18px 20px;
+}
+
+.government-intent span {
+  color: var(--accent);
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin-bottom: 6px;
+}
+
 .ori-essence span,
 .ori-call span {
   color: #efb45f;
