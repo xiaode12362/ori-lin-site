@@ -3,6 +3,7 @@
   const date = document.querySelector('#editionDate');
   const title = document.querySelector('#editionTitle');
   const note = document.querySelector('#editionNote');
+  const trackingSummary = document.querySelector('#trackingSummary');
   const filters = document.querySelectorAll('[data-filter]');
   let items = [];
 
@@ -16,7 +17,11 @@
       list.innerHTML = '<p class="news-empty">这一栏今天没有足够可靠的消息。宁可空着，不拿噪音凑数。</p>';
       return;
     }
-    list.innerHTML = visible.map((item, index) => `
+    list.innerHTML = visible.map((item, index) => {
+      const tracking = item.tracking || {};
+      const reviews = tracking.reviews || [];
+      const latest = reviews[reviews.length - 1];
+      return `
       <article class="news-card">
         <div class="news-card-meta">
           <span>${String(index + 1).padStart(2, '0')}</span>
@@ -45,11 +50,25 @@
           `).join('')}
         </div>
         <p class="ori-call"><span>ORI 结论</span>${escapeHtml(item.oriCall || item.advice)}</p>
+        <details class="prediction-tracking">
+          <summary>预测跟踪 · ${escapeHtml(latest?.verdict || tracking.verdict || '跟踪中')}</summary>
+          <div class="tracking-body">
+            <p><strong>复盘节点</strong>${escapeHtml((tracking.reviewSchedule || ['D+1', 'D+7', 'D+30', 'D+90']).join(' / '))}</p>
+            <p><strong>下次复盘</strong>${escapeHtml(tracking.nextReviewAt || '待安排')}</p>
+            ${latest ? `
+              <p><strong>实际发生</strong>${escapeHtml(latest.actual)}</p>
+              <p><strong>联动验证</strong>${escapeHtml(latest.linkage)}</p>
+              <p><strong>为什么对或错</strong>${escapeHtml(latest.reason)}</p>
+              <p><strong>政策为何偏离 ORI 路径</strong>${escapeHtml(latest.policyDeviation)}</p>
+              <div class="tracking-evidence">${(latest.sources || []).map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('')}</div>
+            ` : '<p class="tracking-pending">尚未到复盘节点。ORI 不用当天涨跌冒充预测正确。</p>'}
+          </div>
+        </details>
         <div class="news-sources">
           ${(item.sources || [{ label: `${item.source} · ${item.publishedAt}`, url: item.sourceUrl }]).map((source) => `<a class="news-source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('')}
         </div>
       </article>
-    `).join('');
+    `}).join('');
   };
 
   filters.forEach((button) => button.addEventListener('click', () => {
@@ -66,6 +85,9 @@
       const edition = data.editions?.[0];
       if (!edition) throw new Error('no edition');
       items = edition.items || [];
+      const resolved = items.filter((item) => ['正确', '部分正确', '错误'].includes(item.tracking?.verdict));
+      const correct = resolved.filter((item) => item.tracking.verdict === '正确').length;
+      trackingSummary.innerHTML = `<span>预测账本</span><strong>${items.length} 条跟踪中</strong><small>${resolved.length ? `已验证 ${resolved.length} 条 · 正确 ${correct} 条` : '命中率等待 D+7 后形成'}</small>`;
       date.textContent = edition.date;
       date.dateTime = edition.date;
       title.textContent = edition.title || '今日新闻判断';

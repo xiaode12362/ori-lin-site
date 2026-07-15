@@ -42,7 +42,22 @@
               "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml"
             }
           ],
-          "governmentIntent": "能源转型已经进入必须兑现2030目标的阶段。政府要用硬指标倒逼高耗能行业改造，同时把电网、储能和绿色制造培育成新的投资需求。"
+          "governmentIntent": "能源转型已经进入必须兑现2030目标的阶段。政府要用硬指标倒逼高耗能行业改造，同时把电网、储能和绿色制造培育成新的投资需求。",
+          "id": "2026-07-15-cn-01",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -79,7 +94,22 @@
               "url": "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/gnmygl/art/2026/art_c9b4c4851de94b18809007ff90d9cce0.html"
             }
           ],
-          "governmentIntent": "房地产和外需不能长期承担增长，政府希望提高居民消费率，用服务消费、耐用品更新和居民增收建立更稳定的内需。"
+          "governmentIntent": "房地产和外需不能长期承担增长，政府希望提高居民消费率，用服务消费、耐用品更新和居民增收建立更稳定的内需。",
+          "id": "2026-07-15-cn-02",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -116,7 +146,22 @@
               "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161754.shtml"
             }
           ],
-          "governmentIntent": "大江大河治理后，污染短板转到县乡、工业园区和农村。政府要把治理责任下沉，减少小水体污染引发的民生与监管风险。"
+          "governmentIntent": "大江大河治理后，污染短板转到县乡、工业园区和农村。政府要把治理责任下沉，减少小水体污染引发的民生与监管风险。",
+          "id": "2026-07-15-cn-03",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -153,7 +198,22 @@
               "url": "https://www.mee.gov.cn/zcwj/zyygwj/202607/t20260714_1161683.shtml"
             }
           ],
-          "governmentIntent": "土地、矿产、森林和水资源长期存在家底不清、权责分散。政府要先确权和数字化，才能提高配置效率并追究资源损耗责任。"
+          "governmentIntent": "土地、矿产、森林和水资源长期存在家底不清、权责分散。政府要先确权和数字化，才能提高配置效率并追究资源损耗责任。",
+          "id": "2026-07-15-cn-04",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -190,7 +250,22 @@
               "url": "https://www.gov.cn/zhengce/content/202607/content_7075213.htm"
             }
           ],
-          "governmentIntent": "老龄化、慢病和基层医疗不足会持续抬高财政与家庭成本。政府希望把资源前移到预防、基层诊疗和设备升级，降低后端重病支出。"
+          "governmentIntent": "老龄化、慢病和基层医疗不足会持续抬高财政与家庭成本。政府希望把资源前移到预防、基层诊疗和设备升级，降低后端重病支出。",
+          "id": "2026-07-15-cn-05",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -227,7 +302,22 @@
               "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm"
             }
           ],
-          "governmentIntent": "政府希望扩大中医药服务供给、推动标准化与现代化，同时形成具有本土知识产权和出口潜力的医药产业体系。"
+          "governmentIntent": "政府希望扩大中医药服务供给、推动标准化与现代化，同时形成具有本土知识产权和出口潜力的医药产业体系。",
+          "id": "2026-07-15-cn-06",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -264,7 +354,22 @@
               "url": "https://www.nea.gov.cn/20260710/02dd0d866ecd4e12855f69848a350181/c.html"
             }
           ],
-          "governmentIntent": "高温与工业用电叠加正在考验区域电网。能源主管部门发布数据，是为了推动地方提前保供、调峰和扩网，避免限电影响生产。"
+          "governmentIntent": "高温与工业用电叠加正在考验区域电网。能源主管部门发布数据，是为了推动地方提前保供、调峰和扩网，避免限电影响生产。",
+          "id": "2026-07-15-cn-07",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -301,7 +406,22 @@
               "url": "https://www.mofcom.gov.cn/zwgk/gztz/art/2026/art_833243f78f844d8680db3cbb98822b43.html"
             }
           ],
-          "governmentIntent": "传统零售承受客流下降和线上竞争，但又承担就业与社区供应。政府希望用门店改造和供应链升级稳消费、稳就业，而非继续粗放开店。"
+          "governmentIntent": "传统零售承受客流下降和线上竞争，但又承担就业与社区供应。政府希望用门店改造和供应链升级稳消费、稳就业，而非继续粗放开店。",
+          "id": "2026-07-15-cn-08",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -338,7 +458,22 @@
               "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"
             }
           ],
-          "governmentIntent": "AI和数字经济增长正在被算力、网络和安全能力约束。政府希望提前建设基础设施，形成可控的数字底座并带动新产业投资。"
+          "governmentIntent": "AI和数字经济增长正在被算力、网络和安全能力约束。政府希望提前建设基础设施，形成可控的数字底座并带动新产业投资。",
+          "id": "2026-07-15-cn-09",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国内社会金融",
@@ -375,7 +510,22 @@
               "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"
             }
           ],
-          "governmentIntent": "老龄化和慢病会推高医疗支出。政府希望通过公共运动设施和群众体育把健康管理前移，同时扩大体育服务消费。"
+          "governmentIntent": "老龄化和慢病会推高医疗支出。政府希望通过公共运动设施和群众体育把健康管理前移，同时扩大体育服务消费。",
+          "id": "2026-07-15-cn-10",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -412,7 +562,22 @@
               "url": "https://www.bls.gov/news.release/cpi.htm"
             }
           ],
-          "governmentIntent": "美国政府定期公布CPI，为工资、福利、国债和货币政策提供统一基准；此时市场尤其需要判断能源冲击是否正在传导到核心通胀。"
+          "governmentIntent": "美国政府定期公布CPI，为工资、福利、国债和货币政策提供统一基准；此时市场尤其需要判断能源冲击是否正在传导到核心通胀。",
+          "id": "2026-07-15-intl-01",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -449,7 +614,22 @@
               "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
             }
           ],
-          "governmentIntent": "美联储公开会议纪要是为了提高政策透明度，让银行和市场理解流动性工具的判断依据，降低突然政策变化造成的冲击。"
+          "governmentIntent": "美联储公开会议纪要是为了提高政策透明度，让银行和市场理解流动性工具的判断依据，降低突然政策变化造成的冲击。",
+          "id": "2026-07-15-intl-02",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -486,7 +666,22 @@
               "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
             }
           ],
-          "governmentIntent": "经济结构被AI、实时数据和供应冲击改变，旧模型可能失真。美联储希望重做数据和通胀框架，提高政策反应速度与可信度。"
+          "governmentIntent": "经济结构被AI、实时数据和供应冲击改变，旧模型可能失真。美联储希望重做数据和通胀框架，提高政策反应速度与可信度。",
+          "id": "2026-07-15-intl-03",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -523,7 +718,22 @@
               "url": "https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets"
             }
           ],
-          "governmentIntent": "越来越多公司长期留在私募市场，普通投资者难以分享早期增长。SEC希望降低上市摩擦，同时维持披露与投资者保护。"
+          "governmentIntent": "越来越多公司长期留在私募市场，普通投资者难以分享早期增长。SEC希望降低上市摩擦，同时维持披露与投资者保护。",
+          "id": "2026-07-15-intl-04",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -560,7 +770,22 @@
               "url": "https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group"
             }
           ],
-          "governmentIntent": "社交媒体荐股、拉高出货和新型投资骗局增加。SEC要集中数据和执法资源，降低散户损失并维护市场信任。"
+          "governmentIntent": "社交媒体荐股、拉高出货和新型投资骗局增加。SEC要集中数据和执法资源，降低散户损失并维护市场信任。",
+          "id": "2026-07-15-intl-05",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -597,7 +822,22 @@
               "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-may-2026"
             }
           ],
-          "governmentIntent": "美国政府发布贸易数据，是为了判断关税、汇率和供应链政策是否改变进出口结构，也为GDP和产业政策提供依据。"
+          "governmentIntent": "美国政府发布贸易数据，是为了判断关税、汇率和供应链政策是否改变进出口结构，也为GDP和产业政策提供依据。",
+          "id": "2026-07-15-intl-06",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -634,7 +874,22 @@
               "url": "https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf"
             }
           ],
-          "governmentIntent": "战争、能源与科技投资正在改变全球增长路径。IMF希望统一风险基准，促使各国提前调整财政、货币和能源政策。"
+          "governmentIntent": "战争、能源与科技投资正在改变全球增长路径。IMF希望统一风险基准，促使各国提前调整财政、货币和能源政策。",
+          "id": "2026-07-15-intl-07",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -671,7 +926,22 @@
               "url": "https://www.iea.org/reports/oil-market-report-july-2026"
             }
           ],
-          "governmentIntent": "中东供应与成品油短缺造成价格剧烈波动。IEA发布供需和库存判断，是为了帮助成员国决定储备释放与能源安全行动。"
+          "governmentIntent": "中东供应与成品油短缺造成价格剧烈波动。IEA发布供需和库存判断，是为了帮助成员国决定储备释放与能源安全行动。",
+          "id": "2026-07-15-intl-08",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -708,7 +978,22 @@
               "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php"
             }
           ],
-          "governmentIntent": "美国需要用公开预测指导能源企业、消费者和政策部门安排产量、库存与基础设施，并降低能源价格误判。"
+          "governmentIntent": "美国需要用公开预测指导能源企业、消费者和政策部门安排产量、库存与基础设施，并降低能源价格误判。",
+          "id": "2026-07-15-intl-09",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         },
         {
           "group": "国际重大一手新闻",
@@ -745,7 +1030,22 @@
               "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html"
             }
           ],
-          "governmentIntent": "欧洲同时面对能源通胀和增长压力。欧洲央行公开讨论过程，是为了解释加息逻辑、稳定通胀预期并防止成员国利差失控。"
+          "governmentIntent": "欧洲同时面对能源通胀和增长压力。欧洲央行公开讨论过程，是为了解释加息逻辑、稳定通胀预期并防止成员国利差失控。",
+          "id": "2026-07-15-intl-10",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-15",
+            "baselineAt": "2026-07-15",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-16",
+            "reviews": []
+          }
         }
       ]
     }
