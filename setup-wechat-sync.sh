@@ -29,13 +29,13 @@ else
     git pull origin main 2>/dev/null || echo "[WARN] git pull failed, continuing anyway"
 fi
 
-# 2. Check wechat_sync.py exists
-if [ ! -f "$SITE_DIR/wechat_sync.py" ]; then
-    echo "ERROR: wechat_sync.py not found in $SITE_DIR"
+# 2. Check the daily news sync script exists
+if [ ! -f "$SITE_DIR/wechat_news_sync.py" ]; then
+    echo "ERROR: wechat_news_sync.py not found in $SITE_DIR"
     echo "Make sure git pull succeeded"
     exit 1
 fi
-echo "[OK] wechat_sync.py found"
+echo "[OK] wechat_news_sync.py found"
 
 # 3. Install Python 3 and pip
 echo ""
@@ -70,16 +70,19 @@ echo "[OK] Python packages installed"
 # 5. Create .env file
 echo ""
 echo "--- Setting up .env file ---"
-APPID="wx9c7ec502f5b0f3ad"
-SECRET="46e5038f4f22414ff9c78d04a5f2dc81"
-
-cat > "$ENV_FILE" << EOF
+if [ -f "$ENV_FILE" ]; then
+    echo "[OK] Existing .env preserved"
+else
+    : "${WECHAT_APPID:?Set WECHAT_APPID before running this setup script}"
+    : "${WECHAT_APPSECRET:?Set WECHAT_APPSECRET before running this setup script}"
+    cat > "$ENV_FILE" << EOF
 # ORI-LIN WeChat Sync Configuration
-WECHAT_APPID=$APPID
-WECHAT_APPSECRET=$SECRET
+WECHAT_APPID=$WECHAT_APPID
+WECHAT_APPSECRET=$WECHAT_APPSECRET
 EOF
-chmod 600 "$ENV_FILE"
-echo "[OK] .env file created at $ENV_FILE"
+    chmod 600 "$ENV_FILE"
+    echo "[OK] .env file created at $ENV_FILE"
+fi
 
 # 6. Get server public IP
 echo ""
@@ -105,25 +108,17 @@ ENV_FILE="$SITE_DIR/.env"
 
 cd "$SITE_DIR"
 
-# Ensure .env exists (git pull may remove it)
+# Credentials must remain local and must never be written into source code.
 if [ ! -f "$ENV_FILE" ]; then
-    echo 'WECHAT_APPID=wx9c7ec502f5b0f3ad' > "$ENV_FILE"
-    echo 'WECHAT_APPSECRET=46e5038f4f22414ff9c78d04a5f2dc81' >> "$ENV_FILE"
-    chmod 600 "$ENV_FILE"
+    echo "Missing $ENV_FILE" >> "$LOG_FILE"
+    exit 1
 fi
 
 # Pull latest code
 /usr/bin/git pull origin main >> "$LOG_FILE" 2>&1
 
-# Ensure .env still exists after pull
-if [ ! -f "$ENV_FILE" ]; then
-    echo 'WECHAT_APPID=wx9c7ec502f5b0f3ad' > "$ENV_FILE"
-    echo 'WECHAT_APPSECRET=46e5038f4f22414ff9c78d04a5f2dc81' >> "$ENV_FILE"
-    chmod 600 "$ENV_FILE"
-fi
-
-# Run sync (draft-only: personal subscription accounts can't auto-publish)
-/usr/bin/python3 wechat_sync.py --draft-only >> "$LOG_FILE" 2>&1
+# Publish the latest complete edition; the script prevents same-day duplicates.
+/usr/bin/python3 wechat_news_sync.py >> "$LOG_FILE" 2>&1
 
 # Clean up cover image
 rm -f "$SITE_DIR/wechat_cover.png" 2>/dev/null
@@ -131,18 +126,18 @@ CRON_EOF
 chmod +x "$CRON_SCRIPT"
 echo "[OK] Sync script created at $CRON_SCRIPT"
 
-# 8. Add cron job (daily at 22:00)
+# 8. Add cron job (daily at 08:30, after the 07:30 news task)
 echo ""
 echo "--- Setting up cron job ---"
 # Remove existing entry if any
-(crontab -l 2>/dev/null | grep -v "wechat-sync" ; echo "0 22 * * * $CRON_SCRIPT") | crontab -
-echo "[OK] Cron job added: daily at 22:00 (server time)"
+(crontab -l 2>/dev/null | grep -v "wechat-sync" ; echo "30 8 * * * $CRON_SCRIPT") | crontab -
+echo "[OK] Cron job added: daily at 08:30 (server time)"
 
 # 9. Test run
 echo ""
 echo "--- Testing sync (dry-run) ---"
 cd "$SITE_DIR"
-python3 wechat_sync.py --dry-run 2>&1 | tail -5
+python3 wechat_news_sync.py --render-only 2>&1 | tail -5
 
 echo ""
 echo "========================================="
@@ -154,8 +149,8 @@ if [ -n "$SERVER_IP" ]; then
     echo "  mp.weixin.qq.com -> 设置与开发 -> 基本配置 -> IP白名单"
     echo ""
 fi
-echo "To test full sync (creates draft, personal accounts can't auto-publish):"
-echo "  cd $SITE_DIR && python3 wechat_sync.py --draft-only"
+echo "To test a draft without publishing:"
+echo "  cd $SITE_DIR && python3 wechat_news_sync.py --draft-only"
 echo ""
-echo "Cron runs daily at 22:00 server time (draft-only mode)."
+echo "Cron runs daily at 08:30 server time and confirms the publish status."
 echo "Check logs: tail -f $SITE_DIR/wechat_sync.log"
