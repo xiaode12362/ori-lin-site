@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T15:30:00+08:00",
+  "updatedAt": "2026-07-16T13:19:17+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
     {
@@ -46,7 +46,7 @@
           "id": "2026-07-15-cn-01",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -55,8 +55,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "国电南瑞（600406.SH）2026-07-15 收盘 21.99→22.16，+0.77%；同期上证综指-0.29%，超额+1.06%；许继电气（000400.SZ）2026-07-15 收盘 19.85→20.00，+0.76%；同期深证成指-0.97%，超额+1.73%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：中国政府网／生态环境部（2026-07-14）",
+                    "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：国电南瑞（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600406.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：许继电气（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000400.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -98,7 +130,7 @@
           "id": "2026-07-15-cn-02",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -107,8 +139,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "美的集团（000333.SZ）2026-07-14 收盘 80.40→81.18，+0.97%；同期深证成指+2.77%，超额-1.80%；海尔智家（600690.SH）2026-07-14 收盘 20.25→20.33，+0.40%；同期上证综指+1.36%，超额-0.97%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票虽同向上涨，但均未跑赢大盘，首日更接近市场普涨而非可辨认的新闻联动；原因果链尚未得到验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：国务院／商务部（2026-07-13）",
+                    "url": "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/gnmygl/art/2026/art_c9b4c4851de94b18809007ff90d9cce0.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：美的集团（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000333.SZ?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：海尔智家（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600690.SS?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -150,7 +214,7 @@
           "id": "2026-07-15-cn-03",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -159,8 +223,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "碧水源（300070.SZ）2026-07-15 收盘 3.45→3.50，+1.45%；同期深证成指-0.97%，超额+2.42%；首创环保（600008.SH）2026-07-15 收盘 2.85→2.90，+1.75%；同期上证综指-0.29%，超额+2.05%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：中国政府网／生态环境部（2026-07-14）",
+                    "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161754.shtml"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：碧水源（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300070.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：首创环保（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600008.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -202,7 +298,7 @@
           "id": "2026-07-15-cn-04",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -211,8 +307,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "超图软件（300036.SZ）2026-07-15 收盘 10.62→10.83，+1.98%；同期深证成指-0.97%，超额+2.95%；中科星图（688568.SH）2026-07-15 收盘 34.68→34.31，-1.07%；同期上证综指-0.29%，超额-0.78%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：中办、国办／中国政府网（2026-07-14）",
+                    "url": "https://www.mee.gov.cn/zcwj/zyygwj/202607/t20260714_1161683.shtml"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：超图软件（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300036.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：中科星图（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/688568.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -254,7 +382,7 @@
           "id": "2026-07-15-cn-05",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -263,8 +391,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "迈瑞医疗（300760.SZ）2026-07-14 收盘 139.68→139.96，+0.20%；同期深证成指+2.77%，超额-2.57%；联影医疗（688271.SH）2026-07-14 收盘 108.39→110.21，+1.68%；同期上证综指+1.36%，超额+0.32%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：国务院／中国政府网（2026-07-13）",
+                    "url": "https://www.gov.cn/zhengce/content/202607/content_7075213.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：迈瑞医疗（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300760.SZ?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：联影医疗（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/688271.SS?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783382400&period2=1784160000&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -306,7 +466,7 @@
           "id": "2026-07-15-cn-06",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -315,8 +475,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "华润三九（000999.SZ）2026-07-13 收盘 23.76→24.49，+3.07%；同期深证成指-3.48%，超额+6.55%；同仁堂（600085.SH）2026-07-13 收盘 23.68→24.53，+3.59%；同期上证综指-2.06%，超额+5.65%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：国务院／中国政府网（2026-07-10）",
+                    "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：华润三九（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000999.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：同仁堂（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600085.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -358,7 +550,7 @@
           "id": "2026-07-15-cn-07",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -367,8 +559,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "思源电气（002028.SZ）2026-07-13 收盘 151.73→159.50，+5.12%；同期深证成指-3.48%，超额+8.60%；平高电气（600312.SH）2026-07-13 收盘 16.49→16.68，+1.15%；同期上证综指-2.06%，超额+3.21%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：国家能源局（2026-07-10）",
+                    "url": "https://www.nea.gov.cn/20260710/02dd0d866ecd4e12855f69848a350181/c.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：思源电气（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002028.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：平高电气（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600312.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -410,7 +634,7 @@
           "id": "2026-07-15-cn-08",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -419,8 +643,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "永辉超市（601933.SH）2026-07-10 收盘 3.06→3.20，+4.58%；同期上证综指-1.00%，超额+5.58%；红旗连锁（002697.SZ）2026-07-10 收盘 4.35→4.42，+1.61%；同期深证成指-2.29%，超额+3.90%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：商务部（2026-07-09）",
+                    "url": "https://www.mofcom.gov.cn/zwgk/gztz/art/2026/art_833243f78f844d8680db3cbb98822b43.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：永辉超市（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/601933.SS?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：红旗连锁（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002697.SZ?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -462,7 +718,7 @@
           "id": "2026-07-15-cn-09",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -471,8 +727,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "中际旭创（300308.SZ）2026-07-13 收盘 1093.98→1108.00，+1.28%；同期深证成指-3.48%，超额+4.76%；紫光股份（000938.SZ）2026-07-13 收盘 38.41→38.40，-0.03%；同期深证成指-3.48%，超额+3.46%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票绝对涨跌并不完全一致，但都取得正超额，显示相对市场有一定板块共振；尚缺中间信号，不能把相对强势直接归因于原新闻。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：新华社／商务部转载（2026-07-11）",
+                    "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：中际旭创（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300308.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：紫光股份（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000938.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -514,7 +798,7 @@
           "id": "2026-07-15-cn-10",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -523,8 +807,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "舒华体育（605299.SH）2026-07-13 收盘 12.60→12.03，-4.52%；同期上证综指-2.06%，超额-2.46%；金陵体育（300651.SZ）2026-07-13 收盘 16.92→16.10，-4.85%；同期深证成指-3.48%，超额-1.37%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向下跌且均跑输各自大盘，首日未见预判方向的正向联动；单日表现仍不足以否定需在后续节点验证的条件与因果链。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：新华社／商务部转载（2026-07-11）",
+                    "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_f07d8f8770524f63a63ce69201cdc6dd.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：舒华体育（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/605299.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：金陵体育（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300651.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -566,7 +882,7 @@
           "id": "2026-07-15-intl-01",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -575,8 +891,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Amazon（AMZN）2026-07-15 收盘 247.49→254.96，+3.02%；同期标普500+0.38%，超额+2.64%；NVIDIA（NVDA）2026-07-15 收盘 211.80→212.50，+0.33%；同期标普500+0.38%，超额-0.05%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：U.S. Bureau of Labor Statistics（2026-07-14）",
+                    "url": "https://www.bls.gov/news.release/cpi.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Amazon（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：NVIDIA（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -618,7 +962,7 @@
           "id": "2026-07-15-intl-02",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -627,8 +971,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "JPMorgan（JPM）2026-07-15 收盘 342.89→346.91，+1.17%；同期标普500+0.38%，超额+0.79%；Bank of America（BAC）2026-07-15 收盘 60.62→61.59，+1.60%；同期标普500+0.38%，超额+1.22%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：Federal Reserve（2026-07-14）",
+                    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：JPMorgan（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Bank of America（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BAC?period1=1783468800&period2=1784246400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -670,7 +1042,7 @@
           "id": "2026-07-15-intl-03",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -679,8 +1051,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "CME Group（CME）2026-07-10 收盘 239.71→240.27，+0.23%；同期标普500+0.42%，超额-0.19%；Intercontinental Exchange（ICE）2026-07-10 收盘 135.11→135.26，+0.11%；同期标普500+0.42%，超额-0.31%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票虽同向上涨，但均未跑赢大盘，首日更接近市场普涨而非可辨认的新闻联动；原因果链尚未得到验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：Federal Reserve（2026-07-09）",
+                    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：CME Group（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CME?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Intercontinental Exchange（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICE?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -722,7 +1122,7 @@
           "id": "2026-07-15-intl-04",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -731,8 +1131,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Goldman Sachs（GS）2026-07-09 收盘 1029.64→1055.97，+2.56%；同期标普500+0.81%，超额+1.74%；Nasdaq（NDAQ）2026-07-09 收盘 84.39→87.52，+3.71%；同期标普500+0.81%，超额+2.89%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：U.S. SEC（2026-07-08）",
+                    "url": "https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Goldman Sachs（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GS?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Nasdaq（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NDAQ?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -774,7 +1202,7 @@
           "id": "2026-07-15-intl-05",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -783,8 +1211,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Interactive Brokers（IBKR）2026-07-08 收盘 94.57→93.40，-1.24%；同期标普500-0.28%，超额-0.96%；Robinhood（HOOD）2026-07-08 收盘 112.90→113.53，+0.56%；同期标普500-0.28%，超额+0.84%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：U.S. SEC（2026-07-07）",
+                    "url": "https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Interactive Brokers（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBKR?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Robinhood（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HOOD?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -826,7 +1282,7 @@
           "id": "2026-07-15-intl-06",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -835,8 +1291,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "FedEx（FDX）2026-07-08 收盘 312.88→309.76，-1.00%；同期标普500-0.28%，超额-0.72%；Walmart（WMT）2026-07-08 收盘 111.54→113.10，+1.40%；同期标普500-0.28%，超额+1.68%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：U.S. BEA／Census Bureau（2026-07-07）",
+                    "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-may-2026"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：FedEx（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FDX?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Walmart（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -878,7 +1362,7 @@
           "id": "2026-07-15-intl-07",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -887,8 +1371,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Caterpillar（CAT）2026-07-09 收盘 948.08→938.39，-1.02%；同期标普500+0.81%，超额-1.84%；Microsoft（MSFT）2026-07-09 收盘 383.34→384.36，+0.27%；同期标普500+0.81%，超额-0.55%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：International Monetary Fund（2026-07-08）",
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Caterpillar（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Microsoft（2026-07-09）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782950400&period2=1783728000&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -930,7 +1442,7 @@
           "id": "2026-07-15-intl-08",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -939,8 +1451,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Valero Energy（VLO）2026-07-13 收盘 280.69→295.79，+5.38%；同期标普500-0.79%，超额+6.17%；Marathon Petroleum（MPC）2026-07-13 收盘 283.74→296.88，+4.63%；同期标普500-0.79%，超额+5.42%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致的相对强势；但尚无预算、订单、利率、资金流或监管执行等中间信号，不能据此认定新闻因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：International Energy Agency（2026-07-10）",
+                    "url": "https://www.iea.org/reports/oil-market-report-july-2026"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Valero Energy（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/VLO?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Marathon Petroleum（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MPC?period1=1783296000&period2=1784073600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -982,7 +1522,7 @@
           "id": "2026-07-15-intl-09",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -991,8 +1531,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Exxon Mobil（XOM）2026-07-08 收盘 141.69→141.13，-0.40%；同期标普500-0.28%，超额-0.11%；Chevron（CVX）2026-07-08 收盘 174.01→175.97，+1.13%；同期标普500-0.28%，超额+1.41%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票的绝对收益或相对大盘表现出现分化，首日没有形成一致的板块—个股联动；需等待后续中间信号判断原映射是否成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：U.S. Energy Information Administration（2026-07-07）",
+                    "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Exxon Mobil（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Chevron（2026-07-08）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1782864000&period2=1783641600&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1034,7 +1602,7 @@
           "id": "2026-07-15-intl-10",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-15",
             "baselineAt": "2026-07-15",
             "reviewSchedule": [
@@ -1043,8 +1611,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-16",
-            "reviews": []
+            "nextReviewAt": "2026-07-22",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-16",
+                "window": "D+1",
+                "actual": "Banco Santander（SAN）2026-07-10 收盘 13.79→13.87，+0.58%；同期标普500+0.42%，超额+0.16%；Deutsche Bank（DB）2026-07-10 收盘 35.40→35.77，+1.05%；同期标普500+0.42%，超额+0.62%。以上均为新闻发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票方向大致一致，但相对大盘的强度有限，首日不足以识别独立的新闻联动；原因果链仍待后续节点验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、盈利、利率、资金流和执行条件，也不能排除提前交易及外部市场冲击。",
+                "policyDeviation": "D+1尚未进入政策或机构执行的验证阶段；没有足够证据证明实际执行偏离 ORI 预判路径。当前仅记录价格反应，后续需核对预算、招标、订单、利率、资金流、产量或监管执行。",
+                "sources": [
+                  {
+                    "label": "原始一手文件：European Central Bank（2026-07-09）",
+                    "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Banco Santander（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SAN?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Deutsche Bank（2026-07-10）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DB?period1=1783036800&period2=1783814400&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         }
       ]
