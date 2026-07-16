@@ -1,7 +1,1215 @@
 {
-  "updatedAt": "2026-07-16T13:19:17+08:00",
+  "updatedAt": "2026-07-16T10:30:00+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-16",
+      "title": "今日 20 条一手新闻标的卡",
+      "note": "国内 10 条，国际 10 条。24 小时内不足，扩展至最近 7 天；AI 拟人化规则原文发布于 4 月，本期仅按 7 月 15 日正式施行处理，不冒充今日发布。全部结论回到政府、央行、监管、国际组织或公司原始披露。methodologyVersion=1.0.0。已应用 activeRules：D+7 起判断联动；无预算、招标、订单、利率或监管执行信号，不认定政策兑现。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "宏观经济",
+          "title": "二季度放缓，软件和金融仍是结构性增量",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "2026年二季度和上半年国内生产总值初步核算结果",
+          "originalSource": "国家统计局",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html",
+          "governmentIntent": "官方明示是核算经济结构；ORI推断是用4.3%的二季度增速校准政策力度，把资源继续压向信息软件、金融和先进制造，而非全面刺激。",
+          "essence": "总量降速但信息软件增10.8%、金融增6.9%，钱仍在数字化和资本服务链，建筑业负增长压制旧周期。",
+          "upCondition": "未来2个季度信息软件增加值连续高于8%，且相关公司合同或递延收入同比增15%以上，结构行情才可延续。",
+          "downCondition": "信息软件增速跌破6%或二季度后企业订单连续2个月走弱，成长溢价回落。",
+          "stocks": [
+            {
+              "name": "中科曙光",
+              "ticker": "603019.SH",
+              "reason": "年报披露主营高端计算与算力基础设施，直接承接信息服务扩张。",
+              "trigger": "季度合同负债或收入连续2季增15%以上。"
+            },
+            {
+              "name": "东方财富",
+              "ticker": "300059.SZ",
+              "reason": "定期报告披露证券与金融数据服务收入，受益金融业活动扩张。",
+              "trigger": "市场成交额连续20日高于近一年均值20%。"
+            }
+          ],
+          "oriCall": "先看软件订单确定性，再看金融成交弹性；D+7后才判断联动，建筑链暂不反转。",
+          "sources": [
+            {
+              "label": "原新闻：国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"
+            },
+            {
+              "label": "公司原始披露：中科曙光定期报告",
+              "url": "https://www.sugon.com/investor"
+            },
+            {
+              "label": "公司原始披露：东方财富公告",
+              "url": "https://www.eastmoney.com/notice/"
+            }
+          ],
+          "id": "2026-07-16-cn-01",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "外贸",
+          "title": "外贸高增先看电子链订单，不把总量直接等同利润",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "2026年上半年进出口情况新闻发布会",
+          "originalSource": "国务院新闻办公室、海关总署",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://english.scio.gov.cn/pressroom/node_9019860.html",
+          "governmentIntent": "官方明示是发布上半年外贸结构；ORI推断是稳定出口份额并扩大进口，以通关便利和市场多元化缓冲贸易摩擦。",
+          "essence": "上半年进出口25.47万亿元、增16.9%，电子零部件和计算硬件高增，订单先流向出海制造与港口物流。",
+          "upCondition": "未来2个月出口额同比保持10%以上，且电子链公司海外订单连续2月增15%以上，外贸链可延续。",
+          "downCondition": "出口增速跌破5%或运价连续4周回落20%，外贸景气交易失效。",
+          "stocks": [
+            {
+              "name": "立讯精密",
+              "ticker": "002475.SZ",
+              "reason": "年报披露消费电子和通信互联为核心业务，海外客户收入占比较高。",
+              "trigger": "海外收入与订单连续2季双位数增长。"
+            },
+            {
+              "name": "宁波港",
+              "ticker": "601018.SH",
+              "reason": "年报披露集装箱和货物吞吐业务，直接验证外贸实物流量。",
+              "trigger": "月度集装箱吞吐连续2月同比增10%以上。"
+            }
+          ],
+          "oriCall": "确定性先看港口吞吐，弹性看电子出口订单；D+7以后再确认价格联动。",
+          "sources": [
+            {
+              "label": "原新闻：国务院新闻办公室、海关总署",
+              "url": "https://english.scio.gov.cn/pressroom/node_9019860.html"
+            },
+            {
+              "label": "公司原始披露：立讯精密公告",
+              "url": "https://www.luxshare-ict.com/investor.html"
+            },
+            {
+              "label": "公司原始披露：宁波港公告",
+              "url": "https://www.nbport.com.cn/gfww/"
+            }
+          ],
+          "id": "2026-07-16-cn-02",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "医疗设备",
+          "title": "医用设备集采从扩量转向价格与合规双约束",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "国家卫生健康委 国家中医药管理局 国家疾病预防控制局关于进一步做好公立医疗卫生机构医用设备集中采购工作的通知",
+          "originalSource": "国家卫生健康委等三部门",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://wjw.xinjiang.gov.cn/hfpc/zcwj4/202607/86a5e26707ca4812bda436a6758228fa.shtml",
+          "governmentIntent": "官方明示是提高资金效益、治理异常低价和廉政风险；ORI推断是以省级集采换规模，同时把售后、质量和全生命周期成本纳入准入。",
+          "essence": "订单向有注册证、装机量和服务网络的国产设备龙头集中，但中标不等于高利润。",
+          "upCondition": "90天内至少3省发布设备集采预算，龙头中标额同比增20%且毛利率下降少于2个百分点，板块才上行。",
+          "downCondition": "只有低价中标、无新增预算，或应收账款增速高于收入15个百分点，逻辑失效。",
+          "stocks": [
+            {
+              "name": "联影医疗",
+              "ticker": "688271.SH",
+              "reason": "年报披露医学影像与放疗设备业务，具备大型设备装机和服务体系。",
+              "trigger": "省级集采中标且单季新增订单同比增20%以上。"
+            },
+            {
+              "name": "迈瑞医疗",
+              "ticker": "300760.SZ",
+              "reason": "年报披露生命信息、体外诊断和医学影像三大产品线，覆盖医院采购。",
+              "trigger": "集采份额提升且国内毛利率降幅小于2个百分点。"
+            }
+          ],
+          "oriCall": "先看预算和中标确定性，再看毛利弹性；没有采购执行，不把政策当兑现。",
+          "sources": [
+            {
+              "label": "原新闻：国家卫生健康委等三部门",
+              "url": "https://wjw.xinjiang.gov.cn/hfpc/zcwj4/202607/86a5e26707ca4812bda436a6758228fa.shtml"
+            },
+            {
+              "label": "公司原始披露：联影医疗定期报告",
+              "url": "https://www.united-imaging.com/investor"
+            },
+            {
+              "label": "公司原始披露：迈瑞医疗公告",
+              "url": "https://www.mindray.com/cn/investor-relations"
+            }
+          ],
+          "id": "2026-07-16-cn-03",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "互联网基础设施",
+          "title": "互联网基础资源进入安全、国产化和服务化考核",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "关于推动互联网基础资源高质量发展的指导意见",
+          "originalSource": "工业和信息化部等四部门",
+          "publishedAt": "2026-07-13",
+          "originalUrl": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_df93d63485c143658d5e75df06f4ec7a.html",
+          "governmentIntent": "官方明示是保障基础资源供给并强化核心技术；ORI推断是提升域名、地址、解析和交换体系的自主可控，压实运营商安全投入。",
+          "essence": "新增支出更可能进入网络设备、解析安全和运营商云，而非泛互联网应用。",
+          "upCondition": "90天内三大运营商相关集采合计同比增15%，且国产设备份额连续2批提升，板块可走订单行情。",
+          "downCondition": "90天无集采，或资本开支指引下调10%以上，政策主题回落。",
+          "stocks": [
+            {
+              "name": "紫光股份",
+              "ticker": "000938.SZ",
+              "reason": "年报披露交换机、路由器及云计算基础设施业务，覆盖互联网基础资源承载层。",
+              "trigger": "运营商网络设备中标份额连续2批提升。"
+            },
+            {
+              "name": "启明星辰",
+              "ticker": "002439.SZ",
+              "reason": "年报披露网络安全、数据安全与安全运营服务，承接监管合规投入。",
+              "trigger": "安全运营合同额连续2季增15%以上。"
+            }
+          ],
+          "oriCall": "设备确定性高于应用弹性；先盯运营商集采，再看安全服务收入。",
+          "sources": [
+            {
+              "label": "原新闻：工业和信息化部等四部门",
+              "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_df93d63485c143658d5e75df06f4ec7a.html"
+            },
+            {
+              "label": "公司原始披露：紫光股份定期报告",
+              "url": "https://www.thunis.com/drupal/cn/ir"
+            },
+            {
+              "label": "公司原始披露：启明星辰公告",
+              "url": "https://www.venustech.com.cn/new_type/tzzgx/"
+            }
+          ],
+          "id": "2026-07-16-cn-04",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "能源转型",
+          "title": "节能降碳开始考核煤电效率与非化石替代",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "国家能源局关于印发《能源领域节能降碳行动计划（2026—2028年）》的通知",
+          "originalSource": "国家能源局",
+          "publishedAt": "2026-07-10",
+          "originalUrl": "https://www.nea.gov.cn/20260710/4acf5873e20149cdbc52c709b16b30ff/c.html",
+          "governmentIntent": "官方明示是贯穿能源产供储销用全链条降碳；ORI推断是用能效门槛淘汰高成本产能，并给电网、储能和节能改造形成项目池。",
+          "essence": "真正的钱在煤电改造、电网消纳与非化石替代，先有预算招标，后有设备利润。",
+          "upCondition": "未来6个月节能改造和电网招标额同比增20%，且项目开工率超70%，板块可走1至2个季度。",
+          "downCondition": "招标额低于去年或中标价格下降10%以上，收入增长不转利润。",
+          "stocks": [
+            {
+              "name": "国电南瑞",
+              "ticker": "600406.SH",
+              "reason": "年报披露电网自动化、电力信息通信等业务，直接承接电网消纳改造。",
+              "trigger": "国家电网中标额连续2批同比增15%以上。"
+            },
+            {
+              "name": "东方电气",
+              "ticker": "600875.SH",
+              "reason": "年报披露火电、核电、风电及节能环保装备，覆盖存量机组改造。",
+              "trigger": "节能改造新增订单连续2季增20%以上。"
+            }
+          ],
+          "oriCall": "先看南瑞订单确定性，东方电气看改造弹性；无招标不追主题。",
+          "sources": [
+            {
+              "label": "原新闻：国家能源局",
+              "url": "https://www.nea.gov.cn/20260710/4acf5873e20149cdbc52c709b16b30ff/c.html"
+            },
+            {
+              "label": "公司原始披露：国电南瑞公告",
+              "url": "https://www.naritech.cn/col/col246/index.html"
+            },
+            {
+              "label": "公司原始披露：东方电气定期报告",
+              "url": "https://www.dec-ltd.cn/investor"
+            }
+          ],
+          "id": "2026-07-16-cn-05",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "固废治理",
+          "title": "110亿吨年新增固废把治理从倡议变成刚性项目",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "关于印发《固体废物污染防治“十五五”规划》的通知",
+          "originalSource": "生态环境部等六部门",
+          "publishedAt": "2026-07-09",
+          "originalUrl": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202607/t20260714_1161736.html",
+          "governmentIntent": "官方明示是补齐固废治理短板、压实地方责任；ORI推断是以全过程监管和历史堆场整治撬动环境监测、资源化与危废处置订单。",
+          "essence": "资金先到地方治理项目和数字监管平台，资源化企业要靠收费与回款证明收益。",
+          "upCondition": "未来6个月新增专项债或财政项目超100亿元，龙头新签订单同比增20%且回款周期不恶化。",
+          "downCondition": "预算不落地，或应收账款周转天数增加30天以上，主题难兑现。",
+          "stocks": [
+            {
+              "name": "瀚蓝环境",
+              "ticker": "600323.SH",
+              "reason": "年报披露固废处理、能源和供水业务，具备项目运营与现金流基础。",
+              "trigger": "固废项目新增产能投运且经营现金流覆盖利润。"
+            },
+            {
+              "name": "高能环境",
+              "ticker": "603588.SH",
+              "reason": "年报披露固废危废资源化与环境修复业务，覆盖历史堆场治理。",
+              "trigger": "新签订单同比增20%且应收周转不恶化。"
+            }
+          ],
+          "oriCall": "运营现金流优先，工程订单其次；D+7以后看项目而非股价。",
+          "sources": [
+            {
+              "label": "原新闻：生态环境部等六部门",
+              "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202607/t20260714_1161736.html"
+            },
+            {
+              "label": "公司原始披露：瀚蓝环境定期报告",
+              "url": "https://www.grandblue.cn/investor"
+            },
+            {
+              "label": "公司原始披露：高能环境公告",
+              "url": "https://www.bgechina.cn/investor"
+            }
+          ],
+          "id": "2026-07-16-cn-06",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "人工智能监管",
+          "title": "AI陪伴正式进入强提醒、评估与退出机制",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "人工智能拟人化互动服务管理暂行办法",
+          "originalSource": "国家网信办等五部门",
+          "publishedAt": "2026-04-10",
+          "originalUrl": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm",
+          "governmentIntent": "官方明示是促进创新并保护未成年人、隐私和生命健康；ORI推断是把情感陪伴从流量产品变为高合规成本服务，淘汰弱治理供给。",
+          "essence": "7月15日正式施行后，资金更偏向内容安全、身份核验和企业级合规，不是无门槛AI陪伴。",
+          "upCondition": "未来90天头部平台合规采购合同增20%，且监管抽查无重大处罚，安全链可持续。",
+          "downCondition": "平台暂停功能或合规成本令相关业务毛利率下降5个百分点以上，弹性转负。",
+          "stocks": [
+            {
+              "name": "三六零",
+              "ticker": "601360.SH",
+              "reason": "年报披露安全与人工智能业务，具备模型安全和内容治理能力。",
+              "trigger": "企业级AI安全订单连续2季增20%以上。"
+            },
+            {
+              "name": "美亚柏科",
+              "ticker": "300188.SZ",
+              "reason": "年报披露网络空间安全、电子数据取证和大数据治理业务。",
+              "trigger": "省级监管或平台安全项目连续2批中标。"
+            }
+          ],
+          "oriCall": "合规确定性先看订单，应用弹性后看用户留存；执行日不等于盈利日。",
+          "sources": [
+            {
+              "label": "原新闻：国家网信办等五部门",
+              "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+            },
+            {
+              "label": "公司原始披露：三六零定期报告",
+              "url": "https://ir.360.cn/"
+            },
+            {
+              "label": "公司原始披露：美亚柏科公告",
+              "url": "https://www.300188.cn/investor"
+            }
+          ],
+          "id": "2026-07-16-cn-07",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "大宗商品",
+          "title": "锂铁涨、能源跌，原料价格正在分化而非全面通胀",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "2026年7月上旬流通领域重要生产资料市场价格变动情况",
+          "originalSource": "国家统计局",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260713_1964100.html",
+          "governmentIntent": "官方明示是监测50种生产资料价格；ORI推断是识别成本传导：磷酸铁锂涨7.9%，而LNG和甲醇下跌，产业利润将重新分配。",
+          "essence": "锂电材料短期有补库弹性，化工和燃气成本下行利好下游，不能用单一商品代表总需求。",
+          "upCondition": "磷酸铁锂价格连续3旬上涨且库存下降10%，材料链可延续4至8周。",
+          "downCondition": "价格一旬转跌5%以上或下游排产未增，补库交易结束。",
+          "stocks": [
+            {
+              "name": "湖南裕能",
+              "ticker": "301358.SZ",
+              "reason": "年报披露磷酸铁锂正极材料为核心业务，售价与出货直接受材料价格影响。",
+              "trigger": "月度排产增15%且库存周转改善。"
+            },
+            {
+              "name": "龙佰集团",
+              "ticker": "002601.SZ",
+              "reason": "年报披露钛白粉及新能源材料业务，具备原料成本与产品价差验证。",
+              "trigger": "产品提价落地且单吨毛利连续2月改善。"
+            }
+          ],
+          "oriCall": "先看库存和排产，再看价格弹性；单旬上涨只记D+1，不算命中。",
+          "sources": [
+            {
+              "label": "原新闻：国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260713_1964100.html"
+            },
+            {
+              "label": "公司原始披露：湖南裕能公告",
+              "url": "https://www.hunanyuneng.com/investor"
+            },
+            {
+              "label": "公司原始披露：龙佰集团公告",
+              "url": "https://www.lomonbillions.global/investor"
+            }
+          ],
+          "id": "2026-07-16-cn-08",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "粮食安全",
+          "title": "夏粮增产靠单产，种业和农机仍是效率投资",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "国家统计局关于2026年夏粮产量数据的公告",
+          "originalSource": "国家统计局",
+          "publishedAt": "2026-07-10",
+          "originalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260710_1964090.html",
+          "governmentIntent": "官方明示是公布播种面积、单产和总产；ORI推断是面积下降0.2%后仍靠单产增0.8%实现增产，政策会继续投向种源、农机和高标准农田。",
+          "essence": "粮价未必上涨，但提高单产的种子、灌溉和机械设备有持续财政需求。",
+          "upCondition": "秋季前农业项目招标同比增15%，且种业龙头预收款连续2季增长，板块可走订单行情。",
+          "downCondition": "粮价下跌10%且补贴或采购预算未增，商业利润弹性不足。",
+          "stocks": [
+            {
+              "name": "隆平高科",
+              "ticker": "000998.SZ",
+              "reason": "年报披露水稻、玉米等种子业务，直接对应单产提升与品种更新。",
+              "trigger": "预收款或合同负债连续2季同比增15%以上。"
+            },
+            {
+              "name": "一拖股份",
+              "ticker": "601038.SH",
+              "reason": "年报披露拖拉机及农业机械业务，承接农机更新和规模化作业。",
+              "trigger": "大中拖销量连续2月同比增15%以上。"
+            }
+          ],
+          "oriCall": "种业确定性高于粮价弹性；先看订单与补贴执行，再看估值。",
+          "sources": [
+            {
+              "label": "原新闻：国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260710_1964090.html"
+            },
+            {
+              "label": "公司原始披露：隆平高科公告",
+              "url": "https://www.lpht.com.cn/investor"
+            },
+            {
+              "label": "公司原始披露：一拖股份定期报告",
+              "url": "https://www.first-tractor.com.cn/tzzgx/"
+            }
+          ],
+          "id": "2026-07-16-cn-09",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "房地产",
+          "title": "一线企稳不是全国反转，城市分化继续扩大",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "2026年6月份70个大中城市商品住宅销售价格变动情况",
+          "originalSource": "国家统计局",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html",
+          "governmentIntent": "官方明示是发布70城房价指数；ORI推断是观察去库存政策是否传导，一线环比上涨而二三线仍弱，资源会继续向核心城市和优质项目集中。",
+          "essence": "钱先回到核心城市改善盘与代建服务，尚未形成全国开发链普涨。",
+          "upCondition": "核心20城新房价格连续3个月环比为正，销售面积同比增10%，开发链才具备季度修复。",
+          "downCondition": "二手房挂牌量连续2月增10%或三线价格再降0.5%以上，修复中断。",
+          "stocks": [
+            {
+              "name": "保利发展",
+              "ticker": "600048.SH",
+              "reason": "年报披露聚焦核心城市开发与经营，销售和拿地数据可直接验证复苏。",
+              "trigger": "单月销售额连续3月同比增10%以上。"
+            },
+            {
+              "name": "绿城管理控股",
+              "ticker": "09979.HK",
+              "reason": "年报披露代建业务，在开发商轻资产和项目纾困中具备订单来源。",
+              "trigger": "新拓代建面积连续2季增15%以上。"
+            }
+          ],
+          "oriCall": "先看保利销售确定性，再看代建弹性；三线不跟随就不是全面反转。",
+          "sources": [
+            {
+              "label": "原新闻：国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html"
+            },
+            {
+              "label": "公司原始披露：保利发展公告",
+              "url": "https://www.polycn.com/investor"
+            },
+            {
+              "label": "公司原始披露：绿城管理公告",
+              "url": "https://www.greentownmanagement.com/investor"
+            }
+          ],
+          "id": "2026-07-16-cn-10",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "通胀",
+          "title": "美国PPI决定降息预期能否穿过企业成本端",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "Producer Price Index — June 2026",
+          "originalSource": "U.S. Bureau of Labor Statistics",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.bls.gov/news.release/ppi.htm",
+          "governmentIntent": "官方明示是测量生产端价格；ORI推断是判断能源冲击是否向核心商品与服务扩散，并据此约束美联储政策空间。",
+          "essence": "若核心PPI不再加速，资金先回流长久期资产；若扩散，定价权和能源链占优。",
+          "upCondition": "核心PPI连续2个月环比不高于0.2%，10年美债收益率20日均线下行，成长股可延续4至8周。",
+          "downCondition": "核心PPI连续2月高于0.4%或通胀预期突破3%，降息交易失效。",
+          "stocks": [
+            {
+              "name": "Microsoft",
+              "ticker": "MSFT",
+              "reason": "公司财报披露云与AI资本开支和订阅收入，长久期估值受利率敏感。",
+              "trigger": "核心PPI达标且Azure增速连续2季不降。"
+            },
+            {
+              "name": "Exxon Mobil",
+              "ticker": "XOM",
+              "reason": "公司财报披露上游产量与炼化利润，对能源价格传导更直接。",
+              "trigger": "能源PPI回升且季度自由现金流改善。"
+            }
+          ],
+          "oriCall": "先看核心PPI确定利率方向，再选科技或能源弹性；D+7确认。",
+          "sources": [
+            {
+              "label": "原新闻：U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/ppi.htm"
+            },
+            {
+              "label": "公司原始披露：Microsoft filings",
+              "url": "https://www.microsoft.com/en-us/Investor"
+            },
+            {
+              "label": "公司原始披露：ExxonMobil filings",
+              "url": "https://investor.exxonmobil.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-01",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "英国",
+          "category": "宏观政策",
+          "title": "OECD把英国增长约束指向生产率与财政空间",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "OECD Economic Surveys: United Kingdom 2026",
+          "originalSource": "OECD",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.oecd.org/en/publications/oecd-economic-surveys-united-kingdom-2026_16097513.html",
+          "governmentIntent": "官方明示是评估英国经济并给出改革建议；ORI推断是逼迫财政支出转向区域生产率、技能和投资，而非长期普遍补贴。",
+          "essence": "资金更可能进入基础设施、数字化和效率服务，英镑与银行仍受财政可信度约束。",
+          "upCondition": "未来2个季度英国商业投资同比增3%以上，且10年国债收益率不升，基建与银行可修复。",
+          "downCondition": "财政赤字预期上调1个百分点或企业投资转负，修复失效。",
+          "stocks": [
+            {
+              "name": "Barclays",
+              "ticker": "BARC.L",
+              "reason": "年报披露英国零售与企业银行业务，受信贷和利率路径共同影响。",
+              "trigger": "净息差稳定且贷款损失率不升。"
+            },
+            {
+              "name": "RELX",
+              "ticker": "REL.L",
+              "reason": "年报披露数据分析与专业信息服务，代表高生产率数字服务出口。",
+              "trigger": "有机收入连续2季高于6%。"
+            }
+          ],
+          "oriCall": "RELX看结构确定性，Barclays看宏观弹性；先等投资数据。",
+          "sources": [
+            {
+              "label": "原新闻：OECD",
+              "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-united-kingdom-2026_16097513.html"
+            },
+            {
+              "label": "公司原始披露：Barclays results",
+              "url": "https://home.barclays/investor-relations/"
+            },
+            {
+              "label": "公司原始披露：RELX results",
+              "url": "https://www.relx.com/investors"
+            }
+          ],
+          "id": "2026-07-16-intl-02",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "全球",
+          "category": "贸易规则",
+          "title": "WTO改革推进，但电商与争端解决仍缺共识",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "DG Okonjo-Iweala calls for simultaneous progress on WTO reform, outstanding negotiations",
+          "originalSource": "World Trade Organization",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.wto.org/english/news_e/news26_e/gc_14jul26_457_e.htm",
+          "governmentIntent": "官方明示是同步推进机构改革和谈判；ORI推断是降低多边规则失速风险，但数字贸易和争端解决仍需成员让步。",
+          "essence": "短期是跨境平台合规确定性边际改善，不是关税立即下降。",
+          "upCondition": "未来6个月电商协议新增10个成员接受，且主要经济体新增关税措施减少20%，跨境平台估值修复。",
+          "downCondition": "电子商务安排继续僵持或主要经济体新关税覆盖额上升，逻辑失效。",
+          "stocks": [
+            {
+              "name": "MercadoLibre",
+              "ticker": "MELI",
+              "reason": "公司财报披露跨境电商与支付生态，受数字贸易规则和区域开放影响。",
+              "trigger": "跨境交易额连续2季增20%以上。"
+            },
+            {
+              "name": "DHL Group",
+              "ticker": "DHL.DE",
+              "reason": "公司年报披露国际快递与供应链业务，是实物贸易量验证标的。",
+              "trigger": "国际件量连续2季转正且单票收益稳定。"
+            }
+          ],
+          "oriCall": "先看规则接受度，再看跨境交易量；物流确定性高于平台估值弹性。",
+          "sources": [
+            {
+              "label": "原新闻：World Trade Organization",
+              "url": "https://www.wto.org/english/news_e/news26_e/gc_14jul26_457_e.htm"
+            },
+            {
+              "label": "公司原始披露：MercadoLibre results",
+              "url": "https://investor.mercadolibre.com/"
+            },
+            {
+              "label": "公司原始披露：DHL Group reports",
+              "url": "https://group.dhl.com/en/investors.html"
+            }
+          ],
+          "id": "2026-07-16-intl-03",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "欧元区",
+          "category": "数字货币",
+          "title": "数字欧元从设计走向36家支付机构实测",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "ECB selects 36 payment service providers to join digital euro pilot",
+          "originalSource": "European Central Bank",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+          "governmentIntent": "官方明示是测试技术、流程和用户体验；ORI推断是降低欧洲支付对非欧体系依赖，同时给银行和收单机构提前改造接口。",
+          "essence": "钱先流向支付软件、身份认证和银行IT，试点不等于立即发行。",
+          "upCondition": "2027年下半年试点按期启动，参与机构接口预算同比增20%，支付IT可走12个月订单周期。",
+          "downCondition": "立法延期超过6个月或参与机构缩减20%，主题降温。",
+          "stocks": [
+            {
+              "name": "Adyen",
+              "ticker": "ADYEN.AS",
+              "reason": "公司财报披露全球收单与支付平台业务，具备商户端接口能力。",
+              "trigger": "欧洲处理量连续2季增20%以上。"
+            },
+            {
+              "name": "Worldline",
+              "ticker": "WLN.PA",
+              "reason": "公司年报披露欧洲支付处理与商户服务，直接面对接口改造。",
+              "trigger": "新合同增长且自由现金流转正。"
+            }
+          ],
+          "oriCall": "Adyen看确定性，Worldline看反转弹性；先等预算与里程碑。",
+          "sources": [
+            {
+              "label": "原新闻：European Central Bank",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
+            },
+            {
+              "label": "公司原始披露：Adyen results",
+              "url": "https://investors.adyen.com/"
+            },
+            {
+              "label": "公司原始披露：Worldline reports",
+              "url": "https://investors.worldline.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-04",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "全球",
+          "category": "天然气",
+          "title": "LNG历史高贸易量之后，霍尔木兹风险重定价",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "Global liquefied natural gas trade volumes reached record high in 2025",
+          "originalSource": "U.S. Energy Information Administration",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.eia.gov/todayinenergy/index.php/detail.php?id=67625",
+          "governmentIntent": "官方明示是解释2025年LNG贸易增5.4%至纪录；ORI推断是美国新增产能与关键航道中断同时放大区域价差和运力价值。",
+          "essence": "上游、液化和船运比单纯公用事业更有弹性，但航道恢复会快速压缩溢价。",
+          "upCondition": "未来8周JKM或TTF均价高于近3年均值20%，LNG运价连续4周上涨，产业链可延续。",
+          "downCondition": "关键航道恢复且气价4周回落20%，风险溢价消失。",
+          "stocks": [
+            {
+              "name": "Cheniere Energy",
+              "ticker": "LNG",
+              "reason": "公司财报披露美国LNG液化与长期合同，受出口利用率和价差驱动。",
+              "trigger": "液化利用率高于90%且新增长协落地。"
+            },
+            {
+              "name": "Flex LNG",
+              "ticker": "FLNG",
+              "reason": "公司财报披露LNG船队租约与日租金，直接反映运输紧张。",
+              "trigger": "现货日租连续4周高于去年同期20%。"
+            }
+          ],
+          "oriCall": "先看Cheniere合同确定性，再看船运弹性；航道是反转开关。",
+          "sources": [
+            {
+              "label": "原新闻：U.S. Energy Information Administration",
+              "url": "https://www.eia.gov/todayinenergy/index.php/detail.php?id=67625"
+            },
+            {
+              "label": "公司原始披露：Cheniere filings",
+              "url": "https://lngir.cheniere.com/"
+            },
+            {
+              "label": "公司原始披露：Flex LNG reports",
+              "url": "https://www.flexlng.com/investor-relations/"
+            }
+          ],
+          "id": "2026-07-16-intl-05",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "英国",
+          "category": "金融监管",
+          "title": "英国首次把四大云厂商纳入金融系统级监管",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "UK financial regulators to begin overseeing Critical Third Parties announced by HM Treasury",
+          "originalSource": "Bank of England, PRA and FCA",
+          "publishedAt": "2026-07-10",
+          "originalUrl": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt",
+          "governmentIntent": "官方明示是防止云服务故障传导金融系统；ORI推断是把韧性、审计和灾备成本外部化给AWS、Google Cloud、Microsoft和Oracle。",
+          "essence": "云需求不会消失，但金融云利润要扣除监管、冗余和本地化成本。",
+          "upCondition": "未来2个季度四家云厂商金融行业收入增15%以上，且无重大合规事故，韧性投入转为护城河。",
+          "downCondition": "重大中断或监管要求令金融云资本开支增速高于收入10个百分点，利润承压。",
+          "stocks": [
+            {
+              "name": "Microsoft",
+              "ticker": "MSFT",
+              "reason": "公司财报披露Azure与安全业务，且被英国列为关键第三方。",
+              "trigger": "金融云收入增15%以上且安全事件可控。"
+            },
+            {
+              "name": "Oracle",
+              "ticker": "ORCL",
+              "reason": "公司财报披露OCI云与数据库业务，同被纳入关键第三方监管。",
+              "trigger": "OCI剩余履约义务连续2季增20%以上。"
+            }
+          ],
+          "oriCall": "Microsoft确定性更高，Oracle弹性更大；先看合规成本再看云增速。",
+          "sources": [
+            {
+              "label": "原新闻：Bank of England, PRA and FCA",
+              "url": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt"
+            },
+            {
+              "label": "公司原始披露：Microsoft filings",
+              "url": "https://www.microsoft.com/en-us/Investor"
+            },
+            {
+              "label": "公司原始披露：Oracle results",
+              "url": "https://investor.oracle.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-06",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "市政债监管",
+          "title": "SEC把P3与远程办公纳入市政顾问合规边界",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
+          "originalSource": "U.S. Securities and Exchange Commission",
+          "publishedAt": "2026-07-10",
+          "originalUrl": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors",
+          "governmentIntent": "官方明示是澄清注册、办公地点和记录保存；ORI推断是堵住P3融资咨询与远程展业的灰区，提高小型顾问合规门槛。",
+          "essence": "头部投行和合规软件获益于集中度提升，市政融资量本身仍取决于利率。",
+          "upCondition": "未来2个季度市政债发行同比增10%，头部承销份额提升且合规成本率稳定，板块受益。",
+          "downCondition": "发行量下降15%或监管执法显著扩大，收益被成本吞噬。",
+          "stocks": [
+            {
+              "name": "Morgan Stanley",
+              "ticker": "MS",
+              "reason": "公司财报披露机构证券与承销业务，具备市政融资合规体系。",
+              "trigger": "固定收益承销收入连续2季增长。"
+            },
+            {
+              "name": "Broadridge",
+              "ticker": "BR",
+              "reason": "公司财报披露资本市场技术与监管通信服务，承接记录和合规数字化。",
+              "trigger": "剩余履约义务与订阅收入连续2季增8%以上。"
+            }
+          ],
+          "oriCall": "先看Broadridge合规确定性，再看投行发行弹性；规则本身不创造债券需求。",
+          "sources": [
+            {
+              "label": "原新闻：U.S. Securities and Exchange Commission",
+              "url": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors"
+            },
+            {
+              "label": "公司原始披露：Morgan Stanley results",
+              "url": "https://www.morganstanley.com/about-us-ir"
+            },
+            {
+              "label": "公司原始披露：Broadridge results",
+              "url": "https://www.broadridge-ir.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-07",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "欧洲",
+          "category": "半导体",
+          "title": "ASML上调指引，AI晶圆厂扩产进入设备兑现",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026",
+          "originalSource": "ASML Holding N.V.",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+          "governmentIntent": "公司明示AI需求推动订单和指引；ORI推断是先进制程资本开支仍强，但出口管制与交付节奏决定收入确认。",
+          "essence": "钱已从AI叙事流到EUV设备订单，供应链的确定性高于下游应用估值。",
+          "upCondition": "未来2季ASML净预订均高于100亿欧元，毛利率不低于52%，设备链可延续。",
+          "downCondition": "净预订单季跌破70亿欧元或主要客户资本开支下调15%，行情反转。",
+          "stocks": [
+            {
+              "name": "ASML",
+              "ticker": "ASML",
+              "reason": "本次财报披露Q2净销售93亿欧元、净利润29亿欧元，是设备需求直接证据。",
+              "trigger": "净预订与指引连续2季上修。"
+            },
+            {
+              "name": "ASM International",
+              "ticker": "ASM.AS",
+              "reason": "公司财报披露原子层沉积设备，受先进逻辑与存储扩产驱动。",
+              "trigger": "订单连续2季同比增20%以上。"
+            }
+          ],
+          "oriCall": "ASML看确定性，ASM看弹性；订单先于收入，出口许可是反转点。",
+          "sources": [
+            {
+              "label": "原新闻：ASML Holding N.V.",
+              "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"
+            },
+            {
+              "label": "公司原始披露：ASML Q2 results",
+              "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"
+            },
+            {
+              "label": "公司原始披露：ASM results",
+              "url": "https://www.asm.com/investors/"
+            }
+          ],
+          "id": "2026-07-16-intl-08",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "资产管理",
+          "title": "BlackRock半年净流入3210亿美元，资金继续向ETF和私募集中",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "BlackRock Reports Second Quarter 2026 Diluted EPS of $12.19, or $13.91 as adjusted",
+          "originalSource": "BlackRock, Inc.",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026",
+          "governmentIntent": "公司明示净流入、费用与回购提升；ORI推断是资产管理规模继续向低费ETF、私募和技术平台集中，中小机构被挤压。",
+          "essence": "钱流向被动指数、另类资产和Aladdin技术，不是所有资管公司同步受益。",
+          "upCondition": "未来2季BlackRock净流入均超1000亿美元，基础费率不降，资管链可延续。",
+          "downCondition": "单季净流出或市场下跌令AUM回撤10%，利润弹性转负。",
+          "stocks": [
+            {
+              "name": "BlackRock",
+              "ticker": "BLK",
+              "reason": "本次财报披露AUM 15.3万亿美元和Q2净流入1920亿美元。",
+              "trigger": "单季净流入高于1000亿美元且费用率稳定。"
+            },
+            {
+              "name": "CME Group",
+              "ticker": "CME",
+              "reason": "公司财报披露交易与清算业务，受资产配置和风险对冲活跃度驱动。",
+              "trigger": "日均成交量连续2月同比增10%以上。"
+            }
+          ],
+          "oriCall": "BlackRock确定性高，CME看波动弹性；先看净流入，再看市场价格。",
+          "sources": [
+            {
+              "label": "原新闻：BlackRock, Inc.",
+              "url": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026"
+            },
+            {
+              "label": "公司原始披露：BlackRock Q2 results",
+              "url": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026"
+            },
+            {
+              "label": "公司原始披露：CME results",
+              "url": "https://investor.cmegroup.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-09",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        },
+        {
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "医药与器械",
+          "title": "强生上调全年指引，创新药与器械兑现高于宏观噪声",
+          "verdict": "数据验证",
+          "verdictTone": "data",
+          "originalNews": "Johnson & Johnson reports Q2 2026 results, raises 2026 outlook",
+          "originalSource": "Johnson & Johnson",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx",
+          "governmentIntent": "公司明示销售增长6.6%并上调全年指引；ORI推断是成熟医疗龙头用新品批准和组合深度抵消价格与专利周期风险。",
+          "essence": "钱流向有临床数据、批准和渠道的创新药与器械，纯概念生物科技仍高波动。",
+          "upCondition": "未来2季运营销售增速高于5%，新增适应症按期放量，医疗龙头可延续。",
+          "downCondition": "核心产品销售低于指引5%或诉讼准备金大幅上调，防御逻辑失效。",
+          "stocks": [
+            {
+              "name": "Johnson & Johnson",
+              "ticker": "JNJ",
+              "reason": "本次财报披露Q2销售253亿美元并上调全年销售与EPS指引。",
+              "trigger": "运营销售连续2季增5%以上。"
+            },
+            {
+              "name": "Abbott",
+              "ticker": "ABT",
+              "reason": "公司财报披露诊断、器械与营养业务，可验证医疗需求广度。",
+              "trigger": "器械有机收入连续2季增8%以上。"
+            }
+          ],
+          "oriCall": "JNJ看指引确定性，Abbott看器械弹性；临床与销售先于估值。",
+          "sources": [
+            {
+              "label": "原新闻：Johnson & Johnson",
+              "url": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx"
+            },
+            {
+              "label": "公司原始披露：J&J Q2 results",
+              "url": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx"
+            },
+            {
+              "label": "公司原始披露：Abbott results",
+              "url": "https://www.abbottinvestor.com/"
+            }
+          ],
+          "id": "2026-07-16-intl-10",
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-16",
+            "baselineAt": "2026-07-16",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-17",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-15",
       "title": "今日 20 条一手新闻标的卡",
