@@ -1120,7 +1120,12 @@ a.archive-item:hover strong {
 
 .stock-list {
   border-top: 1px solid var(--ink);
-  margin-top: 30px;
+  margin-top: 12px;
+}
+
+.stock-section-title {
+  font-size: 18px;
+  margin: 30px 0 0;
 }
 
 .stock-row {
@@ -1139,6 +1144,46 @@ a.archive-item:hover strong {
 .stock-name strong,
 .stock-name span {
   display: block;
+}
+
+.stock-name em {
+  background: #edf3eb;
+  color: #31543a;
+  display: inline-block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 8px;
+  padding: 5px 8px;
+}
+
+.stock-explain b,
+.stock-check b {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.stock-explain small {
+  color: var(--muted);
+  display: block;
+  line-height: 1.55;
+  margin-top: 8px;
+}
+
+.stock-check p + p {
+  margin-top: 8px;
+}
+
+.news-simple {
+  margin: 10px 0 24px;
+}
+
+.news-next {
+  margin-top: 24px;
+}
+
+.analysis-details {
+  margin-top: 18px;
 }
 
 .stock-name span {

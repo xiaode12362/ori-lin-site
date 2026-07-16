@@ -30,27 +30,49 @@
           <span class="news-verdict ${escapeHtml(item.verdictTone || '')}">${escapeHtml(item.verdict)}</span>
         </div>
         <h3>${escapeHtml(item.title)}</h3>
+        <dl class="news-analysis news-simple">
+          <div>
+            <dt>发生了什么</dt>
+            <dd>${escapeHtml(item.whatHappened || item.essence || item.judgment)}</dd>
+          </div>
+          <div>
+            <dt>跟你有什么关系</dt>
+            <dd>${escapeHtml(item.whatItMeans || item.governmentIntent)}</dd>
+          </div>
+        </dl>
         <div class="original-news">
           <span>原新闻</span>
           <a href="${escapeHtml(item.originalUrl || item.sources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.originalNews || item.title)} ↗</a>
           <small>${escapeHtml(item.originalSource || item.source || '')} · ${escapeHtml(item.publishedAt || '')}</small>
         </div>
-        <p class="government-intent"><span>政府为什么这样做 · ORI 推断</span>${escapeHtml(item.governmentIntent || '该动作的政策用意仍需结合后续文件判断。')}</p>
-        <p class="ori-essence"><span>ORI 看见</span>${escapeHtml(item.essence || item.judgment)}</p>
-        <div class="market-conditions">
-          <p><strong>板块会动：</strong>${escapeHtml(item.upCondition)}</p>
-          <p><strong>板块会跌：</strong>${escapeHtml(item.downCondition)}</p>
-        </div>
+        <h4 class="stock-section-title">具体影响哪些股票</h4>
         <div class="stock-list">
           ${(item.stocks || []).map((stock) => `
             <div class="stock-row">
-              <div class="stock-name"><strong>${escapeHtml(stock.name)}</strong><span>${escapeHtml(stock.ticker)}</span></div>
-              <p>${escapeHtml(stock.reason)}</p>
-              <p><b>触发：</b>${escapeHtml(stock.trigger)}</p>
+              <div class="stock-name"><strong>${escapeHtml(stock.name)}</strong><span>${escapeHtml(stock.ticker)}</span><em>${escapeHtml(stock.direction || '条件性影响')}</em></div>
+              <div class="stock-explain"><b>为什么受影响</b><p>${escapeHtml(stock.reason)}</p><small>证据：${escapeHtml(stock.evidence || stock.reason || '暂无直接证据')}</small></div>
+              <div class="stock-check"><p><b>确认信号：</b>${escapeHtml(stock.trigger)}</p><p><b>判断失效：</b>${escapeHtml(stock.invalidCondition || item.downCondition)}</p></div>
             </div>
           `).join('')}
         </div>
-        <p class="ori-call"><span>ORI 结论</span>${escapeHtml(item.oriCall || item.advice)}</p>
+        <dl class="news-analysis news-simple news-next">
+          <div>
+            <dt>接下来盯什么</dt>
+            <dd>${escapeHtml(item.watchNext || item.upCondition)}</dd>
+          </div>
+          <div class="news-advice">
+            <dt>一句话结论</dt>
+            <dd>${escapeHtml(item.oriCall || item.advice)}</dd>
+          </div>
+        </dl>
+        <details class="prediction-tracking analysis-details">
+          <summary>展开看详细分析与涨跌条件</summary>
+          <div class="tracking-body">
+            <p><strong>官方目标与 ORI 分析</strong>${escapeHtml(item.governmentIntent || '仍需结合后续文件判断。')}</p>
+            <p><strong>可能上涨的条件</strong>${escapeHtml(item.upCondition)}</p>
+            <p><strong>判断失效的条件</strong>${escapeHtml(item.downCondition)}</p>
+          </div>
+        </details>
         <details class="prediction-tracking">
           <summary>预测跟踪 · ${escapeHtml(latest?.verdict || tracking.verdict || '跟踪中')}</summary>
           <div class="tracking-body">
