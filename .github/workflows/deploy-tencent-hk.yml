@@ -41,6 +41,21 @@ jobs:
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -n '$TENCENT_SITE_PATH' && test '$TENCENT_SITE_PATH' != '/' && rm -f '$TENCENT_SITE_PATH/day-021.html' '$TENCENT_SITE_PATH/day-022.html'"
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-020.html'"
 
+      - name: Create WeChat draft when requested
+        if: contains(github.event.head_commit.message, '[wechat-draft]')
+        env:
+          TENCENT_HOST: 43.132.148.35
+          TENCENT_USER: ${{ secrets.TENCENT_USER }}
+          TENCENT_PORT: ${{ secrets.TENCENT_PORT || 22 }}
+          TENCENT_SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PRIVATE_KEY }}
+          TENCENT_SITE_PATH: /var/www/ori-lin-site
+        run: |
+          set -euo pipefail
+          WECHAT_DIR=/tmp/ori-lin-wechat
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$WECHAT_DIR' && test -s '$TENCENT_SITE_PATH/.env'"
+          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no wechat_sync.py wechat_news_sync.py news.json "$TENCENT_USER@$TENCENT_HOST:$WECHAT_DIR/"
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "cp '$TENCENT_SITE_PATH/.env' '$WECHAT_DIR/.env' && chmod 600 '$WECHAT_DIR/.env' && cd '$WECHAT_DIR' && python3 wechat_news_sync.py --draft-only"
+
       - name: Verify public site
         run: |
           set -euo pipefail

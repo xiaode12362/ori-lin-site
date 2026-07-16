@@ -46,28 +46,33 @@ def get_edition(target_date=None):
 
 def stock_block(stock):
     return f"""
-    <p><strong>{esc(stock.get('name'))}（{esc(stock.get('ticker'))}）｜{esc(stock.get('direction') or '暂不明确')}</strong><br>
-    直接原因：{esc(stock.get('reason'))}<br>
+    <blockquote><strong>{esc(stock.get('name'))}（{esc(stock.get('ticker'))}）｜{esc(stock.get('direction') or '暂不明确')}</strong><br>
+    为什么：{esc(stock.get('reason'))}<br>
     证据：{esc(stock.get('evidence'))}<br>
-    确认信号：{esc(stock.get('trigger'))}<br>
-    失效条件：{esc(stock.get('invalidCondition'))}</p>"""
+    何时确认：{esc(stock.get('trigger'))}<br>
+    何时失效：{esc(stock.get('invalidCondition'))}</blockquote>"""
 
 
 def card(item, number):
     stocks = "".join(stock_block(x) for x in item.get("stocks", []))
     if not stocks:
         stocks = '<p>证据不足，暂不映射到具体股票。</p>'
-    return f"""
+    group_heading = ""
+    if number == 1:
+        group_heading = '<h2 style="color:#9a7536;">一、国内：政策、订单与资金方向</h2>'
+    elif number == 11:
+        group_heading = '<h2 style="color:#9a7536;">二、国际：利率、贸易与全球公司</h2>'
+    return f"""{group_heading}
     <section>
-      <p><small>{number:02d} · {esc(item.get('group'))} · {esc(item.get('category'))}</small></p>
+      <p><small>{number:02d} · {esc(item.get('category'))}</small></p>
       <h2>{esc(item.get('title'))}</h2>
-      <p><strong>发生了什么：</strong>{esc(item.get('whatHappened') or item.get('verdict'))}</p>
-      <p><strong>为什么这样做：</strong>{esc(item.get('whyThisAction') or item.get('governmentIntent'))}</p>
-      <p><strong>这意味着什么：</strong>{esc(item.get('whatItMeans') or item.get('essence'))}</p>
-      <h3>具体影响哪些股票</h3>
+      <p><strong>这条新闻说了什么：</strong>{esc(item.get('whatHappened') or item.get('verdict'))}</p>
+      <p><strong>为什么现在做：</strong>{esc(item.get('whyThisAction') or item.get('governmentIntent'))}</p>
+      <p><strong>钱和订单怎么变：</strong>{esc(item.get('whatItMeans') or item.get('essence'))}</p>
+      <h3>落到哪些股票</h3>
       {stocks}
-      <p><strong>接下来盯什么：</strong>{esc(item.get('watchNext') or item.get('upCondition'))}</p>
-      <p><strong>一句话结论：</strong>{esc(item.get('oriCall'))}</p>
+      <p><strong>下一步验证：</strong>{esc(item.get('watchNext') or item.get('upCondition'))}</p>
+      <p><strong>ORI 一句话：</strong>{esc(item.get('oriCall'))}</p>
       <p><small>原文：{esc(item.get('originalSource'))} · {esc(item.get('publishedAt'))} · <a href="{esc(item.get('originalUrl'))}">查看一手原文</a></small></p>
       <hr>
     </section>"""
@@ -79,7 +84,8 @@ def render(edition):
     <section style="line-height:1.75;">
       <h1>ORI-LIN 每日20条一手新闻</h1>
       <p>{esc(edition['date'])}｜国内 10 条 + 国际 10 条</p>
-      <blockquote>股票仅为研究关注清单，不是无条件买入指令。先看证据，再等验证信号。</blockquote>
+      <p><strong>今天怎么读：</strong>别先猜大盘。先看政策把钱推向哪里、公司订单会不会变，再用后续数字验证。</p>
+      <blockquote>每只股票都写清楚利好、利空或暂不明确，并附证据、确认信号和失效条件。股票只是研究清单，不是买入指令。</blockquote>
       {cards}
       <p><small>新闻事实、官方目标与 ORI-LIN 分析已分开呈现。持续跟踪请访问 ori-lin.com。</small></p>
     </section>"""
