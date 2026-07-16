@@ -5,10 +5,13 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
 from pathlib import Path
+
+import requests
 
 from wechat_sync import (
     create_cover_image,
@@ -99,6 +102,18 @@ def write_state(state):
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def require_us_egress():
+    """Fail closed: WeChat credentials must never be sent from a non-US exit."""
+    if os.getenv("WECHAT_US_PROXY_ACTIVE") != "1":
+        raise RuntimeError("公众号接口必须通过 wechat_us_publish.py 的美国专用出口执行")
+    geo = requests.get("https://ipinfo.io/json", timeout=20).json()
+    if geo.get("country") != "US":
+        raise RuntimeError(
+            f"公众号发布出口不是美国：{geo.get('ip', 'unknown')} / {geo.get('country', 'unknown')}"
+        )
+    print(f"公众号接口确认美国出口：{geo.get('ip')} · US/{geo.get('region', '')}")
+
+
 def confirm(token, publish_id):
     for _ in range(30):
         data = post_json(
@@ -146,6 +161,8 @@ def main():
     if args.render_only:
         print(f"预览已生成：{PREVIEW}")
         return 0
+
+    require_us_egress()
 
     edition_date = edition["date"]
     digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
