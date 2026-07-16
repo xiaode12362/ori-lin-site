@@ -35,6 +35,10 @@
             <dt>发生了什么</dt>
             <dd>${escapeHtml(item.whatHappened || item.essence || item.judgment)}</dd>
           </div>
+          <div class="why-action">
+            <dt>国家/机构为什么这样做</dt>
+            <dd>${escapeHtml(item.whyThisAction || item.governmentIntent || '它想解决一个具体问题，后续要看实际执行。')}</dd>
+          </div>
           <div>
             <dt>跟你有什么关系</dt>
             <dd>${escapeHtml(item.whatItMeans || item.governmentIntent)}</dd>
