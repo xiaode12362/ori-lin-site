@@ -1,7 +1,1088 @@
 {
-  "updatedAt": "2026-07-16T10:30:00+08:00",
+  "updatedAt": "2026-07-17T13:20:00+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-17",
+      "title": "今天20条：哪些订单、成本和股票会变",
+      "note": "本期含国内10条、国际10条。优先采用24小时内一手披露；不足部分扩展到72小时，3条扩展到7天并明确标注发布日期。股票只在有直接披露证据时映射；2条欧盟政策暂不映射。方法规则：D+1只记录，D+7起判断；没有预算、订单或执行信号，不认定政策兑现。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-17-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "半导体",
+          "title": "澜起上半年利润大增，服务器芯片卖得更好",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "澜起科技发布2026年上半年业绩预增公告。",
+          "originalSource": "上海证券交易所·澜起科技公告",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=688008",
+          "whatHappened": "澜起科技发布2026年上半年业绩预增公告。",
+          "whyThisAction": "公司想让投资者提前知道服务器芯片放量已明显抬高利润。",
+          "governmentIntent": "官方事实：公司发布业绩预增。ORI-LIN分析：服务器更新需求正在变成芯片收入，但最终数字要等半年报。",
+          "whatItMeans": "澜起卖出的内存接口芯片增多，收入和利润直接增加。",
+          "essence": "服务器芯片订单直接进入澜起收入，研发和扩产费用也会同步增加。",
+          "upCondition": "半年报利润落在预告上半区，且互连芯片收入继续增长。",
+          "downCondition": "半年报低于预告下限，或三季度订单环比下降。",
+          "stocks": [
+            {
+              "name": "澜起科技",
+              "ticker": "688008.SH",
+              "direction": "利好",
+              "reason": "业绩预告直接显示主营芯片利润增加。",
+              "evidence": "澜起科技半年度业绩预增公告，2026-07-17",
+              "trigger": "看半年报收入、净利润和三季度指引。",
+              "invalidCondition": "利润低于预告下限时失效。"
+            }
+          ],
+          "watchNext": "盯半年报净利润、互连芯片收入和三季度订单。",
+          "oriCall": "利润兑现前先看正式半年报；低于预告下限，利好判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：上海证券交易所·澜起科技公告",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=688008"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "公司控制权",
+          "title": "浙江美大拟换实控人，新股东能否带来订单还未知",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "浙江美大披露股份转让协议，公司控制权拟发生变化。",
+          "originalSource": "巨潮资讯网·浙江美大公告",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "浙江美大披露股份转让协议，公司控制权拟发生变化。",
+          "whyThisAction": "原股东要转让控制权，新股东希望取得公司经营决策权。",
+          "governmentIntent": "官方事实：股东签署股份转让协议。ORI-LIN分析：交易先改变治理，业务改善仍需后续方案证明。",
+          "whatItMeans": "控制权变化会影响管理层和经营方向，但暂未产生新订单。",
+          "essence": "资金先流向卖方股东，不会直接进入上市公司账户。",
+          "upCondition": "交易完成且新股东公布可量化业务计划。",
+          "downCondition": "交易终止，或新股东没有订单、渠道和资金安排。",
+          "stocks": [
+            {
+              "name": "浙江美大",
+              "ticker": "002677.SZ",
+              "direction": "暂不明确",
+              "reason": "换实控人会改管理方向，但不会自动增加收入。",
+              "evidence": "浙江美大控制权变更提示公告，2026-07-17",
+              "trigger": "看过户完成、董事会改组和新业务方案。",
+              "invalidCondition": "股份转让终止时判断失效。"
+            }
+          ],
+          "watchNext": "盯股份过户、董事会改组和新股东业务计划。",
+          "oriCall": "先看交易能否完成；交易终止，这条判断立即失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯网·浙江美大公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股份回购",
+          "title": "城投控股开始回购，真金白银减少市场卖盘",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "城投控股披露首次回购公司股份。",
+          "originalSource": "上海证券交易所·城投控股公告",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600649",
+          "whatHappened": "城投控股披露首次回购公司股份。",
+          "whyThisAction": "公司认为股价没有体现资产价值，决定用现金买回股份。",
+          "governmentIntent": "官方事实：公司启动回购。ORI-LIN分析：回购能托住短期卖盘，但不能替代地产业务改善。",
+          "whatItMeans": "公司现金减少，可交易股份也减少；后续注销才真正缩股。",
+          "essence": "公司资金流向二级市场卖方，回购完成后可流通股份减少。",
+          "upCondition": "累计回购接近方案上限，并按计划注销。",
+          "downCondition": "回购长期停留在低比例，或经营现金明显恶化。",
+          "stocks": [
+            {
+              "name": "城投控股",
+              "ticker": "600649.SH",
+              "direction": "利好",
+              "reason": "公司直接用现金买股，短期减少市场卖盘。",
+              "evidence": "城投控股首次回购公告，2026-07-17",
+              "trigger": "看累计回购金额和注销进度。",
+              "invalidCondition": "回购停止或现金恶化时失效。"
+            }
+          ],
+          "watchNext": "盯累计回购金额、成交均价和注销公告。",
+          "oriCall": "回购接近上限才有分量；若停止回购，利好判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：上海证券交易所·城投控股公告",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600649"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股份解禁",
+          "title": "长芯博创一批定增股解禁，短期可卖股份增加",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "长芯博创公告向特定对象发行的股票解除限售。",
+          "originalSource": "巨潮资讯网·长芯博创公告",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "长芯博创公告向特定对象发行的股票解除限售。",
+          "whyThisAction": "公司按发行约定让到期股份恢复交易。",
+          "governmentIntent": "官方事实：限售股到期上市。ORI-LIN分析：这改变股票供给，不直接改变光通信订单。",
+          "whatItMeans": "持有人可卖出的股份增加，短期股价需要承接更多卖盘。",
+          "essence": "新增可交易股份进入市场，上市公司不会因此收到新钱。",
+          "upCondition": "解禁后五个交易日成交平稳，且股东未集中减持。",
+          "downCondition": "出现大额减持，或成交量不足以承接。",
+          "stocks": [
+            {
+              "name": "长芯博创",
+              "ticker": "300548.SZ",
+              "direction": "利空",
+              "reason": "解禁让更多股份可以卖出，短期卖盘可能增加。",
+              "evidence": "长芯博创解除限售公告，2026-07-17",
+              "trigger": "看解禁数量、股东减持公告和成交量。",
+              "invalidCondition": "股东不减持且成交平稳时失效。"
+            }
+          ],
+          "watchNext": "盯解禁数量、五日成交量和股东减持公告。",
+          "oriCall": "先防卖盘增加；若股东不减持，利空判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯网·长芯博创公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "交易风险",
+          "title": "东易日盛撤销风险警示，但装修业务仍要看现金",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "东易日盛公告股票撤销退市及其他风险警示。",
+          "originalSource": "巨潮资讯网·东易日盛公告",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "东易日盛公告股票撤销退市及其他风险警示。",
+          "whyThisAction": "交易所规则允许公司在风险指标改善后恢复普通交易简称。",
+          "governmentIntent": "官方事实：风险警示被撤销。ORI-LIN分析：交易资格改善与经营修复是两回事。",
+          "whatItMeans": "交易限制减少，但装修订单、回款和利润不会自动改善。",
+          "essence": "资金可能重新进入该股票，但客户订单和公司现金没有同步增加。",
+          "upCondition": "下一份财报经营现金转正，且没有新增风险警示。",
+          "downCondition": "再次触发风险警示，或经营现金继续流出。",
+          "stocks": [
+            {
+              "name": "东易日盛",
+              "ticker": "002713.SZ",
+              "direction": "利好",
+              "reason": "撤销风险警示降低退市相关交易限制。",
+              "evidence": "东易日盛撤销风险警示公告，2026-07-17",
+              "trigger": "看财报现金、订单和是否再收问询。",
+              "invalidCondition": "再次被风险警示时失效。"
+            }
+          ],
+          "watchNext": "盯经营现金、装修订单和交易所问询。",
+          "oriCall": "交易资格先改善；若现金继续恶化，这个利好失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯网·东易日盛公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "能源政策",
+          "title": "2030年非化石能源占比要到25%，新增电源继续偏绿",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "国务院提出2030年非化石能源消费占比达到25%。",
+          "originalSource": "国务院",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml",
+          "whatHappened": "国务院提出2030年非化石能源消费占比达到25%。",
+          "whyThisAction": "国家要少烧煤和油，同时保证用电不短缺。",
+          "governmentIntent": "官方目标：2030年非化石能源占比25%。ORI-LIN分析：订单先落到电网和新能源设备，价格竞争仍会压利润。",
+          "whatItMeans": "电网、风电和光伏还要继续投入；高耗能企业要多付改造费。",
+          "essence": "电源和电网建设资金流向风机、光伏组件、储能和输电设备。",
+          "upCondition": "年度新增风光装机和电网投资继续增长。",
+          "downCondition": "装机招标下降，或设备价格跌幅快于成本下降。",
+          "stocks": [
+            {
+              "name": "金风科技",
+              "ticker": "002202.SZ",
+              "direction": "利好",
+              "reason": "公司主营风机，新增风电装机直接带来设备订单。",
+              "evidence": "金风科技年度报告，2026-03-31",
+              "trigger": "看风机新增订单和中标价格。",
+              "invalidCondition": "订单下降或毛利继续下滑时失效。"
+            }
+          ],
+          "watchNext": "盯年度新增风电装机和金风新增订单。",
+          "oriCall": "政策方向利好设备订单；若招标下降，判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：国务院",
+              "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml"
+            },
+            {
+              "label": "股票证据：金风科技年度报告，2026-03-31",
+              "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=002202"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "人工智能",
+          "title": "工信部点名一批AI案例，名单内公司先拿到示范资格",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "工信部公布2025年人工智能应用典型案例名单。",
+          "originalSource": "工业和信息化部",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20265/46872edcc9fd400dae2f20060d5cca7e.pdf",
+          "whatHappened": "工信部公布2025年人工智能应用典型案例名单。",
+          "whyThisAction": "国家想把已经能用的AI项目复制到更多工厂和公共服务。",
+          "governmentIntent": "官方目标：推广可复制的AI应用。ORI-LIN分析：名单是销售背书，不等于已经收到新订单。",
+          "whatItMeans": "入选公司更容易展示案例，但新增收入仍要等采购合同。",
+          "essence": "采购资金可能流向名单内的算力、软件和行业应用提供商。",
+          "upCondition": "三个月内出现同类项目合同或中标公告。",
+          "downCondition": "只有宣传，没有新增合同和收入。",
+          "stocks": [
+            {
+              "name": "广电运通",
+              "ticker": "002152.SZ",
+              "direction": "利好",
+              "reason": "公司的智算云项目被官方名单直接点名。",
+              "evidence": "工信部AI典型案例名单，2026-07-15",
+              "trigger": "看智算项目中标和数字业务收入。",
+              "invalidCondition": "三个月无新增合同则失效。"
+            },
+            {
+              "name": "中国移动",
+              "ticker": "600941.SH",
+              "direction": "利好",
+              "reason": "公司的万卡集群和调度项目被名单点名。",
+              "evidence": "工信部AI典型案例名单，2026-07-15",
+              "trigger": "看算力合同和云业务收入。",
+              "invalidCondition": "项目不再复制时失效。"
+            }
+          ],
+          "watchNext": "盯三个月内的中标公告和相关业务收入。",
+          "oriCall": "名单是背书，不是订单；没有新合同时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：工业和信息化部",
+              "url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20265/46872edcc9fd400dae2f20060d5cca7e.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "产业融资",
+          "title": "国家产融平台上线高企专区，银行多了精准获客入口",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "国家产融合作平台为高新技术企业上线融资服务专区。",
+          "originalSource": "国家产融合作平台",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://crpt.miit.gov.cn/",
+          "whatHappened": "国家产融合作平台为高新技术企业上线融资服务专区。",
+          "whyThisAction": "政府想让缺抵押物的科技企业更快找到合适贷款。",
+          "governmentIntent": "官方目标：提高科技企业融资对接效率。ORI-LIN分析：真正效果要看放款额和坏账，不看注册数。",
+          "whatItMeans": "银行可低成本找到科技客户，企业可能更快拿到贷款。",
+          "essence": "贷款资金从银行流向平台内高新技术企业。",
+          "upCondition": "季度新增放款增加，且逾期率没有明显上升。",
+          "downCondition": "只有入库没有放款，或逾期率明显上升。",
+          "stocks": [
+            {
+              "name": "工商银行",
+              "ticker": "601398.SH",
+              "direction": "暂不明确",
+              "reason": "平台展示工行产品，能带来客户，也会增加信用风险。",
+              "evidence": "国家产融合作平台产品页，2026-07-15",
+              "trigger": "看科技贷款增量和不良率。",
+              "invalidCondition": "放款不增或不良率上升时失效。"
+            }
+          ],
+          "watchNext": "盯季度放款金额、入库企业数和不良率。",
+          "oriCall": "先看真实放款；只有注册量，没有收入时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：国家产融合作平台",
+              "url": "https://crpt.miit.gov.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "行业标准",
+          "title": "工信部一次征求173项标准，工业软件要按统一规则改造",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "工信部就工业互联网和区块链等173项标准计划征求意见。",
+          "originalSource": "工业和信息化部",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.miit.gov.cn/jgsj/kjs/jscx/bzgf/",
+          "whatHappened": "工信部就工业互联网和区块链等173项标准计划征求意见。",
+          "whyThisAction": "国家想让不同厂商的软件和设备能按同一规则连接。",
+          "governmentIntent": "官方事实：173项标准计划公开征求意见。ORI-LIN分析：短期先增加研发成本，订单要等标准通过和招标。",
+          "whatItMeans": "厂商要花钱改产品；能先适配标准的软件商更容易进项目。",
+          "essence": "企业预算先流向软件适配、测试和认证。",
+          "upCondition": "标准正式发布，并出现按新标准采购的项目。",
+          "downCondition": "标准长期未落地，或采购文件不采用。",
+          "stocks": [
+            {
+              "name": "宝信软件",
+              "ticker": "600845.SH",
+              "direction": "暂不明确",
+              "reason": "公司做工业软件和平台，适配新标准既有成本也可能带来订单。",
+              "evidence": "宝信软件年度报告，2026-03-31",
+              "trigger": "看新标准相关合同和研发费用。",
+              "invalidCondition": "无相关招标时失效。"
+            }
+          ],
+          "watchNext": "盯标准发布日期和首批按标准招标的项目。",
+          "oriCall": "先增加适配成本；没有采购项目，订单判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：工业和信息化部",
+              "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/bzgf/"
+            },
+            {
+              "label": "股票证据：宝信软件年度报告，2026-03-31",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600845"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "货币政策",
+          "title": "央行说还会用多种工具，关键看贷款利率是否真降",
+          "verdict": "官方数据",
+          "verdictTone": "solid",
+          "originalNews": "央行表示会搭配降准、逆回购和中期借贷等工具。",
+          "originalSource": "中国人民银行、国务院新闻办公室",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.beijing.gov.cn/fuwu/lqfw/ztzl/jrfw/shrl/202607/t20260716_4766755.html",
+          "whatHappened": "央行表示会搭配降准、逆回购和中期借贷等工具。",
+          "whyThisAction": "央行想让银行有钱放贷，同时避免短期利率大起大落。",
+          "governmentIntent": "官方目标：保持短期利率平稳并支持重点领域。ORI-LIN分析：银行利润取决于存贷款价差，不取决于单次投放量。",
+          "whatItMeans": "银行资金成本可能下降，但贷款价格也可能跟着下调。",
+          "essence": "较便宜的资金先进入银行，再由贷款流向企业和居民。",
+          "upCondition": "七天期资金利率下降，且贷款需求回升。",
+          "downCondition": "资金利率不降，或贷款利率降得更快。",
+          "stocks": [
+            {
+              "name": "招商银行",
+              "ticker": "600036.SH",
+              "direction": "暂不明确",
+              "reason": "资金成本可能下降，但贷款利率也会下降。",
+              "evidence": "招商银行年度报告，2026-03-25",
+              "trigger": "看净利息收益率和新增贷款。",
+              "invalidCondition": "净利息收益率继续快速下降时失效。"
+            }
+          ],
+          "watchNext": "盯七天期资金利率和招商银行净利息收益率。",
+          "oriCall": "不要只看投放量；银行利差不改善，判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：中国人民银行、国务院新闻办公室",
+              "url": "https://www.beijing.gov.cn/fuwu/lqfw/ztzl/jrfw/shrl/202607/t20260716_4766755.html"
+            },
+            {
+              "label": "股票证据：招商银行年度报告，2026-03-25",
+              "url": "https://www.cmbchina.com/cmbir/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-01",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "银行监管",
+          "title": "美国银行检查少传敏感文件，合规成本会上升",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "美国三家银行监管机构加强检查敏感资料的安全流程。",
+          "originalSource": "Federal Reserve、FDIC、OCC",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260716a.htm",
+          "whatHappened": "美国三家银行监管机构加强检查敏感资料的安全流程。",
+          "whyThisAction": "监管机构要减少检查材料被网络攻击者拿走的风险。",
+          "governmentIntent": "官方目标：降低监管检查中的数据泄露风险。ORI-LIN分析：大行能承担成本，小行压力更大。",
+          "whatItMeans": "银行要增加现场审查和数据保护投入，短期成本上升。",
+          "essence": "银行预算流向数据安全、现场审查和合规人员。",
+          "upCondition": "银行披露安全投入增加，且重大泄露事件减少。",
+          "downCondition": "规则没有执行，或银行安全事故仍增加。",
+          "stocks": [
+            {
+              "name": "摩根大通",
+              "ticker": "JPM",
+              "direction": "暂不明确",
+              "reason": "大型银行要改检查流程，成本增加但数据风险下降。",
+              "evidence": "摩根大通年度报告，2026-02-20",
+              "trigger": "看合规费用和重大数据事件。",
+              "invalidCondition": "安全事件增加时失效。"
+            }
+          ],
+          "watchNext": "盯合规费用和72小时泄露通知记录。",
+          "oriCall": "短期增加成本；若泄露不降，保护效果判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：Federal Reserve、FDIC、OCC",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260716a.htm"
+            },
+            {
+              "label": "股票证据：摩根大通年度报告，2026-02-20",
+              "url": "https://www.jpmorganchase.com/ir"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-02",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "消费数据",
+          "title": "美国6月零售只环比增0.2%，消费还在长但速度慢",
+          "verdict": "官方数据",
+          "verdictTone": "solid",
+          "originalNews": "美国6月零售和餐饮销售环比增长0.2%。",
+          "originalSource": "U.S. Census Bureau",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.census.gov/retail/sales.html",
+          "whatHappened": "美国6月零售和餐饮销售环比增长0.2%。",
+          "whyThisAction": "政府要用销售数据判断家庭是否还愿意花钱。",
+          "governmentIntent": "官方事实：销售额环比增0.2%、同比增6.7%。ORI-LIN分析：金额增长不等于销量同幅增长。",
+          "whatItMeans": "零售商仍有收入增长，但需要降价抢客时利润会受压。",
+          "essence": "消费者的钱继续流向零售和餐饮，但增量较小。",
+          "upCondition": "剔除价格后销量增长，且库存周转没有变慢。",
+          "downCondition": "后续零售数据下修，或库存连续上升。",
+          "stocks": [
+            {
+              "name": "沃尔玛",
+              "ticker": "WMT",
+              "direction": "暂不明确",
+              "reason": "消费金额仍增长，但低价竞争可能压利润。",
+              "evidence": "沃尔玛年度报告，2026-03-13",
+              "trigger": "看同店销售和库存周转。",
+              "invalidCondition": "同店销售下降时失效。"
+            }
+          ],
+          "watchNext": "盯下月零售修正值和沃尔玛同店销售。",
+          "oriCall": "消费没有停，但不算强；数据下修时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：U.S. Census Bureau",
+              "url": "https://www.census.gov/retail/sales.html"
+            },
+            {
+              "label": "股票证据：沃尔玛年度报告，2026-03-13",
+              "url": "https://stock.walmart.com/financial-information/annual-reports-and-proxies/default.aspx"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-03",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "半导体",
+          "title": "台积电二季度收入402亿美元，三季度还要继续增",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "台积电二季度收入402亿美元，三季度指引446亿至458亿美元。",
+          "originalSource": "TSMC Investor Relations",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+          "whatHappened": "台积电二季度收入402亿美元，三季度指引446亿至458亿美元。",
+          "whyThisAction": "公司要说明AI芯片订单能否继续填满先进产线。",
+          "governmentIntent": "公司事实：二季度收入402亿美元。ORI-LIN分析：高指引说明AI订单仍强，但扩厂和海外生产会增加成本。",
+          "whatItMeans": "客户为先进芯片多付钱，台积电收入和利润继续增加。",
+          "essence": "AI芯片客户的晶圆订单直接进入台积电收入。",
+          "upCondition": "三季度收入达到指引，毛利率保持65%以上。",
+          "downCondition": "收入低于指引，或毛利率跌破65%。",
+          "stocks": [
+            {
+              "name": "台积电",
+              "ticker": "TSM",
+              "direction": "利好",
+              "reason": "公司给出更高的三季度收入指引。",
+              "evidence": "台积电二季度财报，2026-07-16",
+              "trigger": "看三季度收入和毛利率。",
+              "invalidCondition": "收入低于446亿美元时失效。"
+            }
+          ],
+          "watchNext": "盯三季度收入446亿美元下限和65%毛利率。",
+          "oriCall": "订单仍强；若收入低于指引下限，利好失效。",
+          "sources": [
+            {
+              "label": "一手原文：TSMC Investor Relations",
+              "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-04",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "食品饮料",
+          "title": "百事收入增6%，但北美食品销量仍承压",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "百事二季度收入增长6%，核心每股利润增长4%。",
+          "originalSource": "PepsiCo Investor Relations",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q2-2026-earnings-release.pdf",
+          "whatHappened": "百事二季度收入增长6%，核心每股利润增长4%。",
+          "whyThisAction": "公司要证明涨价、收购和节省费用能盖住成本上涨。",
+          "governmentIntent": "公司事实：收入增6%、核心每股利润增4%。ORI-LIN分析：增长更多靠价格和并购，销量质量仍要观察。",
+          "whatItMeans": "饮料收入增长，但北美食品销量下降会拖累利润。",
+          "essence": "消费者的钱流向饮料和零食，成本增加吃掉部分利润。",
+          "upCondition": "北美食品销量转正，核心利润增速加快。",
+          "downCondition": "销量继续下降，或核心利润率继续收缩。",
+          "stocks": [
+            {
+              "name": "百事公司",
+              "ticker": "PEP",
+              "direction": "暂不明确",
+              "reason": "收入增长，但北美食品销量和利润率仍有压力。",
+              "evidence": "百事二季度财报，2026-07-16",
+              "trigger": "看北美销量和核心利润率。",
+              "invalidCondition": "销量持续下滑时失效。"
+            }
+          ],
+          "watchNext": "盯北美食品销量和下一季核心利润率。",
+          "oriCall": "收入在涨，质量一般；销量继续跌时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：PepsiCo Investor Relations",
+              "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q2-2026-earnings-release.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-05",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "流媒体",
+          "title": "奈飞公布二季度成绩，关键仍是广告和观看时长",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "奈飞发布2026年二季度财报和后续经营展望。",
+          "originalSource": "Netflix Investor Relations",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://ir.netflix.net/financials/quarterly-earnings/default.aspx",
+          "whatHappened": "奈飞发布2026年二季度财报和后续经营展望。",
+          "whyThisAction": "公司要证明会员费和广告收入能覆盖内容投入。",
+          "governmentIntent": "公司事实：二季度财报已发布。ORI-LIN分析：收入增长要同时看广告和观看时长，不能只看会员价格。",
+          "whatItMeans": "广告主和会员的钱进入奈飞，内容制作方也会拿到更多预算。",
+          "essence": "会员费和广告预算流向平台，再分给内容制作。",
+          "upCondition": "广告收入和观看时长同时增长。",
+          "downCondition": "观看时长下降，或内容投入增长快于收入。",
+          "stocks": [
+            {
+              "name": "奈飞",
+              "ticker": "NFLX",
+              "direction": "暂不明确",
+              "reason": "财报直接影响收入预期，但还要核对广告和观看数据。",
+              "evidence": "奈飞二季度股东信，2026-07-16",
+              "trigger": "看广告收入、观看时长和营业利润率。",
+              "invalidCondition": "观看时长下降时失效。"
+            }
+          ],
+          "watchNext": "盯广告收入、观看时长和营业利润率。",
+          "oriCall": "先看用户是否真多看；观看时长下降，判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：Netflix Investor Relations",
+              "url": "https://ir.netflix.net/financials/quarterly-earnings/default.aspx"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-06",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "贸易优惠",
+          "title": "欧盟复盘发展中国家关税优惠，受惠商品仍可低税进入",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "欧盟发布普惠制执行报告，复盘发展中国家出口优惠。",
+          "originalSource": "European Commission",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://policy.trade.ec.europa.eu/news_en",
+          "whatHappened": "欧盟发布普惠制执行报告，复盘发展中国家出口优惠。",
+          "whyThisAction": "欧盟想用较低关税支持这些国家出口，同时检查劳工和环保要求。",
+          "governmentIntent": "官方目标：评估普惠制执行。ORI-LIN分析：报告覆盖国家和商品较多，暂不能直接指向单一股票。",
+          "whatItMeans": "符合条件的出口商少交关税；违规国家可能失去优惠。",
+          "essence": "关税优惠留在进口商和出口商利润中，具体分配取决于合同。",
+          "upCondition": "欧盟公布具体国家和商品调整清单。",
+          "downCondition": "优惠范围不变，或企业没有相关采购敞口。",
+          "stocks": [],
+          "watchNext": "盯具体国家、商品税率和生效日期。",
+          "oriCall": "暂时无法映射具体股票；没有调整清单前不下结论。",
+          "sources": [
+            {
+              "label": "一手原文：European Commission",
+              "url": "https://policy.trade.ec.europa.eu/news_en"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-07",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "贸易监测",
+          "title": "欧盟升级进口监测，异常增长的商品会更早被盯上",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "欧盟升级进口晴雨表，更快发现进口数量异常。",
+          "originalSource": "European Commission",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://policy.trade.ec.europa.eu/news_en",
+          "whatHappened": "欧盟升级进口晴雨表，更快发现进口数量异常。",
+          "whyThisAction": "欧盟想在本地企业受冲击前先看到哪些商品突然涌入。",
+          "governmentIntent": "官方目标：提高进口异常识别速度。ORI-LIN分析：工具本身不等于加税，需等待具体商品名单。",
+          "whatItMeans": "被监测商品可能面临调查，进口商也要准备更多数据。",
+          "essence": "企业先增加报关和数据准备成本，是否缴税要等后续调查。",
+          "upCondition": "欧盟点名商品并启动保障或反倾销调查。",
+          "downCondition": "没有具体调查，或监测数据回落。",
+          "stocks": [],
+          "watchNext": "盯具体商品名单、调查编号和临时税率。",
+          "oriCall": "暂时无法映射具体股票；没有调查就没有直接影响。",
+          "sources": [
+            {
+              "label": "一手原文：European Commission",
+              "url": "https://policy.trade.ec.europa.eu/news_en"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-08",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "数字支付",
+          "title": "欧洲央行选36家机构试数字欧元，支付系统要开始改造",
+          "verdict": "正式文件",
+          "verdictTone": "solid",
+          "originalNews": "欧洲央行选出36家支付机构参加数字欧元试点。",
+          "originalSource": "European Central Bank",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+          "whatHappened": "欧洲央行选出36家支付机构参加数字欧元试点。",
+          "whyThisAction": "央行想测试不用现金时，公众还能安全、离线付款。",
+          "governmentIntent": "官方目标：测试数字欧元功能和使用体验。ORI-LIN分析：试点要到2027年下半年开始，短期先花开发费。",
+          "whatItMeans": "入选机构要投入系统改造，现有银行卡网络会面对新方案。",
+          "essence": "支付机构预算流向钱包、清算接口和安全测试。",
+          "upCondition": "2027年试点按期启动，并公布交易量。",
+          "downCondition": "试点延期，或用户使用率很低。",
+          "stocks": [
+            {
+              "name": "万事达卡",
+              "ticker": "MA",
+              "direction": "暂不明确",
+              "reason": "数字欧元可能增加合作接口，也可能绕开部分卡交易。",
+              "evidence": "万事达卡年度报告，2026-02-12",
+              "trigger": "看是否参与试点和欧洲交易量。",
+              "invalidCondition": "试点不影响卡交易时失效。"
+            }
+          ],
+          "watchNext": "盯2027年启动时间、参与名单和试点交易量。",
+          "oriCall": "短期是开发成本；试点延期，影响判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：European Central Bank",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
+            },
+            {
+              "label": "股票证据：万事达卡年度报告，2026-02-12",
+              "url": "https://investor.mastercard.com/financials-and-sec-filings/annual-reports-and-proxy/default.aspx"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-09",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "投资银行",
+          "title": "高盛二季度赚66亿美元，交易和大项目业务很强",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "高盛二季度收入203亿美元，净利润66亿美元。",
+          "originalSource": "Goldman Sachs",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.goldmansachs.com/pressroom/press-releases/2026/2026-07-14-q2-results",
+          "whatHappened": "高盛二季度收入203亿美元，净利润66亿美元。",
+          "whyThisAction": "公司要证明大额交易和资产管理能持续带来收费。",
+          "governmentIntent": "公司事实：收入203亿美元、净利润66亿美元。ORI-LIN分析：本季很强，下一步要看项目储备能否成交。",
+          "whatItMeans": "企业并购、发债和交易增加，高盛收取更多手续费。",
+          "essence": "企业客户支付的顾问费和交易费进入高盛。",
+          "upCondition": "投行业务收入和已宣布交易继续增长。",
+          "downCondition": "交易延期，或下一季投行收入明显下降。",
+          "stocks": [
+            {
+              "name": "高盛",
+              "ticker": "GS",
+              "direction": "利好",
+              "reason": "二季度收入和净利润直接大幅增加。",
+              "evidence": "高盛二季度财报，2026-07-14",
+              "trigger": "看投行项目储备和下一季收入。",
+              "invalidCondition": "投行收入明显下降时失效。"
+            }
+          ],
+          "watchNext": "盯下一季投行收入和已宣布交易完成率。",
+          "oriCall": "本季业绩强；若交易延期，利好判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：Goldman Sachs",
+              "url": "https://www.goldmansachs.com/pressroom/press-releases/2026/2026-07-14-q2-results"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-17-intl-10",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "银行业绩",
+          "title": "摩根大通发布二季度财报，先看贷款收入和坏账",
+          "verdict": "公司公告",
+          "verdictTone": "solid",
+          "originalNews": "摩根大通向美国证监会提交2026年二季度业绩材料。",
+          "originalSource": "JPMorgan Chase SEC filing",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/0001628280-26-048078-index.htm",
+          "whatHappened": "摩根大通向美国证监会提交2026年二季度业绩材料。",
+          "whyThisAction": "公司要说明贷款、交易和信用成本怎样改变利润。",
+          "governmentIntent": "公司事实：二季度业绩材料已提交。ORI-LIN分析：只看收入不够，还要看拨备和贷款需求。",
+          "whatItMeans": "贷款利息和交易收费增加会抬高收入，坏账会吃掉利润。",
+          "essence": "借款人利息和客户交易费进入银行，坏账损失从利润扣除。",
+          "upCondition": "净利息收入增长，且信用损失准备没有大增。",
+          "downCondition": "坏账准备大增，或贷款余额下降。",
+          "stocks": [
+            {
+              "name": "摩根大通",
+              "ticker": "JPM",
+              "direction": "暂不明确",
+              "reason": "财报直接影响利润，但需要同时核对坏账和贷款。",
+              "evidence": "摩根大通二季度8-K，2026-07-14",
+              "trigger": "看净利息收入、贷款和信用损失准备。",
+              "invalidCondition": "坏账准备大增时失效。"
+            }
+          ],
+          "watchNext": "盯净利息收入、贷款余额和信用损失准备。",
+          "oriCall": "先看坏账是否受控；坏账跳升，判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：JPMorgan Chase SEC filing",
+              "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/0001628280-26-048078-index.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-17",
+            "baselineAt": "2026-07-17",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-18",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-16",
       "title": "今天20条：发生了什么，具体影响哪些股票",
