@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T13:20:00+08:00",
+  "updatedAt": "2026-07-17T19:57:11+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
     {
@@ -1142,7 +1142,7 @@
           "id": "2026-07-16-cn-01",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1151,8 +1151,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "中科曙光（603019.SH）2026-07-17 收盘 97.66→87.89，-10.00%；同期上证综指-3.05%，超额-6.96%。东方财富（300059.SZ）19.82→19.70，-0.61%；同期深证成指-5.40%，超额+4.79%。以上为7月16日数据发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票均下跌，但相对大盘表现一弱一强，软件算力与金融服务没有形成一致的板块—个股联动；首日价格也不能替代订单与递延收入验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、成交额、收入和利润条件，也不能排除大盘急跌及外部冲击。",
+                "policyDeviation": "D+1尚未进入企业订单和收入兑现阶段；没有足够证据证明实际结构增长偏离 ORI 预判路径。当前仅记录价格反应，后续需核对合同负债、收入增速与市场成交额。",
+                "sources": [
+                  {"label": "国家统计局：二季度和上半年GDP初步核算（2026-07-16）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"},
+                  {"label": "Yahoo Finance日线：中科曙光（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/603019.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：东方财富（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300059.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "二季度整体增速放慢。不过，信息软件业增长10.8%，金融业增长6.9%。",
           "whatItMeans": "做软件、算力和金融服务的公司，订单可能比建筑等传统行业更稳。",
@@ -1212,7 +1229,7 @@
           "id": "2026-07-16-cn-02",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1221,8 +1238,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "立讯精密（002475.SZ）2026-07-15 收盘 61.67→60.47，-1.95%；同期深证成指-0.97%，超额-0.97%。宁波港（601018.SH）3.35→3.40，+1.49%；同期上证综指-0.29%，超额+1.78%。以上为7月14日发布会后的首个完整交易日收盘反应。",
+                "linkage": "电子制造与港口标的绝对收益、相对收益均分化，首日没有形成一致的出口链联动；尚无海外订单、利润或月度吞吐量信号。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证出口增速、海外订单、利润和港口吞吐量触发条件，也不能排除市场风格差异。",
+                "policyDeviation": "D+1尚未进入外贸订单和实物流量兑现阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对出口额、企业海外收入与港口集装箱吞吐量。",
+                "sources": [
+                  {"label": "国务院新闻办公室、海关总署：上半年进出口发布会（2026-07-14）", "url": "https://english.scio.gov.cn/pressroom/node_9019860.html"},
+                  {"label": "Yahoo Finance日线：立讯精密（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002475.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：宁波港（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601018.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "上半年进出口总额增长16.9%，电子零部件和计算机相关出口增长较快。",
           "whatItMeans": "电子制造商可能增加订单，港口可能增加货量；但出口增加不代表利润一定增加。",
@@ -1282,7 +1316,7 @@
           "id": "2026-07-16-cn-03",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1291,8 +1325,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "联影医疗（688271.SH）2026-07-16 收盘 109.00→111.72，+2.50%；同期上证综指-1.85%，超额+4.35%。迈瑞医疗（300760.SZ）146.00→150.31，+2.95%；同期深证成指-1.97%，超额+4.92%。以上为官方页面7月15日发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定医疗设备股同向上涨且均明显跑赢大盘，首日出现一致相对强势；但省级预算、中标额和毛利率尚未验证，不能据此认定集采因果链成立。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证至少3省预算、龙头中标额和毛利率触发条件，也不能排除板块交易与提前定价。",
+                "policyDeviation": "实际通知要求2026年底前至少完成一轮省级集采，与 ORI 关注预算和中标落地的路径一致；D+1尚无预算、中标或利润证据。",
+                "sources": [
+                  {"label": "国家卫生健康委等三部门：医用设备集中采购通知（页面发布2026-07-15）", "url": "https://wjw.xinjiang.gov.cn/hfpc/zcwj4/202607/86a5e26707ca4812bda436a6758228fa.shtml"},
+                  {"label": "Yahoo Finance日线：联影医疗（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/688271.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：迈瑞医疗（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300760.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "公立医院的医用设备采购将更集中，同时加强价格和合规管理。",
           "whatItMeans": "产品证件齐、装机多、售后网点全的设备公司更容易中标，但低价中标可能压低利润。",
@@ -1352,7 +1403,7 @@
           "id": "2026-07-16-cn-04",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1361,8 +1412,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "紫光股份（000938.SZ）2026-07-14 收盘 38.40→36.98，-3.70%；同期深证成指+2.77%，超额-6.47%。启明星辰（002439.SZ）13.26→12.94，-2.41%；同期深证成指+2.77%，超额-5.18%。以上为7月13日文件发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向下跌且均显著跑输上涨的大盘，首日呈现一致相对弱势；但尚无运营商集采、国产份额或安全合同额信号，不能据此判定政策链失效。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证运营商集采、设备份额和安全运营合同触发条件，也不能把首日弱势直接归因于文件。",
+                "policyDeviation": "D+1尚未进入运营商采购和监管合规投入阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对集采规模、资本开支与合同额。",
+                "sources": [
+                  {"label": "工业和信息化部等四部门：互联网基础资源指导意见（2026-07-13）", "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_df93d63485c143658d5e75df06f4ec7a.html"},
+                  {"label": "Yahoo Finance日线：紫光股份（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000938.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：启明星辰（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002439.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "四部门要求提升域名、网络设备、解析系统等互联网基础设施的安全和服务能力。",
           "whatItMeans": "钱更可能花在交换机、路由器、云基础设施和网络安全上，不是普通互联网应用。",
@@ -1422,7 +1489,7 @@
           "id": "2026-07-16-cn-05",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1431,8 +1498,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "国电南瑞（600406.SH）2026-07-13 收盘 22.04→21.70，-1.54%；同期上证综指-2.06%，超额+0.52%。东方电气（600875.SH）28.14→26.90，-4.41%；同期上证综指-2.06%，超额-2.35%。以上为7月10日文件公开后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票均下跌，但国电南瑞略有正超额、东方电气明显跑输，电网与煤电改造标的未形成一致联动；招标和开工率尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证招标额、项目开工率、中标价格和新增订单触发条件，也不能排除大盘下跌影响。",
+                "policyDeviation": "文件要求各地和央企抓好落实，与 ORI 等待招标和订单的路径一致；D+1尚无招标额、开工率或利润证据。",
+                "sources": [
+                  {"label": "国家能源局：能源领域节能降碳行动计划（页面公开2026-07-10）", "url": "https://www.nea.gov.cn/20260710/4acf5873e20149cdbc52c709b16b30ff/c.html"},
+                  {"label": "Yahoo Finance日线：国电南瑞（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600406.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：东方电气（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600875.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "能源部门开始考核煤电效率，并要求提高风电、光伏等新能源的消纳能力。",
           "whatItMeans": "电厂要买改造设备，电网要升级调度和输配电系统，相关设备商可能增加订单。",
@@ -1492,7 +1575,7 @@
           "id": "2026-07-16-cn-06",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1501,8 +1584,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "瀚蓝环境（600323.SH）2026-07-15 收盘 29.99→30.30，+1.03%；同期上证综指-0.29%，超额+1.32%。高能环境（603588.SH）14.35→13.61，-5.16%；同期上证综指-0.29%，超额-4.87%。以上为规划页面7月14日公开后的首个完整交易日收盘反应。",
+                "linkage": "两只固废标的一涨一跌、相对大盘表现也明显分化，首日没有形成一致板块—个股联动；专项债、项目订单和回款信号均未出现。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证新增财政项目、新签订单、回款周期和现金流触发条件，也不能排除公司自身因素。",
+                "policyDeviation": "D+1尚未进入地方预算、项目采购和回款执行阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对专项债、项目清单、订单与应收周转。",
+                "sources": [
+                  {"label": "生态环境部等六部门：固体废物污染防治“十五五”规划（页面公开2026-07-14）", "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202607/t20260714_1161736.html"},
+                  {"label": "Yahoo Finance日线：瀚蓝环境（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600323.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：高能环境（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/603588.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "多部门要求治理每年新增的大量固体废物，并建设处理项目和监管系统。",
           "whatItMeans": "垃圾处理、危废资源化和环境修复公司可能接到项目，但回款慢会吃掉利润。",
@@ -1562,7 +1661,7 @@
           "id": "2026-07-16-cn-07",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1571,8 +1670,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "三六零（601360.SH）2026-07-16 收盘 9.00→9.05，+0.56%；同期上证综指-1.85%，超额+2.41%。美亚柏科（300188.SZ）9.92→9.98，+0.60%；同期深证成指-1.97%，超额+2.57%。以上为《办法》7月15日正式施行后的首个完整交易日收盘反应。",
+                "linkage": "两只安全合规标的同向小涨且均跑赢大盘，首日出现一致相对强势；但企业级AI安全订单、监管项目中标和合规采购尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证平台合规采购、企业级AI安全订单或省级监管项目触发条件，也不能排除防御性交易。",
+                "policyDeviation": "《办法》于7月15日按期施行，实际执行时间与预期一致；D+1尚无平台采购、监管抽查、处罚或毛利率证据。",
+                "sources": [
+                  {"label": "国家网信办等五部门：人工智能拟人化互动服务管理暂行办法（2026-04-10公布，2026-07-15施行）", "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"},
+                  {"label": "Yahoo Finance日线：三六零（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601360.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：美亚柏科（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300188.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "AI拟人化互动服务的新规则在7月15日正式施行，平台要加强内容安全、身份提醒和用户保护。",
           "whatItMeans": "AI陪伴平台合规成本会上升；提供模型安全、内容审核和身份核验的公司可能多接订单。",
@@ -1632,7 +1748,7 @@
           "id": "2026-07-16-cn-08",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1641,8 +1757,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "湖南裕能（301358.SZ）2026-07-15 收盘 61.98→63.37，+2.24%；同期深证成指-0.97%，超额+3.22%。龙佰集团（002601.SZ）15.36→15.60，+1.56%；同期深证成指-0.97%，超额+2.54%。以上为7月14日价格数据发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定材料股同向上涨且均跑赢大盘，首日出现一致相对强势；但磷酸铁锂连续涨价、库存、排产和单吨毛利条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证连续3旬涨价、库存下降、月度排产和单吨毛利触发条件，也不能把单日上涨视为补库因果链成立。",
+                "policyDeviation": "该条为价格数据而非政策执行；实际价格分化与 ORI 强调不能用单一商品代表总需求一致。后续需核对材料价格、库存、排产与价差。",
+                "sources": [
+                  {"label": "国家统计局：7月上旬生产资料市场价格（2026-07-14）", "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260713_1964100.html"},
+                  {"label": "Yahoo Finance日线：湖南裕能（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/301358.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：龙佰集团（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002601.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "7月上旬部分锂电材料价格上涨，天然气和部分化工原料价格下降。",
           "whatItMeans": "锂电材料企业只有在产品涨价快于成本上涨时才赚钱更多；下游企业可能因能源降价省成本。",
@@ -1702,7 +1834,7 @@
           "id": "2026-07-16-cn-09",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1711,8 +1843,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "隆平高科（000998.SZ）2026-07-13 收盘 7.83→7.96，+1.66%；同期深证成指-3.48%，超额+5.14%。一拖股份（601038.SH）11.84→11.48，-3.04%；同期上证综指-2.06%，超额-0.98%。以上为7月10日公告后的首个完整交易日收盘反应。",
+                "linkage": "种业标的明显跑赢、农机标的跑输大盘，单产提升映射到种子与机械的个股反应分化；农业招标、预收款和大中拖销量尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证农业项目招标、合同负债和大中拖销量触发条件，也不能证明单产数据已传导至企业订单。",
+                "policyDeviation": "该条为产量数据而非新增政策执行；D+1尚无补贴、采购预算或订单证据。后续需核对秋季项目招标、种业预收款与农机销量。",
+                "sources": [
+                  {"label": "国家统计局：2026年夏粮产量公告（2026-07-10）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260710_1964090.html"},
+                  {"label": "Yahoo Finance日线：隆平高科（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000998.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：深证成指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：一拖股份（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601038.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "今年夏粮增加，主要原因是单产提高，不一定意味着粮价会上涨。",
           "whatItMeans": "政府和农户可能继续购买好种子、灌溉设备和农机，用更少土地生产更多粮食。",
@@ -1772,7 +1921,7 @@
           "id": "2026-07-16-cn-10",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1781,8 +1930,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "保利发展（600048.SH）2026-07-16 收盘 4.91→4.97，+1.22%；同期上证综指-1.85%，超额+3.07%。绿城管理控股（09979.HK）1.69→1.75，+3.55%；同期恒生指数+1.33%，超额+2.22%。以上为7月15日房价数据发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票同向上涨且均跑赢各自大盘，首日出现一致相对强势；但核心城市连续3个月价格、销售面积、保利销售额和代建面积条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证核心20城持续量价修复和公司销售、代建订单触发条件，也不能把首日强势等同全国楼市反转。",
+                "policyDeviation": "该条为房价数据而非新增政策执行；数据仍显示城市分化，与 ORI 判断尚未全国反转一致。后续需核对核心城市量价、挂牌量、保利销售额与代建拓展。",
+                "sources": [
+                  {"label": "国家统计局：2026年6月70城住宅价格（2026-07-15）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html"},
+                  {"label": "Yahoo Finance日线：保利发展（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600048.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：绿城管理控股（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/9979.HK?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：恒生指数（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "核心城市部分住房价格趋稳，其他城市仍然较弱，城市之间差距继续扩大。",
           "whatItMeans": "业务集中在核心城市的开发商和代建公司可能先改善，全国性地产链还不能一起看多。",
@@ -1842,7 +2008,7 @@
           "id": "2026-07-16-intl-01",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1851,8 +2017,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Microsoft（MSFT）2026-07-16 收盘 395.63→401.10，+1.38%；同期标普500-0.51%，超额+1.89%。Exxon Mobil（XOM）144.51→145.95，+1.00%；同期标普500-0.51%，超额+1.51%。以上为7月15日PPI发布后的首个完整交易日收盘反应。",
+                "linkage": "两只条件相反的指定股票同时上涨并跑赢大盘，首日没有形成“通胀降温利好成长、能源回升利好上游”的清晰分流；核心PPI连续性、利率均线和现金流尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证连续2个月核心PPI、10年美债收益率、Azure增速和Exxon自由现金流触发条件。",
+                "policyDeviation": "该条为通胀数据而非政策执行；D+1无法确认美联储利率路径是否沿 ORI 条件展开。后续需核对核心PPI连续性、国债收益率和公司经营数据。",
+                "sources": [
+                  {"label": "U.S. Bureau of Labor Statistics：June 2026 PPI（2026-07-15）", "url": "https://www.bls.gov/news.release/ppi.htm"},
+                  {"label": "Yahoo Finance日线：Microsoft（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Exxon Mobil（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "美国生产者价格反映企业端成本。如果涨幅放慢，市场会更相信通胀正在降温。",
           "whatItMeans": "通胀降温通常减轻科技股估值压力；能源价格再涨则更利好石油公司。",
@@ -1912,7 +2094,7 @@
           "id": "2026-07-16-intl-02",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1921,8 +2103,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Barclays（BARC.L）2026-07-16 收盘 524.50→524.80，+0.06%；同期富时100+0.54%，超额-0.48%。RELX（REL.L）2501.00→2502.00，+0.04%；同期富时100+0.54%，超额-0.50%。以上为7月15日OECD报告发布后的首个完整交易日收盘反应。",
+                "linkage": "两只指定股票近乎持平且均小幅跑输大盘，首日没有出现数字效率服务强于银行的清晰分化；商业投资、国债收益率和公司经营触发条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证英国商业投资、财政赤字、Barclays净息差与RELX有机收入触发条件。",
+                "policyDeviation": "OECD报告提出结构改革和生产率方向，但D+1尚无英国政府预算或执行数据，不能判断执行是否偏离 ORI 路径。",
+                "sources": [
+                  {"label": "OECD Economic Surveys: United Kingdom 2026（2026-07-15）", "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-united-kingdom-2026_aa997c6e-en.html"},
+                  {"label": "Yahoo Finance日线：Barclays（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BARC.L?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：RELX（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/REL.L?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：富时100（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "OECD认为英国增长受生产率低和财政空间有限拖累。",
           "whatItMeans": "基础设施和数字服务可能得到更多支持；银行仍要面对经济疲弱和坏账风险。",
@@ -1982,7 +2180,7 @@
           "id": "2026-07-16-intl-03",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -1991,8 +2189,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "MercadoLibre（MELI）2026-07-15 收盘 1873.88→1843.19，-1.64%；同期标普500+0.38%，超额-2.02%。DHL Group（DHL.DE）57.22→57.72，+0.87%；同期德国DAX-0.59%，超额+1.46%。以上为7月14日WTO消息后的首个完整交易日收盘反应。",
+                "linkage": "跨境平台与国际物流标的一弱一强，相对大盘表现分化，首日没有形成一致数字贸易联动；成员接受度、关税覆盖额和跨境交易量尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证电商协议成员、关税措施、跨境交易额和国际件量触发条件。",
+                "policyDeviation": "WTO改革讨论仍处规则阶段，与 ORI 判断关税不会立即下降一致；D+1尚无成员扩围或新增关税减少的执行证据。",
+                "sources": [
+                  {"label": "World Trade Organization：WTO改革与谈判进展（2026-07-14）", "url": "https://www.wto.org/english/news_e/news26_e/gc_14jul26_457_e.htm"},
+                  {"label": "Yahoo Finance日线：MercadoLibre（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：DHL Group（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/DHL.DE?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：德国DAX（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGDAXI?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "世界贸易组织继续推进改革，但电商规则和争端解决仍没有完全达成共识。",
           "whatItMeans": "跨境电商和国际物流的规则可能更清楚，但短期不会因为这次会议立刻增加利润。",
@@ -2052,7 +2267,7 @@
           "id": "2026-07-16-intl-04",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2061,8 +2276,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Adyen（ADYEN.AS）2026-07-15 收盘 827.50→872.00，+5.38%；同期欧洲斯托克50-0.23%，超额+5.61%。Worldline（WLN.PA）9.52→10.11，+6.17%；同期欧洲斯托克50-0.23%，超额+6.40%。以上为7月14日ECB试点消息后的首个完整交易日收盘反应。",
+                "linkage": "两只支付标的同向大涨且均明显跑赢欧洲大盘，首日出现一致相对强势；但试点尚未启动，接口预算、合同和自由现金流条件均未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证2027年试点进度、接口预算、欧洲处理量和新合同触发条件，也不能把测试名单等同全面发行。",
+                "policyDeviation": "ECB按计划选出36家支付机构，实际准备阶段与 ORI 预判一致；D+1尚无立法、接口预算或技术订单证据。",
+                "sources": [
+                  {"label": "European Central Bank：36家支付机构加入数字欧元试点（2026-07-14）", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"},
+                  {"label": "Yahoo Finance日线：Adyen（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADYEN.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Worldline（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/WLN.PA?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：欧洲斯托克50（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "欧洲央行选了36家支付机构，测试数字欧元的支付和接口方案。",
           "whatItMeans": "支付软件、身份认证和银行IT公司可能获得测试与改造订单，但数字欧元还没有正式发行。",
@@ -2122,7 +2353,7 @@
           "id": "2026-07-16-intl-05",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2131,8 +2362,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Cheniere Energy（LNG）2026-07-15 收盘 265.03→255.83，-3.47%；同期标普500+0.38%，超额-3.85%。Flex LNG（FLNG）30.81→30.95，+0.45%；同期标普500+0.38%，超额+0.07%。以上为7月14日EIA文章后的首个完整交易日收盘反应。",
+                "linkage": "液化出口商明显跑输、船运标的仅大致跟随大盘，上游液化与航运没有形成一致联动；气价、运价、利用率和长协条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证JKM或TTF均价、LNG运价、液化利用率和现货日租触发条件。",
+                "policyDeviation": "该条为能源实物流量与航道风险数据，不涉及政府执行偏离；D+1尚不能判断风险溢价是否沿 ORI 路径形成。",
+                "sources": [
+                  {"label": "U.S. Energy Information Administration：全球LNG贸易量（2026-07-14）", "url": "https://www.eia.gov/todayinenergy/index.php/detail.php?id=67625"},
+                  {"label": "Yahoo Finance日线：Cheniere Energy（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/LNG?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Flex LNG（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/FLNG?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "全球液化天然气贸易量创新高，重要航道一旦受阻，天然气和船运价格可能上涨。",
           "whatItMeans": "液化天然气出口商和运输船公司可能多赚钱；航道恢复后，额外利润可能很快消失。",
@@ -2192,7 +2439,7 @@
           "id": "2026-07-16-intl-06",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2201,8 +2448,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Microsoft（MSFT）2026-07-13 收盘 385.10→390.99，+1.53%；同期标普500-0.79%，超额+2.32%。Oracle（ORCL）140.64→131.54，-6.47%；同期标普500-0.79%，超额-5.68%。以上为7月10日英国监管消息后的首个完整交易日收盘反应。",
+                "linkage": "两家被监管的云服务商一强一弱，相对大盘表现显著分化，首日没有形成一致金融云联动；金融云收入、资本开支和合规事故条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证金融云收入、OCI剩余履约义务、合规成本和安全事件触发条件。",
+                "policyDeviation": "英国监管机构已按公告开始关键第三方监督准备，与 ORI 预判监管成本需从利润中扣除的路径一致；D+1尚无具体资本开支或事故数据。",
+                "sources": [
+                  {"label": "Bank of England、PRA、FCA：关键第三方监管（2026-07-10）", "url": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt"},
+                  {"label": "Yahoo Finance日线：Microsoft（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Oracle（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "英国金融监管机构把四家云服务商纳入金融系统级监管。",
           "whatItMeans": "银行仍会买云服务，但云厂商要增加安全、备份和本地合规支出，收入和成本会一起增加。",
@@ -2262,7 +2525,7 @@
           "id": "2026-07-16-intl-07",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2271,8 +2534,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Morgan Stanley（MS）2026-07-13 收盘 222.28→221.09，-0.54%；同期标普500-0.79%，超额+0.26%。Broadridge（BR）147.47→151.04，+2.42%；同期标普500-0.79%，超额+3.21%。以上为7月10日SEC更新后的首个完整交易日收盘反应。",
+                "linkage": "两只标的绝对涨跌分化，但均取得正超额，其中合规技术标的更强；市政债发行量、承销份额和订阅收入条件尚未验证，不能确认监管边界已转化为收入。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证市政债发行、固定收益承销收入、剩余履约义务和合规成本触发条件。",
+                "policyDeviation": "SEC此次仅澄清注册与记录保存边界，与 ORI 判断融资量仍由利率决定一致；D+1尚无发行量或收入兑现证据。",
+                "sources": [
+                  {"label": "U.S. SEC：Municipal Advisor FAQs更新（2026-07-10）", "url": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors"},
+                  {"label": "Yahoo Finance日线：Morgan Stanley（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Broadridge（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BR?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "美国证监会更新了市政融资顾问规则，明确公私合作项目和远程办公的合规要求。",
           "whatItMeans": "大型投行和合规软件公司更容易承担新增要求，小机构的成本会上升。",
@@ -2332,7 +2611,7 @@
           "id": "2026-07-16-intl-08",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2341,8 +2620,25 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "ASML（ASML）2026-07-16 收盘 1815.27→1784.87，-1.67%；同期标普500-0.51%，超额-1.16%。ASM International（ASM.AS）923.40→906.00，-1.88%；同期欧洲斯托克50+0.29%，超额-2.17%。以上为7月15日ASML财报后的首个完整交易日收盘反应。",
+                "linkage": "两只设备股同向下跌且均跑输各自大盘，首日未沿“订单证据直接、设备链更确定”的方向表现；但连续两季净预订、毛利率和ASM订单条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季净预订、毛利率、客户资本开支和ASM订单触发条件，也不能以单日下跌推翻财报订单事实。",
+                "policyDeviation": "该条为公司经营数据，不涉及政策执行偏离；ASML已上调收入与毛利率指引，实际披露与 ORI 关注订单证据的路径一致，后续仍需连续季度验证。",
+                "sources": [
+                  {"label": "ASML：Q2 2026 financial results（2026-07-15）", "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"},
+                  {"label": "Yahoo Finance日线：ASML ADR（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：ASM International（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASM.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：欧洲斯托克50（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "ASML二季度销售93亿欧元、净利润29亿欧元，并上调业绩预期。",
           "whatItMeans": "芯片厂扩产已经变成设备订单，ASML和先进制程设备供应商最直接受益。",
@@ -2402,7 +2698,7 @@
           "id": "2026-07-16-intl-09",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2411,8 +2707,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "BlackRock（BLK）2026-07-16 收盘 1093.40→1087.05，-0.58%；同期标普500-0.51%，超额-0.07%。CME Group（CME）245.18→246.27，+0.44%；同期标普500-0.51%，超额+0.95%。以上为7月15日BlackRock财报后的首个完整交易日收盘反应。",
+                "linkage": "BlackRock基本跟随大盘，CME取得小幅正超额，两只资管与交易基础设施标的反应分化且强度有限；后续净流入、费率和成交量条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季净流入、基础费率、AUM回撤和CME日均成交量触发条件。",
+                "policyDeviation": "该条为公司财报，不涉及政策执行偏离；BlackRock披露AUM与净流入已沿 ORI 关注资金流的路径提供起点，但持续性尚待后续季度验证。",
+                "sources": [
+                  {"label": "BlackRock：Q2 2026 results（2026-07-15）", "url": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026"},
+                  {"label": "Yahoo Finance日线：BlackRock（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BLK?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：CME Group（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/CME?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "BlackRock上半年净流入3210亿美元，管理资产达到15.3万亿美元。",
           "whatItMeans": "BlackRock直接获得更多管理费；交易和对冲增加时，交易所也可能增加手续费收入。",
@@ -2472,7 +2784,7 @@
           "id": "2026-07-16-intl-10",
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-16",
             "baselineAt": "2026-07-16",
             "reviewSchedule": [
@@ -2481,8 +2793,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-17",
-            "reviews": []
+            "nextReviewAt": "2026-07-23",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-17",
+                "window": "D+1",
+                "actual": "Johnson & Johnson（JNJ）2026-07-16 收盘 247.02→249.97，+1.19%；同期标普500-0.51%，超额+1.70%。Abbott（ABT）89.27→98.83，+10.71%；同期标普500-0.51%，超额+11.22%。以上为7月15日强生财报后的首个完整交易日收盘反应。",
+                "linkage": "直接受益标的强生与行业观察标的雅培均上涨并跑赢大盘，医疗需求首日出现一致相对强势；但连续两季运营销售、新适应症放量与器械有机收入条件尚未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季运营销售、核心产品指引、诉讼准备金和雅培器械收入触发条件。",
+                "policyDeviation": "该条为公司财报，不涉及政策执行偏离；强生上调指引与 ORI 判断直接受益者已有收入证据一致，行业广度仍需后续财报验证。",
+                "sources": [
+                  {"label": "Johnson & Johnson：Q2 2026 results（2026-07-15）", "url": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx"},
+                  {"label": "Yahoo Finance日线：Johnson & Johnson（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：Abbott（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ABT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
+                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                ]
+              }
+            ]
           },
           "whatHappened": "强生二季度销售253亿美元，并上调全年销售和每股收益预期。",
           "whatItMeans": "强生的创新药和器械已经产生真实收入；其他医疗公司只能作为行业需求参考。",
