@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Run ORI-LIN WeChat sync through a pinned US Clash Verge node, then restore it."""
+"""Run ORI-LIN WeChat sync through a pinned US Clash Verge node, then restore it.
+
+Usage:
+  python wechat_us_publish.py --date 2026-07-18 --draft-only
+  python wechat_us_publish.py --article day-022.html --draft-only
+"""
 
 from __future__ import annotations
 
@@ -71,6 +76,12 @@ def controller(method: str, path: str, body: dict | None = None) -> dict:
 
 def main() -> int:
     load_env()
+    args = sys.argv[1:]
+    sync_script = "wechat_news_sync.py"
+    if "--article" in args:
+        args = [arg for arg in args if arg != "--article"]
+        sync_script = "wechat_sync.py"
+
     node = os.getenv("WECHAT_PROXY_NODE", DEFAULT_NODE)
     configs = controller("GET", "/configs")
     proxies = controller("GET", "/proxies").get("proxies", {})
@@ -97,7 +108,7 @@ def main() -> int:
             }
         )
         result = subprocess.run(
-            [sys.executable, str(ROOT / "wechat_news_sync.py"), *sys.argv[1:]],
+            [sys.executable, str(ROOT / sync_script), *args],
             cwd=ROOT,
             env=env,
             timeout=240,

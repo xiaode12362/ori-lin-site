@@ -381,6 +381,27 @@ def publish_draft(access_token, media_id):
     return data
 
 
+def find_remote_article(access_token, title):
+    """Avoid creating the same titled article twice during automatic draft sync."""
+    expected = truncate_utf8(title, 64)
+    for endpoint, status in (("draft/batchget", "draft"), ("freepublish/batchget", "published")):
+        data = post_json(
+            f"{WECHAT_API}/{endpoint}",
+            {"access_token": access_token},
+            {"offset": 0, "count": 20, "no_content": 1},
+        )
+        if data.get("errcode", 0):
+            raise Exception(
+                f"Failed to check existing WeChat articles: "
+                f"{json.dumps(data, ensure_ascii=False)}"
+            )
+        for item in data.get("item", []):
+            articles = item.get("content", {}).get("news_item", [])
+            if any(article.get("title") == expected for article in articles):
+                return status
+    return None
+
+
 def find_latest_article():
     """Find the latest day-XXX.html file in the site directory."""
     pattern = str(SITE_DIR / "day-*.html")
@@ -464,6 +485,12 @@ def main():
     log("Getting WeChat access token...")
     access_token = get_access_token()
     log("Access token obtained")
+
+    if draft_only:
+        remote_status = find_remote_article(access_token, article["title"])
+        if remote_status:
+            log(f"Article already exists remotely ({remote_status}); skipping duplicate draft")
+            return
 
     # Upload cover image
     log("Uploading cover image...")
