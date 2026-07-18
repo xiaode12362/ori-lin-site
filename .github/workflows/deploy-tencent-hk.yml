@@ -16,7 +16,9 @@ jobs:
       - name: Prepare static files
         run: |
           mkdir -p _site
-          cp *.html styles.css script.js comments.js CNAME vercel.json _site/
+          cp *.html *.css *.js *.json *.xml robots.txt CNAME _site/
+          if [ -d assets ]; then cp -R assets _site/assets; fi
+          if [ -d comments-server ]; then cp -R comments-server _site/comments-server; fi
 
       - name: Deploy static site
         env:
@@ -35,11 +37,18 @@ jobs:
           printf '%s\n' "$TENCENT_SSH_PRIVATE_KEY" > ~/.ssh/ori_linin_deploy_key
           chmod 600 ~/.ssh/ori_linin_deploy_key
           ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "mkdir -p '$TENCENT_SITE_PATH'"
-          scp -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/* "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/" || true
-          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-021.html'"
+          scp -r -i ~/.ssh/ori_linin_deploy_key -P "$TENCENT_PORT" -o StrictHostKeyChecking=no _site/. "$TENCENT_USER@$TENCENT_HOST:$TENCENT_SITE_PATH/"
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "if systemctl list-unit-files | grep -q '^ori-lin-comments.service'; then cd '$TENCENT_SITE_PATH/comments-server' && npm install --omit=dev && systemctl restart ori-lin-comments; fi"
+          ssh -i ~/.ssh/ori_linin_deploy_key -p "$TENCENT_PORT" -o StrictHostKeyChecking=no "$TENCENT_USER@$TENCENT_HOST" "test -s '$TENCENT_SITE_PATH/index.html' && test -s '$TENCENT_SITE_PATH/day-022.html' && test -s '$TENCENT_SITE_PATH/assets/industry-choice-market-cap.png'"
 
       - name: Verify public site
         run: |
           set -euo pipefail
-          curl -fsSL https://www.ori-lin.com/ | grep -q 'day-021.html'
-          curl -fsSL https://www.ori-lin.com/day-021.html | grep -q 'Day 021'
+          for attempt in 1 2 3 4 5; do
+            if curl -fsSL https://www.ori-lin.com/ | grep -q 'day-022.html' && curl -fsSL https://www.ori-lin.com/day-022.html | grep -q 'Day 022'; then
+              exit 0
+            fi
+            sleep 12
+          done
+          echo "Public site did not update to Day 022 in time"
+          exit 1

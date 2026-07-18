@@ -70,8 +70,14 @@ echo "[OK] Python packages installed"
 # 5. Create .env file
 echo ""
 echo "--- Setting up .env file ---"
-APPID="wx9c7ec502f5b0f3ad"
-SECRET="46e5038f4f22414ff9c78d04a5f2dc81"
+read -r -p "WeChat AppID: " APPID
+read -r -s -p "WeChat AppSecret: " SECRET
+echo ""
+
+if [ -z "$APPID" ] || [ -z "$SECRET" ]; then
+    echo "ERROR: AppID and AppSecret are required"
+    exit 1
+fi
 
 cat > "$ENV_FILE" << EOF
 # ORI-LIN WeChat Sync Configuration
@@ -105,21 +111,19 @@ ENV_FILE="$SITE_DIR/.env"
 
 cd "$SITE_DIR"
 
-# Ensure .env exists (git pull may remove it)
+# Credentials are local-only and must be provisioned before the cron runs.
 if [ ! -f "$ENV_FILE" ]; then
-    echo 'WECHAT_APPID=wx9c7ec502f5b0f3ad' > "$ENV_FILE"
-    echo 'WECHAT_APPSECRET=46e5038f4f22414ff9c78d04a5f2dc81' >> "$ENV_FILE"
-    chmod 600 "$ENV_FILE"
+    echo "ERROR: $ENV_FILE is missing; run setup-wechat-sync.sh again" >> "$LOG_FILE"
+    exit 1
 fi
 
 # Pull latest code
 /usr/bin/git pull origin main >> "$LOG_FILE" 2>&1
 
-# Ensure .env still exists after pull
+# The ignored .env file should survive git pull; fail closed if it does not.
 if [ ! -f "$ENV_FILE" ]; then
-    echo 'WECHAT_APPID=wx9c7ec502f5b0f3ad' > "$ENV_FILE"
-    echo 'WECHAT_APPSECRET=46e5038f4f22414ff9c78d04a5f2dc81' >> "$ENV_FILE"
-    chmod 600 "$ENV_FILE"
+    echo "ERROR: $ENV_FILE disappeared after git pull" >> "$LOG_FILE"
+    exit 1
 fi
 
 # Run sync (draft-only: personal subscription accounts can't auto-publish)

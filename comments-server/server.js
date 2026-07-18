@@ -6,7 +6,7 @@ import { open } from "sqlite";
 const app = express();
 const port = process.env.PORT || 3100;
 const dbPath = process.env.COMMENTS_DB || "/var/lib/ori-lin/comments.sqlite";
-const adminToken = process.env.ADMIN_TOKEN || "ori-lin-admin";
+const adminToken = process.env.ADMIN_TOKEN || "";
 
 const db = await open({
   filename: dbPath,
@@ -33,6 +33,15 @@ await db.exec(`
     note text not null,
     created_at text not null default (datetime('now'))
   );
+
+  create table if not exists pageviews (
+    day text not null,
+    page text not null,
+    source text not null default '',
+    referrer text not null default 'direct',
+    views integer not null default 0,
+    primary key (day, page, source, referrer)
+  );
 `);
 
 app.use(helmet({ contentSecurityPolicy: false }));
@@ -41,6 +50,38 @@ app.use(express.json({ limit: "32kb" }));
 function cleanText(value, max) {
   return String(value || "").trim().slice(0, max);
 }
+
+app.post("/api/pageviews", async (req, res) => {
+  const page = cleanText(req.body.page, 200);
+  const source = cleanText(req.body.source, 80);
+  const referrer = cleanText(req.body.referrer, 160) || "direct";
+  if (!page) return res.status(400).json({ error: "missing_page" });
+
+  await db.run(
+    `insert into pageviews (day, page, source, referrer, views)
+     values (date('now'), ?, ?, ?, 1)
+     on conflict(day, page, source, referrer) do update set views = views + 1`,
+    page,
+    source,
+    referrer
+  );
+  res.status(204).end();
+});
+
+app.get("/api/stats", async (req, res) => {
+  const token = cleanText(req.query.token, 120);
+  if (!adminToken || token !== adminToken) return res.status(401).json({ error: "unauthorized" });
+
+  const days = Math.min(Math.max(Number(req.query.days) || 30, 1), 365);
+  const rows = await db.all(
+    `select day, page, source, referrer, views
+     from pageviews
+     where day >= date('now', ?)
+     order by day desc, views desc`,
+    `-${days - 1} days`
+  );
+  res.json(rows);
+});
 
 app.get("/api/comments", async (req, res) => {
   const page = cleanText(req.query.page, 200);
@@ -103,7 +144,7 @@ app.post("/api/applications", async (req, res) => {
 
 app.get("/api/applications", async (req, res) => {
   const token = cleanText(req.query.token, 120);
-  if (token !== adminToken) {
+  if (!adminToken || token !== adminToken) {
     return res.status(401).json({ error: "unauthorized" });
   }
 
