@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ORI-LIN</title>
+    <link>https://www.ori-lin.com/</link>
+    <description>把复杂商业局面，翻译成可以带走的判断。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <item>
+      <title>别再问它好不好。把它算出来。</title>
+      <link>https://www.ori-lin.com/day-022.html</link>
+      <guid>https://www.ori-lin.com/day-022.html</guid>
+      <pubDate>Sat, 25 Jul 2026 08:00:00 +0800</pubDate>
+      <description>好行业看 WTP−OC，好公司看 ROIC−WACC，好价格看 IRR 与安全边际。</description>
+    </item>
+    <item>
+      <title>哪些 AI 真正赚大钱？</title>
+      <link>https://www.ori-lin.com/day-021.html</link>
+      <guid>https://www.ori-lin.com/day-021.html</guid>
+      <pubDate>Fri, 24 Jul 2026 08:00:00 +0800</pubDate>
+      <description>不要看模型多聪明，要看它占住了哪种不愿放弃的需求。</description>
+    </item>
+    <item>
+      <title>短剧满足的底层需求，二十年前是谁在满足？</title>
+      <link>https://www.ori-lin.com/day-020.html</link>
+      <guid>https://www.ori-lin.com/day-020.html</guid>
+      <pubDate>Thu, 23 Jul 2026 08:00:00 +0800</pubDate>
+      <description>需求不会消失，只会换一种更适合当前媒介的包装。</description>
+    </item>
+  </channel>
+</rss>

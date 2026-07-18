@@ -30,7 +30,8 @@ from datetime import datetime
 # IPv6 is disabled at OS level (sysctl), so regular requests will use IPv4
 import requests as HTTP
 
-# Load credentials from the local, git-ignored .env file.
+# Load credentials from a local .env file when present. Secrets must never be
+# embedded in source control or recreated from hard-coded defaults.
 _env_path = Path(__file__).parent / ".env"
 if _env_path.exists():
     for line in _env_path.read_text(encoding="utf-8").splitlines():
@@ -342,7 +343,7 @@ def upload_cover_image(access_token, image_path):
     return data["media_id"]
 
 
-def create_draft(access_token, title, content, thumb_media_id, digest=""):
+def create_draft(access_token, title, content, thumb_media_id, digest="", source_url="https://www.ori-lin.com/"):
     """Create a draft article in WeChat MP."""
     url = f"{WECHAT_API}/draft/add"
     params = {"access_token": access_token}
@@ -356,7 +357,7 @@ def create_draft(access_token, title, content, thumb_media_id, digest=""):
                 "author": "ORI-LIN",
                 "digest": digest,
                 "content": content,
-                "content_source_url": "https://www.ori-lin.com",
+                "content_source_url": source_url,
                 "thumb_media_id": thumb_media_id,
                 "need_open_comment": 1,
                 "only_fans_can_comment": 0,
@@ -476,8 +477,14 @@ def main():
     # Create draft
     log("Creating draft article...")
     digest = article["deck"][:120] if article["deck"] else article["title"]
+    day_match = re.search(r"day-(\d+)", article_file.stem)
+    campaign = f"day{int(day_match.group(1)):03d}" if day_match else "latest"
+    source_url = (
+        f"https://www.ori-lin.com/{article_file.name}"
+        f"?utm_source=wechat_mp&utm_medium=article&utm_campaign={campaign}"
+    )
     draft_media_id = create_draft(
-        access_token, article["title"], wechat_html, thumb_media_id, digest
+        access_token, article["title"], wechat_html, thumb_media_id, digest, source_url
     )
     log(f"Draft created: {draft_media_id}")
 
