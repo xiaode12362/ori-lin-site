@@ -4,7 +4,7 @@ ORI-LIN -> WeChat Official Account auto-sync script.
 
 Usage:
   python wechat_sync.py                   # auto-find latest day-XXX.html
-  python wechat_sync.py day-005.html      # specify article
+  python wechat_sync.py day-003.html      # specify article
   python wechat_sync.py --dry-run         # convert only, no API calls
   python wechat_sync.py --draft-only      # create draft, don't publish
 

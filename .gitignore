@@ -8,4 +8,6 @@ node_modules
 wechat_cover.png
 wechat_sync.log
 wechat_preview.html
+wechat_news_preview.html
+.wechat_news_state.json
 __pycache__/
