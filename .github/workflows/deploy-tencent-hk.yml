@@ -47,7 +47,11 @@ jobs:
         run: |
           set -euo pipefail
           for attempt in 1 2 3 4 5; do
-            if curl -fsSL https://www.ori-lin.com/ | grep -q 'day-022.html' && curl -fsSL https://www.ori-lin.com/day-022.html | grep -q 'Day 022'; then
+            cache_bust="${GITHUB_SHA}-${attempt}"
+            if curl -fsSL "https://www.ori-lin.com/index.html?deploy=${cache_bust}" -o /tmp/ori-home.html \
+              && curl -fsSL "https://www.ori-lin.com/day-022.html?deploy=${cache_bust}" -o /tmp/ori-day-022.html \
+              && grep -q 'day-022.html' /tmp/ori-home.html \
+              && grep -q 'Day 022' /tmp/ori-day-022.html; then
               exit 0
             fi
             sleep 12
