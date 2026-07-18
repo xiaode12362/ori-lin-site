@@ -1,7 +1,1004 @@
 {
-  "updatedAt": "2026-07-17T19:57:11+08:00",
+  "updatedAt": "2026-07-18T13:35:00+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-18",
+      "title": "今天20条：油价、订单和利润具体怎么变",
+      "note": "本期含国内10条、国际10条。优先采用24小时内一手披露；其余主要扩展到72小时，2条国际规则与利率材料扩展到7天并标注发布日期。股票只在公告或官方文件有直接关系时映射；8条宏观与监管新闻因缺少公司级订单证据暂不映射。方法版本1.0.0：D+1只记录，D+7起判断；没有预算、订单或执行信号，不认定政策兑现。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-18-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "能源价格",
+          "title": "汽柴油每吨涨约300元，开车和运输都更贵",
+          "verdict": "成本上升",
+          "verdictTone": "caution",
+          "originalNews": "7月17日24时起，汽油每吨涨300元，柴油涨290元。",
+          "originalSource": "国家发展改革委",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html",
+          "whatHappened": "7月17日24时起，汽油每吨涨300元，柴油涨290元。",
+          "whyThisAction": "发改委按国际原油价格变化，把国内成品油价格同步调高。",
+          "governmentIntent": "官方事实：发改委按现行价格机制上调汽柴油最高零售价。 ORI-LIN分析：炼油企业售价提高，但运输、物流和用车家庭要多花钱。",
+          "whatItMeans": "加油站售价上升，炼油销售收入增加；货运和客运燃料成本增加。",
+          "essence": "更多钱从车主和运输企业流向成品油销售端。",
+          "upCondition": "主营炼油价差扩大，且成品油销量没有明显下降。",
+          "downCondition": "国际油价回落并触发下一轮下调，或销量明显减少。",
+          "stocks": [
+            {
+              "name": "中国石油",
+              "ticker": "601857.SH",
+              "direction": "利好",
+              "reason": "官方文件直接要求中石油执行新价格，成品油售价提高。",
+              "evidence": "国家发展改革委成品油调价通知，2026-07-17",
+              "trigger": "看下一轮调价和炼油业务利润。",
+              "invalidCondition": "炼油价差收窄或销量大降时失效。"
+            },
+            {
+              "name": "中国石化",
+              "ticker": "600028.SH",
+              "direction": "利好",
+              "reason": "官方文件直接要求中石化执行新价格，销售端单价提高。",
+              "evidence": "国家发展改革委成品油调价通知，2026-07-17",
+              "trigger": "看零售销量和炼油毛利。",
+              "invalidCondition": "销量下滑抵消提价时失效。"
+            }
+          ],
+          "watchNext": "盯下一轮调价幅度、布伦特油价和两家公司炼油利润。",
+          "oriCall": "短期利好炼油销售端；下一轮油价下调时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：国家发展改革委",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "工业数据",
+          "title": "6月工业产出增5.3%，电子设备增长最快",
+          "verdict": "订单分化",
+          "verdictTone": "solid",
+          "originalNews": "6月工业增加值增5.3%，电子设备制造增15.7%。",
+          "originalSource": "国家统计局",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964123.html",
+          "whatHappened": "6月工业增加值增5.3%，电子设备制造增15.7%。",
+          "whyThisAction": "统计局公布数据，是让市场看清哪些工厂订单在增、哪些在减。",
+          "governmentIntent": "官方事实：统计局发布6月规模以上工业增加值。 ORI-LIN分析：电子、运输设备订单较强，化工和有色金属仍偏弱。",
+          "whatItMeans": "电子和运输设备工厂开工更多；化工、有色企业的新增收入更慢。",
+          "essence": "新增生产更多流向电子设备、运输设备和专用设备。",
+          "upCondition": "7月电子设备增加值仍超过10%，企业订单同步增长。",
+          "downCondition": "7月增速明显回落，或库存增幅快于销售。",
+          "stocks": [],
+          "watchNext": "盯7月工业增加值、产成品库存和行业订单。",
+          "oriCall": "电子制造仍强，但没有公司订单证据前不映射个股。",
+          "sources": [
+            {
+              "label": "一手原文：国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964123.html"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "创新药",
+          "title": "科伦一款肺癌药三期试验达到主要终点",
+          "verdict": "研发推进",
+          "verdictTone": "solid",
+          "originalNews": "科伦肺癌药联合方案的三期试验达到主要终点。",
+          "originalSource": "巨潮资讯·科伦药业公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "科伦肺癌药联合方案的三期试验达到主要终点。",
+          "whyThisAction": "公司要说明药物疗效已跨过关键试验门槛，准备推进申报。",
+          "governmentIntent": "官方事实：公司公告三期临床达到主要终点。 ORI-LIN分析：药物更接近申报上市，但收入仍取决于获批、定价和放量。",
+          "whatItMeans": "研发成功率提高，后续申报费用增加；获批后才会形成药品收入。",
+          "essence": "研发投入继续流向申报和生产准备，收入尚未落袋。",
+          "upCondition": "公司提交上市申请并获受理，后续获得批准。",
+          "downCondition": "完整数据不支持申报，或监管要求补做试验。",
+          "stocks": [
+            {
+              "name": "科伦药业",
+              "ticker": "002422.SZ",
+              "direction": "利好",
+              "reason": "控股子公司的核心药物三期试验直接取得进展。",
+              "evidence": "科伦药业核心产品三期临床公告，2026-07-15",
+              "trigger": "看上市申请受理和批准时间。",
+              "invalidCondition": "试验数据不足或申报失败时失效。"
+            }
+          ],
+          "watchNext": "盯完整试验数据、上市申请受理号和获批时间。",
+          "oriCall": "这是研发利好，不是收入确认；申报受阻时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯·科伦药业公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "半导体融资",
+          "title": "长鑫科技启动科创板发行，存储芯片扩产要拿到钱",
+          "verdict": "融资落地",
+          "verdictTone": "solid",
+          "originalNews": "长鑫科技发布科创板首次公开发行公告。",
+          "originalSource": "上交所·长鑫科技发行公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "长鑫科技发布科创板首次公开发行公告。",
+          "whyThisAction": "公司要从公开市场募集资金，继续建设存储芯片产能。",
+          "governmentIntent": "官方事实：发行申请已通过审核并获证监会同意注册。 ORI-LIN分析：募集资金会增加扩产能力，但新增股份也会摊薄原股东权益。",
+          "whatItMeans": "投资者资金进入公司，设备采购和产线建设支出随后增加。",
+          "essence": "资金从新股认购流向存储芯片产线和研发。",
+          "upCondition": "募集金额足额到账，募投项目按期投产。",
+          "downCondition": "发行延期，或募投项目建设进度明显落后。",
+          "stocks": [
+            {
+              "name": "长鑫科技",
+              "ticker": "688825.SH",
+              "direction": "暂不明确",
+              "reason": "IPO带来扩产资金，也增加可交易股份和摊薄压力。",
+              "evidence": "长鑫科技首次公开发行公告，2026-07-15",
+              "trigger": "看募集净额、上市日和募投进度。",
+              "invalidCondition": "募集失败或项目取消时原判断失效。"
+            }
+          ],
+          "watchNext": "盯募集净额、上市日期和首批设备采购。",
+          "oriCall": "融资利好产能，股价方向仍看发行价格和投产速度。",
+          "sources": [
+            {
+              "label": "一手原文：上交所·长鑫科技发行公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "可转债",
+          "title": "中科曙光发行可转债，先拿钱再决定是否转股",
+          "verdict": "融资增加",
+          "verdictTone": "watch",
+          "originalNews": "中科曙光启动向公众发行可转换公司债券。",
+          "originalSource": "上交所·中科曙光公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603019",
+          "whatHappened": "中科曙光启动向公众发行可转换公司债券。",
+          "whyThisAction": "公司想用较低融资成本拿到项目资金，并保留未来转股可能。",
+          "governmentIntent": "官方事实：证监会已同意注册，公司按公告启动发行。 ORI-LIN分析：现金先增加；未来转股会增加股份，未转股则要付利息还本。",
+          "whatItMeans": "认购资金进入公司，可用于募投项目；股东要承担潜在摊薄。",
+          "essence": "债券资金流入公司，之后流向计算设备和项目建设。",
+          "upCondition": "发行足额完成，募投项目形成新增订单和收入。",
+          "downCondition": "弃购比例高，或项目回报低于利息和摊薄成本。",
+          "stocks": [
+            {
+              "name": "中科曙光",
+              "ticker": "603019.SH",
+              "direction": "暂不明确",
+              "reason": "可转债增加现金，但未来转股会摊薄每股收益。",
+              "evidence": "中科曙光可转债发行公告，2026-07-15",
+              "trigger": "看认购结果、募集净额和转股价。",
+              "invalidCondition": "发行取消或募投项目终止时失效。"
+            }
+          ],
+          "watchNext": "盯认购结果、募集净额、转股价和项目进度。",
+          "oriCall": "融资能补项目资金，但摊薄前先看钱是否赚到回报。",
+          "sources": [
+            {
+              "label": "一手原文：上交所·中科曙光公告",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603019"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "光通信",
+          "title": "光迅预计上半年利润增长，光模块订单在兑现",
+          "verdict": "利润增长",
+          "verdictTone": "solid",
+          "originalNews": "光迅科技预计2026年上半年净利润同比增长。",
+          "originalSource": "巨潮资讯·光迅科技公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "光迅科技预计2026年上半年净利润同比增长。",
+          "whyThisAction": "公司要提前说明经营结果变化，避免市场只靠传闻猜利润。",
+          "governmentIntent": "官方事实：公司发布半年度业绩预告。 ORI-LIN分析：光通信产品收入改善已进入利润，但最终数字要等半年报。",
+          "whatItMeans": "光模块销售增加或毛利改善，直接抬高公司利润。",
+          "essence": "数据通信和传输产品订单进入光迅收入。",
+          "upCondition": "半年报利润落在预告上半区，且经营现金流同步增长。",
+          "downCondition": "正式利润低于预告下限，或应收账款大幅上升。",
+          "stocks": [
+            {
+              "name": "光迅科技",
+              "ticker": "002281.SZ",
+              "direction": "利好",
+              "reason": "公司自己的业绩预告显示利润增长。",
+              "evidence": "光迅科技半年度业绩预告，2026-07-15",
+              "trigger": "看半年报利润、毛利率和现金流。",
+              "invalidCondition": "利润低于预告下限时失效。"
+            }
+          ],
+          "watchNext": "盯半年报净利润、毛利率和经营现金流。",
+          "oriCall": "利润增长已被公司确认；现金流不跟上时利好打折。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯·光迅科技公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "影视",
+          "title": "博纳上半年仍亏损，电影收入还没盖住成本",
+          "verdict": "继续亏损",
+          "verdictTone": "risk",
+          "originalNews": "博纳预计上半年亏损1.5亿至2.1亿元。",
+          "originalSource": "巨潮资讯·博纳影业公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "博纳预计上半年亏损1.5亿至2.1亿元。",
+          "whyThisAction": "公司要让投资者提前看到影片收入仍不足以覆盖制作和运营成本。",
+          "governmentIntent": "官方事实：公司发布半年度业绩预告。 ORI-LIN分析：减亏不等于赚钱，后续要靠新片票房和版权回款。",
+          "whatItMeans": "影片制作、发行和影院成本继续消耗现金，利润仍为负。",
+          "essence": "票房和版权回款仍少于影片与影院成本。",
+          "upCondition": "新片票房和版权收入使下半年单季转正。",
+          "downCondition": "新片延期或票房低于预算，亏损继续扩大。",
+          "stocks": [
+            {
+              "name": "博纳影业",
+              "ticker": "001330.SZ",
+              "direction": "利空",
+              "reason": "公司预告上半年仍有较大亏损。",
+              "evidence": "博纳影业半年度业绩预告，2026-07-15",
+              "trigger": "看新片上映、票房和单季利润。",
+              "invalidCondition": "下半年单季扭亏并持续时失效。"
+            }
+          ],
+          "watchNext": "盯新片上映日期、累计票房和三季度单季利润。",
+          "oriCall": "当前仍是亏损公司；单季持续转正后判断才失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯·博纳影业公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "家居建材",
+          "title": "惠达上半年转亏，卫浴销售没盖住费用",
+          "verdict": "利润转负",
+          "verdictTone": "risk",
+          "originalNews": "惠达预计上半年亏损7200万至9000万元。",
+          "originalSource": "上交所·惠达卫浴公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603385",
+          "whatHappened": "惠达预计上半年亏损7200万至9000万元。",
+          "whyThisAction": "公司要提前说明销售和转型投入已把半年利润拖成亏损。",
+          "governmentIntent": "官方事实：公司发布半年度业绩预亏公告。 ORI-LIN分析：地产客户和零售需求仍弱，改革费用暂未换来利润。",
+          "whatItMeans": "卫浴销售收入不足，费用和减值直接压低利润。",
+          "essence": "销售回款不足以覆盖生产、渠道和转型支出。",
+          "upCondition": "三季度收入回升，经营现金流转正且亏损收窄。",
+          "downCondition": "应收减值继续增加，或三季度亏损扩大。",
+          "stocks": [
+            {
+              "name": "惠达卫浴",
+              "ticker": "603385.SH",
+              "direction": "利空",
+              "reason": "公司明确预告半年度由盈转亏。",
+              "evidence": "惠达卫浴半年度业绩预亏公告，2026-07-15",
+              "trigger": "看三季度收入、现金流和减值。",
+              "invalidCondition": "单季扭亏并持续时失效。"
+            }
+          ],
+          "watchNext": "盯三季度销售、应收账款减值和经营现金流。",
+          "oriCall": "亏损已经确认；零售回升并让单季转正后判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：上交所·惠达卫浴公告",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603385"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "汽车电子",
+          "title": "威帝上半年预亏，客车电子订单仍不足",
+          "verdict": "继续亏损",
+          "verdictTone": "risk",
+          "originalNews": "威帝股份发布2026年半年度业绩预亏公告。",
+          "originalSource": "上交所·威帝股份公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603023",
+          "whatHappened": "威帝股份发布2026年半年度业绩预亏公告。",
+          "whyThisAction": "公司要提前说明主营收入还没有覆盖日常成本。",
+          "governmentIntent": "官方事实：公司预计上半年净利润为负。 ORI-LIN分析：客车电子订单是否恢复，要看收入和回款而不是题材。",
+          "whatItMeans": "车身电子产品销量不足，固定成本继续压低利润。",
+          "essence": "订单收入偏少，工厂和人员成本没有被充分摊薄。",
+          "upCondition": "三季度新增订单明显增加，单季收入和现金流转正。",
+          "downCondition": "订单继续减少，或应收账款逾期增加。",
+          "stocks": [
+            {
+              "name": "威帝股份",
+              "ticker": "603023.SH",
+              "direction": "利空",
+              "reason": "公司自己的业绩预告显示上半年亏损。",
+              "evidence": "威帝股份半年度业绩预亏公告，2026-07-15",
+              "trigger": "看三季度订单、收入和回款。",
+              "invalidCondition": "单季稳定盈利时失效。"
+            }
+          ],
+          "watchNext": "盯三季度订单金额、营业收入和应收账款。",
+          "oriCall": "订单未覆盖成本前偏空；单季稳定盈利后判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：上交所·威帝股份公告",
+              "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=603023"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "油墨化工",
+          "title": "乐通上半年扭亏，赚的钱仍不到千万元",
+          "verdict": "小幅扭亏",
+          "verdictTone": "watch",
+          "originalNews": "乐通预计上半年盈利580万至870万元。",
+          "originalSource": "巨潮资讯·乐通股份公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.cninfo.com.cn/new/index",
+          "whatHappened": "乐通预计上半年盈利580万至870万元。",
+          "whyThisAction": "公司要提前说明主营经营已从亏损转回小幅盈利。",
+          "governmentIntent": "官方事实：公司发布半年度业绩预告。 ORI-LIN分析：扭亏是改善，但利润规模小，容易被原料价格或订单变化吃掉。",
+          "whatItMeans": "销售和成本控制暂时覆盖了费用，公司重新有净利润。",
+          "essence": "油墨业务收入扣除原料和费用后，留下少量利润。",
+          "upCondition": "半年报利润在上限附近，三季度利润继续增长。",
+          "downCondition": "原料涨价或订单下降，使三季度再次亏损。",
+          "stocks": [
+            {
+              "name": "乐通股份",
+              "ticker": "002319.SZ",
+              "direction": "利好",
+              "reason": "公司预告上半年由亏转盈。",
+              "evidence": "乐通股份半年度业绩预告，2026-07-15",
+              "trigger": "看半年报利润和三季度订单。",
+              "invalidCondition": "三季度再次亏损时失效。"
+            }
+          ],
+          "watchNext": "盯半年报净利润、原料价格和三季度订单。",
+          "oriCall": "扭亏属利好，但利润很薄；再次亏损时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：巨潮资讯·乐通股份公告",
+              "url": "https://www.cninfo.com.cn/new/index"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-01",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "工业产出",
+          "title": "美国6月工业只增0.1%，工厂产量没有增长",
+          "verdict": "增长偏慢",
+          "verdictTone": "watch",
+          "originalNews": "美国6月工业产出增0.1%，制造业产出持平。",
+          "originalSource": "美国联邦储备委员会",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+          "whatHappened": "美国6月工业产出增0.1%，制造业产出持平。",
+          "whyThisAction": "美联储公布工厂产量，是为了判断企业订单和设备使用情况。",
+          "governmentIntent": "官方事实：工业产出环比增0.1%，产能利用率为76.1%。 ORI-LIN分析：工厂没有明显扩产，短期设备和原料需求增长有限。",
+          "whatItMeans": "制造商新增产量不多，设备、零部件和原料采购难大增。",
+          "essence": "新增订单没有明显转成更高的工厂产量。",
+          "upCondition": "7月制造业产出转为增长，产能利用率上升。",
+          "downCondition": "7月产出下降，新增订单继续走弱。",
+          "stocks": [],
+          "watchNext": "盯7月工业产出、产能利用率和制造业订单。",
+          "oriCall": "美国制造业暂未明显加速；7月产出上升时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国联邦储备委员会",
+              "url": "https://www.federalreserve.gov/releases/g17/current/default.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-02",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "贸易价格",
+          "title": "美国进口价格涨0.3%，非燃料商品更贵",
+          "verdict": "进口成本上升",
+          "verdictTone": "caution",
+          "originalNews": "美国6月进口价格涨0.3%，出口价格降0.6%。",
+          "originalSource": "美国劳工统计局",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.bls.gov/news.release/archives/ximpim_07172026.htm",
+          "whatHappened": "美国6月进口价格涨0.3%，出口价格降0.6%。",
+          "whyThisAction": "劳工统计局要看国外商品涨价会不会传到美国企业和消费者。",
+          "governmentIntent": "官方事实：非燃料进口涨价抵消了燃料进口降价。 ORI-LIN分析：进口商成本仍升，出口商卖价却下降，利润两头受压。",
+          "whatItMeans": "美国进口商买货更贵，出口企业收到的单价反而更低。",
+          "essence": "更多成本落到进口商，出口商单位收入减少。",
+          "upCondition": "7月进口价格回落，出口价格恢复上涨。",
+          "downCondition": "进口价格继续上涨，出口价格继续下降。",
+          "stocks": [],
+          "watchNext": "盯7月进口价格、出口价格和企业毛利率。",
+          "oriCall": "贸易企业利润受压；进口降价且出口提价时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国劳工统计局",
+              "url": "https://www.bls.gov/news.release/archives/ximpim_07172026.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-03",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "医疗器械",
+          "title": "雅培二季度销售126亿美元，并上调利润目标",
+          "verdict": "业绩上调",
+          "verdictTone": "solid",
+          "originalNews": "雅培二季度销售126亿美元，并上调全年每股利润目标。",
+          "originalSource": "Abbott官方新闻稿",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://abbott.mediaroom.com/2026-07-16-Abbott-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-EPS-Guidance",
+          "whatHappened": "雅培二季度销售126亿美元，并上调全年每股利润目标。",
+          "whyThisAction": "公司要告诉股东，现有业务增长足以提高全年利润预期。",
+          "governmentIntent": "官方事实：公司公布二季度业绩并上调全年调整后每股利润指引。 ORI-LIN分析：医疗器械和药品销售增长已进入收入，但仍要看下半年兑现。",
+          "whatItMeans": "更多医疗产品销售进入公司收入，全年利润目标随之提高。",
+          "essence": "医院和患者支出更多流入雅培的器械、药品和营养业务。",
+          "upCondition": "三季度销售保持增长，全年利润达到新指引上半区。",
+          "downCondition": "产品销量放缓，或全年利润再次下调。",
+          "stocks": [
+            {
+              "name": "雅培",
+              "ticker": "ABT",
+              "direction": "利好",
+              "reason": "公司二季度销售增长并直接上调全年利润目标。",
+              "evidence": "Abbott Q2 2026 results，2026-07-16",
+              "trigger": "看三季度销售和全年指引。",
+              "invalidCondition": "公司下调全年利润目标时失效。"
+            }
+          ],
+          "watchNext": "盯三季度销售、医疗器械增速和全年利润指引。",
+          "oriCall": "上调指引属直接利好；下调全年目标时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：Abbott官方新闻稿",
+              "url": "https://abbott.mediaroom.com/2026-07-16-Abbott-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-EPS-Guidance"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-04",
+          "group": "国际重大一手新闻",
+          "region": "欧元区",
+          "category": "国际贸易",
+          "title": "欧元区5月商品贸易转为78亿欧元逆差",
+          "verdict": "进口多于出口",
+          "verdictTone": "caution",
+          "originalNews": "欧元区5月商品贸易由顺差转为78亿欧元逆差。",
+          "originalSource": "欧盟统计局",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/6-16072026-ap",
+          "whatHappened": "欧元区5月商品贸易由顺差转为78亿欧元逆差。",
+          "whyThisAction": "欧盟统计局要看出口收入是否足够支付进口商品。",
+          "governmentIntent": "官方事实：5月出口2436亿欧元，贸易余额为逆差78亿欧元。 ORI-LIN分析：进口支出增加更快，出口企业没有拿回同样多的新增收入。",
+          "whatItMeans": "欧元区企业和消费者向海外支付的钱多于出口收到的钱。",
+          "essence": "商品资金净流向欧元区以外，出口企业收入增长很弱。",
+          "upCondition": "6月出口增长加快，贸易余额恢复顺差。",
+          "downCondition": "逆差继续扩大，出口同比转为下降。",
+          "stocks": [],
+          "watchNext": "盯6月出口金额、进口金额和贸易余额。",
+          "oriCall": "外贸对欧元区收入拖累；恢复顺差时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：欧盟统计局",
+              "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/6-16072026-ap"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-05",
+          "group": "国际重大一手新闻",
+          "region": "荷兰",
+          "category": "半导体设备",
+          "title": "阿斯麦二季度收入93亿欧元，并上调全年目标",
+          "verdict": "设备订单强",
+          "verdictTone": "solid",
+          "originalNews": "阿斯麦二季度收入93亿欧元，净利润29亿欧元。",
+          "originalSource": "ASML官方财报",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+          "whatHappened": "阿斯麦二季度收入93亿欧元，净利润29亿欧元。",
+          "whyThisAction": "公司要说明芯片厂买设备的速度，更新全年交付目标。",
+          "governmentIntent": "官方事实：公司公布二季度业绩并提高2026年销售目标。 ORI-LIN分析：芯片厂设备采购继续增加，收入已落实到阿斯麦。",
+          "whatItMeans": "晶圆厂为扩产支付更多设备款，阿斯麦收入和利润增加。",
+          "essence": "芯片厂的扩产预算直接进入光刻机设备收入。",
+          "upCondition": "三季度收入达到公司指引，新增订单继续增长。",
+          "downCondition": "出口许可收紧，或客户推迟设备验收。",
+          "stocks": [
+            {
+              "name": "阿斯麦",
+              "ticker": "ASML",
+              "direction": "利好",
+              "reason": "公司收入和利润增长，并上调全年销售目标。",
+              "evidence": "ASML Q2 2026 results，2026-07-15",
+              "trigger": "看三季度收入、订单和出口许可。",
+              "invalidCondition": "公司下调指引或交付延期时失效。"
+            }
+          ],
+          "watchNext": "盯三季度收入、净订单和出口许可变化。",
+          "oriCall": "设备需求已兑现；订单下降或交付受限时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：ASML官方财报",
+              "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-06",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "医药",
+          "title": "强生二季度利润好于计划，再次上调全年目标",
+          "verdict": "业绩上调",
+          "verdictTone": "solid",
+          "originalNews": "强生公布二季度业绩，并提高2026年全年目标。",
+          "originalSource": "Johnson & Johnson官方新闻稿",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.jnj.com/media-center/press-releases/johnson-johnson-reports-q2-2026-results-raises-2026-outlook",
+          "whatHappened": "强生公布二季度业绩，并提高2026年全年目标。",
+          "whyThisAction": "公司要告诉股东，药品和医疗器械销售比原计划更好。",
+          "governmentIntent": "官方事实：公司公布每股收益并上调全年业绩展望。 ORI-LIN分析：主营销售改善已进入利润，但要继续看重点药物和器械销量。",
+          "whatItMeans": "医院和患者购买更多产品，强生全年收入和利润预期提高。",
+          "essence": "医疗支出更多进入强生药品和器械业务。",
+          "upCondition": "三季度销售达到新目标，重点产品继续增长。",
+          "downCondition": "重点药物销量下降，或公司下调全年目标。",
+          "stocks": [
+            {
+              "name": "强生",
+              "ticker": "JNJ",
+              "direction": "利好",
+              "reason": "公司二季度业绩后直接上调全年展望。",
+              "evidence": "Johnson & Johnson Q2 2026 results，2026-07-15",
+              "trigger": "看三季度销售和全年展望。",
+              "invalidCondition": "公司下调全年目标时失效。"
+            }
+          ],
+          "watchNext": "盯三季度药品销售、器械销售和全年展望。",
+          "oriCall": "上调全年目标属利好；重点产品失速时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：Johnson & Johnson官方新闻稿",
+              "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-reports-q2-2026-results-raises-2026-outlook"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-07",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "经济调查",
+          "title": "美联储称多数地区仍增长，但成本涨得更快",
+          "verdict": "利润受压",
+          "verdictTone": "caution",
+          "originalNews": "美联储称12个地区中11个增长，但企业成本普遍上升。",
+          "originalSource": "美国联邦储备委员会褐皮书",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.federalreserve.gov/monetarypolicy/beigebook202607-summary.htm",
+          "whatHappened": "美联储称12个地区中11个增长，但企业成本普遍上升。",
+          "whyThisAction": "美联储想在议息前听清企业真实的订单、用工和涨价情况。",
+          "governmentIntent": "官方事实：多数地区活动增长，能源、运输和原料成本上升。 ORI-LIN分析：企业有订单，但部分售价涨不过成本，利润会被挤压。",
+          "whatItMeans": "能源、运输和原料供应商多收钱，下游企业利润可能减少。",
+          "essence": "更多收入流向能源和运输端，下游企业承担更高成本。",
+          "upCondition": "下一期报告显示投入成本放缓，销售价格能覆盖成本。",
+          "downCondition": "成本继续快于售价上涨，企业利润率下降。",
+          "stocks": [],
+          "watchNext": "盯下一期褐皮书、企业毛利率和能源价格。",
+          "oriCall": "增长仍在但利润承压；成本涨幅回落时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国联邦储备委员会褐皮书",
+              "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202607-summary.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-08",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "生产者价格",
+          "title": "美国6月出厂价格仍在涨，企业采购成本没松",
+          "verdict": "降息更难",
+          "verdictTone": "caution",
+          "originalNews": "美国劳工统计局公布6月生产者价格数据。",
+          "originalSource": "美国劳工统计局",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.bls.gov/news.release/archives/ppi_07152026.htm",
+          "whatHappened": "美国劳工统计局公布6月生产者价格数据。",
+          "whyThisAction": "机构要看企业进货和出厂价格，会不会继续推高消费者价格。",
+          "governmentIntent": "官方事实：劳工统计局发布6月生产者价格指数。 ORI-LIN分析：企业成本压力仍在，美联储更难快速降低利率。",
+          "whatItMeans": "企业采购和服务成本上升，不能提价的公司利润会减少。",
+          "essence": "更多钱用于支付原料和服务成本，企业可留利润变少。",
+          "upCondition": "7月生产者价格明显回落，核心项目同步降温。",
+          "downCondition": "生产者价格继续上升，企业提价范围扩大。",
+          "stocks": [],
+          "watchNext": "盯7月生产者价格、企业毛利率和美联储会议。",
+          "oriCall": "成本仍压利润；生产者价格持续回落时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国劳工统计局",
+              "url": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-09",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "利率政策",
+          "title": "美联储主席称经济仍稳，降息要继续等数据",
+          "verdict": "利率难快降",
+          "verdictTone": "watch",
+          "originalNews": "美联储主席称经济稳健，通胀仍高于2%目标。",
+          "originalSource": "美国联邦储备委员会国会证词",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.federalreserve.gov/newsevents/testimony/warsh20260714a.htm",
+          "whatHappened": "美联储主席称经济稳健，通胀仍高于2%目标。",
+          "whyThisAction": "美联储要解释为什么现在不能只看增长就马上降息。",
+          "governmentIntent": "官方事实：主席向国会提交半年度货币政策报告。 ORI-LIN分析：经济没有明显衰退，利率快速下降的条件仍不足。",
+          "whatItMeans": "借款企业和房贷客户还要继续承担较高利息。",
+          "essence": "更多现金继续用于付利息，债务较重企业压力更大。",
+          "upCondition": "通胀连续回落，就业明显转弱，美联储给出降息时间。",
+          "downCondition": "通胀反弹，或经济继续强劲，美联储延后降息。",
+          "stocks": [],
+          "watchNext": "盯下一次通胀、就业数据和议息声明。",
+          "oriCall": "利率暂难快降；美联储明确给出降息时间时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国联邦储备委员会国会证词",
+              "url": "https://www.federalreserve.gov/newsevents/testimony/warsh20260714a.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-18-intl-10",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "出口管制",
+          "title": "美国放宽对阿联酋部分军民两用商品出口",
+          "verdict": "准入放宽",
+          "verdictTone": "watch",
+          "originalNews": "美国把阿联酋调入更宽松的出口管制国家组。",
+          "originalSource": "美国商务部工业与安全局",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.bis.gov/news-updates",
+          "whatHappened": "美国把阿联酋调入更宽松的出口管制国家组。",
+          "whyThisAction": "美国想让获准的阿联酋客户更容易买到受管制商品。",
+          "governmentIntent": "官方事实：规则允许部分军事、卫星和油气设备免许可证出口。 ORI-LIN分析：合格买家采购时间和手续减少，但具体订单尚未披露。",
+          "whatItMeans": "阿联酋政府和获批企业买美国设备更省时间和合规费用。",
+          "essence": "潜在订单可更快流向美国卫星、油气和军民两用设备商。",
+          "upCondition": "美国公布获批企业名单，随后出现具体采购合同。",
+          "downCondition": "安全条件变化，规则被撤回或重新收紧。",
+          "stocks": [],
+          "watchNext": "盯获批企业名单、许可证细则和采购合同。",
+          "oriCall": "准入已放宽，但没有订单前不映射股票。",
+          "sources": [
+            {
+              "label": "一手原文：美国商务部工业与安全局",
+              "url": "https://www.bis.gov/news-updates"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-18",
+            "baselineAt": "2026-07-18",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-19",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-17",
       "title": "今天20条：哪些订单、成本和股票会变",
@@ -1162,11 +2159,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证 upCondition、downCondition 或个股 trigger 中要求的持续订单、成交额、收入和利润条件，也不能排除大盘急跌及外部冲击。",
                 "policyDeviation": "D+1尚未进入企业订单和收入兑现阶段；没有足够证据证明实际结构增长偏离 ORI 预判路径。当前仅记录价格反应，后续需核对合同负债、收入增速与市场成交额。",
                 "sources": [
-                  {"label": "国家统计局：二季度和上半年GDP初步核算（2026-07-16）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"},
-                  {"label": "Yahoo Finance日线：中科曙光（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/603019.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：东方财富（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300059.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-17）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家统计局：二季度和上半年GDP初步核算（2026-07-16）",
+                    "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：中科曙光（2026-07-17）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/603019.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-17）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：东方财富（2026-07-17）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300059.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-17）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1249,11 +2261,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证出口增速、海外订单、利润和港口吞吐量触发条件，也不能排除市场风格差异。",
                 "policyDeviation": "D+1尚未进入外贸订单和实物流量兑现阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对出口额、企业海外收入与港口集装箱吞吐量。",
                 "sources": [
-                  {"label": "国务院新闻办公室、海关总署：上半年进出口发布会（2026-07-14）", "url": "https://english.scio.gov.cn/pressroom/node_9019860.html"},
-                  {"label": "Yahoo Finance日线：立讯精密（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002475.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：宁波港（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601018.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国务院新闻办公室、海关总署：上半年进出口发布会（2026-07-14）",
+                    "url": "https://english.scio.gov.cn/pressroom/node_9019860.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：立讯精密（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002475.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：宁波港（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/601018.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1336,11 +2363,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证至少3省预算、龙头中标额和毛利率触发条件，也不能排除板块交易与提前定价。",
                 "policyDeviation": "实际通知要求2026年底前至少完成一轮省级集采，与 ORI 关注预算和中标落地的路径一致；D+1尚无预算、中标或利润证据。",
                 "sources": [
-                  {"label": "国家卫生健康委等三部门：医用设备集中采购通知（页面发布2026-07-15）", "url": "https://wjw.xinjiang.gov.cn/hfpc/zcwj4/202607/86a5e26707ca4812bda436a6758228fa.shtml"},
-                  {"label": "Yahoo Finance日线：联影医疗（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/688271.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：迈瑞医疗（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300760.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家卫生健康委等三部门：医用设备集中采购通知（页面发布2026-07-15）",
+                    "url": "https://wjw.xinjiang.gov.cn/hfpc/zcwj4/202607/86a5e26707ca4812bda436a6758228fa.shtml"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：联影医疗（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/688271.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：迈瑞医疗（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300760.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1423,10 +2465,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证运营商集采、设备份额和安全运营合同触发条件，也不能把首日弱势直接归因于文件。",
                 "policyDeviation": "D+1尚未进入运营商采购和监管合规投入阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对集采规模、资本开支与合同额。",
                 "sources": [
-                  {"label": "工业和信息化部等四部门：互联网基础资源指导意见（2026-07-13）", "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_df93d63485c143658d5e75df06f4ec7a.html"},
-                  {"label": "Yahoo Finance日线：紫光股份（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000938.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：启明星辰（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002439.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-14）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "工业和信息化部等四部门：互联网基础资源指导意见（2026-07-13）",
+                    "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_df93d63485c143658d5e75df06f4ec7a.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：紫光股份（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000938.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：启明星辰（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002439.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-14）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1509,10 +2563,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证招标额、项目开工率、中标价格和新增订单触发条件，也不能排除大盘下跌影响。",
                 "policyDeviation": "文件要求各地和央企抓好落实，与 ORI 等待招标和订单的路径一致；D+1尚无招标额、开工率或利润证据。",
                 "sources": [
-                  {"label": "国家能源局：能源领域节能降碳行动计划（页面公开2026-07-10）", "url": "https://www.nea.gov.cn/20260710/4acf5873e20149cdbc52c709b16b30ff/c.html"},
-                  {"label": "Yahoo Finance日线：国电南瑞（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600406.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：东方电气（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600875.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家能源局：能源领域节能降碳行动计划（页面公开2026-07-10）",
+                    "url": "https://www.nea.gov.cn/20260710/4acf5873e20149cdbc52c709b16b30ff/c.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：国电南瑞（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600406.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：东方电气（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600875.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1595,10 +2661,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证新增财政项目、新签订单、回款周期和现金流触发条件，也不能排除公司自身因素。",
                 "policyDeviation": "D+1尚未进入地方预算、项目采购和回款执行阶段；没有足够证据证明实际执行偏离 ORI 预判路径。后续需核对专项债、项目清单、订单与应收周转。",
                 "sources": [
-                  {"label": "生态环境部等六部门：固体废物污染防治“十五五”规划（页面公开2026-07-14）", "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202607/t20260714_1161736.html"},
-                  {"label": "Yahoo Finance日线：瀚蓝环境（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600323.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：高能环境（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/603588.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "生态环境部等六部门：固体废物污染防治“十五五”规划（页面公开2026-07-14）",
+                    "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202607/t20260714_1161736.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：瀚蓝环境（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600323.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：高能环境（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/603588.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1681,11 +2759,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证平台合规采购、企业级AI安全订单或省级监管项目触发条件，也不能排除防御性交易。",
                 "policyDeviation": "《办法》于7月15日按期施行，实际执行时间与预期一致；D+1尚无平台采购、监管抽查、处罚或毛利率证据。",
                 "sources": [
-                  {"label": "国家网信办等五部门：人工智能拟人化互动服务管理暂行办法（2026-04-10公布，2026-07-15施行）", "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"},
-                  {"label": "Yahoo Finance日线：三六零（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601360.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：美亚柏科（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300188.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家网信办等五部门：人工智能拟人化互动服务管理暂行办法（2026-04-10公布，2026-07-15施行）",
+                    "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：三六零（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/601360.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：美亚柏科（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300188.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1768,10 +2861,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证连续3旬涨价、库存下降、月度排产和单吨毛利触发条件，也不能把单日上涨视为补库因果链成立。",
                 "policyDeviation": "该条为价格数据而非政策执行；实际价格分化与 ORI 强调不能用单一商品代表总需求一致。后续需核对材料价格、库存、排产与价差。",
                 "sources": [
-                  {"label": "国家统计局：7月上旬生产资料市场价格（2026-07-14）", "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260713_1964100.html"},
-                  {"label": "Yahoo Finance日线：湖南裕能（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/301358.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：龙佰集团（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/002601.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家统计局：7月上旬生产资料市场价格（2026-07-14）",
+                    "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260713_1964100.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：湖南裕能（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/301358.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：龙佰集团（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002601.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1854,11 +2959,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证农业项目招标、合同负债和大中拖销量触发条件，也不能证明单产数据已传导至企业订单。",
                 "policyDeviation": "该条为产量数据而非新增政策执行；D+1尚无补贴、采购预算或订单证据。后续需核对秋季项目招标、种业预收款与农机销量。",
                 "sources": [
-                  {"label": "国家统计局：2026年夏粮产量公告（2026-07-10）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260710_1964090.html"},
-                  {"label": "Yahoo Finance日线：隆平高科（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000998.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：深证成指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：一拖股份（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/601038.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家统计局：2026年夏粮产量公告（2026-07-10）",
+                    "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260710_1964090.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：隆平高科（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000998.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：深证成指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：一拖股份（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/601038.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -1941,11 +3061,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证核心20城持续量价修复和公司销售、代建订单触发条件，也不能把首日强势等同全国楼市反转。",
                 "policyDeviation": "该条为房价数据而非新增政策执行；数据仍显示城市分化，与 ORI 判断尚未全国反转一致。后续需核对核心城市量价、挂牌量、保利销售额与代建拓展。",
                 "sources": [
-                  {"label": "国家统计局：2026年6月70城住宅价格（2026-07-15）", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html"},
-                  {"label": "Yahoo Finance日线：保利发展（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/600048.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：上证综指（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：绿城管理控股（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/9979.HK?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：恒生指数（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "国家统计局：2026年6月70城住宅价格（2026-07-15）",
+                    "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：保利发展（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600048.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：上证综指（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：绿城管理控股（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/9979.HK?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：恒生指数（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2028,10 +3163,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证连续2个月核心PPI、10年美债收益率、Azure增速和Exxon自由现金流触发条件。",
                 "policyDeviation": "该条为通胀数据而非政策执行；D+1无法确认美联储利率路径是否沿 ORI 条件展开。后续需核对核心PPI连续性、国债收益率和公司经营数据。",
                 "sources": [
-                  {"label": "U.S. Bureau of Labor Statistics：June 2026 PPI（2026-07-15）", "url": "https://www.bls.gov/news.release/ppi.htm"},
-                  {"label": "Yahoo Finance日线：Microsoft（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Exxon Mobil（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "U.S. Bureau of Labor Statistics：June 2026 PPI（2026-07-15）",
+                    "url": "https://www.bls.gov/news.release/ppi.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Microsoft（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Exxon Mobil（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2114,10 +3261,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证英国商业投资、财政赤字、Barclays净息差与RELX有机收入触发条件。",
                 "policyDeviation": "OECD报告提出结构改革和生产率方向，但D+1尚无英国政府预算或执行数据，不能判断执行是否偏离 ORI 路径。",
                 "sources": [
-                  {"label": "OECD Economic Surveys: United Kingdom 2026（2026-07-15）", "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-united-kingdom-2026_aa997c6e-en.html"},
-                  {"label": "Yahoo Finance日线：Barclays（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BARC.L?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：RELX（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/REL.L?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：富时100（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "OECD Economic Surveys: United Kingdom 2026（2026-07-15）",
+                    "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-united-kingdom-2026_aa997c6e-en.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Barclays（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BARC.L?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：RELX（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/REL.L?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：富时100（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2200,11 +3359,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证电商协议成员、关税措施、跨境交易额和国际件量触发条件。",
                 "policyDeviation": "WTO改革讨论仍处规则阶段，与 ORI 判断关税不会立即下降一致；D+1尚无成员扩围或新增关税减少的执行证据。",
                 "sources": [
-                  {"label": "World Trade Organization：WTO改革与谈判进展（2026-07-14）", "url": "https://www.wto.org/english/news_e/news26_e/gc_14jul26_457_e.htm"},
-                  {"label": "Yahoo Finance日线：MercadoLibre（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：DHL Group（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/DHL.DE?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：德国DAX（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGDAXI?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "World Trade Organization：WTO改革与谈判进展（2026-07-14）",
+                    "url": "https://www.wto.org/english/news_e/news26_e/gc_14jul26_457_e.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：MercadoLibre（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：DHL Group（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DHL.DE?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：德国DAX（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGDAXI?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2287,10 +3461,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证2027年试点进度、接口预算、欧洲处理量和新合同触发条件，也不能把测试名单等同全面发行。",
                 "policyDeviation": "ECB按计划选出36家支付机构，实际准备阶段与 ORI 预判一致；D+1尚无立法、接口预算或技术订单证据。",
                 "sources": [
-                  {"label": "European Central Bank：36家支付机构加入数字欧元试点（2026-07-14）", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"},
-                  {"label": "Yahoo Finance日线：Adyen（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADYEN.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Worldline（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/WLN.PA?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：欧洲斯托克50（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "European Central Bank：36家支付机构加入数字欧元试点（2026-07-14）",
+                    "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Adyen（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADYEN.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Worldline（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/WLN.PA?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：欧洲斯托克50（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2373,10 +3559,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证JKM或TTF均价、LNG运价、液化利用率和现货日租触发条件。",
                 "policyDeviation": "该条为能源实物流量与航道风险数据，不涉及政府执行偏离；D+1尚不能判断风险溢价是否沿 ORI 路径形成。",
                 "sources": [
-                  {"label": "U.S. Energy Information Administration：全球LNG贸易量（2026-07-14）", "url": "https://www.eia.gov/todayinenergy/index.php/detail.php?id=67625"},
-                  {"label": "Yahoo Finance日线：Cheniere Energy（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/LNG?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Flex LNG（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/FLNG?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-15）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "U.S. Energy Information Administration：全球LNG贸易量（2026-07-14）",
+                    "url": "https://www.eia.gov/todayinenergy/index.php/detail.php?id=67625"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Cheniere Energy（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LNG?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Flex LNG（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FLNG?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-15）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2459,10 +3657,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证金融云收入、OCI剩余履约义务、合规成本和安全事件触发条件。",
                 "policyDeviation": "英国监管机构已按公告开始关键第三方监督准备，与 ORI 预判监管成本需从利润中扣除的路径一致；D+1尚无具体资本开支或事故数据。",
                 "sources": [
-                  {"label": "Bank of England、PRA、FCA：关键第三方监管（2026-07-10）", "url": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt"},
-                  {"label": "Yahoo Finance日线：Microsoft（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Oracle（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "Bank of England、PRA、FCA：关键第三方监管（2026-07-10）",
+                    "url": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Microsoft（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Oracle（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2545,10 +3755,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证市政债发行、固定收益承销收入、剩余履约义务和合规成本触发条件。",
                 "policyDeviation": "SEC此次仅澄清注册与记录保存边界，与 ORI 判断融资量仍由利率决定一致；D+1尚无发行量或收入兑现证据。",
                 "sources": [
-                  {"label": "U.S. SEC：Municipal Advisor FAQs更新（2026-07-10）", "url": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors"},
-                  {"label": "Yahoo Finance日线：Morgan Stanley（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Broadridge（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BR?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-13）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "U.S. SEC：Municipal Advisor FAQs更新（2026-07-10）",
+                    "url": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Morgan Stanley（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Broadridge（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BR?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-13）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2631,11 +3853,26 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季净预订、毛利率、客户资本开支和ASM订单触发条件，也不能以单日下跌推翻财报订单事实。",
                 "policyDeviation": "该条为公司经营数据，不涉及政策执行偏离；ASML已上调收入与毛利率指引，实际披露与 ORI 关注订单证据的路径一致，后续仍需连续季度验证。",
                 "sources": [
-                  {"label": "ASML：Q2 2026 financial results（2026-07-15）", "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"},
-                  {"label": "Yahoo Finance日线：ASML ADR（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：ASM International（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASM.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：欧洲斯托克50（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "ASML：Q2 2026 financial results（2026-07-15）",
+                    "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：ASML ADR（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：ASM International（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASM.AS?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：欧洲斯托克50（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2718,10 +3955,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季净流入、基础费率、AUM回撤和CME日均成交量触发条件。",
                 "policyDeviation": "该条为公司财报，不涉及政策执行偏离；BlackRock披露AUM与净流入已沿 ORI 关注资金流的路径提供起点，但持续性尚待后续季度验证。",
                 "sources": [
-                  {"label": "BlackRock：Q2 2026 results（2026-07-15）", "url": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026"},
-                  {"label": "Yahoo Finance日线：BlackRock（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BLK?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：CME Group（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/CME?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "BlackRock：Q2 2026 results（2026-07-15）",
+                    "url": "https://www.blackrock.com/corporate/newsroom/press-releases/article/corporate-one/press-releases/blackrock-reports-second-quarter-2026"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：BlackRock（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BLK?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：CME Group（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CME?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]
@@ -2804,10 +4053,22 @@
                 "reason": "D+1只记录第一反应，不计入命中率。当前价格证据不能验证未来两季运营销售、核心产品指引、诉讼准备金和雅培器械收入触发条件。",
                 "policyDeviation": "该条为公司财报，不涉及政策执行偏离；强生上调指引与 ORI 判断直接受益者已有收入证据一致，行业广度仍需后续财报验证。",
                 "sources": [
-                  {"label": "Johnson & Johnson：Q2 2026 results（2026-07-15）", "url": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx"},
-                  {"label": "Yahoo Finance日线：Johnson & Johnson（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：Abbott（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ABT?period1=1782864000&period2=1784332800&interval=1d&events=history"},
-                  {"label": "Yahoo Finance日线：标普500（2026-07-16）", "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"}
+                  {
+                    "label": "Johnson & Johnson：Q2 2026 results（2026-07-15）",
+                    "url": "https://www.investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q2-2026-results-raises-2026-outlook/default.aspx"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Johnson & Johnson（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：Abbott（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ABT?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance日线：标普500（2026-07-16）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1782864000&period2=1784332800&interval=1d&events=history"
+                  }
                 ]
               }
             ]

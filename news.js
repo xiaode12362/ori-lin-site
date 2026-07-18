@@ -44,20 +44,15 @@
             <dd>${escapeHtml(item.whatItMeans || item.governmentIntent)}</dd>
           </div>
         </dl>
-        <div class="original-news">
-          <span>原新闻</span>
-          <a href="${escapeHtml(item.originalUrl || item.sources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.originalNews || item.title)} ↗</a>
-          <small>${escapeHtml(item.originalSource || item.source || '')} · ${escapeHtml(item.publishedAt || '')}</small>
-        </div>
         <h4 class="stock-section-title">具体影响哪些股票</h4>
         <div class="stock-list">
-          ${(item.stocks || []).map((stock) => `
+          ${(item.stocks || []).length ? (item.stocks || []).map((stock) => `
             <div class="stock-row">
               <div class="stock-name"><strong>${escapeHtml(stock.name)}</strong><span>${escapeHtml(stock.ticker)}</span><em>${escapeHtml(stock.direction || '条件性影响')}</em></div>
               <div class="stock-explain"><b>为什么受影响</b><p>${escapeHtml(stock.reason)}</p><small>证据：${escapeHtml(stock.evidence || stock.reason || '暂无直接证据')}</small></div>
               <div class="stock-check"><p><b>确认信号：</b>${escapeHtml(stock.trigger)}</p><p><b>判断失效：</b>${escapeHtml(stock.invalidCondition || item.downCondition)}</p></div>
             </div>
-          `).join('')}
+          `).join('') : '<p class="tracking-pending">暂时无法映射到具体股票：缺少公司订单、收入或成本敞口的一手证据。</p>'}
         </div>
         <dl class="news-analysis news-simple news-next">
           <div>
@@ -91,6 +86,7 @@
             ` : '<p class="tracking-pending">尚未到复盘节点。ORI 不用当天涨跌冒充预测正确。</p>'}
           </div>
         </details>
+        <h4 class="stock-section-title">一手原文</h4>
         <div class="news-sources">
           ${(item.sources || [{ label: `${item.source} · ${item.publishedAt}`, url: item.sourceUrl }]).map((source) => `<a class="news-source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('')}
         </div>
