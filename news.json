@@ -1,7 +1,1052 @@
 {
-  "updatedAt": "2026-07-18T13:35:00+08:00",
+  "updatedAt": "2026-07-19T13:36:46+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-19",
+      "title": "今天20条：利润、利率和关税具体影响谁",
+      "note": "本期含国内10条、国际10条。国内10条均为7月18日交易所一手披露，处于24小时窗口；国际优先采用7月16日至17日发布的7条材料，其余3条扩展至7月14日至15日，并已保留原发布日期。股票只在公告或直接业务关系可验证时映射，5条宏观与规则新闻因缺少公司级订单或利润证据暂不硬贴股票。方法版本1.0.0：D+1只记录，D+7起判断；没有预算、订单或执行信号，不认定政策兑现。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-19-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "汽车材料",
+          "title": "立中上半年利润预增，车轮和新材料都在放量",
+          "verdict": "利润增长",
+          "verdictTone": "solid",
+          "originalNews": "立中预计上半年净利润5.4亿至5.85亿元。",
+          "originalSource": "立中集团公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431397.pdf",
+          "whatHappened": "立中预计上半年净利润5.4亿至5.85亿元。",
+          "whyThisAction": "公司披露预告，是让投资者提前知道销量、产品结构和利润变化。",
+          "governmentIntent": "公司事实：净利润预计增34.57%至45.78%。ORI-LIN分析：海外产能、高价值车轮和新材料一起贡献增量。",
+          "whatItMeans": "汽车客户采购更多锻造铝轮和新材料，公司产能利用率提高，单位利润随之改善。",
+          "essence": "增长来自真实产销量和产品升级，不只是一次性收益。",
+          "upCondition": "半年报确认利润不少于5.4亿元，且墨西哥工厂继续盈利。",
+          "downCondition": "半年报低于预告下限，或铝价差收窄导致出口利润回落。",
+          "stocks": [
+            {
+              "name": "立中集团",
+              "ticker": "300428.SZ",
+              "direction": "利好",
+              "reason": "公告直接确认产销量、产能利用率和高价值产品占比上升。",
+              "evidence": "立中集团2026年半年度业绩预告",
+              "trigger": "看半年报净利润、锻造轮销量和墨西哥工厂利润。",
+              "invalidCondition": "净利润低于5.4亿元或销量回落时失效。"
+            }
+          ],
+          "watchNext": "盯半年报净利润、锻造铝轮销量和墨西哥工厂产能利用率。",
+          "oriCall": "利润增长有销量支撑；半年报低于5.4亿元时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：立中集团公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431397.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "端侧芯片",
+          "title": "星宸利润预增近六倍，端侧AI芯片量价齐升",
+          "verdict": "高增长",
+          "verdictTone": "solid",
+          "originalNews": "星宸预计上半年净利润8.2亿至9亿元。",
+          "originalSource": "星宸科技公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431396.pdf",
+          "whatHappened": "星宸预计上半年净利润8.2亿至9亿元。",
+          "whyThisAction": "公司披露预告，是说明芯片缺货环境下为何仍能扩大出货。",
+          "governmentIntent": "公司事实：收入预计增86.74%至93.86%。ORI-LIN分析：端侧AI芯片销量和均价同时提高，利润弹性很大。",
+          "whatItMeans": "机器人、车载计算和智能终端客户买得更多，公司高价值芯片占比提高。",
+          "essence": "增长核心是端侧AI进入批量采购，稳定供应链帮助公司接住订单。",
+          "upCondition": "半年报收入至少26.2亿元，SSR670等产品继续批量出货。",
+          "downCondition": "核心元器件短缺限制交付，或下半年订单与均价明显下降。",
+          "stocks": [
+            {
+              "name": "星宸科技",
+              "ticker": "301536.SZ",
+              "direction": "利好",
+              "reason": "公告直接确认产品销量、销售均价和端侧AI芯片占比上升。",
+              "evidence": "星宸科技2026年半年度业绩预告",
+              "trigger": "看半年报收入、毛利率及SSR670出货。",
+              "invalidCondition": "收入低于26.2亿元或高价值芯片占比下降时失效。"
+            }
+          ],
+          "watchNext": "盯半年报收入26.2亿元下限、毛利率和端侧AI芯片出货。",
+          "oriCall": "量价齐升已形成强利润；收入低于26.2亿元时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：星宸科技公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431396.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "智能软件",
+          "title": "中科创达利润预增五成，AI操作系统收入加快",
+          "verdict": "收入增长",
+          "verdictTone": "solid",
+          "originalNews": "中科创达预计上半年净利润2.38亿至2.46亿元。",
+          "originalSource": "中科创达公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431395.pdf",
+          "whatHappened": "中科创达预计上半年净利润2.38亿至2.46亿元。",
+          "whyThisAction": "公司披露预告，是交代全球业务和AI操作系统投入是否变成收入。",
+          "governmentIntent": "公司事实：收入预计增长超过30%。ORI-LIN分析：多终端AI软件项目开始贡献更快收入。",
+          "whatItMeans": "汽车、物联网和智能设备客户的软件采购增加，公司研发投入更容易被新增收入覆盖。",
+          "essence": "AI操作系统从研发阶段进入更多终端和场景，收入增速快于去年。",
+          "upCondition": "半年报收入增速保持30%以上，扣非利润不少于2.18亿元。",
+          "downCondition": "项目验收延迟，或收入增速跌破30%且研发费用继续快速增长。",
+          "stocks": [
+            {
+              "name": "中科创达",
+              "ticker": "300496.SZ",
+              "direction": "利好",
+              "reason": "公告直接确认收入增长超过30%，净利润增长50%至55%。",
+              "evidence": "中科创达2026年半年度业绩预告",
+              "trigger": "看半年报收入增速、扣非利润和AIOS项目验收。",
+              "invalidCondition": "收入增速低于30%或利润低于预告下限时失效。"
+            }
+          ],
+          "watchNext": "盯半年报收入增速、2.18亿元扣非利润下限和项目验收。",
+          "oriCall": "AI软件收入正在提速；收入增速跌破30%时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：中科创达公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431395.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "光通信",
+          "title": "天孚利润预增25%至45%，数据中心仍在买光器件",
+          "verdict": "需求增长",
+          "verdictTone": "solid",
+          "originalNews": "天孚预计上半年净利润11.24亿至13.04亿元。",
+          "originalSource": "天孚通信公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431394.pdf",
+          "whatHappened": "天孚预计上半年净利润11.24亿至13.04亿元。",
+          "whyThisAction": "公司披露预告，是说明AI数据中心需求、缺料和汇率对利润的净影响。",
+          "governmentIntent": "公司事实：高速光器件需求持续增长。ORI-LIN分析：订单仍强，但缺料和汇兑损失压住部分利润。",
+          "whatItMeans": "云厂商扩建数据中心会多买高速光器件，公司收入增加；缺料供应商和汇率变化影响交付利润。",
+          "essence": "AI数据中心建设继续转化为高速光器件采购，但供给约束还没完全消失。",
+          "upCondition": "半年报净利润不少于11.24亿元，且关键物料供给改善。",
+          "downCondition": "光器件订单放缓、关键物料继续短缺或汇兑损失扩大。",
+          "stocks": [
+            {
+              "name": "天孚通信",
+              "ticker": "300394.SZ",
+              "direction": "利好",
+              "reason": "公告直接说明全球数据中心建设拉动高速光器件需求。",
+              "evidence": "天孚通信2026年半年度业绩预告",
+              "trigger": "看半年报收入、毛利率和关键物料供应。",
+              "invalidCondition": "净利润低于11.24亿元或需求转弱时失效。"
+            }
+          ],
+          "watchNext": "盯11.24亿元利润下限、毛利率、关键物料交付和汇兑损失。",
+          "oriCall": "数据中心订单仍强；利润低于11.24亿元时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：天孚通信公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431394.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "电池材料",
+          "title": "当升利润预增逾五成，储能材料开始成为新支柱",
+          "verdict": "销量增长",
+          "verdictTone": "solid",
+          "originalNews": "当升预计上半年净利润4.8亿至5.3亿元。",
+          "originalSource": "当升科技公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431393.pdf",
+          "whatHappened": "当升预计上半年净利润4.8亿至5.3亿元。",
+          "whyThisAction": "公司披露预告，是说明动力、储能和新型电池材料分别贡献多少增长。",
+          "governmentIntent": "公司事实：扣非利润预计增71.15%至91.05%。ORI-LIN分析：储能与数据中心项目带动磷系材料快速上量。",
+          "whatItMeans": "电池厂和数据中心储能项目增加材料采购，公司销量和利润提高；下游客户要承担更多采购支出。",
+          "essence": "利润增长从高镍材料扩展到磷系储能材料，收入来源更分散。",
+          "upCondition": "半年报扣非利润不少于4.3亿元，磷系产品继续向头部客户放量。",
+          "downCondition": "储能项目推迟、材料价格下跌或销量未能覆盖降价。",
+          "stocks": [
+            {
+              "name": "当升科技",
+              "ticker": "300073.SZ",
+              "direction": "利好",
+              "reason": "公告直接确认动力与储能材料销量大增，磷系产品快速上量。",
+              "evidence": "当升科技2026年半年度业绩预告",
+              "trigger": "看半年报材料销量、4.3亿元扣非利润下限和储能客户进度。",
+              "invalidCondition": "扣非利润低于4.3亿元或储能销量回落时失效。"
+            }
+          ],
+          "watchNext": "盯4.3亿元扣非利润下限、磷系材料销量和储能项目交付。",
+          "oriCall": "储能材料已贡献新增量；扣非利润低于4.3亿元时失效。",
+          "sources": [
+            {
+              "label": "一手原文：当升科技公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431393.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "白酒价格",
+          "title": "飞天茅台每瓶涨100元，公司先守价格再看销量",
+          "verdict": "提价",
+          "verdictTone": "solid",
+          "originalNews": "飞天茅台平台零售价和合同价均上调100元。",
+          "originalSource": "贵州茅台公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431263.PDF",
+          "whatHappened": "飞天茅台平台零售价和合同价均上调100元。",
+          "whyThisAction": "公司想在需求变化时维持市场秩序，让出厂量与成交价更匹配。",
+          "governmentIntent": "公司事实：零售价调至1639元，合同价调至1369元。ORI-LIN分析：单瓶收入提高，但销量反应决定真实利润。",
+          "whatItMeans": "经销商和消费者每瓶多付100元，公司收入可能增加；若需求转弱，经销商库存压力会加大。",
+          "essence": "这次提价先提高单价，最终效果要由销量和渠道库存确认。",
+          "upCondition": "提价后批发价稳定、合同执行量没有明显下降。",
+          "downCondition": "实际成交价跌回提价前，或渠道销量和回款明显下降。",
+          "stocks": [
+            {
+              "name": "贵州茅台",
+              "ticker": "600519.SH",
+              "direction": "利好",
+              "reason": "公告直接上调平台零售价和销售合同价各100元。",
+              "evidence": "贵州茅台重大事项公告",
+              "trigger": "看批发价、i茅台销量、合同执行量和渠道库存。",
+              "invalidCondition": "成交价回落或销量下降抵消提价时失效。"
+            }
+          ],
+          "watchNext": "盯1639元零售价、1369元合同价、i茅台销量和渠道库存。",
+          "oriCall": "提价利好单瓶收入；销量明显下降时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：贵州茅台公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431263.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "监管处罚",
+          "title": "新华锦拟被罚455万元，旧财报资金占用被追责",
+          "verdict": "治理风险",
+          "verdictTone": "caution",
+          "originalNews": "新华锦因信披违规拟被罚455万元。",
+          "originalSource": "ST新华锦公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431257.PDF",
+          "whatHappened": "新华锦因信披违规拟被罚455万元。",
+          "whyThisAction": "监管要追责未披露资金占用和虚假记载，降低股东被隐瞒风险。",
+          "governmentIntent": "监管事实：公司拟被罚455万元，相关人员另行处罚。ORI-LIN分析：罚款不大，但财报可信度和治理风险更关键。",
+          "whatItMeans": "公司要支付罚款并加强内控，投资者要承担更高信息不确定性；经营订单暂未被公告认定受影响。",
+          "essence": "核心风险不是455万元，而是历史资金占用暴露出的治理和报表可信度。",
+          "upCondition": "正式处罚不再加重，整改报告和后续审计确认问题已闭环。",
+          "downCondition": "正式处罚加重、再发现资金占用或审计继续出具非标准意见。",
+          "stocks": [
+            {
+              "name": "ST新华锦",
+              "ticker": "600735.SH",
+              "direction": "利空",
+              "reason": "公告直接披露多年资金占用、财报重大遗漏和虚假记载。",
+              "evidence": "ST新华锦行政处罚事先告知书公告",
+              "trigger": "看正式处罚决定、整改报告和下一份审计意见。",
+              "invalidCondition": "正式处罚未加重且审计确认整改完成后，利空判断减弱。"
+            }
+          ],
+          "watchNext": "盯正式处罚金额、整改报告、审计意见和是否再现资金占用。",
+          "oriCall": "治理风险仍高；审计确认彻底整改后判断才失效。",
+          "sources": [
+            {
+              "label": "一手原文：ST新华锦公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431257.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股份回购",
+          "title": "科德拟回购1亿至2亿元，真买入才减少流通卖盘",
+          "verdict": "回购计划",
+          "verdictTone": "solid",
+          "originalNews": "科德拟以不超23.27元回购1亿至2亿元股份。",
+          "originalSource": "科德教育公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431239.PDF",
+          "whatHappened": "科德拟以不超23.27元回购1亿至2亿元股份。",
+          "whyThisAction": "公司想用回购股份做员工激励，并表达对自身价值的信心。",
+          "governmentIntent": "公司事实：回购占总股本约0.93%至1.87%。ORI-LIN分析：执行会减少市场卖盘，但最多1.8亿元来自专项贷款。",
+          "whatItMeans": "公司买股会增加市场需求，但借款回购也增加利息和现金支出；员工未来获得激励股份。",
+          "essence": "回购方案只有在实际成交后才形成买盘，计划本身不等于完成。",
+          "upCondition": "实际回购金额达到1亿元以上，成交价不超过23.27元。",
+          "downCondition": "股价长期高于上限、贷款未落实或公司终止回购。",
+          "stocks": [
+            {
+              "name": "科德教育",
+              "ticker": "300192.SZ",
+              "direction": "利好",
+              "reason": "公告明确1亿至2亿元回购区间，并已获不超1.8亿元贷款承诺。",
+              "evidence": "科德教育股份回购方案",
+              "trigger": "看首次回购、累计金额和贷款合同是否落地。",
+              "invalidCondition": "未达到1亿元下限或回购终止时失效。"
+            }
+          ],
+          "watchNext": "盯首次成交、1亿元最低金额、23.27元上限和贷款合同。",
+          "oriCall": "实际回购形成买盘；未达到1亿元时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：科德教育公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431239.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股东增持",
+          "title": "神马控股股东已买3411万元，后续还需继续增持",
+          "verdict": "增持执行",
+          "verdictTone": "solid",
+          "originalNews": "神马控股股东首次增持549万股。",
+          "originalSource": "神马股份公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431238.PDF",
+          "whatHappened": "神马控股股东首次增持549万股。",
+          "whyThisAction": "控股股东用真金白银表达信心，并按原计划增加持股。",
+          "governmentIntent": "公司事实：首笔增持3411万元，计划总额1.5亿至3亿元。ORI-LIN分析：已形成买盘，但剩余执行量更重要。",
+          "whatItMeans": "控股股东继续买入会增加股票需求；贷款和自有资金承担增持成本，公司经营利润不因此直接增加。",
+          "essence": "这是股东资金行为，不是主营订单改善，不能把增持等同于业绩增长。",
+          "upCondition": "累计增持达到1.5亿元下限，且公司经营现金流没有恶化。",
+          "downCondition": "增持未达下限、计划终止或经营亏损继续扩大。",
+          "stocks": [
+            {
+              "name": "神马股份",
+              "ticker": "600810.SH",
+              "direction": "利好",
+              "reason": "公告确认已成交3411万元，计划下限为1.5亿元。",
+              "evidence": "神马股份控股股东增持进展公告",
+              "trigger": "看累计增持金额和12月28日前是否达到下限。",
+              "invalidCondition": "未达到1.5亿元下限或提前终止时失效。"
+            }
+          ],
+          "watchNext": "盯累计金额、1.5亿元下限、8.5元价格上限和12月28日。",
+          "oriCall": "增持提供真实买盘；未达1.5亿元下限时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：神马股份公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431238.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "资产重组",
+          "title": "美年终止发行股份买资产，扩张计划暂时落空",
+          "verdict": "交易终止",
+          "verdictTone": "caution",
+          "originalNews": "美年终止发行股份购买资产并撤回申请。",
+          "originalSource": "美年健康公告",
+          "publishedAt": "2026-07-18",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431135.PDF",
+          "whatHappened": "美年终止发行股份购买资产并撤回申请。",
+          "whyThisAction": "公司与交易方决定停止原交易，并向投资者解释终止原因和后续安排。",
+          "governmentIntent": "公司事实：董事会已同意终止交易。ORI-LIN分析：不再新增标的业务，也避免继续承担交易和整合成本。",
+          "whatItMeans": "卖方拿不到原定股份或对价，公司不再并表新资产；现有体检业务订单暂不因公告直接变化。",
+          "essence": "交易终止同时失去扩张机会和整合风险，净影响要看标的质量与替代方案。",
+          "upCondition": "公司披露低成本替代扩张方案，且现有业务现金流改善。",
+          "downCondition": "终止产生大额费用，或现有业务增长不足且没有替代方案。",
+          "stocks": [
+            {
+              "name": "美年健康",
+              "ticker": "002044.SZ",
+              "direction": "暂不明确",
+              "reason": "公告只确认交易终止，尚未披露可量化的利润影响。",
+              "evidence": "美年健康终止发行股份购买资产事项公告",
+              "trigger": "看7月24日说明会、终止费用和替代扩张方案。",
+              "invalidCondition": "披露明确财务影响后需重新判断。"
+            }
+          ],
+          "watchNext": "盯7月24日说明会、终止费用、标的规模和替代扩张方案。",
+          "oriCall": "当前影响不明确；披露财务影响后本判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美年健康公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431135.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-01",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "利率政策",
+          "title": "韩国央行加息0.25个百分点，贷款成本继续上升",
+          "verdict": "利率上升",
+          "verdictTone": "caution",
+          "originalNews": "韩国央行把基准利率从2.5%上调至2.75%。",
+          "originalSource": "韩国央行",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11062944&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+          "whatHappened": "韩国央行把基准利率从2.5%上调至2.75%。",
+          "whyThisAction": "央行要压住高于目标的通胀，并防范金融风险继续累积。",
+          "governmentIntent": "官方目标：应对通胀和金融稳定风险。ORI-LIN分析：银行贷款定价可能提高，但借款人还款压力也会上升。",
+          "whatItMeans": "家庭和企业借钱更贵；银行息差可能改善，但坏账也可能增加，净影响要看资产质量。",
+          "essence": "韩国从稳利率转为加息，说明AI出口强劲已带来更持续的物价压力。",
+          "upCondition": "贷款利率跟随上升，银行净息差扩大且逾期率稳定。",
+          "downCondition": "通胀快速回落、经济转弱，或坏账上升抵消息差改善。",
+          "stocks": [
+            {
+              "name": "KB金融",
+              "ticker": "105560.KS",
+              "direction": "暂不明确",
+              "reason": "银行贷款直接受基准利率影响，但更高利率也会增加信用风险。",
+              "evidence": "韩国央行加息决定",
+              "trigger": "看净息差、逾期率和9月利率决定。",
+              "invalidCondition": "若坏账上升快于净息差改善，利好逻辑失效。"
+            },
+            {
+              "name": "新韩金融",
+              "ticker": "055550.KS",
+              "direction": "暂不明确",
+              "reason": "银行资产收益率可能上升，同时借款人还款压力增加。",
+              "evidence": "韩国央行加息决定",
+              "trigger": "看净息差、贷款增速和不良贷款率。",
+              "invalidCondition": "贷款收缩或坏账明显上升时偏利空。"
+            }
+          ],
+          "watchNext": "盯9月利率决定、银行净息差和不良贷款率。",
+          "oriCall": "银行收入和坏账同时受影响；净息差未改善时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：韩国央行",
+              "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11062944&oldMenuNo=400007&programType=newsDataEng&relate=Y"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-02",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "通胀数据",
+          "title": "欧元区通胀降至2.8%，服务价格仍是最大推力",
+          "verdict": "通胀降温",
+          "verdictTone": "neutral",
+          "originalNews": "欧元区6月通胀从3.2%降至2.8%。",
+          "originalSource": "欧盟统计局",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-17072026-ap",
+          "whatHappened": "欧元区6月通胀从3.2%降至2.8%。",
+          "whyThisAction": "统计局公布完整数据，让央行判断涨价压力是否真的在减弱。",
+          "governmentIntent": "官方事实：服务价格贡献1.51个百分点。ORI-LIN分析：总通胀回落，但服务涨价仍限制快速降息。",
+          "whatItMeans": "消费者涨价压力略减；借款人能否少付利息仍要等欧洲央行判断，企业融资成本不会立刻下降。",
+          "essence": "能源和食品涨价放慢，但服务价格黏性说明利率下降空间仍有限。",
+          "upCondition": "7月通胀继续下降，核心通胀也明显接近2%。",
+          "downCondition": "能源再涨或服务通胀重新加速，推迟降息预期。",
+          "stocks": [],
+          "watchNext": "盯7月31日初值、2.4%核心通胀和欧洲央行下一次会议。",
+          "oriCall": "通胀在降但未回到目标；服务通胀再升时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：欧盟统计局",
+              "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-17072026-ap"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-03",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "房地产数据",
+          "title": "美国新屋开工升至142.7万套，建筑需求回暖",
+          "verdict": "开工回升",
+          "verdictTone": "solid",
+          "originalNews": "美国6月新屋开工折年率为142.7万套。",
+          "originalSource": "美国人口普查局",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.census.gov/econwidget/",
+          "whatHappened": "美国6月新屋开工折年率为142.7万套。",
+          "whyThisAction": "政府公布开工数据，是让市场判断住房供给和建筑采购是否恢复。",
+          "governmentIntent": "官方事实：开工环比增长19%。ORI-LIN分析：建材和施工需求回升，但单月波动较大，不能直接推成公司订单。",
+          "whatItMeans": "更多住房开工会增加木材、水泥和施工用工需求；购房人是否接盘仍取决于按揭利率。",
+          "essence": "供给端明显反弹，但需要连续数据确认不是天气或统计波动。",
+          "upCondition": "7月开工继续高于140万套，建筑许可和新屋销售同步上升。",
+          "downCondition": "开工重回120万套附近，或库存上升而销售下降。",
+          "stocks": [],
+          "watchNext": "盯7月开工、建筑许可、新屋销售和30年按揭利率。",
+          "oriCall": "建筑需求短期回升；开工跌回120万套附近时失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国人口普查局",
+              "url": "https://www.census.gov/econwidget/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-04",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "贸易关税",
+          "title": "美国对部分巴西商品加征25%关税，进口成本上升",
+          "verdict": "关税上升",
+          "verdictTone": "caution",
+          "originalNews": "美国决定对部分巴西商品加征25%关税。",
+          "originalSource": "美国贸易代表办公室",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices",
+          "whatHappened": "美国决定对部分巴西商品加征25%关税。",
+          "whyThisAction": "美国要回应其认定的数字贸易、支付、知识产权和乙醇壁垒。",
+          "governmentIntent": "官方目标：迫使巴西改变相关政策。ORI-LIN分析：被列商品进入美国更贵，进口商和巴西出口商分担成本。",
+          "whatItMeans": "美国进口商要多付税或换供应商；巴西出口企业可能降价保订单，但具体公司要等商品清单确认。",
+          "essence": "这是已决定的25%成本变化，不是谈判口号，影响从具体税目生效后开始。",
+          "upCondition": "最终清单覆盖主要出口品，且进口量和订单明显下降。",
+          "downCondition": "两国谈判取消关税，或主要商品被排除在清单外。",
+          "stocks": [],
+          "watchNext": "盯联邦公报商品清单、生效日、巴西对美出口量和谈判结果。",
+          "oriCall": "相关进口成本将上升；关税取消或主要商品获豁免时失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国贸易代表办公室",
+              "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-05",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "自由贸易",
+          "title": "英印自贸协定生效，双边商品开始按更低关税走",
+          "verdict": "关税下降",
+          "verdictTone": "solid",
+          "originalNews": "英国与印度自贸协定已于7月15日生效。",
+          "originalSource": "英国政府",
+          "publishedAt": "2026-07-17",
+          "originalUrl": "https://www.gov.uk/government/news/historic-uk-india-free-trade-agreement-is-now-in-effect",
+          "whatHappened": "英国与印度自贸协定已于7月15日生效。",
+          "whyThisAction": "两国想降低关税和通关障碍，扩大目前480亿英镑的双边贸易。",
+          "governmentIntent": "官方目标：让更多商品低税进入双方市场。ORI-LIN分析：进口商成本下降，出口商能否增单要看原产地规则。",
+          "whatItMeans": "符合规则的英国和印度出口商少交关税，消费者可能买到更便宜商品；不合规企业仍按原税率。",
+          "essence": "协定已生效，真实影响将从报关税率、订单和通关速度体现。",
+          "upCondition": "企业开始使用优惠税率，双边贸易量和重点商品订单上升。",
+          "downCondition": "原产地手续太复杂、利用率低，或非关税壁垒抵消降税。",
+          "stocks": [],
+          "watchNext": "盯优惠税率利用率、季度贸易额和重点商品订单。",
+          "oriCall": "降税已落地；企业很少使用优惠税率时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国政府",
+              "url": "https://www.gov.uk/government/news/historic-uk-india-free-trade-agreement-is-now-in-effect"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-06",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "资本市场监管",
+          "title": "美国证监会拟默认电子送达，金融机构可少寄纸张",
+          "verdict": "合规降本",
+          "verdictTone": "neutral",
+          "originalNews": "美国证监会提议把监管文件电子送达改为默认方式。",
+          "originalSource": "美国证券交易委员会",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors",
+          "whatHappened": "美国证监会提议把监管文件电子送达改为默认方式。",
+          "whyThisAction": "监管想降低纸张、印刷和邮寄成本，同时保留投资者索要纸质版的权利。",
+          "governmentIntent": "官方目标：让披露更及时且更便宜。ORI-LIN分析：发行人和券商合规成本可能下降，但系统改造要先花钱。",
+          "whatItMeans": "券商、基金和上市公司少付邮寄费，IT服务商可能增加改造订单；纸张和印刷需求下降。",
+          "essence": "目前只是征求意见，成本变化要等最终规则和过渡期确定。",
+          "upCondition": "60天意见期后形成最终规则，电子送达成为默认选项。",
+          "downCondition": "提案撤回、范围大幅缩小或纸质退出率很高。",
+          "stocks": [],
+          "watchNext": "盯60天意见期、最终规则、过渡期和纸质退出比例。",
+          "oriCall": "方向是降低寄送成本；提案未转为最终规则时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国证券交易委员会",
+              "url": "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-07",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "天然气库存",
+          "title": "美国天然气库存升至3024亿立方英尺，供应仍宽松",
+          "verdict": "库存偏高",
+          "verdictTone": "caution",
+          "originalNews": "美国天然气库存一周增加410亿立方英尺。",
+          "originalSource": "美国能源信息署",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.eia.gov/dnav/ng/ng_stor_wkly_s1_w.htm",
+          "whatHappened": "美国天然气库存一周增加410亿立方英尺。",
+          "whyThisAction": "能源署公布库存，是让市场判断夏季用气后还剩多少可用供应。",
+          "governmentIntent": "官方事实：库存为3024亿立方英尺。ORI-LIN分析：比五年均值高181亿，天然气涨价空间受到压制。",
+          "whatItMeans": "发电厂和工业用户采购压力较小；天然气生产商售价可能承压，库存运营商则增加储存量。",
+          "essence": "库存高于五年均值，说明短期供应缓冲仍足。",
+          "upCondition": "高温推高发电用气，后续注气量明显低于五年均值。",
+          "downCondition": "库存继续快速增加，或需求下降使库存差进一步扩大。",
+          "stocks": [
+            {
+              "name": "EQT",
+              "ticker": "EQT.N",
+              "direction": "利空",
+              "reason": "公司收入直接受美国天然气价格影响，高库存通常压低现货和期货价格。",
+              "evidence": "美国能源信息署周度库存",
+              "trigger": "看Henry Hub价格、后续注气量和EQT实现售价。",
+              "invalidCondition": "库存差收窄且气价持续上涨时失效。"
+            },
+            {
+              "name": "Coterra Energy",
+              "ticker": "CTRA.N",
+              "direction": "利空",
+              "reason": "公司天然气产量较大，库存宽松会压住销售价格。",
+              "evidence": "美国能源信息署周度库存",
+              "trigger": "看天然气库存、产量指引和实现价格。",
+              "invalidCondition": "高温需求快速消化库存时失效。"
+            }
+          ],
+          "watchNext": "盯下一周注气量、五年均值差和Henry Hub天然气价格。",
+          "oriCall": "库存偏高压制气价；库存差快速收窄时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国能源信息署",
+              "url": "https://www.eia.gov/dnav/ng/ng_stor_wkly_s1_w.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-08",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "数据中心能源",
+          "title": "SLB与Liberty合作，给数据中心配独立电源",
+          "verdict": "新增业务",
+          "verdictTone": "solid",
+          "originalNews": "SLB与Liberty将为数据中心提供模块化设施和发电。",
+          "originalSource": "SLB公司公告",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0714-slb-liberty-energy",
+          "whatHappened": "SLB与Liberty将为数据中心提供模块化设施和发电。",
+          "whyThisAction": "两家公司要解决AI数据中心排队接电太慢、供电可靠性不足的问题。",
+          "governmentIntent": "公司事实：SLB年底累计交付目标超2吉瓦。ORI-LIN分析：AI电力瓶颈为两家公司打开新订单入口。",
+          "whatItMeans": "数据中心开发商向两家公司采购设施和发电系统，能更快开机；传统电网接入压力暂时下降。",
+          "essence": "合作把油服公司的工程和发电能力卖给AI数据中心，是可量化的新业务方向。",
+          "upCondition": "双方签下具体数据中心合同，SLB交付超过2吉瓦且Liberty项目推进。",
+          "downCondition": "联盟没有获得项目订单，或设备交付和许可持续延期。",
+          "stocks": [
+            {
+              "name": "SLB",
+              "ticker": "SLB.N",
+              "direction": "利好",
+              "reason": "公告明确由SLB提供模块化设施、项目执行和全球交付。",
+              "evidence": "SLB与Liberty战略联盟公告",
+              "trigger": "看年底累计2吉瓦交付和新增合同金额。",
+              "invalidCondition": "未获订单或交付低于目标时失效。"
+            },
+            {
+              "name": "Liberty Energy",
+              "ticker": "LBRT.N",
+              "direction": "利好",
+              "reason": "公告明确由Liberty提供模块化发电和智能电力控制。",
+              "evidence": "SLB与Liberty战略联盟公告",
+              "trigger": "看2029年前约3吉瓦项目管线和客户合同。",
+              "invalidCondition": "项目管线未转成合同或许可受阻时失效。"
+            }
+          ],
+          "watchNext": "盯SLB年底2吉瓦交付、Liberty三吉瓦项目管线和订单。",
+          "oriCall": "AI电力瓶颈带来新订单入口；无具体合同落地时失效。",
+          "sources": [
+            {
+              "label": "一手原文：SLB公司公告",
+              "url": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0714-slb-liberty-energy"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-09",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "通信设备",
+          "title": "爱立信收入下滑但毛利率升至48.4%，控成本见效",
+          "verdict": "利润率改善",
+          "verdictTone": "neutral",
+          "originalNews": "爱立信二季度销售527亿瑞典克朗。",
+          "originalSource": "爱立信公司公告",
+          "publishedAt": "2026-07-14",
+          "originalUrl": "https://www.ericsson.com/en/press-releases/2026/7/ericsson-reports-second-quarter-results-2026",
+          "whatHappened": "爱立信二季度销售527亿瑞典克朗。",
+          "whyThisAction": "公司发布财报，是说明运营商采购放缓时能否靠产品组合和控成本守住利润。",
+          "governmentIntent": "公司事实：有机收入降1%，调整后毛利率升至48.4%。ORI-LIN分析：利润率改善，但收入还没恢复增长。",
+          "whatItMeans": "运营商采购仍偏弱，公司靠更高毛利产品和成本控制缓冲；股东获得82亿克朗资本回报。",
+          "essence": "经营效率改善是真的，但需要新订单增长才能形成持续扩张。",
+          "upCondition": "下季度有机收入转正，毛利率保持48%左右且自由现金流回升。",
+          "downCondition": "运营商继续削减资本开支，收入下滑扩大或现金流恶化。",
+          "stocks": [
+            {
+              "name": "爱立信",
+              "ticker": "ERIC.O",
+              "direction": "暂不明确",
+              "reason": "财报显示毛利率改善，但销售和净利润仍同比下降。",
+              "evidence": "爱立信2026年二季度报告",
+              "trigger": "看三季度有机收入、毛利率和自由现金流。",
+              "invalidCondition": "收入转正则偏利好，利润率回落则偏利空。"
+            }
+          ],
+          "watchNext": "盯有机收入、48%毛利率、自由现金流和运营商资本开支。",
+          "oriCall": "控成本有效但需求仍弱；有机收入转正后判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：爱立信公司公告",
+              "url": "https://www.ericsson.com/en/press-releases/2026/7/ericsson-reports-second-quarter-results-2026"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-19-intl-10",
+          "group": "国际重大新闻",
+          "region": "国际",
+          "category": "矿业产量",
+          "title": "力拓铁矿销量增5%，锂产量增20%，供给继续增加",
+          "verdict": "产量增长",
+          "verdictTone": "solid",
+          "originalNews": "力拓二季度全球铁矿销量同比增长5%。",
+          "originalSource": "力拓公司公告",
+          "publishedAt": "2026-07-15",
+          "originalUrl": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-releases-second-quarter-2026-production-results",
+          "whatHappened": "力拓二季度全球铁矿销量同比增长5%。",
+          "whyThisAction": "公司发布产量，是让市场判断矿山扩产是否兑现、单位成本是否下降。",
+          "governmentIntent": "公司事实：锂产量增20%，铜成本指引下调。ORI-LIN分析：销量和成本改善利好收入，但也增加商品供给。",
+          "whatItMeans": "钢厂和电池厂获得更多原料；力拓卖出更多铁矿和锂，并用更低铜成本改善利润。",
+          "essence": "多品种产量增长提高收入基础，真正利润仍由铁矿、铜和锂价格决定。",
+          "upCondition": "全年铁矿销量达到指引，铜成本维持每磅30至50美分。",
+          "downCondition": "商品价格大跌、项目延误或全年销量低于指引。",
+          "stocks": [
+            {
+              "name": "力拓",
+              "ticker": "RIO.L",
+              "direction": "利好",
+              "reason": "公告直接确认铁矿销量增长、锂产量增长和铜成本指引下调。",
+              "evidence": "力拓2026年二季度生产报告",
+              "trigger": "看全年铁矿销量、铜成本和锂产量指引。",
+              "invalidCondition": "销量低于指引或商品跌价抵消增量时失效。"
+            }
+          ],
+          "watchNext": "盯全年铁矿销量343至366百万吨、铜成本和锂产量。",
+          "oriCall": "量增和降本形成支撑；商品跌价抵消增量时失效。",
+          "sources": [
+            {
+              "label": "一手原文：力拓公司公告",
+              "url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-releases-second-quarter-2026-production-results"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-19",
+            "baselineAt": "2026-07-19",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-20",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-18",
       "title": "今天20条：油价、订单和利润具体怎么变",
