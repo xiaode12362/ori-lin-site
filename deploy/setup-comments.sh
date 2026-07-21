@@ -32,13 +32,13 @@ systemctl daemon-reload
 systemctl enable ori-lin-comments
 systemctl restart ori-lin-comments
 
-if ! grep -q "location /api/comments" /etc/nginx/conf.d/ori-lin-site.conf; then
+if ! grep -q "location /api/" /etc/nginx/conf.d/ori-lin-site.conf; then
   python3 - <<'PY'
 from pathlib import Path
 path = Path("/etc/nginx/conf.d/ori-lin-site.conf")
 text = path.read_text()
 needle = "    location / {\n"
-insert = """    location /api/comments {\n        proxy_pass http://127.0.0.1:3100;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n    }\n\n"""
+insert = """    location /api/ {\n        proxy_pass http://127.0.0.1:3100;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n    }\n\n"""
 text = text.replace(needle, insert + needle)
 path.write_text(text)
 PY

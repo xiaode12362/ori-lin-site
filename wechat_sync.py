@@ -30,13 +30,9 @@ from datetime import datetime
 # IPv6 is disabled at OS level (sysctl), so regular requests will use IPv4
 import requests as HTTP
 
-# Try loading .env file; auto-recreate if missing (git pull may delete it)
+# Load credentials from a local .env file when present. Secrets must never be
+# embedded in source control or recreated from hard-coded defaults.
 _env_path = Path(__file__).parent / ".env"
-_DEFAULT_APPID = "wx9c7ec502f5b0f3ad"
-_DEFAULT_SECRET = "46e5038f4f22414ff9c78d04a5f2dc81"
-if not _env_path.exists():
-    _env_path.write_text(f"WECHAT_APPID={_DEFAULT_APPID}\nWECHAT_APPSECRET={_DEFAULT_SECRET}\n", encoding="utf-8")
-    os.chmod(_env_path, 0o600)
 if _env_path.exists():
     for line in _env_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
@@ -45,8 +41,8 @@ if _env_path.exists():
             os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 # ===== Configuration =====
-WECHAT_APPID = os.environ.get("WECHAT_APPID", _DEFAULT_APPID)
-WECHAT_APPSECRET = os.environ.get("WECHAT_APPSECRET", _DEFAULT_SECRET)
+WECHAT_APPID = os.environ.get("WECHAT_APPID", "")
+WECHAT_APPSECRET = os.environ.get("WECHAT_APPSECRET", "")
 SITE_DIR = Path(__file__).parent
 WECHAT_API = "https://api.weixin.qq.com/cgi-bin"
 LOG_FILE = SITE_DIR / "wechat_sync.log"
@@ -347,7 +343,7 @@ def upload_cover_image(access_token, image_path):
     return data["media_id"]
 
 
-def create_draft(access_token, title, content, thumb_media_id, digest=""):
+def create_draft(access_token, title, content, thumb_media_id, digest="", source_url="https://www.ori-lin.com/"):
     """Create a draft article in WeChat MP."""
     url = f"{WECHAT_API}/draft/add"
     params = {"access_token": access_token}
@@ -361,7 +357,7 @@ def create_draft(access_token, title, content, thumb_media_id, digest=""):
                 "author": "ORI-LIN",
                 "digest": digest,
                 "content": content,
-                "content_source_url": "https://www.ori-lin.com",
+                "content_source_url": source_url,
                 "thumb_media_id": thumb_media_id,
                 "need_open_comment": 1,
                 "only_fans_can_comment": 0,
@@ -383,6 +379,27 @@ def publish_draft(access_token, media_id):
     if data.get("errcode", 0) != 0:
         raise Exception(f"Failed to publish: {json.dumps(data, ensure_ascii=False)}")
     return data
+
+
+def find_remote_article(access_token, title):
+    """Avoid creating the same titled article twice during automatic draft sync."""
+    expected = truncate_utf8(title, 64)
+    for endpoint, status in (("draft/batchget", "draft"), ("freepublish/batchget", "published")):
+        data = post_json(
+            f"{WECHAT_API}/{endpoint}",
+            {"access_token": access_token},
+            {"offset": 0, "count": 20, "no_content": 1},
+        )
+        if data.get("errcode", 0):
+            raise Exception(
+                f"Failed to check existing WeChat articles: "
+                f"{json.dumps(data, ensure_ascii=False)}"
+            )
+        for item in data.get("item", []):
+            articles = item.get("content", {}).get("news_item", [])
+            if any(article.get("title") == expected for article in articles):
+                return status
+    return None
 
 
 def find_latest_article():
@@ -469,6 +486,12 @@ def main():
     access_token = get_access_token()
     log("Access token obtained")
 
+    if draft_only:
+        remote_status = find_remote_article(access_token, article["title"])
+        if remote_status:
+            log(f"Article already exists remotely ({remote_status}); skipping duplicate draft")
+            return
+
     # Upload cover image
     log("Uploading cover image...")
     if cover_path.exists():
@@ -481,8 +504,14 @@ def main():
     # Create draft
     log("Creating draft article...")
     digest = article["deck"][:120] if article["deck"] else article["title"]
+    day_match = re.search(r"day-(\d+)", article_file.stem)
+    campaign = f"day{int(day_match.group(1)):03d}" if day_match else "latest"
+    source_url = (
+        f"https://www.ori-lin.com/{article_file.name}"
+        f"?utm_source=wechat_mp&utm_medium=article&utm_campaign={campaign}"
+    )
     draft_media_id = create_draft(
-        access_token, article["title"], wechat_html, thumb_media_id, digest
+        access_token, article["title"], wechat_html, thumb_media_id, digest, source_url
     )
     log(f"Draft created: {draft_media_id}")
 

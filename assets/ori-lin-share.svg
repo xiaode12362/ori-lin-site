@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <circle cx="78" cy="72" r="30" fill="#151916"/>
+  <text x="78" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#f3f0e8">OL</text>
+  <text x="128" y="80" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#151916">ORI-LIN</text>
+  <line x1="62" y1="120" x2="1138" y2="120" stroke="#d6d4ca"/>
+  <text x="72" y="217" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#b63a28">每天一句防坑话</text>
+  <text x="68" y="348" font-family="SimSun, Songti SC, serif" font-size="86" font-weight="700" fill="#151916">在噪音里，</text>
+  <text x="68" y="458" font-family="SimSun, Songti SC, serif" font-size="86" font-weight="700" fill="#b63a28">保住你的判断。</text>
+  <text x="72" y="548" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" fill="#626860">不转述热闹，只把复杂商业局面翻译成可以带走的判断。</text>
+  <text x="1128" y="584" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#151916">ori-lin.com</text>
+</svg>

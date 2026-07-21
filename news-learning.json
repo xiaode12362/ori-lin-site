@@ -1,0 +1,31 @@
+{
+  "updatedAt": "2026-07-17T19:57:11+08:00",
+  "methodologyVersion": "1.0.0",
+  "minimumIndependentSamples": 3,
+  "scoreFromWindow": "D+7",
+  "activeRules": [
+    {
+      "id": "rule-001",
+      "scope": "全部",
+      "rule": "D+1 只记录市场第一反应，不计入命中率；D+7 起才判断联动是否成立。",
+      "reason": "一天涨跌容易被大盘、情绪和提前交易干扰。",
+      "confidence": "方法规则"
+    },
+    {
+      "id": "rule-002",
+      "scope": "政策新闻",
+      "rule": "没有预算、招标、订单、利率或监管执行等中间信号，不把主题上涨认定为政策兑现。",
+      "reason": "把新闻热度与真实资金落地分开。",
+      "confidence": "方法规则"
+    }
+  ],
+  "candidateRules": [],
+  "changes": [],
+  "metrics": {
+    "eligibleReviews": 0,
+    "correct": 0,
+    "partlyCorrect": 0,
+    "wrong": 0,
+    "insufficientEvidence": 0
+  }
+}
