@@ -1,7 +1,1033 @@
 {
-  "updatedAt": "2026-07-19T23:55:00+08:00",
+  "updatedAt": "2026-07-21T13:57:50+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-21",
+      "title": "今天20条：订单、利润、关税与AI合规具体影响谁",
+      "note": "本期国内10条、国际10条，全部采用2026年7月20日发布或披露的一手材料，处于24小时优先窗口。新闻事实、机构目标和ORI-LIN分析已分开；国内10条均有公告直接对应股票，国际10条中4条有公司级直接证据，其余6条因尚无公司名单、订单或成本数据不硬贴股票。方法版本1.0.0：D+1只记录，D+7起判断；没有预算、订单或执行信号，不认定政策兑现。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-21-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "算力服务",
+          "title": "扬电签下8.6亿元算力服务合同，首批8月底交付",
+          "verdict": "订单待交付",
+          "verdictTone": "solid",
+          "originalNews": "扬电子公司签下8.6亿元、60个月算力服务合同。",
+          "originalSource": "扬电科技公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225432525.PDF",
+          "whatHappened": "扬电子公司签下8.6亿元、60个月算力服务合同。",
+          "whyThisAction": "公司要把传统电力设备之外的新算力业务做成第二条收入来源。",
+          "governmentIntent": "公司事实：合同上限128个节点。ORI-LIN分析：先采购设备再收费，收入确定性高于利润确定性。",
+          "whatItMeans": "客户获得长期算力，扬电要先花钱买设备；能否赚钱取决于融资成本、交付和99.5%可用率。",
+          "essence": "67.22%营收规模的合同很大，但首批验收和资金成本才决定利润。",
+          "upCondition": "8月31日前32个节点验收，后续订单继续落地。",
+          "downCondition": "首批未按时验收、融资受阻或服务可用率不达标。",
+          "stocks": [
+            {
+              "name": "扬电科技",
+              "ticker": "301012.SZ",
+              "direction": "利好",
+              "reason": "公司是合同直接履约方，服务费按实际节点逐月确认。",
+              "evidence": "公司重大合同公告：总额8.59776亿元，首批2.14944亿元",
+              "trigger": "首批32个节点按期验收并开始计费",
+              "invalidCondition": "8月31日前未验收或毛利被融资和运维成本吞噬"
+            }
+          ],
+          "watchNext": "8月31日首批验收、设备采购额和新增有息负债。",
+          "oriCall": "这是大订单，不是已赚利润；首批交付失败时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：扬电科技公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225432525.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "汽车设备",
+          "title": "罗博特科获1.23亿元车载摄像头整线订单",
+          "verdict": "订单增量",
+          "verdictTone": "solid",
+          "originalNews": "罗博特科子公司获1.23亿元车载摄像头设备订单。",
+          "originalSource": "罗博特科公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434160.PDF",
+          "whatHappened": "罗博特科子公司获1.23亿元车载摄像头设备订单。",
+          "whyThisAction": "公司披露大额订单，让投资者判断汽车智能化设备能否形成新增长。",
+          "governmentIntent": "公司事实：订单约占2025年营收12.94%。ORI-LIN分析：老客户复购比一次性试单更有验证力。",
+          "whatItMeans": "客户增加车载摄像头装配测试产线，罗博特科获得设备收入；交付延期会推迟确认。",
+          "essence": "复购证明设备已通过客户使用验证，但收入仍要等交付验收。",
+          "upCondition": "合同按计划交付，2026年及以后确认收入。",
+          "downCondition": "客户取消、验收推迟或欧元汇率明显不利。",
+          "stocks": [
+            {
+              "name": "罗博特科",
+              "ticker": "300757.SZ",
+              "direction": "利好",
+              "reason": "全资子公司ficonTEC直接取得车载摄像头整线订单。",
+              "evidence": "公司公告：1588万欧元，约占2025年营收12.94%",
+              "trigger": "定期报告披露交付验收和收入确认",
+              "invalidCondition": "合同未全面履行或确认收入显著低于1.23亿元"
+            }
+          ],
+          "watchNext": "交付验收进度、欧元收入折算额和设备毛利率。",
+          "oriCall": "老客户复购支持订单判断；无法验收时失效。",
+          "sources": [
+            {
+              "label": "一手原文：罗博特科公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434160.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "电网设备",
+          "title": "特锐德预中标国网1.53亿元开关设备",
+          "verdict": "候选中标",
+          "verdictTone": "watch",
+          "originalNews": "特锐德及子公司预中标国网1.53亿元设备项目。",
+          "originalSource": "特锐德公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433219.PDF",
+          "whatHappened": "特锐德及子公司预中标国网1.53亿元设备项目。",
+          "whyThisAction": "国家电网采购组合电器和开关柜，用于新建及改造输变电工程。",
+          "governmentIntent": "官方事实：公司是推荐候选人。ORI-LIN分析：尚未拿到通知书，不能把预中标当收入。",
+          "whatItMeans": "国网增加设备采购会给特锐德带来订单，但最终金额、交付节奏和毛利仍未锁定。",
+          "essence": "订单方向已出现，业绩兑现要经过通知书、合同和交付三道关。",
+          "upCondition": "收到中标通知书并签约，合同额接近1.525亿元。",
+          "downCondition": "未正式中标、金额缩减或交付毛利过低。",
+          "stocks": [
+            {
+              "name": "特锐德",
+              "ticker": "300001.SZ",
+              "direction": "利好",
+              "reason": "公司和全资子公司是国网项目推荐中标候选人。",
+              "evidence": "公司提示性公告：预中标约1.525179亿元",
+              "trigger": "正式中标通知书、合同金额和交付公告",
+              "invalidCondition": "未收到通知书或最终金额明显缩水"
+            }
+          ],
+          "watchNext": "正式通知书、合同金额和组合电器交付周期。",
+          "oriCall": "预中标利好订单储备；未转正式合同则失效。",
+          "sources": [
+            {
+              "label": "一手原文：特锐德公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433219.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "特高压设备",
+          "title": "金冠电气预中标7482万元国网项目",
+          "verdict": "候选中标",
+          "verdictTone": "watch",
+          "originalNews": "金冠电气预中标国网避雷器和开关柜7482万元。",
+          "originalSource": "金冠电气公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431430.PDF",
+          "whatHappened": "金冠电气预中标国网避雷器和开关柜7482万元。",
+          "whyThisAction": "国网为特高压和输变电工程采购保护设备，保障高压线路稳定运行。",
+          "governmentIntent": "官方事实：项目约占2025年营收9.06%。ORI-LIN分析：规模足以影响收入，但仍在候选期。",
+          "whatItMeans": "金冠电气可能增加避雷器和开关柜订单；若正式签约，未来交付收入更可见。",
+          "essence": "特高压订单直接对应公司产品，关键是从候选名单转成合同。",
+          "upCondition": "收到正式通知书并按7481.51万元附近签约。",
+          "downCondition": "候选资格变化、合同金额下降或项目延期。",
+          "stocks": [
+            {
+              "name": "金冠电气",
+              "ticker": "688517.SH",
+              "direction": "利好",
+              "reason": "公司及子公司直接预中标国网三个设备标包。",
+              "evidence": "公司公告：合计7481.51万元，占2025年营收9.06%",
+              "trigger": "正式中标公告和合同交付计划",
+              "invalidCondition": "未正式签约或最终金额低于公告规模"
+            }
+          ],
+          "watchNext": "中标通知书、签约额和特高压项目开工节点。",
+          "oriCall": "订单占比较高；未签正式合同则判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：金冠电气公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431430.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "通信设备",
+          "title": "平治信息预中标中国移动1.84亿元家庭网关",
+          "verdict": "候选中标",
+          "verdictTone": "watch",
+          "originalNews": "平治子公司预中标移动家庭网关，金额约1.84亿元。",
+          "originalSource": "平治信息公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431449.PDF",
+          "whatHappened": "平治子公司预中标移动家庭网关，金额约1.84亿元。",
+          "whyThisAction": "中国移动集中采购家庭上网盒子，统一满足宽带升级和10G接入需求。",
+          "governmentIntent": "官方事实：覆盖GPON和10G GPON。ORI-LIN分析：中标份额明确后才能测算真实利润。",
+          "whatItMeans": "运营商采购会增加兆能讯通出货，但网关竞价激烈，收入增加不等于毛利同步增加。",
+          "essence": "订单直接，但仍处于候选公示，且利润取决于最终份额和单价。",
+          "upCondition": "收到通知书并签约，含税金额接近1.84亿元。",
+          "downCondition": "未中标、份额下调或中标单价导致毛利过低。",
+          "stocks": [
+            {
+              "name": "平治信息",
+              "ticker": "300571.SZ",
+              "direction": "利好",
+              "reason": "全资子公司是中国移动两个标包的候选人。",
+              "evidence": "公司公告：预中标含税约1.84亿元",
+              "trigger": "正式通知书、份额、合同单价",
+              "invalidCondition": "未获通知书或最终金额明显低于1.84亿元"
+            }
+          ],
+          "watchNext": "公示结果、正式合同、GPON与10G GPON出货量。",
+          "oriCall": "订单可见度提升；未转正式中标时失效。",
+          "sources": [
+            {
+              "label": "一手原文：平治信息公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431449.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "营养健康",
+          "title": "仙乐健康拟投不超3800万美元扩泰国产能",
+          "verdict": "产能扩张",
+          "verdictTone": "watch",
+          "originalNews": "仙乐健康拟投不超3800万美元建泰国二期工厂。",
+          "originalSource": "仙乐健康公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434165.PDF",
+          "whatHappened": "仙乐健康拟投不超3800万美元建泰国二期工厂。",
+          "whyThisAction": "公司要承接东南亚和澳新订单，并缓解国内软胶囊等产能紧张。",
+          "governmentIntent": "公司事实：项目需中泰两地审批。ORI-LIN分析：先是资本开支，订单和产能利用率决定回报。",
+          "whatItMeans": "设备和建设供应商先获支出，仙乐短期现金流承压；投产后若订单充足可降低贸易风险。",
+          "essence": "海外工厂是供应链保险，但没有客户锁单前不能直接算成利润。",
+          "upCondition": "取得审批并披露客户订单、开工和投产时间。",
+          "downCondition": "审批未过、建设超支或投产后利用率低。",
+          "stocks": [
+            {
+              "name": "仙乐健康",
+              "ticker": "300791.SZ",
+              "direction": "暂不明确",
+              "reason": "公司直接承担最高3800万美元投资，短期支出与长期增收并存。",
+              "evidence": "公司泰国生产基地二期公告",
+              "trigger": "审批、开工、投产和新增订单",
+              "invalidCondition": "项目取消或投产后利用率长期低于计划"
+            }
+          ],
+          "watchNext": "境外投资批复、实际投资额、投产日期和锁定订单。",
+          "oriCall": "战略方向合理但先花钱；审批或订单落空时失效。",
+          "sources": [
+            {
+              "label": "一手原文：仙乐健康公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434165.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股份回购",
+          "title": "可孚医疗拟用1亿至2亿元回购并注销",
+          "verdict": "减少股本",
+          "verdictTone": "solid",
+          "originalNews": "可孚医疗拟回购1亿至2亿元股份并全部注销。",
+          "originalSource": "可孚医疗公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434044.PDF",
+          "whatHappened": "可孚医疗拟回购1亿至2亿元股份并全部注销。",
+          "whyThisAction": "公司希望用真金白银减少流通股本并稳定投资者对估值的信心。",
+          "governmentIntent": "公司事实：上限69.66元/股。ORI-LIN分析：注销能抬高每股指标，但要看实际买入额。",
+          "whatItMeans": "股东持有的每股利润份额可能上升，公司现金减少；回购价过高会削弱资金效率。",
+          "essence": "注销型回购比员工激励型更直接减少股本，但公告额度不是完成额度。",
+          "upCondition": "实际回购达到1亿元以上并完成注销。",
+          "downCondition": "股价长期高于69.66元、方案终止或仅少量执行。",
+          "stocks": [
+            {
+              "name": "可孚医疗",
+              "ticker": "301087.SZ",
+              "direction": "利好",
+              "reason": "注销回购直接减少总股本，提升每股指标。",
+              "evidence": "回购报告书：1亿至2亿元，预计0.61%至1.22%股本",
+              "trigger": "首次回购、累计金额和注销完成公告",
+              "invalidCondition": "未达到1亿元下限或未完成注销"
+            }
+          ],
+          "watchNext": "首次买入日、累计回购额、均价和注销登记。",
+          "oriCall": "注销回购有实质支撑；未达到金额下限时失效。",
+          "sources": [
+            {
+              "label": "一手原文：可孚医疗公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434044.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "股份回购",
+          "title": "智飞生物拟用1.5亿至3亿元回购用于员工激励",
+          "verdict": "激励型回购",
+          "verdictTone": "watch",
+          "originalNews": "智飞生物拟回购1.5亿至3亿元用于员工激励。",
+          "originalSource": "智飞生物公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433324.PDF",
+          "whatHappened": "智飞生物拟回购1.5亿至3亿元用于员工激励。",
+          "whyThisAction": "公司想绑定核心员工并传递对长期经营的信心，降低人才流失。",
+          "governmentIntent": "公司事实：回购上限18.22元/股。ORI-LIN分析：股份不注销，激励效果取决于考核条件。",
+          "whatItMeans": "公司先付现金买股，员工未来可能获得股份；股东是否受益要看激励带来的利润增量。",
+          "essence": "这是人才工具，不是直接减少股本，不能等同注销型回购。",
+          "upCondition": "回购达到1.5亿元并公布严格业绩考核。",
+          "downCondition": "回购不足下限、考核宽松或三年内未实施激励。",
+          "stocks": [
+            {
+              "name": "智飞生物",
+              "ticker": "300122.SZ",
+              "direction": "暂不明确",
+              "reason": "公司会形成真实买盘，但股份用于激励而非注销。",
+              "evidence": "公司回购报告书：1.5亿至3亿元，价格上限18.22元",
+              "trigger": "累计回购额及员工持股考核指标",
+              "invalidCondition": "未达到1.5亿元或激励没有带来业绩改善"
+            }
+          ],
+          "watchNext": "累计金额、回购均价、激励对象和利润考核线。",
+          "oriCall": "短期有买盘，长期看考核；回购不达下限时失效。",
+          "sources": [
+            {
+              "label": "一手原文：智飞生物公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433324.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "光模块",
+          "title": "新易盛上半年净利预增至70亿至80亿元",
+          "verdict": "利润高增",
+          "verdictTone": "solid",
+          "originalNews": "新易盛预计上半年净利70亿至80亿元。",
+          "originalSource": "新易盛公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431444.pdf",
+          "whatHappened": "新易盛预计上半年净利70亿至80亿元。",
+          "whyThisAction": "公司提前披露业绩，让市场核对人工智能算力投入是否已转成光模块利润。",
+          "governmentIntent": "公司事实：净利同比增77.56%至102.93%。ORI-LIN分析：产品结构优化说明高速产品占比提升。",
+          "whatItMeans": "云厂商扩建算力中心会增加高速光模块采购，新易盛直接受益；后续要防客户资本开支转弱。",
+          "essence": "增长来自AI算力需求和产品升级，扣非利润接近净利润，质量较高。",
+          "upCondition": "半年报净利不低于70亿元且高速产品需求延续。",
+          "downCondition": "半年报低于预告下限或主要客户下调算力资本开支。",
+          "stocks": [
+            {
+              "name": "新易盛",
+              "ticker": "300502.SZ",
+              "direction": "利好",
+              "reason": "公司业绩预告直接确认AI算力和产品结构带来利润增长。",
+              "evidence": "公司公告：净利70亿至80亿元，扣非69.81亿至79.81亿元",
+              "trigger": "半年报净利、毛利率和800G/1.6T收入",
+              "invalidCondition": "净利低于70亿元或高速产品毛利明显下降"
+            }
+          ],
+          "watchNext": "半年报净利、毛利率、800G及1.6T出货。",
+          "oriCall": "利润增长有扣非支撑；低于70亿元时失效。",
+          "sources": [
+            {
+              "label": "一手原文：新易盛公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431444.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "电子铜箔",
+          "title": "铜冠铜箔上半年净利预增近五至六倍",
+          "verdict": "利润高增",
+          "verdictTone": "solid",
+          "originalNews": "铜冠铜箔预计上半年净利2.05亿至2.25亿元。",
+          "originalSource": "铜冠铜箔公告",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431480.pdf",
+          "whatHappened": "铜冠铜箔预计上半年净利2.05亿至2.25亿元。",
+          "whyThisAction": "公司披露高端铜箔供需和降本结果，让市场判断利润修复是否可持续。",
+          "governmentIntent": "公司事实：高频高速铜箔供不应求。ORI-LIN分析：产品占比和加工费同时改善，比单纯涨价更扎实。",
+          "whatItMeans": "AI服务器基板厂要采购更多高端铜箔，铜冠销量和加工费上升；普通铜箔同行未必同享。",
+          "essence": "利润增长来自高端产品放量和成本下降，不能外推到所有铜箔。",
+          "upCondition": "半年报净利不低于2.05亿元且高频高速铜箔销量继续增。",
+          "downCondition": "净利低于下限、高端铜箔降价或供需转松。",
+          "stocks": [
+            {
+              "name": "铜冠铜箔",
+              "ticker": "301217.SZ",
+              "direction": "利好",
+              "reason": "公司直接披露高端铜箔销量、加工费和毛利改善。",
+              "evidence": "公司公告：净利同比增486.49%至543.70%",
+              "trigger": "半年报高频高速铜箔销量、加工费和毛利率",
+              "invalidCondition": "净利低于2.05亿元或高端产品毛利回落"
+            }
+          ],
+          "watchNext": "高频高速铜箔销量、加工费、毛利率和客户扩产。",
+          "oriCall": "高端产品驱动利润；净利低于2.05亿元时失效。",
+          "sources": [
+            {
+              "label": "一手原文：铜冠铜箔公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431480.pdf"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-01",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "欧盟产品合规",
+          "title": "欧盟数字产品护照登记系统上线测试",
+          "verdict": "合规成本上升",
+          "verdictTone": "watch",
+          "originalNews": "欧盟上线数字产品护照登记系统和测试环境。",
+          "originalSource": "欧盟委员会",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en",
+          "whatHappened": "欧盟上线数字产品护照登记系统和测试环境。",
+          "whyThisAction": "欧盟要统一追踪商品材料、来源和维修回收信息，减少供应链信息缺口。",
+          "governmentIntent": "官方目标：提高透明度和合规。ORI-LIN分析：出口商要补数据系统，先增加成本再换准入。",
+          "whatItMeans": "向欧盟卖受管商品的企业要登记唯一标识和资料；软件、检测和追溯服务商可能增加订单。",
+          "essence": "先影响合规流程，不等于立刻改变销量；首批大型电池节点是2027年2月18日。",
+          "upCondition": "欧盟按期开放正式登记并启动首批产品强制执行。",
+          "downCondition": "实施延期、范围缩小或企业现有系统可零成本满足。",
+          "stocks": [],
+          "watchNext": "2027年2月18日、大型电池细则和企业登记数量。",
+          "oriCall": "这是准入成本上升；实施延期时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：欧盟委员会",
+              "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-02",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "平台监管",
+          "title": "欧盟因假冒和不安全商品风险罚AliExpress 5.5亿欧元",
+          "verdict": "直接罚款",
+          "verdictTone": "caution",
+          "originalNews": "欧盟以平台风控不足罚AliExpress 5.5亿欧元。",
+          "originalSource": "欧盟委员会",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+          "whatHappened": "欧盟以平台风控不足罚AliExpress 5.5亿欧元。",
+          "whyThisAction": "欧盟要迫使大型平台更主动清理假货、不安全商品和非法商品。",
+          "governmentIntent": "官方事实：罚款并要求整改。ORI-LIN分析：除一次性罚款外，审核和商家管理成本会长期增加。",
+          "whatItMeans": "平台要多花钱做风控，问题商家流量会下降；合规商家竞争环境可能改善。",
+          "essence": "5.5亿欧元是确定成本，后续整改才决定长期利润影响。",
+          "upCondition": "平台完成整改且不再产生周期性罚款。",
+          "downCondition": "继续违规导致追加罚金或欧盟业务限制。",
+          "stocks": [
+            {
+              "name": "阿里巴巴",
+              "ticker": "9988.HK",
+              "direction": "利空",
+              "reason": "AliExpress由阿里巴巴运营，罚款和整改成本直接落在集团。",
+              "evidence": "欧盟委员会处罚决定：5.5亿欧元",
+              "trigger": "公司披露计提金额及整改完成",
+              "invalidCondition": "罚款被法院撤销或最终计提显著低于5.5亿欧元"
+            }
+          ],
+          "watchNext": "财报计提额、申诉进展、整改期限和追加罚款。",
+          "oriCall": "罚款和整改直接压成本；处罚撤销时失效。",
+          "sources": [
+            {
+              "label": "一手原文：欧盟委员会",
+              "url": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-03",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "人工智能监管",
+          "title": "欧盟发布AI内容标识指引，8月2日起执行",
+          "verdict": "规则落地",
+          "verdictTone": "watch",
+          "originalNews": "欧盟发布AI透明度指引，8月2日起适用。",
+          "originalSource": "欧盟委员会",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+          "whatHappened": "欧盟发布AI透明度指引，8月2日起适用。",
+          "whyThisAction": "欧盟要让用户知道自己在和AI互动，并能识别AI生成或篡改内容。",
+          "governmentIntent": "官方目标：减少欺骗和操纵。ORI-LIN分析：模型和内容平台要新增机器可读标记与提示。",
+          "whatItMeans": "AI供应商要改产品和审核流程，合规成本上升；检测、内容溯源工具可能新增需求。",
+          "essence": "这是明确的产品改造期限，但尚无公司级成本数据，暂不硬贴股票。",
+          "upCondition": "8月2日起执法并公布首批检查或处罚案例。",
+          "downCondition": "执行延期、豁免扩大或技术标准大幅放宽。",
+          "stocks": [],
+          "watchNext": "8月2日执行、机器标记标准和首批执法决定。",
+          "oriCall": "AI产品合规成本确定上升；执行延期时失效。",
+          "sources": [
+            {
+              "label": "一手原文：欧盟委员会",
+              "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-04",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "云计算",
+          "title": "微软Azure扩大采用AMD新一代AI与高性能计算芯片",
+          "verdict": "订单方向明确",
+          "verdictTone": "solid",
+          "originalNews": "微软Azure宣布扩充AMD处理器和AI加速器实例。",
+          "originalSource": "微软官方博客",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+          "whatHappened": "微软Azure宣布扩充AMD处理器和AI加速器实例。",
+          "whyThisAction": "微软要用更多专用芯片匹配AI推理、数据处理和科学计算，降低单一架构限制。",
+          "governmentIntent": "公司事实：新实例含AMD EPYC和MI455X。ORI-LIN分析：AMD获得云端采用，微软增加资本开支。",
+          "whatItMeans": "AMD可能增加数据中心芯片订单；微软客户可获得更多算力选择，但折旧和电力成本也会增加。",
+          "essence": "产品进入Azure是采用信号，真正利润仍看实例上线和客户使用率。",
+          "upCondition": "新实例按期商用并在AMD财报体现数据中心收入增长。",
+          "downCondition": "上线延期、客户利用率低或微软缩减相关采购。",
+          "stocks": [
+            {
+              "name": "AMD",
+              "ticker": "AMD",
+              "direction": "利好",
+              "reason": "AMD的新CPU和AI加速器被Azure明确采用。",
+              "evidence": "微软官方公告点名6代EPYC与MI455X",
+              "trigger": "实例商用时间及AMD数据中心收入",
+              "invalidCondition": "Azure延期或AMD数据中心收入未体现增量"
+            },
+            {
+              "name": "微软",
+              "ticker": "MSFT",
+              "direction": "暂不明确",
+              "reason": "新增实例扩大云服务能力，同时增加服务器和电力资本开支。",
+              "evidence": "微软官方Azure基础设施公告",
+              "trigger": "Azure新实例利用率和云业务利润率",
+              "invalidCondition": "利用率低导致折旧拖累利润"
+            }
+          ],
+          "watchNext": "实例上线日期、Azure利用率、AMD数据中心收入。",
+          "oriCall": "AMD获采用利好；实例不上线或无收入增量时失效。",
+          "sources": [
+            {
+              "label": "一手原文：微软官方博客",
+              "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-05",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "太空产业",
+          "title": "英国投入6200万英镑支持卫星通信和太空技术",
+          "verdict": "政府资金",
+          "verdictTone": "solid",
+          "originalNews": "英国公布6200万英镑卫星通信和太空创新资金。",
+          "originalSource": "英国航天局",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://www.gov.uk/government/news/uk-invests-in-homegrown-space-tech-to-boost-national-resilience",
+          "whatHappened": "英国公布6200万英镑卫星通信和太空创新资金。",
+          "whyThisAction": "英国要减少关键太空能力对海外依赖，并把实验技术推向商业产品。",
+          "governmentIntent": "官方事实：4200万用于卫星通信，2000万用于创新项目。ORI-LIN分析：获奖名单才是订单信号。",
+          "whatItMeans": "英国企业、大学和研究机构可获补助；未入选公司不会直接增加收入。",
+          "essence": "预算已明确，但受益主体尚未确定，因此不硬贴股票。",
+          "upCondition": "公布获资助名单并签署补助协议。",
+          "downCondition": "资金延后、取消或项目无法商业化。",
+          "stocks": [],
+          "watchNext": "8月7日意向截止、11月12日申请截止和获奖名单。",
+          "oriCall": "资金方向确定，受益公司未定；预算取消时失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国航天局",
+              "url": "https://www.gov.uk/government/news/uk-invests-in-homegrown-space-tech-to-boost-national-resilience"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-06",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "贸易关税",
+          "title": "美国将对近200亿美元加拿大商品加征50%关税",
+          "verdict": "贸易成本上升",
+          "verdictTone": "caution",
+          "originalNews": "美国宣布对近200亿美元加拿大商品加征50%关税。",
+          "originalSource": "美国贸易代表办公室",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada",
+          "whatHappened": "美国宣布对近200亿美元加拿大商品加征50%关税。",
+          "whyThisAction": "美国要反制加拿大在汽车、酒类和乳制品上的差别待遇。",
+          "governmentIntent": "官方事实：措施30天后生效。ORI-LIN分析：跨境进口商先承担成本，随后可能涨价或换供应商。",
+          "whatItMeans": "加拿大出口商订单承压，美国进口商和消费者可能多付钱；本土替代供应商可能获订单。",
+          "essence": "关税覆盖面大，但官方未给公司清单，暂不硬贴股票。",
+          "upCondition": "关税按期生效并维持，进口量或价格开始变化。",
+          "downCondition": "美加达成协议、措施暂停或法院阻止执行。",
+          "stocks": [],
+          "watchNext": "30天生效日、覆盖清单、豁免和美加谈判结果。",
+          "oriCall": "跨境成本会升；关税未生效时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：美国贸易代表办公室",
+              "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-07",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "贸易救济",
+          "title": "英国复审中国陶瓷餐厨具13%至36%反倾销税",
+          "verdict": "关税待调整",
+          "verdictTone": "watch",
+          "originalNews": "英国启动中国陶瓷餐厨具反倾销措施中期复审。",
+          "originalSource": "英国贸易救济署",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://www.gov.uk/government/news/tra-to-review-chinese-ceramic-tableware-and-kitchenware-measure",
+          "whatHappened": "英国启动中国陶瓷餐厨具反倾销措施中期复审。",
+          "whyThisAction": "英国发现现有关税后进口仍增、单价仍降，想判断保护力度是否足够。",
+          "governmentIntent": "官方事实：2023至2025年进口增22%。ORI-LIN分析：若税率提高，中国出口商成本再升。",
+          "whatItMeans": "英国本土陶瓷企业可能少受低价竞争，中国出口商可能降价、转市场或少接订单。",
+          "essence": "当前只是复审，不是已经加税，需等最终决定。",
+          "upCondition": "复审决定提高税率或延长措施。",
+          "downCondition": "维持、下调或取消现有13%至36%关税。",
+          "stocks": [],
+          "watchNext": "8月4日登记截止、复审结论和最终税率。",
+          "oriCall": "出口风险上升但税率未定；复审不加码时失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国贸易救济署",
+              "url": "https://www.gov.uk/government/news/tra-to-review-chinese-ceramic-tableware-and-kitchenware-measure"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-08",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "税务数据",
+          "title": "英国拟要求金融机构持续报送利息和刷卡销售数据",
+          "verdict": "数据合规",
+          "verdictTone": "watch",
+          "originalNews": "英国就利息和刷卡销售第三方数据新规征求意见。",
+          "originalSource": "英国税务海关总署",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://www.gov.uk/government/consultations/draft-legislation-better-use-of-new-and-improved-third-party-data",
+          "whatHappened": "英国就利息和刷卡销售第三方数据新规征求意见。",
+          "whyThisAction": "英国要提高税务数据匹配准确度，用数字提示和精准检查减少漏税。",
+          "governmentIntent": "官方目标：统一数据质量。ORI-LIN分析：银行和支付机构需改报送系统，成本先上升。",
+          "whatItMeans": "金融机构、收单机构和支付平台要持续提供更标准的数据，企业报税被自动核对得更细。",
+          "essence": "仍是草案咨询，尚无公司级改造预算，暂不硬贴股票。",
+          "upCondition": "咨询结束后形成法规并明确上线时间和数据格式。",
+          "downCondition": "草案撤回、范围缩小或大部分机构获豁免。",
+          "stocks": [],
+          "watchNext": "8月20日咨询截止、最终法规和系统上线日期。",
+          "oriCall": "报税数据会更细；草案撤回时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国税务海关总署",
+              "url": "https://www.gov.uk/government/consultations/draft-legislation-better-use-of-new-and-improved-third-party-data"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-09",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "医疗并购",
+          "title": "Tempus AI签约收购Personalis",
+          "verdict": "并购待完成",
+          "verdictTone": "watch",
+          "originalNews": "Tempus AI与Personalis签署合并协议。",
+          "originalSource": "Personalis向美国SEC提交的8-K",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://www.sec.gov/Archives/edgar/data/1527753/000119312526308488/d68794d8k.htm",
+          "whatHappened": "Tempus AI与Personalis签署合并协议。",
+          "whyThisAction": "Tempus要把Personalis的癌症基因检测能力并入自身医疗数据与AI平台。",
+          "governmentIntent": "公司事实：双方已签协议。ORI-LIN分析：Personalis获得退出路径，Tempus承担整合和融资风险。",
+          "whatItMeans": "Personalis股东等待交易对价，Tempus可扩充检测产品；若协同不足，收购成本会压利润。",
+          "essence": "签约提高完成概率，但仍需股东和监管批准。",
+          "upCondition": "股东批准、监管放行并按协议完成交割。",
+          "downCondition": "任一方终止协议、审批失败或交割长期延迟。",
+          "stocks": [
+            {
+              "name": "Personalis",
+              "ticker": "PSNL",
+              "direction": "利好",
+              "reason": "公司是被收购方，交易完成将按协议实现股东退出。",
+              "evidence": "公司8-K确认签署合并协议",
+              "trigger": "委托书披露对价、股东投票和交割",
+              "invalidCondition": "交易终止或对价下调"
+            },
+            {
+              "name": "Tempus AI",
+              "ticker": "TEM",
+              "direction": "暂不明确",
+              "reason": "公司获得检测资产，但需承担交易和整合成本。",
+              "evidence": "双方8-K合并协议",
+              "trigger": "融资安排、协同目标和交割后利润率",
+              "invalidCondition": "整合成本超过协同收益"
+            }
+          ],
+          "watchNext": "每股对价、股东会日期、监管审批和交割日。",
+          "oriCall": "被收购方受益更直接；交易终止时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Personalis向美国SEC提交的8-K",
+              "url": "https://www.sec.gov/Archives/edgar/data/1527753/000119312526308488/d68794d8k.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-21-intl-10",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "银行并购",
+          "title": "Hancock Whitney收购One Florida Bank获监管放行",
+          "verdict": "交割临近",
+          "verdictTone": "solid",
+          "originalNews": "Hancock Whitney银行收购案获三方监管放行。",
+          "originalSource": "Hancock Whitney向美国SEC提交的8-K",
+          "publishedAt": "2026-07-20",
+          "originalUrl": "https://www.sec.gov/Archives/edgar/data/750577/000119312526308486/d63138d8k.htm",
+          "whatHappened": "Hancock Whitney银行收购案获三方监管放行。",
+          "whyThisAction": "公司要扩大佛罗里达市场网点和客户，监管则确认交易可继续推进。",
+          "governmentIntent": "公司事实：股东也已批准。ORI-LIN分析：主要外部门槛已过，8月1日前后交割概率提升。",
+          "whatItMeans": "收购方可增加存贷款客户，但要承担整合和信用成本；被收购银行股东等待交割。",
+          "essence": "监管与股东批准都完成，剩余风险主要是常规交割条件。",
+          "upCondition": "8月1日前后完成收购并披露成本协同。",
+          "downCondition": "常规条件未满足、交割延期或信用损失高于预期。",
+          "stocks": [
+            {
+              "name": "Hancock Whitney",
+              "ticker": "HWC",
+              "direction": "暂不明确",
+              "reason": "监管放行提高收购完成率，但整合收益和成本尚未验证。",
+              "evidence": "公司8-K：美联储、FDIC和州监管均已放行",
+              "trigger": "8月1日前后交割及后续成本协同",
+              "invalidCondition": "交易未交割或并购后信用成本明显上升"
+            }
+          ],
+          "watchNext": "8月1日前后交割、存款留存率和整合费用。",
+          "oriCall": "交割概率提升；收购未完成时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Hancock Whitney向美国SEC提交的8-K",
+              "url": "https://www.sec.gov/Archives/edgar/data/750577/000119312526308486/d63138d8k.htm"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-21",
+            "baselineAt": "2026-07-21",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-22",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-19",
       "title": "今天20条：利润、利率和关税具体影响谁",
