@@ -1074,7 +1074,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1083,8 +1083,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日立中集团较7月17日收盘上涨7.03%（16.50元至17.66元），开盘跳升8.79%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日明显跑赢大盘，方向与利好预判一致；但半年报净利润、锻造轮销量和墨西哥工厂利润尚未披露，销量→利润→股价的完整链条未验证。",
+                "verdict": "证据不足",
+                "reason": "D+1只能确认市场先交易了业绩预告，不能确认5.4亿元利润下限及经营触发条件最终兑现。",
+                "policyDeviation": "非政策事项；公司尚未到半年报验证节点，首日没有发现执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：立中集团公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431397.pdf"
+                  },
+                  {
+                    "label": "立中集团历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300428.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1127,7 +1151,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1136,8 +1160,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日星宸科技较7月17日收盘上涨16.11%（91.85元至106.65元），开盘一度高开20.00%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日大幅跑赢大盘，方向与利好预判一致；但26.2亿元收入下限、毛利率和SSR670批量出货仍需半年报确认。",
+                "verdict": "证据不足",
+                "reason": "首日反应支持市场认可量价齐升叙事，但尚不足以证明高价值芯片占比和利润链条持续。",
+                "policyDeviation": "非政策事项；关键交付和财报验证尚未到期，暂无执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：星宸科技公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431396.pdf"
+                  },
+                  {
+                    "label": "星宸科技历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/301536.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1180,7 +1228,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1189,8 +1237,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日中科创达较7月17日收盘上涨4.02%（56.15元至58.41元），开盘高开4.19%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日跑赢大盘，方向与利好预判一致；收入增速、扣非利润和AIOS项目验收尚无新公告，因果链只观察到股价端。",
+                "verdict": "证据不足",
+                "reason": "市场反应正向，但收入增速是否保持30%以上仍是未验证的核心假设。",
+                "policyDeviation": "非政策事项；项目验收和半年报尚未更新，暂无执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：中科创达公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431395.pdf"
+                  },
+                  {
+                    "label": "中科创达历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300496.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1233,7 +1305,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1242,8 +1314,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日天孚通信较7月17日收盘上涨1.03%（211.37元至213.54元），开盘高开6.45%后回落；同期上证综指上涨0.85%。",
+                "linkage": "收盘仅小幅跑赢大盘，正向反应很弱；数据中心订单、11.24亿元利润下限和关键物料供应均没有新披露。",
+                "verdict": "证据不足",
+                "reason": "高开回落说明首日定价分歧较大，单日价格不能验证订单与供给链条。",
+                "policyDeviation": "非政策事项；关键物料和订单验证尚未到期，暂无执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：天孚通信公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431394.pdf"
+                  },
+                  {
+                    "label": "天孚通信历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300394.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1286,7 +1382,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1295,8 +1391,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日当升科技较7月17日收盘上涨4.52%（38.28元至40.01元），开盘高开1.99%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日跑赢大盘，方向与利好预判一致；储能材料销量、磷系产品客户放量和4.3亿元扣非利润下限尚未更新。",
+                "verdict": "证据不足",
+                "reason": "价格反应支持市场认可储能增量，但完整销量→利润链条仍缺半年报证据。",
+                "policyDeviation": "非政策事项；储能客户进度和半年报尚未到验证节点，暂无执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：当升科技公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431393.pdf"
+                  },
+                  {
+                    "label": "当升科技历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300073.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1339,7 +1459,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1348,8 +1468,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日贵州茅台较7月17日收盘上涨5.95%（1253.00元至1327.50元），开盘高开1.36%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日明显跑赢大盘，方向与提价利好预判一致；批发价、i茅台销量、渠道库存和合同执行量尚无完整区间数据。",
+                "verdict": "证据不足",
+                "reason": "首日反应认可提价，但尚不能判断销量下降是否会抵消每瓶100元的提价。",
+                "policyDeviation": "非政策事项；公司已按公告实施价格调整，销量与回款是否偏离预期仍需后续数据。",
+                "sources": [
+                  {
+                    "label": "一手原文：贵州茅台公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431263.PDF"
+                  },
+                  {
+                    "label": "贵州茅台历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600519.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1392,7 +1536,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1401,8 +1545,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日ST新华锦较7月17日收盘上涨1.89%（5.81元至5.92元），开盘高开7.57%后回落；同期上证综指上涨0.85%。",
+                "linkage": "首日股价没有按利空方向下跌，且略跑赢大盘；但正式处罚、整改报告和审计意见均未更新，治理风险链条尚不能据股价否定。",
+                "verdict": "证据不足",
+                "reason": "价格反应与利空预判不一致，但事先告知书到正式处罚和审计闭环需要更长时间，D+1不足以下结论。",
+                "policyDeviation": "监管程序仍处于事先告知后的后续阶段，尚无正式处罚变化或整改闭环证据，不能认定监管执行偏离。",
+                "sources": [
+                  {
+                    "label": "一手原文：ST新华锦公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431257.PDF"
+                  },
+                  {
+                    "label": "ST新华锦历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600735.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1445,7 +1613,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1454,8 +1622,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日科德教育较7月17日收盘下跌1.07%（10.28元至10.17元），开盘高开3.60%后转跌；同期上证综指上涨0.85%。",
+                "linkage": "收盘反应与回购利好预判相反并跑输大盘；首次回购、累计金额和贷款合同尚无新披露，真实买盘链条未启动验证。",
+                "verdict": "证据不足",
+                "reason": "方案公告不等于实际回购，首日高开回落正说明必须等待成交金额，不能据方案判定命中。",
+                "policyDeviation": "非政策事项；回购执行期刚开始，尚不能把未见首次回购认定为公司执行偏离。",
+                "sources": [
+                  {
+                    "label": "一手原文：科德教育公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431239.PDF"
+                  },
+                  {
+                    "label": "科德教育历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300192.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1498,7 +1690,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1507,8 +1699,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日神马股份较7月17日收盘下跌2.89%（6.23元至6.05元），开盘持平；同期上证综指上涨0.85%。",
+                "linkage": "首日股价与增持利好方向相反并跑输大盘；累计增持距1.5亿元下限仍远，经营现金流也未有新数据。",
+                "verdict": "证据不足",
+                "reason": "3411万元已成交买盘没有在首日形成相对收益，但核心条件是计划期内达到1.5亿元，D+1不能最终否定。",
+                "policyDeviation": "非政策事项；控股股东增持计划仍在执行期，尚无终止或未达期证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：神马股份公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431238.PDF"
+                  },
+                  {
+                    "label": "神马股份历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600810.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1551,7 +1767,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1560,8 +1776,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日美年健康较7月17日收盘下跌2.21%（4.53元至4.43元），开盘低开0.66%；同期上证综指上涨0.85%。",
+                "linkage": "个股首日跑输大盘，但原判断本就为影响不明确；7月24日说明会、终止费用和替代扩张方案尚未披露。",
+                "verdict": "证据不足",
+                "reason": "下跌只是第一反应，缺少财务影响和替代方案，无法把价格变化归因于交易终止。",
+                "policyDeviation": "非政策事项；公司已公告终止交易，后续说明和替代方案尚未到披露节点。",
+                "sources": [
+                  {
+                    "label": "一手原文：美年健康公告",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431135.PDF"
+                  },
+                  {
+                    "label": "美年健康历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002044.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1613,7 +1853,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1622,8 +1862,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "韩国市场7月17日因制宪节休市；7月20日相对7月16日，KB金融下跌6.79%（181100韩元至168800韩元），新韩金融下跌5.65%（107900韩元至101800韩元），同期KOSPI下跌4.46%。",
+                "linkage": "两家银行均随市场下跌且分别跑输KOSPI约2.33和1.19个百分点；净息差、贷款增速和不良率没有新数据，无法区分加息影响与系统性下跌。",
+                "verdict": "证据不足",
+                "reason": "首个交易日价格偏弱，但原判断同时包含净息差改善和信用风险上升两条相反路径，必须等银行经营数据。",
+                "policyDeviation": "韩国央行已按决定把基准利率从2.50%上调至2.75%，实际执行与预期一致；银行传导数据尚未公布。",
+                "sources": [
+                  {
+                    "label": "一手原文：韩国央行",
+                    "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11062944&oldMenuNo=400007&programType=newsDataEng&relate=Y"
+                  },
+                  {
+                    "label": "韩国央行2026年休市安排（7月17日制宪节）",
+                    "url": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400373"
+                  },
+                  {
+                    "label": "KB金融历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/105560.KS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "新韩金融历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/055550.KS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "KOSPI历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1656,7 +1928,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1665,8 +1937,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，最新可核验的欧元区HICP仍是6月同比2.8%，较前值3.2%回落；核心通胀2.4%，服务价格对总通胀贡献1.51个百分点，7月初值尚未发布。",
+                "linkage": "总通胀回落与原判断一致，但服务通胀是否再加速、核心通胀是否继续靠近2%都没有新观测；没有指定个股可核对。",
+                "verdict": "证据不足",
+                "reason": "D+1没有新增官方数据，不能把任何市场波动认作降息链条兑现。",
+                "policyDeviation": "统计发布而非政策执行事项；实际数据与基线一致，欧洲央行后续反应尚未到验证节点。",
+                "sources": [
+                  {
+                    "label": "一手原文：欧盟统计局",
+                    "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-17072026-ap"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1699,7 +1987,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1708,8 +1996,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，美国人口普查局最新月度数据仍为6月新屋开工折年率142.7万套、环比增长19%；7月开工、许可和新屋销售尚未发布。",
+                "linkage": "建筑需求的单月回升已确认，但7月能否保持140万套以上及许可、销售能否同步尚无证据；没有指定个股可核对。",
+                "verdict": "证据不足",
+                "reason": "单月开工波动不能证明持续需求，D+1没有新增中间信号。",
+                "policyDeviation": "统计发布而非政策执行事项；没有政策偏离，后续数据尚未到期。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国人口普查局",
+                    "url": "https://www.census.gov/econwidget/"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1742,7 +2046,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1751,8 +2055,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，USTR的最终行动仍为对特定巴西商品加征25%关税；官方已链接联邦公报通知，但进口量、订单和成本传导尚无区间数据。",
+                "linkage": "关税这一政策中间环节已落地，方向与预判一致；商品覆盖后的贸易量、订单和企业利润尚未形成可比较数据，也无指定个股。",
+                "verdict": "证据不足",
+                "reason": "政策动作已确认，但从关税到进口量和利润仍缺后续观测，D+1不能判最终正确。",
+                "policyDeviation": "USTR已采取最终行动，实际执行与预期一致；尚未出现取消、主要商品豁免或执行延迟证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国贸易代表办公室",
+                    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1785,7 +2105,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1794,8 +2114,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "英国政府确认英印自贸协定已于7月15日生效：99%的印度输英商品、90%的英国输印商品可免税或降税；截至7月20日尚无优惠税率利用率和贸易量数据。",
+                "linkage": "降税已落地，政策中间环节与预判一致；企业是否使用原产地优惠、订单和双边贸易量是否增长仍无法验证。",
+                "verdict": "证据不足",
+                "reason": "生效不等于高利用率，D+1只能确认制度落地，不能确认商业结果。",
+                "policyDeviation": "协定按计划生效，实际执行与预期一致；原产地手续和利用率的潜在约束尚无统计证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：英国政府",
+                    "url": "https://www.gov.uk/government/news/historic-uk-india-free-trade-agreement-is-now-in-effect"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1828,7 +2164,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1837,8 +2173,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，美国证监会电子送达仍处于提案阶段，60天意见期尚未结束，也没有最终规则或过渡期安排。",
+                "linkage": "降低寄送成本的方向没有改变，但提案→最终规则→机构成本下降的链条尚未跨过第一个执行节点；没有指定个股可核对。",
+                "verdict": "证据不足",
+                "reason": "没有最终规则就没有可量化成本节省，D+1证据不足。",
+                "policyDeviation": "监管程序仍处法定征求意见阶段，暂无撤回或范围缩小证据，不能认定执行偏离。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国证券交易委员会",
+                    "url": "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1890,7 +2242,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1899,8 +2251,44 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日EQT较7月17日下跌1.03%（49.56美元至49.05美元），同期油气勘探生产ETF XOP下跌0.08%、标普500下跌0.19%。CTRA已在本条新闻发布前完成并入Devon，原股票不再独立交易；继承公司DVN当日下跌0.11%。",
+                "linkage": "EQT方向与高库存利空预判一致但明显归因证据不足；CTRA因并购退市无法观察，原个股映射失效。下一周注气量、Henry Hub和实现售价尚未更新。",
+                "verdict": "证据不足",
+                "reason": "EQT首日弱于行业与大盘，但一天价格不足以证明库存因果；CTRA不是可交易标的，暴露了发布前公司行动校验缺口。",
+                "policyDeviation": "能源库存统计而非政策执行事项；EIA库存基线未发生执行偏离，个股映射问题来自ORI自身未核对并购退市状态。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国能源信息署",
+                    "url": "https://www.eia.gov/dnav/ng/ng_stor_wkly_s1_w.htm"
+                  },
+                  {
+                    "label": "EQT历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/EQT?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "油气勘探生产ETF XOP历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "标普500指数历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "纽约证交所向SEC提交的CTRA退市通知，2026-05-18",
+                    "url": "https://www.sec.gov/Archives/edgar/data/858470/000087666126000399/ruleprovisionnotice.htm"
+                  },
+                  {
+                    "label": "Devon Energy历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DVN?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1952,7 +2340,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -1961,8 +2349,40 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日SLB较7月17日下跌1.28%（46.99美元至46.39美元），Liberty Energy上涨0.96%（23.84美元至24.07美元）；同期能源ETF XLE上涨0.45%、标普500下跌0.19%。",
+                "linkage": "两只指定股票首日分化：LBRT跑赢行业和大盘，SLB跑输；具体数据中心合同、2吉瓦交付和3吉瓦项目管线没有新公告。",
+                "verdict": "证据不足",
+                "reason": "分化价格不能证明联盟订单链条，必须等合同和交付数据。",
+                "policyDeviation": "非政策事项；联盟公告后的项目执行期刚开始，暂无许可或交付延误证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：SLB公司公告",
+                    "url": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0714-slb-liberty-energy"
+                  },
+                  {
+                    "label": "SLB历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SLB?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Liberty Energy历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LBRT?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "能源ETF XLE历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "标普500指数历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2005,7 +2425,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -2014,8 +2434,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日爱立信ADR较7月17日下跌2.34%（9.82美元至9.59美元），同期美国电信ETF IYZ下跌0.22%、标普500下跌0.19%。",
+                "linkage": "爱立信首日明显跑输行业与大盘，价格偏向收入疲弱而非毛利率改善；但三季度有机收入、毛利率和自由现金流尚无新数据。",
+                "verdict": "证据不足",
+                "reason": "首日反应偏负，但原判断为影响不明确，需等经营指标区分成本改善与需求走弱。",
+                "policyDeviation": "非政策事项；公司财报数据已落地，后续收入和现金流尚未到验证节点。",
+                "sources": [
+                  {
+                    "label": "一手原文：爱立信公司公告",
+                    "url": "https://www.ericsson.com/en/press-releases/2026/7/ericsson-reports-second-quarter-results-2026"
+                  },
+                  {
+                    "label": "爱立信ADR历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ERIC?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "美国电信ETF IYZ历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IYZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "标普500指数历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2058,7 +2506,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-19",
             "baselineAt": "2026-07-19",
             "reviewSchedule": [
@@ -2067,8 +2515,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-26",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日力拓伦敦股价由7月17日的6726便士降至6628便士，下跌1.46%；同期富时100指数下跌0.71%。",
+                "linkage": "力拓首日跑输大盘，与利好方向相反；铁矿全年销量、铜成本和锂产量指引尚无新更新，商品价格是否抵消增量也未验证。",
+                "verdict": "证据不足",
+                "reason": "首日负反应不能单独推翻产量和降本逻辑，需等待商品价格及后续生产数据。",
+                "policyDeviation": "非政策事项；公司生产指引未见变更，暂无项目执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：力拓公司公告",
+                    "url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-releases-second-quarter-2026-production-results"
+                  },
+                  {
+                    "label": "力拓伦敦历史行情，2026-07-20",
+                    "url": "https://markets.investorschronicle.markitdigital.com/data/equities/tearsheet/historical?s=RIO%3ALSE"
+                  },
+                  {
+                    "label": "富时100指数历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         }
       ]
@@ -2128,7 +2600,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-18",
             "baselineAt": "2026-07-18",
             "reviewSchedule": [
@@ -2137,8 +2609,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-25",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日中国石油较7月17日上涨7.00%（10.29元至11.01元），中国石化上涨4.17%（5.03元至5.24元）；同期上证综指上涨0.85%。",
+                "linkage": "两只指定股票均明显跑赢大盘，方向与成品油提价利好预判一致；但炼油价差、零售销量和炼油利润尚无新披露，价格链条未完整验证。",
+                "verdict": "证据不足",
+                "reason": "首日反应支持销售提价叙事，但不能证明销量没有下降或炼油价差扩大。",
+                "policyDeviation": "国家发改委调价已按通知执行，实际执行与预期一致；下一轮调价和企业利润尚未到验证节点。",
+                "sources": [
+                  {
+                    "label": "一手原文：国家发展改革委",
+                    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html"
+                  },
+                  {
+                    "label": "中国石油历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/601857.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "中国石化历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600028.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2862,7 +3362,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-18",
             "baselineAt": "2026-07-18",
             "reviewSchedule": [
@@ -2871,8 +3371,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-25",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，美联储最新月度数据仍为6月工业产出环比增长0.1%、制造业产出持平、产能利用率76.1%；7月数据尚未发布。",
+                "linkage": "制造业暂未明显加速的基线成立，但7月产出、产能利用率和新增订单没有新观测；没有指定个股可核对。",
+                "verdict": "证据不足",
+                "reason": "D+1没有新增中间信号，不能验证后续制造业需求方向。",
+                "policyDeviation": "统计发布而非政策执行事项；没有政策偏离，下一月数据尚未到期。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国联邦储备委员会",
+                    "url": "https://www.federalreserve.gov/releases/g17/current/default.htm"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2905,7 +3421,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-18",
             "baselineAt": "2026-07-18",
             "reviewSchedule": [
@@ -2914,8 +3430,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-25",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "截至7月20日，美国劳工统计局最新数据仍为6月进口价格环比上涨0.3%、出口价格下降0.6%；7月数据尚未发布。",
+                "linkage": "进口成本升、出口售价降的利润挤压基线成立，但企业毛利率和7月价格没有新观测；没有指定个股可核对。",
+                "verdict": "证据不足",
+                "reason": "D+1没有新增价格或企业利润数据，不能验证压力是否持续。",
+                "policyDeviation": "统计发布而非政策执行事项；没有政策偏离，后续数据尚未到期。",
+                "sources": [
+                  {
+                    "label": "一手原文：美国劳工统计局",
+                    "url": "https://www.bls.gov/news.release/archives/ximpim_07172026.htm"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -3504,7 +4036,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-17",
             "baselineAt": "2026-07-17",
             "reviewSchedule": [
@@ -3513,8 +4045,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-24",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日澜起科技较7月17日收盘上涨3.45%（183.60元至189.94元），开盘高开6.21%后回落；同期上证综指上涨0.85%。",
+                "linkage": "个股首日跑赢大盘，方向与业绩利好预判一致；正式半年报、互连芯片收入和三季度订单尚无新披露。",
+                "verdict": "证据不足",
+                "reason": "价格正向但高开回落，利润是否落在预告上半区仍需正式半年报。",
+                "policyDeviation": "非政策事项；半年报验证节点尚未到期，暂无执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：上海证券交易所·澜起科技公告",
+                    "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=688008"
+                  },
+                  {
+                    "label": "澜起科技历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/688008.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -3557,7 +4113,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-17",
             "baselineAt": "2026-07-17",
             "reviewSchedule": [
@@ -3566,8 +4122,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-24",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日浙江美大较7月17日收盘下跌9.94%（7.95元至7.16元），开盘高开3.14%后收于跌停附近；同期上证综指上涨0.85%。",
+                "linkage": "个股首日大幅跑输大盘，但原判断为影响不明确；股份过户、董事会改组和可量化业务计划尚无新证据。",
+                "verdict": "证据不足",
+                "reason": "控制权变更不自动产生订单，首日大跌强化了等待交易完成与业务计划的必要性，但不能单凭股价判错。",
+                "policyDeviation": "非政策事项；交易仍待完成，尚无终止或新股东执行偏离证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：巨潮资讯网·浙江美大公告",
+                    "url": "https://www.cninfo.com.cn/new/index"
+                  },
+                  {
+                    "label": "浙江美大历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002677.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -3610,7 +4190,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-17",
             "baselineAt": "2026-07-17",
             "reviewSchedule": [
@@ -3619,8 +4199,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-24",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日城投控股较7月17日收盘上涨0.83%（3.60元至3.63元），与同期上证综指上涨0.85%基本一致。",
+                "linkage": "个股未形成相对大盘超额反应；累计回购金额和注销进度没有新披露，真实买盘强度尚未验证。",
+                "verdict": "证据不足",
+                "reason": "首次回购后的单日表现接近大盘，必须等待累计金额接近方案上限才可比较。",
+                "policyDeviation": "非政策事项；回购计划仍在执行期，暂无停止或现金恶化证据。",
+                "sources": [
+                  {
+                    "label": "一手原文：上海证券交易所·城投控股公告",
+                    "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600649"
+                  },
+                  {
+                    "label": "城投控股历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/600649.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -3663,7 +4267,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-17",
             "baselineAt": "2026-07-17",
             "reviewSchedule": [
@@ -3672,8 +4276,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-24",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日长芯博创较7月17日收盘下跌7.74%（166.21元至153.35元），开盘高开4.07%后转跌；同期上证综指上涨0.85%。",
+                "linkage": "个股首日明显跑输大盘，方向与解禁卖压利空预判一致；但是否有解禁股东实际减持、成交量能否承接仍未完成五个交易日观察。",
+                "verdict": "证据不足",
+                "reason": "首日反应支持卖压担忧，但解禁→减持→价格的完整链条缺股东减持证据。",
+                "policyDeviation": "非政策事项；解禁安排已执行，是否发生集中减持尚无公告，暂无执行偏离结论。",
+                "sources": [
+                  {
+                    "label": "一手原文：巨潮资讯网·长芯博创公告",
+                    "url": "https://www.cninfo.com.cn/new/index"
+                  },
+                  {
+                    "label": "长芯博创历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300548.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -3716,7 +4344,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-17",
             "baselineAt": "2026-07-17",
             "reviewSchedule": [
@@ -3725,8 +4353,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-20",
-            "reviews": []
+            "nextReviewAt": "2026-07-24",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-21",
+                "window": "D+1",
+                "actual": "7月20日东易日盛较7月17日收盘下跌9.97%（10.03元至9.03元），开盘高开1.60%后转为跌停；同期上证综指上涨0.85%。",
+                "linkage": "首日反应与撤销风险警示利好方向相反并大幅跑输大盘；经营现金、订单和新增问询尚无新披露。",
+                "verdict": "证据不足",
+                "reason": "交易资格改善没有转化为首日价格支撑，说明市场仍担忧基本面；但现金流条件需等财报验证。",
+                "policyDeviation": "交易所已按公告撤销风险警示，执行与预期一致；价格下跌更可能反映市场对现金和经营的担忧，不能视为监管偏离。",
+                "sources": [
+                  {
+                    "label": "一手原文：巨潮资讯网·东易日盛公告",
+                    "url": "https://www.cninfo.com.cn/new/index"
+                  },
+                  {
+                    "label": "东易日盛历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/002713.SZ?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  },
+                  {
+                    "label": "上证综指历史行情，2026-07-17至2026-07-20",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784160000&period2=1784851200&interval=1d&events=history"
+                  }
+                ]
+              }
+            ]
           }
         },
         {

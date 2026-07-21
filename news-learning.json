@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T23:55:00+08:00",
+  "updatedAt": "2026-07-21T13:55:00+08:00",
   "methodologyVersion": "1.0.0",
   "minimumIndependentSamples": 3,
   "scoreFromWindow": "D+7",
@@ -19,7 +19,24 @@
       "confidence": "方法规则"
     }
   ],
-  "candidateRules": [],
+  "candidateRules": [
+    {
+      "id": "candidate-001",
+      "scope": "个股映射",
+      "pattern": "发布时未核对公司行动，导致已并购退市证券仍被列为当前可交易标的。",
+      "proposedRule": "发布前核对目标证券的上市状态与重大公司行动；已退市标的不得作为当前股票映射，继承公司只能作为新的明确标的列出。",
+      "reason": "2026-07-19-intl-07把已并入Devon且终止独立上市的Coterra Energy（CTRA）列为跟踪股票，D+1无法观察原标的反应。",
+      "sampleIds": [
+        "2026-07-19-intl-07"
+      ],
+      "independentSampleCount": 1,
+      "counterexamples": [],
+      "confidence": "低",
+      "status": "candidate",
+      "firstSeenAt": "2026-07-21",
+      "lastSeenAt": "2026-07-21"
+    }
+  ],
   "changes": [],
   "metrics": {
     "eligibleReviews": 0,
