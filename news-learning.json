@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-21T13:55:00+08:00",
-  "methodologyVersion": "1.0.0",
+  "updatedAt": "2026-07-22T13:08:10+08:00",
+  "methodologyVersion": "1.1.0",
   "minimumIndependentSamples": 3,
   "scoreFromWindow": "D+7",
   "activeRules": [
@@ -17,6 +17,26 @@
       "rule": "没有预算、招标、订单、利率或监管执行等中间信号，不把主题上涨认定为政策兑现。",
       "reason": "把新闻热度与真实资金落地分开。",
       "confidence": "方法规则"
+    },
+    {
+      "id": "rule-003",
+      "scope": "选题权重、周期位置与验证信号",
+      "rule": "每条预测至少设置一个可在D+7观察的领先信号（预算批次、采购意向、候选中标、周度利率/库存/流量或监管程序节点）；若只能等待月度、季度或财报数据，降低选题权重，D+7不强判，主判断顺延至D+30。",
+      "reason": "六个独立样本显示，仅有季度触发器会使D+7退化为股价复述，无法校准条件判断与因果链。",
+      "sampleIds": [
+        "2026-07-15-cn-03",
+        "2026-07-15-cn-04",
+        "2026-07-15-cn-05",
+        "2026-07-15-cn-09",
+        "2026-07-15-intl-06",
+        "2026-07-15-intl-07"
+      ],
+      "counterexamples": [
+        "2026-07-15-cn-07",
+        "2026-07-15-intl-08"
+      ],
+      "confidence": "高",
+      "activatedAt": "2026-07-22"
     }
   ],
   "candidateRules": [
@@ -35,14 +55,79 @@
       "status": "candidate",
       "firstSeenAt": "2026-07-21",
       "lastSeenAt": "2026-07-21"
+    },
+    {
+      "id": "candidate-002",
+      "scope": "周期位置与验证信号",
+      "pattern": "预测只设置两个月、两季度或财报级触发器，导致D+7即使出现价格波动也没有可比较的中间信号。",
+      "proposedRule": "每条预测至少设置一个可在D+7观察的领先信号（预算批次、采购意向、候选中标、周度利率/库存/流量或监管程序节点）；没有D+7信号的选题降低权重，D+7只记录证据缺口并把主判断留到D+30。",
+      "reason": "本批多条规划和宏观新闻的上涨条件只能按月或按季观察，D+7无法区分因果联动与市场噪声。",
+      "sampleIds": [
+        "2026-07-15-cn-03",
+        "2026-07-15-cn-04",
+        "2026-07-15-cn-05",
+        "2026-07-15-cn-09",
+        "2026-07-15-intl-06",
+        "2026-07-15-intl-07"
+      ],
+      "independentSampleCount": 6,
+      "counterexamples": [
+        "2026-07-15-cn-07在D+7已有负荷纪录与预中标",
+        "2026-07-15-intl-08在D+7已有周度库存与开工率"
+      ],
+      "confidence": "高",
+      "status": "promoted",
+      "promotedTo": "rule-003",
+      "firstSeenAt": "2026-07-22",
+      "lastSeenAt": "2026-07-22"
+    },
+    {
+      "id": "candidate-003",
+      "scope": "行业与个股映射",
+      "pattern": "同一宏观新闻映射到利润驱动不同的跨行业股票，D+7表现分化后无法判断是宏观链条失效还是公司驱动差异。",
+      "proposedRule": "同一新闻的核心股票应共享同一个可验证中间信号；跨行业股票分拆为不同验证链，并分别比较各自行业指数。",
+      "reason": "FDX/WMT分别受物流量和零售库存驱动，CAT/MSFT分别受工业订单和云收入驱动，不能用同一个板块共振标准判断。",
+      "sampleIds": [
+        "2026-07-15-intl-06",
+        "2026-07-15-intl-07"
+      ],
+      "independentSampleCount": 2,
+      "counterexamples": [
+        "2026-07-15-intl-08的VLO/MPC共享炼化利润和成品油库存信号"
+      ],
+      "confidence": "中",
+      "status": "candidate",
+      "firstSeenAt": "2026-07-22",
+      "lastSeenAt": "2026-07-22"
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "version": "1.1.0",
+      "date": "2026-07-22",
+      "oldRule": "D+7起判断联动，但未要求预测必须提供D+7可观察的领先信号。",
+      "newRule": "每条预测至少设置一个D+7可观察领先信号；缺少该信号则降低选题权重、D+7不强判并把主判断顺延至D+30。",
+      "reason": "六个独立样本的触发器仅能按月、按季或财报验证，D+7只能复述股价，无法校准因果链。",
+      "sampleIds": [
+        "2026-07-15-cn-03",
+        "2026-07-15-cn-04",
+        "2026-07-15-cn-05",
+        "2026-07-15-cn-09",
+        "2026-07-15-intl-06",
+        "2026-07-15-intl-07"
+      ],
+      "counterexamples": [
+        "2026-07-15-cn-07在D+7可观察负荷纪录与预中标",
+        "2026-07-15-intl-08在D+7可观察周度库存和炼厂开工率"
+      ],
+      "confidence": "高"
+    }
+  ],
   "metrics": {
-    "eligibleReviews": 0,
-    "correct": 0,
-    "partlyCorrect": 0,
+    "eligibleReviews": 20,
+    "correct": 1,
+    "partlyCorrect": 6,
     "wrong": 0,
-    "insufficientEvidence": 0
+    "insufficientEvidence": 13
   }
 }
