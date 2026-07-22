@@ -1252,7 +1252,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1261,8 +1261,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，扬电科技20.38→24.46，+20.02%；同期深证成指+4.81%，超额+15.21个百分点。",
+                "linkage": "公司大额合同→扬电科技的首日价格反应显著强于大盘，但首批32个节点尚未验收、计费，融资和运维成本也未披露；只能记为订单消息的第一反应。",
+                "reason": "首日涨停附近反应支持市场重视合同规模，但原判断明确“大订单不等于已赚利润”，关键触发器在8月31日前交付验收，D+1不能判命中。",
+                "policyDeviation": "该条为公司合同，无政府执行偏离；实际履约仍按合同时间表等待采购、验收和计费。",
+                "sources": [
+                  {
+                    "label": "扬电科技重大合同公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225432525.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：扬电科技（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/301012.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1305,7 +1329,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1314,8 +1338,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，罗博特科373.10→440.00，+17.93%；同期深证成指+4.81%，超额+13.12个百分点。",
+                "linkage": "老客户复购订单→公司股价出现显著正向第一反应；但设备交付、验收、欧元折算和收入确认均未发生，尚未验证利润链。",
+                "reason": "市场反应与订单利好方向一致，但原触发器是定期报告中的验收和收入确认，D+1不用于最终判断。",
+                "policyDeviation": "该条为公司订单，无政策执行偏离；履约节奏和汇率影响需后续公告及财报验证。",
+                "sources": [
+                  {
+                    "label": "罗博特科重大合同公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434160.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：罗博特科（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300757.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1358,7 +1406,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1367,8 +1415,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，特锐德33.38→35.20，+5.45%；同期深证成指+4.81%，超额+0.64个百分点。",
+                "linkage": "国网推荐候选→特锐德首日小幅跑赢大盘，但强度有限；正式通知书、合同金额、交付和毛利率尚未形成。",
+                "reason": "价格方向与预中标利好一致，却接近市场普涨；原判断要求从候选名单转成正式合同，D+1证据不足。",
+                "policyDeviation": "国网采购程序仍处候选公示阶段，实际执行与ORI设定的“通知书—合同—交付”路径一致，尚无偏离证据。",
+                "sources": [
+                  {
+                    "label": "特锐德国网预中标提示性公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433219.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：特锐德（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1411,7 +1483,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1420,8 +1492,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，金冠电气14.61→14.39，-1.51%；同期上证综指+1.79%，超额-3.30个百分点。",
+                "linkage": "预中标占营收比例较高，但个股首日逆势下跌，未出现正向价格联动；正式通知书、签约额和交付计划仍未披露。",
+                "reason": "首日表现不支持预判方向，但单日价格不足以否定订单链；原判断的失效条件是未签约或金额缩水，尚未发生。",
+                "policyDeviation": "国网采购仍在候选公示流程，没有证据显示资格或金额发生变化；市场提前交易或个股因素可能干扰首日反应。",
+                "sources": [
+                  {
+                    "label": "金冠电气国网预中标公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431430.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：金冠电气（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/688517.SS?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：上证综指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1464,7 +1560,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1473,8 +1569,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，平治信息29.20→30.39，+4.08%；同期深证成指+4.81%，超额-0.73个百分点。",
+                "linkage": "中国移动候选公示→个股上涨但未跑赢大盘，首日更接近市场普涨；正式份额、通知书、合同单价和毛利尚未确定。",
+                "reason": "绝对方向与订单利好一致，但无正超额，且候选尚未转成合同，D+1不能判因果链成立。",
+                "policyDeviation": "采购执行处候选公示阶段，与ORI预期路径一致；尚无份额下调或未中标证据。",
+                "sources": [
+                  {
+                    "label": "平治信息预中标公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431449.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：平治信息（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300571.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1517,7 +1637,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1526,8 +1646,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，仙乐健康16.90→16.60，-1.78%；同期深证成指+4.81%，超额-6.59个百分点。",
+                "linkage": "泰国扩产计划→短期资本支出压力的价格反应更明显，个股逆势下跌；审批、开工、客户锁单、投产和利用率均未形成。",
+                "reason": "首日弱势与ORI“先花钱、方向暂不明确”的谨慎判断相容，但没有项目执行或订单数据，不能据价格确认长期判断。",
+                "policyDeviation": "境外投资审批和建设尚未到可验证节点；一周内无审批取消或订单落空，当前偏差主要是市场先交易资本支出。",
+                "sources": [
+                  {
+                    "label": "仙乐健康泰国基地二期公告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434165.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：仙乐健康（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300791.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1570,7 +1714,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1579,8 +1723,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，可孚医疗50.70→52.48，+3.51%；同期深证成指+4.81%，超额-1.30个百分点。",
+                "linkage": "注销型回购公告→股价上涨但跑输大盘；首次回购、累计金额、达到1亿元下限和注销登记均未发生。",
+                "reason": "首日有正反应，但不具备独立超额，原判断强调公告额度不是完成额度，D+1不计分。",
+                "policyDeviation": "股份回购执行尚未开始，没有政策偏离；需等待真实买入和注销登记。",
+                "sources": [
+                  {
+                    "label": "可孚医疗回购报告书（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225434044.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：可孚医疗（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/301087.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1623,7 +1791,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1632,8 +1800,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，智飞生物12.76→12.90，+1.10%；同期深证成指+4.81%，超额-3.71个百分点。",
+                "linkage": "员工激励型回购公告→个股仅小涨且明显跑输大盘；累计回购额、激励对象和业绩考核尚未披露。",
+                "reason": "短期未见强买盘联动，但原判断本就区分员工激励与注销回购，长期条件不能在D+1验证。",
+                "policyDeviation": "回购方案处执行前阶段，无政策偏离；后续关键是实际金额和考核约束。",
+                "sources": [
+                  {
+                    "label": "智飞生物回购报告书（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225433324.PDF"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：智飞生物（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300122.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1676,7 +1868,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1685,8 +1877,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，新易盛510.00→551.77，+8.19%；同期深证成指+4.81%，超额+3.38个百分点。",
+                "linkage": "业绩预告→AI光模块利润预期→个股出现正向超额第一反应；但半年报净利、毛利率及800G/1.6T收入结构尚未正式披露。",
+                "reason": "价格反应与预告利好方向一致，且具有一定超额；最终触发器仍是半年报不低于70亿元与高速产品需求，D+1只记录。",
+                "policyDeviation": "该条为公司业绩预告，无政府执行偏离；预告到正式半年报仍存在确认差异风险。",
+                "sources": [
+                  {
+                    "label": "新易盛2026年半年度业绩预告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431444.pdf"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：新易盛（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/300502.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1729,7 +1945,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1738,8 +1954,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，铜冠铜箔103.24→107.54，+4.17%；同期深证成指+4.81%，超额-0.64个百分点。",
+                "linkage": "利润预告→高端铜箔景气→个股上涨但未跑赢大盘；半年报净利、高频高速铜箔销量、加工费和毛利率尚未披露。",
+                "reason": "绝对方向与预告利好一致，但缺少市场超额和正式财报验证，不能把普涨中的上涨判为ORI正确。",
+                "policyDeviation": "该条为公司业绩预告，无政府执行偏离；正式半年报和高端产品数据仍待确认。",
+                "sources": [
+                  {
+                    "label": "铜冠铜箔2026年半年度业绩预告（2026-07-20）",
+                    "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431480.pdf"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：铜冠铜箔（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/301217.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：深证成指（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/399001.SZ?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1772,7 +2012,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1781,8 +2021,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至新闻后的首个完整观察日2026-07-21，欧盟数字产品护照登记系统仍处测试上线阶段；首批大型电池强制节点为2027-02-18，尚无公司名单、登记数量、销售或成本数据，原记录也未映射股票。",
+                "linkage": "登记测试→正式登记→强制执行→企业合规成本的链条只完成测试系统上线，尚未到板块和个股层。",
+                "reason": "D+1没有可比较股票，也没有正式执法或登记数量，不能判断长期准入成本。",
+                "policyDeviation": "欧盟按测试计划推进，实际执行与预期一致；距离强制节点较远，一日内无偏离证据。",
+                "sources": [
+                  {
+                    "label": "欧盟委员会：数字产品护照登记系统上线测试（2026-07-20）",
+                    "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1825,7 +2081,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1834,8 +2090,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，阿里巴巴港股116.80→117.00，+0.17%；同期恒生指数-0.04%，超额+0.21个百分点，未出现明显利空第一反应。公司计提、申诉和整改进展尚未披露。",
+                "linkage": "欧盟罚款→集团成本→阿里巴巴股价的首日方向没有表现为利空；但5.5亿欧元计提、整改和申诉仍是后续因果节点。",
+                "reason": "单日小幅相对强势不能推翻确定罚款成本，也不能确认市场已消化；需等待公司财务计提和监管后续。",
+                "policyDeviation": "欧盟处罚决定仍有效，未见撤销或追加处罚；市场可能提前交易或认为集团规模足以吸收成本。",
+                "sources": [
+                  {
+                    "label": "欧盟委员会：AliExpress DSA处罚决定（2026-07-20）",
+                    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：阿里巴巴（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/9988.HK?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：恒生指数（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1868,7 +2148,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1877,8 +2157,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至2026-07-21，欧盟AI内容标识指引已经发布，但2026-08-02执行日尚未到来；未公布首批检查、处罚、公司改造预算或成本数据，原记录未映射股票。",
+                "linkage": "指引→8月2日执行→产品改造/执法→公司成本的链条尚未跨过执行节点。",
+                "reason": "D+1只能确认指引存在，不能提前把未来执法成本判为已经兑现。",
+                "policyDeviation": "执行日尚未到来，当前与欧盟公布的时间表一致，无延期或豁免扩大证据。",
+                "sources": [
+                  {
+                    "label": "欧盟委员会：AI透明度义务指引（2026-07-20）",
+                    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1930,7 +2226,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1939,8 +2235,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，AMD 503.57→544.43，+8.11%，较标普500+0.89%取得+7.22个百分点超额；微软402.29→397.75，-1.13%，跑输标普2.02个百分点。",
+                "linkage": "Azure采用AMD芯片→AMD需求预期出现显著正向第一反应；微软因承担资本开支和利用率风险反向走弱，符合原先对两家公司影响不对称的设定，但实例尚未商用。",
+                "reason": "首日价格分化与“AMD利好、微软暂不明确”一致，但真正触发器是实例上线、利用率和AMD数据中心收入，D+1不计分。",
+                "policyDeviation": "该条为公司产品采用，无政府执行偏离；尚无上线延期或采购缩减证据。",
+                "sources": [
+                  {
+                    "label": "微软：Azure扩大采用AMD基础设施（2026-07-20）",
+                    "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：AMD（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：微软（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -1973,7 +2297,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -1982,8 +2306,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至2026-07-21，英国6200万英镑太空技术资金方向已公布，但8月7日意向截止、11月12日申请截止均未到，尚无获资助名单、补助协议或可核验上市公司映射。",
+                "linkage": "预算方向→申请→获资助名单→公司订单的链条仍在申请前阶段，无法进入板块和股票比较。",
+                "reason": "没有公司级受益主体时不硬贴股票的原基线得到保留，D+1没有条件作命中判断。",
+                "policyDeviation": "英国按公布的申请时序推进，无预算取消或延后证据；资金尚未分配不是执行偏离。",
+                "sources": [
+                  {
+                    "label": "英国政府：6200万英镑太空技术投资（2026-07-20）",
+                    "url": "https://www.gov.uk/government/news/uk-invests-in-homegrown-space-tech-to-boost-national-resilience"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -2016,7 +2356,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -2025,8 +2365,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至2026-07-21，美国对加拿大商品的50%关税仍处公告后的30天生效等待期；尚无最终覆盖清单、豁免、进口量或价格变化，原记录未映射股票。",
+                "linkage": "关税公告→生效→进口成本/数量→板块和公司利润的链条尚未跨过生效节点。",
+                "reason": "D+1只能记录政策公告，不能把尚未生效的关税当成已发生的公司成本。",
+                "policyDeviation": "措施尚在法定等待期内，未见美加协议、法院阻止或暂停执行；当前与公布路径一致。",
+                "sources": [
+                  {
+                    "label": "美国贸易代表办公室：对加Section 338关税声明（2026-07-20）",
+                    "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -2059,7 +2415,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -2068,8 +2424,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至2026-07-21，英国贸易救济署已启动对中国陶瓷餐厨具反倾销措施复审，但8月4日登记截止尚未到，最终税率、延长或取消决定均未形成；原记录未映射股票。",
+                "linkage": "复审→最终税率→出口成本→企业利润的链条只完成程序启动，无法比较板块和个股。",
+                "reason": "原判断明确“复审不是已经加税”，D+1没有最终决定，证据不足。",
+                "policyDeviation": "复审按程序推进，无提前加税、取消或延期证据；实际执行与预期一致。",
+                "sources": [
+                  {
+                    "label": "英国贸易救济署：复审中国陶瓷餐厨具措施（2026-07-20）",
+                    "url": "https://www.gov.uk/government/news/tra-to-review-chinese-ceramic-tableware-and-kitchenware-measure"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -2102,7 +2474,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -2111,8 +2483,24 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "截至2026-07-21，英国金融机构第三方数据报送仍为立法咨询草案，8月20日咨询截止尚未到；没有最终法规、上线日期、数据格式或机构改造预算，原记录未映射股票。",
+                "linkage": "咨询→法规→系统改造→金融机构成本的链条仍停留在咨询，尚无板块与个股验证。",
+                "reason": "D+1不能把草案等同于最终法规，原上涨和失效条件均未到观察点。",
+                "policyDeviation": "咨询按公开时间表进行，未见撤回、缩小范围或大规模豁免，当前无偏离。",
+                "sources": [
+                  {
+                    "label": "英国政府：第三方税务数据立法咨询（2026-07-20）",
+                    "url": "https://www.gov.uk/government/consultations/draft-legislation-better-use-of-new-and-improved-third-party-data"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -2164,7 +2552,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -2173,8 +2561,36 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，Personalis 13.34→13.44，+0.75%，较标普500+0.89%低0.14个百分点；Tempus AI 48.41→48.98，+1.18%，较标普高0.29个百分点。两股首日均无显著超额。",
+                "linkage": "签署合并协议→被收购方/收购方价格反应没有呈现明显不对称；对价细节、委托书、股东投票、监管审批和交割尚未发生。",
+                "reason": "首日市场未显著奖励被收购方，但交易完成概率不能由一天涨跌判断，需以协议条款和审批为准。",
+                "policyDeviation": "该并购尚在股东与监管审批前阶段，无交易终止、对价下调或审批偏离证据。",
+                "sources": [
+                  {
+                    "label": "Personalis 8-K合并协议（2026-07-20）",
+                    "url": "https://www.sec.gov/Archives/edgar/data/1527753/000119312526308488/d68794d8k.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Personalis（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/PSNL?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Tempus AI（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TEM?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         },
         {
@@ -2217,7 +2633,7 @@
           ],
           "tracking": {
             "status": "active",
-            "verdict": "跟踪中",
+            "verdict": "证据不足",
             "createdAt": "2026-07-21",
             "baselineAt": "2026-07-21",
             "reviewSchedule": [
@@ -2226,8 +2642,32 @@
               "D+30",
               "D+90"
             ],
-            "nextReviewAt": "2026-07-22",
-            "reviews": []
+            "nextReviewAt": "2026-07-28",
+            "reviews": [
+              {
+                "reviewedAt": "2026-07-22",
+                "window": "D+1",
+                "actual": "新闻后的首个完整交易日2026-07-21，Hancock Whitney 77.29→76.64，-0.84%；同期标普500+0.89%，超额-1.73个百分点。8月1日前后交割和成本协同尚未发生。",
+                "linkage": "监管放行→交割概率提升，但个股首日逆势走弱；交易交割、整合成本、信用损失和协同尚未验证。",
+                "reason": "首日反应不支持短期利好，但原判断本就标为暂不明确并要求交割与协同，单日不能判错。",
+                "policyDeviation": "美联储、FDIC和州监管已放行，政策执行与预期一致；市场弱势可能交易整合成本，尚无交割延期证据。",
+                "sources": [
+                  {
+                    "label": "Hancock Whitney 8-K监管放行公告（2026-07-20）",
+                    "url": "https://www.sec.gov/Archives/edgar/data/750577/000119312526308486/d63138d8k.htm"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：Hancock Whitney（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWC?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  },
+                  {
+                    "label": "Yahoo Finance 日线：标普500（2026-07-20至2026-07-21）",
+                    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1784505600&period2=1784678400&interval=1d&events=history"
+                  }
+                ],
+                "verdict": "证据不足"
+              }
+            ]
           }
         }
       ]
