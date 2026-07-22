@@ -1,7 +1,1043 @@
 {
-  "updatedAt": "2026-07-21T13:57:50+08:00",
+  "updatedAt": "2026-07-22T13:12:00+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-22",
+      "title": "今天20条：合同、产能、能源账单与AI订单影响谁",
+      "note": "本期国内10条、国际10条，全部采用2026年7月21日发布或披露的一手材料，处于24小时优先窗口。新闻事实、机构或公司目标和ORI-LIN分析已分开；国内10条均有直接股票映射，国际10条中5条有公司级直接证据，其余5条因承包商、预算、正式成员或最终规则尚未确定而不硬贴股票。方法版本1.0.0：D+1只记录，D+7起判断；没有预算、订单或执行信号，不认定政策兑现。股票仅为研究清单，不是买入指令。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-22-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "航运订单",
+          "title": "招商轮船拟签25年西芒杜铁矿运输协议",
+          "verdict": "长协待审",
+          "verdictTone": "watch",
+          "originalNews": "招商轮船子公司拟签25年西芒杜铁矿包运协议。",
+          "originalSource": "招商轮船公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225434474.PDF",
+          "whatHappened": "招商轮船子公司拟签25年西芒杜铁矿包运协议。",
+          "whyThisAction": "公司要锁定西芒杜铁矿长期运量，提高干散货船队收入稳定性。",
+          "governmentIntent": "公司事实：已运约60万吨，合同仍待董事会审议。ORI-LIN分析：运价指数和成本调节决定利润。",
+          "whatItMeans": "矿方获得长期海运能力，招商轮船增加稳定货源；运价下跌或成本上涨会压利润。",
+          "essence": "25年货源很长，但尚未审议，合同金额也未披露。",
+          "upCondition": "董事会通过并披露正式合同、年运量和计价条款。",
+          "downCondition": "董事会否决、合同未签或实际运量明显低于计划。",
+          "stocks": [
+            {
+              "name": "招商轮船",
+              "ticker": "601872.SH",
+              "direction": "利好",
+              "reason": "全资子公司是拟签约承运方。",
+              "evidence": "公司公告：合同期25年且已完成约60万吨运输",
+              "trigger": "董事会批准并签署正式协议",
+              "invalidCondition": "未获批准或正式协议长期未签"
+            }
+          ],
+          "watchNext": "董事会决议、正式合同、年运量及波罗的海运价指数。",
+          "oriCall": "长期货源提升可见度；合同未获批准时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：招商轮船公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225434474.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "算力采购",
+          "title": "行云科技采购近3亿元GPU算力，另签128套框架",
+          "verdict": "先成本后订单",
+          "verdictTone": "caution",
+          "originalNews": "行云科技签下2.9957亿元32套GPU算力采购合同。",
+          "originalSource": "行云科技公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433899.PDF",
+          "whatHappened": "行云科技签下2.9957亿元32套GPU算力采购合同。",
+          "whyThisAction": "公司要先锁定高端算力资源，再出租或销售给下游客户。",
+          "governmentIntent": "公司事实：首批合同32套，余96套仅为意向。ORI-LIN分析：没有客户订单前先形成固定成本。",
+          "whatItMeans": "供应商获得长期服务费，行云科技要按月付款；转售价格和利用率决定是否赚钱。",
+          "essence": "这是采购不是销售，算力贬值和空置风险高。",
+          "upCondition": "首批8套交付，披露下游客户、出租率和毛利。",
+          "downCondition": "融资受阻、算力空置或市场租金跌破采购成本。",
+          "stocks": [
+            {
+              "name": "行云科技",
+              "ticker": "300209.SZ",
+              "direction": "暂不明确",
+              "reason": "公司直接承担2.9957亿元采购义务，收益取决于转售。",
+              "evidence": "公司重大采购合同及128套框架公告",
+              "trigger": "披露客户订单和正毛利",
+              "invalidCondition": "利用率低或租金不足覆盖成本"
+            }
+          ],
+          "watchNext": "首批8套验收、客户订单、算力补贴和有息负债。",
+          "oriCall": "资源已锁定但利润未锁定；没有客户订单时不算利好。",
+          "sources": [
+            {
+              "label": "一手原文：行云科技公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433899.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "算力服务",
+          "title": "宇顺电子签7.31亿元算力服务器租赁合同",
+          "verdict": "收入待交付",
+          "verdictTone": "solid",
+          "originalNews": "宇顺电子子公司签署7.314亿元算力服务器租赁合同。",
+          "originalSource": "宇顺电子公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433845.PDF",
+          "whatHappened": "宇顺电子子公司签署7.314亿元算力服务器租赁合同。",
+          "whyThisAction": "公司要把算力服务器变成长租服务，获得分期收入。",
+          "governmentIntent": "公司事实：不低于11EFLOPS算力，60个月总租金。ORI-LIN分析：先采购设备，融资与验收决定利润。",
+          "whatItMeans": "客户获得算力，宇顺电子增加长期收入，但采购和利息会先消耗现金。",
+          "essence": "合同额大，但客户匿名且设备尚待采购验收。",
+          "upCondition": "服务器按期验收、开始计费并披露融资成本。",
+          "downCondition": "交付失败、客户违约或财务费用吞噬毛利。",
+          "stocks": [
+            {
+              "name": "宇顺电子",
+              "ticker": "002289.SZ",
+              "direction": "利好",
+              "reason": "全资子公司是7.314亿元合同直接履约方。",
+              "evidence": "公司公告：60个月含税总租金7.314亿元",
+              "trigger": "设备验收并开始按月确认收入",
+              "invalidCondition": "采购融资失败或毛利转负"
+            }
+          ],
+          "watchNext": "设备到货验收、融资额、季度收入和毛利率。",
+          "oriCall": "大合同利好收入可见度；无法验收计费时失效。",
+          "sources": [
+            {
+              "label": "一手原文：宇顺电子公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433845.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "PCB设备",
+          "title": "东威科技获1.27亿元电镀设备合同",
+          "verdict": "订单待验收",
+          "verdictTone": "solid",
+          "originalNews": "东威科技签订1.2679亿元电镀设备销售合同。",
+          "originalSource": "东威科技公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225431833.PDF",
+          "whatHappened": "东威科技签订1.2679亿元电镀设备销售合同。",
+          "whyThisAction": "客户扩充电路板等产品的电镀能力，公司锁定2027年设备收入。",
+          "governmentIntent": "公司事实：按客户通知分批交付。ORI-LIN分析：收入仍取决于交货与验收。",
+          "whatItMeans": "客户增加设备资本开支，东威科技获得订单；交货延后会推迟利润。",
+          "essence": "订单直接对应主营设备，兑现时间主要在2027年。",
+          "upCondition": "按批次交付验收，2027年确认收入接近合同规模。",
+          "downCondition": "客户推迟需求、设备未验收或毛利明显下降。",
+          "stocks": [
+            {
+              "name": "东威科技",
+              "ticker": "688700.SH",
+              "direction": "利好",
+              "reason": "公司是电镀设备合同直接卖方。",
+              "evidence": "销售合同含税1.2679亿元",
+              "trigger": "2027年交付验收并确认收入",
+              "invalidCondition": "合同取消或验收长期推迟"
+            }
+          ],
+          "watchNext": "交付批次、2027年收入确认额和设备毛利率。",
+          "oriCall": "订单质量较高；验收推迟或取消时失效。",
+          "sources": [
+            {
+              "label": "一手原文：东威科技公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225431833.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "水务工程",
+          "title": "重庆水务中标1.86亿元三项管网改造",
+          "verdict": "中标待签",
+          "verdictTone": "watch",
+          "originalNews": "重庆水务子公司中标三项管网工程，合计1.8578亿元。",
+          "originalSource": "重庆水务公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432572.PDF",
+          "whatHappened": "重庆水务子公司中标三项管网工程，合计1.8578亿元。",
+          "whyThisAction": "重庆用财政和上级资金更新污水及老旧管网。",
+          "governmentIntent": "官方事实：三项目工期均270天。ORI-LIN分析：中标已确定，但最终金额以合同为准。",
+          "whatItMeans": "财政资金形成施工订单，重庆水务子公司增加工程收入。",
+          "essence": "资金来源明确，中标金额仍需正式合同锁定。",
+          "upCondition": "签约金额接近1.8578亿元并按270天推进。",
+          "downCondition": "合同未签、金额缩水或施工延期。",
+          "stocks": [
+            {
+              "name": "重庆水务",
+              "ticker": "601158.SH",
+              "direction": "利好",
+              "reason": "全资子公司是三项工程中标方。",
+              "evidence": "三个中标价合计约1.8578亿元",
+              "trigger": "正式合同及施工回款",
+              "invalidCondition": "未签约或回款明显延迟"
+            }
+          ],
+          "watchNext": "合同金额、开工日、270天工期和财政回款。",
+          "oriCall": "财政支持的中标较实；未签正式合同时失效。",
+          "sources": [
+            {
+              "label": "一手原文：重庆水务公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432572.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "水电投资",
+          "title": "国投电力拟投333.94亿元建牙根二级水电站",
+          "verdict": "资本开支待批",
+          "verdictTone": "watch",
+          "originalNews": "国投电力拟参与建设240万千瓦牙根二级水电站。",
+          "originalSource": "国投电力公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433554.PDF",
+          "whatHappened": "国投电力拟参与建设240万千瓦牙根二级水电站。",
+          "whyThisAction": "公司要增加长期水电资产，并利用雅砻江梯级水库联合调度。",
+          "governmentIntent": "公司事实：总投资333.94亿元，尚需发改委核准。ORI-LIN分析：先投入、2035年后才有发电收入。",
+          "whatItMeans": "建设供应链获长期订单，股东方承担资本金和融资；投产后才增加电量。",
+          "essence": "大项目提升远期资产，短期主要是审批和资金压力。",
+          "upCondition": "取得核准、按101个月工期建设且投资不超支。",
+          "downCondition": "核准未获、成本超支或电价低于测算。",
+          "stocks": [
+            {
+              "name": "国投电力",
+              "ticker": "600886.SH",
+              "direction": "暂不明确",
+              "reason": "穿透持有项目46.8%，承担投资也分享未来发电收益。",
+              "evidence": "公司公告：项目总投资333.94亿元",
+              "trigger": "发改委核准和开工",
+              "invalidCondition": "未核准或投资回报率显著下调"
+            },
+            {
+              "name": "川投能源",
+              "ticker": "600674.SH",
+              "direction": "暂不明确",
+              "reason": "穿透持有项目43.2%，资本开支与远期收益并存。",
+              "evidence": "雅砻江水电持股结构及项目公告",
+              "trigger": "披露资本金安排",
+              "invalidCondition": "项目取消或严重超支"
+            },
+            {
+              "name": "宁德时代",
+              "ticker": "300750.SZ",
+              "direction": "暂不明确",
+              "reason": "直接持有项目公司10%，但非主营电池订单。",
+              "evidence": "项目公司股权结构",
+              "trigger": "项目核准与出资",
+              "invalidCondition": "退出或项目未核准"
+            }
+          ],
+          "watchNext": "发改委核准、66.79亿元资本金、开工和2035年首机目标。",
+          "oriCall": "远期水电资产有价值；未获核准时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：国投电力公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433554.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "新材料投产",
+          "title": "久日新材500吨ACMO产线进入试生产",
+          "verdict": "产能待销售",
+          "verdictTone": "watch",
+          "originalNews": "久日新材年产500吨ACMO一期进入试生产。",
+          "originalSource": "久日新材公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432632.PDF",
+          "whatHappened": "久日新材年产500吨ACMO一期进入试生产。",
+          "whyThisAction": "公司要补齐高性能光固化单体产品，服务涂料、墨水和3D打印客户。",
+          "governmentIntent": "公司事实：设计总产能1500吨，本次投产500吨。ORI-LIN分析：投产不等于满产销售。",
+          "whatItMeans": "客户多一个材料来源，久日新材增加可售产能；利用率低会增加折旧负担。",
+          "essence": "产线已启动，利润要等销量和价格证明。",
+          "upCondition": "试生产转正式、产能利用率和毛利持续上升。",
+          "downCondition": "客户认证失败、售价下跌或长期低负荷。",
+          "stocks": [
+            {
+              "name": "久日新材",
+              "ticker": "688199.SH",
+              "direction": "利好",
+              "reason": "公司新增500吨ACMO直接产能。",
+              "evidence": "公司投产公告",
+              "trigger": "正式生产、销量和毛利披露",
+              "invalidCondition": "产线长期低负荷或停产"
+            }
+          ],
+          "watchNext": "转正式生产时间、ACMO销量、售价和毛利率。",
+          "oriCall": "新增产能是第一步；卖不出去时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：久日新材公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432632.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "船舶制造",
+          "title": "大金重工获15.75亿元三艘散货船确定订单",
+          "verdict": "订单待交付",
+          "verdictTone": "solid",
+          "originalNews": "大金重工与希腊船东签3+1艘散货船合同。",
+          "originalSource": "大金重工公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432644.PDF",
+          "whatHappened": "大金重工与希腊船东签3+1艘散货船合同。",
+          "whyThisAction": "公司要把海工制造能力延伸到大型商船，增加长期订单。",
+          "governmentIntent": "公司事实：三艘确定船15.75亿元，第四艘为选择权。ORI-LIN分析：只把确定船算订单。",
+          "whatItMeans": "船东增加运力，大金重工获得2029至2030年交付收入；钢价和汇率影响利润。",
+          "essence": "确定订单金额大，执行周期长，选择权船不能提前计入。",
+          "upCondition": "节点款到账、三艘船按期建造交付，第四艘被确认。",
+          "downCondition": "船东取消、延期或成本涨幅超过调价能力。",
+          "stocks": [
+            {
+              "name": "大金重工",
+              "ticker": "002487.SZ",
+              "direction": "利好",
+              "reason": "子公司是三艘确定船直接建造方。",
+              "evidence": "确定船合同约15.75亿元",
+              "trigger": "预付款、开工和交付节点",
+              "invalidCondition": "合同终止或成本导致亏损"
+            }
+          ],
+          "watchNext": "两个月内第四艘选择权、节点款、钢价和2029年交船。",
+          "oriCall": "三艘确定订单直接利好；履约终止时失效。",
+          "sources": [
+            {
+              "label": "一手原文：大金重工公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225432644.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "化工管材",
+          "title": "东宏股份中标万华1.8亿元螺旋焊管框架",
+          "verdict": "中标待签",
+          "verdictTone": "watch",
+          "originalNews": "东宏股份中标万华化学四个焊管标段，预估1.8亿元。",
+          "originalSource": "东宏股份公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433146.PDF",
+          "whatHappened": "东宏股份中标万华化学四个焊管标段，预估1.8亿元。",
+          "whyThisAction": "万华要为多地化工项目集中采购普通和防腐螺旋焊管。",
+          "governmentIntent": "公司事实：1.8亿元为预估值。ORI-LIN分析：框架中标需等合同和实际订单。",
+          "whatItMeans": "万华获得管材供应，东宏股份进入四地采购框架；实际发货决定收入。",
+          "essence": "中标范围广，但框架金额不等于最终订单。",
+          "upCondition": "签署合同并收到接近1.8亿元的实际订单。",
+          "downCondition": "合同金额大幅缩水或项目采购延期。",
+          "stocks": [
+            {
+              "name": "东宏股份",
+              "ticker": "603856.SH",
+              "direction": "利好",
+              "reason": "公司是四个标段确定中标人。",
+              "evidence": "中标预估金额1.8亿元",
+              "trigger": "正式合同及实际采购订单",
+              "invalidCondition": "最终订单明显低于预估"
+            }
+          ],
+          "watchNext": "正式合同、各基地订单、发货和回款。",
+          "oriCall": "中标打开订单入口；实际采购不足时失效。",
+          "sources": [
+            {
+              "label": "一手原文：东宏股份公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433146.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "业绩预告",
+          "title": "晶华新材上半年净利预计增长17%至35%",
+          "verdict": "利润预增",
+          "verdictTone": "solid",
+          "originalNews": "晶华新材预计上半年净利4400万至5100万元。",
+          "originalSource": "晶华新材公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433495.PDF",
+          "whatHappened": "晶华新材预计上半年净利4400万至5100万元。",
+          "whyThisAction": "公司披露销售和工艺改善结果，让市场校验电子与工业材料增长。",
+          "governmentIntent": "公司事实：收入同比约增19%。ORI-LIN分析：正式半年报要验证利润区间。",
+          "whatItMeans": "电子和工业胶粘材料销量增长抬高利润，客户需求转弱会影响后续。",
+          "essence": "收入与扣非利润同步增长，质量好于靠一次性收益。",
+          "upCondition": "半年报净利落在区间且下半年订单延续。",
+          "downCondition": "审计后低于下限或核心业务收入转弱。",
+          "stocks": [
+            {
+              "name": "晶华新材",
+              "ticker": "603683.SH",
+              "direction": "利好",
+              "reason": "公司直接预告主营增长带动净利上升。",
+              "evidence": "净利同比预计增16.79%至35.37%",
+              "trigger": "正式半年报落入预告区间",
+              "invalidCondition": "正式数据低于4400万元"
+            }
+          ],
+          "watchNext": "半年报、电子事业部收入、毛利率和下半年订单。",
+          "oriCall": "主营驱动的预增较扎实；正式净利低于下限时失效。",
+          "sources": [
+            {
+              "label": "一手原文：晶华新材公告",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-21/1225433495.PDF"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-01",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "能源税",
+          "title": "英国10月起把居民电费增值税降至零",
+          "verdict": "电费下降",
+          "verdictTone": "solid",
+          "originalNews": "英国宣布10月1日起居民电费增值税由5%降至0%。",
+          "originalSource": "英国首相府与财政部",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living",
+          "whatHappened": "英国宣布10月1日起居民电费增值税由5%降至0%。",
+          "whyThisAction": "政府要在冬季前降低生活成本，并压低通胀。",
+          "governmentIntent": "官方目标：年电费上限约降45英镑，CPI约降0.1个百分点。ORI-LIN分析：供应商必须让利。",
+          "whatItMeans": "家庭少付电费，政府本财年承担约8.5亿英镑成本；电力商收入不应因此增加。",
+          "essence": "这是消费者减负，不是电力公司的利润补贴。",
+          "upCondition": "10月1日实施且供应商完整传导降税。",
+          "downCondition": "预算取消、实施推迟或未传导到固定套餐。",
+          "stocks": [],
+          "watchNext": "10月电价上限、财政成本和CPI变化。",
+          "oriCall": "居民电费会下降；政策未按期实施时失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国首相府与财政部",
+              "url": "https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-02",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "国防采购",
+          "title": "英国投入2000万英镑研发高超音速靶弹",
+          "verdict": "预算落地",
+          "verdictTone": "solid",
+          "originalNews": "英国宣布投入2000万英镑研发高超音速测试靶弹。",
+          "originalSource": "英国国防部",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.gov.uk/government/news/20-million-investment-for-hypersonic-target-to-test-air-defence-systems-and-boost-british-small-businesses--2",
+          "whatHappened": "英国宣布投入2000万英镑研发高超音速测试靶弹。",
+          "whyThisAction": "国防部要用可重复测试目标验证反导系统，并让中小企业进入供应链。",
+          "governmentIntent": "官方事实：另计划到2028年把中小企业国防支出增至75亿英镑。ORI-LIN分析：具体承包商未公布。",
+          "whatItMeans": "英国防务中小企业将争取研发订单，纳税人承担预算；现阶段无法确认上市公司受益。",
+          "essence": "预算已明确，受益名单仍空缺。",
+          "upCondition": "公布合同、承包商和里程碑付款。",
+          "downCondition": "项目取消、预算削减或合同长期不发。",
+          "stocks": [],
+          "watchNext": "中标名单、合同额、测试时间和2028年采购额。",
+          "oriCall": "预算方向确定；没有承包商名单前不贴股票。",
+          "sources": [
+            {
+              "label": "一手原文：英国国防部",
+              "url": "https://www.gov.uk/government/news/20-million-investment-for-hypersonic-target-to-test-air-defence-systems-and-boost-british-small-businesses--2"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-03",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "航天投资",
+          "title": "英国与佛州设30万英镑联合航天基金",
+          "verdict": "小额基金待申报",
+          "verdictTone": "watch",
+          "originalNews": "英国航天局与佛州设立30万英镑联合创新基金。",
+          "originalSource": "英国航天局",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.gov.uk/government/news/uk-and-florida-forge-new-space-partnership-to-back-joint-innovation",
+          "whatHappened": "英国航天局与佛州设立30万英镑联合创新基金。",
+          "whyThisAction": "双方要把航天研究推进到演示和商业化，并帮助企业进入对方市场。",
+          "governmentIntent": "官方事实：2026年秋季征集、2027年遴选。ORI-LIN分析：金额小且受益者未定。",
+          "whatItMeans": "入选企业可降低早期研发成本，未入选公司没有直接收入变化。",
+          "essence": "有资金但规模小，先看项目名单。",
+          "upCondition": "秋季按时开放申请并公布获资助项目。",
+          "downCondition": "基金延期、取消或没有商业化项目。",
+          "stocks": [],
+          "watchNext": "秋季申请窗口、2027年名单和单项目资助额。",
+          "oriCall": "这是早期种子钱；基金取消时失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国航天局",
+              "url": "https://www.gov.uk/government/news/uk-and-florida-forge-new-space-partnership-to-back-joint-innovation"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-04",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "国防合作",
+          "title": "加拿大成为下一代战机计划首个观察国",
+          "verdict": "订单未落地",
+          "verdictTone": "watch",
+          "originalNews": "加拿大加入英意日下一代战机计划，身份为观察国。",
+          "originalSource": "英国国防部",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.gov.uk/government/news/canada-joins-next-generation-fighter-jet-programme-as-first-observer-nation",
+          "whatHappened": "加拿大加入英意日下一代战机计划，身份为观察国。",
+          "whyThisAction": "四国要先共享能力和产业信息，再讨论加拿大是否正式参与。",
+          "governmentIntent": "官方事实：加拿大没有决策权。ORI-LIN分析：观察身份尚不产生采购订单。",
+          "whatItMeans": "现有600多家供应链企业获得潜在扩容机会，但短期订单和收入不变。",
+          "essence": "合作范围扩大，商业影响要等正式加入和预算。",
+          "upCondition": "加拿大成为正式成员并公布出资或采购量。",
+          "downCondition": "加拿大退出或长期停留在观察身份。",
+          "stocks": [],
+          "watchNext": "加拿大出资、采购数量、正式成员决定和供应商名单。",
+          "oriCall": "潜在市场扩大；没有预算和订单前不算兑现。",
+          "sources": [
+            {
+              "label": "一手原文：英国国防部",
+              "url": "https://www.gov.uk/government/news/canada-joins-next-generation-fighter-jet-programme-as-first-observer-nation"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-05",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "海关监管",
+          "title": "英国征询海关数据和授权数字化改革",
+          "verdict": "规则待定",
+          "verdictTone": "watch",
+          "originalNews": "英国就海关数据、贸易变化和授权制度改革征询意见。",
+          "originalSource": "英国税务海关总署",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.gov.uk/government/calls-for-evidence/customs-modernisation/modernising-the-uk-customs-regime--2",
+          "whatHappened": "英国就海关数据、贸易变化和授权制度改革征询意见。",
+          "whyThisAction": "政府要减少重复申报和长审批，同时用数字数据打击违规贸易。",
+          "governmentIntent": "官方事实：2025年海关系统处理逾9100万份申报。ORI-LIN分析：目前没有最终规则或改造预算。",
+          "whatItMeans": "贸易商未来可能少填表，软件和物流企业也可能承担系统改造成本。",
+          "essence": "仍是征询，不应把方向当成已生效规则。",
+          "upCondition": "发布正式方案、数据格式和实施日期。",
+          "downCondition": "征询结束后不改规则或范围大幅缩小。",
+          "stocks": [],
+          "watchNext": "征询截止、正式法规、接口标准和上线时间。",
+          "oriCall": "海关将更数字化；没有正式规则时判断失效。",
+          "sources": [
+            {
+              "label": "一手原文：英国税务海关总署",
+              "url": "https://www.gov.uk/government/calls-for-evidence/customs-modernisation/modernising-the-uk-customs-regime--2"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-06",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "AI服务器",
+          "title": "Supermicro称季度新订单超600亿美元",
+          "verdict": "订单待交付",
+          "verdictTone": "solid",
+          "originalNews": "Supermicro称第四财季新订单超过600亿美元。",
+          "originalSource": "Super Micro Computer投资者关系公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-Fourth-Quarter-of-Fiscal-Year-2026-Preliminary-Business-Update/default.aspx",
+          "whatHappened": "Supermicro称第四财季新订单超过600亿美元。",
+          "whyThisAction": "公司提前披露订单和毛利，回应收入接近指引低端的担忧。",
+          "governmentIntent": "公司事实：毛利率初估15%至17%，部分订单可取消或延迟。ORI-LIN分析：交付比订单标题更关键。",
+          "whatItMeans": "客户集中采购AI服务器，公司积压订单创新高；供应链和交付能力决定收入。",
+          "essence": "订单强、毛利修复，但数据未经审计。",
+          "upCondition": "8月11日正式业绩确认并给出交付节奏。",
+          "downCondition": "正式数据下修、订单取消或交付严重延期。",
+          "stocks": [
+            {
+              "name": "Super Micro Computer",
+              "ticker": "SMCI",
+              "direction": "利好",
+              "reason": "公司直接获得超600亿美元季度新订单。",
+              "evidence": "公司初步业务更新",
+              "trigger": "8月11日确认订单与毛利",
+              "invalidCondition": "正式业绩大幅下修或订单取消"
+            }
+          ],
+          "watchNext": "8月11日业绩、交付收入、客户集中度和毛利率。",
+          "oriCall": "需求强劲；正式结果或订单兑现明显下修时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Super Micro Computer投资者关系公告",
+              "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-Fourth-Quarter-of-Fiscal-Year-2026-Preliminary-Business-Update/default.aspx"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-07",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "征信并购",
+          "title": "Equifax拟7.5亿美元收购墨西哥征信机构",
+          "verdict": "并购待交割",
+          "verdictTone": "watch",
+          "originalNews": "Equifax签约以7.5亿美元企业价值收购Círculo de Crédito。",
+          "originalSource": "Equifax投资者关系公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://investor.equifax.com/news-events/press-releases/detail/1414/equifax-delivers-strong-11-growth-in-second-quarter-2026",
+          "whatHappened": "Equifax签约以7.5亿美元企业价值收购Círculo de Crédito。",
+          "whyThisAction": "公司要扩大墨西哥征信数据和客户，并用AI降低运营成本。",
+          "governmentIntent": "公司事实：预计第四季度交割。ORI-LIN分析：增长与整合成本同时增加。",
+          "whatItMeans": "卖方股东获得退出，Equifax扩大数据业务；若协同不足，收购价会压回报。",
+          "essence": "收入增长11%提供资金基础，但并购回报仍待验证。",
+          "upCondition": "监管放行、四季度交割并实现协同。",
+          "downCondition": "交易终止或整合成本高于新增利润。",
+          "stocks": [
+            {
+              "name": "Equifax",
+              "ticker": "EFX",
+              "direction": "暂不明确",
+              "reason": "公司是收购方，扩张与7.5亿美元成本并存。",
+              "evidence": "公司签署最终收购协议",
+              "trigger": "四季度交割及协同指引",
+              "invalidCondition": "交易取消或回报率低于资本成本"
+            }
+          ],
+          "watchNext": "监管审批、四季度交割、1.5亿美元降本目标。",
+          "oriCall": "战略扩张明确；交易终止或回报不足时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Equifax投资者关系公告",
+              "url": "https://investor.equifax.com/news-events/press-releases/detail/1414/equifax-delivers-strong-11-growth-in-second-quarter-2026"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-08",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "网络安全并购",
+          "title": "Palo Alto Networks拟收购Embrace补齐用户监控",
+          "verdict": "并购待完成",
+          "verdictTone": "watch",
+          "originalNews": "Palo Alto Networks宣布拟收购用户体验监控公司Embrace。",
+          "originalSource": "Palo Alto Networks公司公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-extend-leading-observability-platform-with-innovative-digital-experience-monitoring",
+          "whatHappened": "Palo Alto Networks宣布拟收购用户体验监控公司Embrace。",
+          "whyThisAction": "公司要把用户端故障监控并入可观测平台，减少客户使用多套工具。",
+          "governmentIntent": "公司事实：预计2027财年第一季度完成。ORI-LIN分析：未披露价格，成本收益难量化。",
+          "whatItMeans": "客户可能用一套平台监控前后端，Palo Alto增加产品能力但承担整合成本。",
+          "essence": "产品协同清楚，交易价格缺失。",
+          "upCondition": "按期交割并披露新增ARR或客户采用率。",
+          "downCondition": "交易未完成或整合后ARR没有增长。",
+          "stocks": [
+            {
+              "name": "Palo Alto Networks",
+              "ticker": "PANW",
+              "direction": "暂不明确",
+              "reason": "公司是收购方，协同与收购成本并存。",
+              "evidence": "公司收购意向公告",
+              "trigger": "2027财年一季度交割",
+              "invalidCondition": "交易终止或产品整合失败"
+            }
+          ],
+          "watchNext": "交易价格、交割日、可观测业务ARR和客户留存。",
+          "oriCall": "能力补齐有逻辑；交易未完成时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Palo Alto Networks公司公告",
+              "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-extend-leading-observability-platform-with-innovative-digital-experience-monitoring"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-09",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "油服业绩",
+          "title": "Halliburton季度收入57亿美元并回购2亿美元",
+          "verdict": "经营改善",
+          "verdictTone": "solid",
+          "originalNews": "Halliburton二季度收入57亿美元、经营利润率14%。",
+          "originalSource": "Halliburton投资者关系公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://ir.halliburton.com/news-releases/news-release-details/halliburton-announces-second-quarter-2026-results",
+          "whatHappened": "Halliburton二季度收入57亿美元、经营利润率14%。",
+          "whyThisAction": "公司用业绩说明北美活动恢复和国际服务需求，并继续回报股东。",
+          "governmentIntent": "公司事实：经营现金流8.24亿美元、回购约2亿美元。ORI-LIN分析：中东活动下滑仍是风险。",
+          "whatItMeans": "油气客户活动增加带动服务收入，Halliburton现金流改善并回购股票。",
+          "essence": "环比增长和现金流支持判断，但油价会改变客户支出。",
+          "upCondition": "后续季度收入、利润率和自由现金流继续增长。",
+          "downCondition": "油价下跌导致客户削减钻完井支出。",
+          "stocks": [
+            {
+              "name": "Halliburton",
+              "ticker": "HAL",
+              "direction": "利好",
+              "reason": "公司收入、利润率和现金流环比改善并实际回购。",
+              "evidence": "公司二季度财报",
+              "trigger": "下季收入和利润率延续增长",
+              "invalidCondition": "客户资本开支下调导致收入转降"
+            }
+          ],
+          "watchNext": "油价、北美压裂活动、国际收入和下季利润率。",
+          "oriCall": "经营改善可见；客户削减资本开支时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Halliburton投资者关系公告",
+              "url": "https://ir.halliburton.com/news-releases/news-release-details/halliburton-announces-second-quarter-2026-results"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-22-intl-10",
+          "group": "国际重大一手新闻",
+          "region": "国际",
+          "category": "消费金融",
+          "title": "Synchrony宣布每股0.34美元季度股息",
+          "verdict": "现金回报",
+          "verdictTone": "solid",
+          "originalNews": "Synchrony宣布每股0.34美元季度现金股息。",
+          "originalSource": "Synchrony投资者关系公告",
+          "publishedAt": "2026-07-21",
+          "originalUrl": "https://investors.synchrony.com/news-events/financial-news/detail/581/synchrony-reports-second-quarter-2026-results",
+          "whatHappened": "Synchrony宣布每股0.34美元季度现金股息。",
+          "whyThisAction": "公司用现金分红回报股东，并配合披露二季度经营结果。",
+          "governmentIntent": "公司事实：8月5日登记、8月17日支付。ORI-LIN分析：分红已明确，持续性看信用损失。",
+          "whatItMeans": "股东获得现金，Synchrony现金减少；若坏账上升，未来分红能力会承压。",
+          "essence": "本次分红确定，长期判断取决于消费信贷质量。",
+          "upCondition": "按期支付且后续季度维持分红。",
+          "downCondition": "董事会撤销或资本充足率因坏账明显下降。",
+          "stocks": [
+            {
+              "name": "Synchrony Financial",
+              "ticker": "SYF",
+              "direction": "利好",
+              "reason": "董事会已宣告每股0.34美元现金股息。",
+              "evidence": "公司二季度公告",
+              "trigger": "8月17日按期支付",
+              "invalidCondition": "分红取消或信用损失侵蚀资本"
+            }
+          ],
+          "watchNext": "8月5日登记、8月17日支付、逾期率和净核销率。",
+          "oriCall": "本次现金回报确定；分红撤销时失效。",
+          "sources": [
+            {
+              "label": "一手原文：Synchrony投资者关系公告",
+              "url": "https://investors.synchrony.com/news-events/financial-news/detail/581/synchrony-reports-second-quarter-2026-results"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-22",
+            "baselineAt": "2026-07-22",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-23",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-21",
       "title": "今天20条：订单、利润、关税与AI合规具体影响谁",
