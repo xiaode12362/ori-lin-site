@@ -1,7 +1,1071 @@
 {
-  "updatedAt": "2026-07-22T14:00:00+08:00",
+  "updatedAt": "2026-07-24T12:00:00+08:00",
   "sourcePolicy": "10条国内社会金融，10条国际重大一手新闻；每条显示原新闻、原出处、股票与触发条件。",
   "editions": [
+    {
+      "date": "2026-07-24",
+      "title": "今天20条：央行MLF加量千亿、科技股回购潮、特斯拉暴跌14%与布油破百",
+      "note": "本期国内10条、国际10条，全部采用2026年7月23日至24日发布或披露的一手材料。国内聚焦央行流动性操作、科技龙头回购潮、能源与基建政策；国际聚焦美股财报冲击、中东地缘升级与能源价格飙升。新闻事实、机构目标和ORI-LIN分析已分开；国内10条均有公告直接对应股票，国际10条中7条有公司级直接证据。方法版本1.0.0：D+1只记录，D+7起判断。",
+      "methodologyVersion": "1.0.0",
+      "items": [
+        {
+          "id": "2026-07-24-cn-01",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "货币政策",
+          "title": "央行7月24日开展5000亿元MLF操作，净投放1000亿元",
+          "verdict": "流动性加码",
+          "verdictTone": "solid",
+          "originalNews": "7月23日央行公告，7月24日将开展5000亿元1年期MLF操作。当月MLF到期4000亿元，实现净投放1000亿元，为连续第三个月加量续作。",
+          "originalSource": "中国人民银行",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.pbc.gov.cn/",
+          "whatHappened": "央行7月24日开展5000亿元MLF（中期借贷便利，银行向央行借中期资金的工具），当月到期4000亿，净投放1000亿。",
+          "whyThisAction": "7月政府债券净融资放量约1.3万亿元，跨月资金需求上升，央行加量续作对冲流动性缺口，支持政府债券顺利发行。",
+          "governmentIntent": "官方目标：保持银行体系流动性充裕，配合财政发力。ORI-LIN分析：连续3个月加量+买断式逆回购净投放7000亿，本月中期流动性合计净投放8000亿，政策态度偏暖。",
+          "whatItMeans": "银行间资金面将保持宽松，有利于债券发行和企业融资；但LPR（贷款市场报价利率）仍按兵不动，宽货币尚未完全传导至宽信用。",
+          "essence": "MLF加量是配合财政发力的标准动作，真正的降息信号要看LPR是否下调。",
+          "upCondition": "三季度政府债券发行高峰中MLF持续加量，或出现降准配合。",
+          "downCondition": "通胀超预期回升或汇率大幅波动，制约货币政策空间。",
+          "stocks": [
+            {
+              "name": "招商银行",
+              "ticker": "600036.SH",
+              "direction": "暂不明确",
+              "reason": "流动性宽松有利于银行负债端稳定，但净息差持续承压。",
+              "evidence": "7月MLF净投放1000亿，买断式逆回购净投放7000亿",
+              "trigger": "8月MLF操作量和LPR报价",
+              "invalidCondition": "LPR下调挤压银行息差"
+            }
+          ],
+          "watchNext": "8月MLF到期量、三季度政府债券发行节奏、社融数据。",
+          "oriCall": "流动性宽松确认政策暖风；若经济数据超预期改善，宽松节奏可能放缓。",
+          "sources": [
+            {
+              "label": "一手原文：央行MLF招标公告",
+              "url": "https://www.pbc.gov.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-02",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "科技/回购",
+          "title": "科技龙头回购潮：江波龙4-8亿、澜起科技3-6亿、立讯精密累计10亿",
+          "verdict": "信心信号",
+          "verdictTone": "solid",
+          "originalNews": "7月23日江波龙公告控股股东提议回购4-8亿元；澜起科技公告拟回购3-6亿元；立讯精密公告累计回购约10亿元。Wind数据显示年内超800家公司实施回购，合计超820亿元。",
+          "originalSource": "各公司公告/Wind",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://static.cninfo.com.cn/",
+          "whatHappened": "科技板块多家龙头密集发布回购计划：江波龙4-8亿、澜起科技3-6亿、立讯精密已累计回购约10亿元。",
+          "whyThisAction": "科技板块持续调整后，龙头以真金白银回购传递估值底部信号，同时用于股权激励绑定核心团队。",
+          "governmentIntent": "公司事实：江波龙上半年净利预增62204%-74394%。ORI-LIN分析：业绩爆发+大额回购形成双重安全边际，但回购不等于股价一定涨。",
+          "whatItMeans": "科技龙头对自身估值有底气，但回购资金若全部用于股权激励会稀释每股收益。",
+          "essence": "回购潮是底部信号之一，但趋势反转需要基本面持续验证。",
+          "upCondition": "回购按计划执行，中报业绩确认高增长。",
+          "downCondition": "行业价格战加剧或海外需求下滑。",
+          "stocks": [
+            {
+              "name": "江波龙",
+              "ticker": "301308.SZ",
+              "direction": "利好",
+              "reason": "控股股东提议4-8亿回购，上半年净利预增超622倍，存储芯片量价齐升。",
+              "evidence": "公司公告：预计H1净利润92-110亿元，同比增62204%-74394%",
+              "trigger": "回购实施进展和中报正式披露",
+              "invalidCondition": "存储价格大幅下滑"
+            },
+            {
+              "name": "澜起科技",
+              "ticker": "688008.SH",
+              "direction": "利好",
+              "reason": "拟3-6亿回购，用于维护公司价值及股东权益，互连芯片龙头地位稳固。",
+              "evidence": "公司公告：拟回购3-6亿元，价格不超332.90元/股",
+              "trigger": "DDR5渗透率提升和AI服务器需求",
+              "invalidCondition": "全球服务器需求不及预期"
+            }
+          ],
+          "watchNext": "各公司回购实施进度、中报业绩正式披露。",
+          "oriCall": "回购潮+业绩预增提供安全边际；若存储周期见顶则失效。",
+          "sources": [
+            {
+              "label": "一手原文：江波龙公告",
+              "url": "https://static.cninfo.com.cn/"
+            },
+            {
+              "label": "一手原文：澜起科技公告",
+              "url": "https://static.cninfo.com.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-03",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "分红/业绩",
+          "title": "工业富联拟分红129亿元，上半年净利预增93%-101%",
+          "verdict": "高分红+高增长",
+          "verdictTone": "solid",
+          "originalNews": "工业富联发布2025年年度权益分派实施公告，拟每10股派6.5元，分红总额129亿元。上半年归母净利润预计234-244亿元，同比增长93%-101%。",
+          "originalSource": "工业富联公告",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://static.cninfo.com.cn/",
+          "whatHappened": "工业富联年度分红129亿元，叠加此前中期分红65.5亿，2025年度累计分红194.5亿元创上市以来新高。",
+          "whyThisAction": "AI服务器业务爆发带动业绩高增，公司用高分红回馈股东，提升长期投资价值。",
+          "governmentIntent": "公司事实：上半年净利预增93%-101%，首次突破200亿。ORI-LIN分析：分红+业绩双高是AI算力需求爆发期的典型特征。",
+          "whatItMeans": "AI算力基础设施需求持续旺盛，但分红比例过高可能压缩再投资能力。",
+          "essence": "工业富联是AI服务器代工龙头，业绩和分红都验证了景气度。",
+          "upCondition": "AI服务器订单持续饱满，毛利率稳中有升。",
+          "downCondition": "AI资本开支周期见顶或客户砍单。",
+          "stocks": [
+            {
+              "name": "工业富联",
+              "ticker": "601138.SH",
+              "direction": "利好",
+              "reason": "直接标的，分红129亿+上半年净利预增93%-101%，AI服务器业务爆发。",
+              "evidence": "公司公告：H1净利润234-244亿元，年度分红129亿元",
+              "trigger": "AI服务器订单和毛利率变化",
+              "invalidCondition": "AI需求增速放缓"
+            }
+          ],
+          "watchNext": "中报正式披露、AI服务器出货量、英伟达/微软资本开支指引。",
+          "oriCall": "高分红+高增长提供安全边际；AI资本开支下修时失效。",
+          "sources": [
+            {
+              "label": "一手原文：工业富联分红公告",
+              "url": "https://static.cninfo.com.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-04",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "半导体材料/订单",
+          "title": "云南锗业子公司签5.7-8.55亿元磷化铟晶片供货协议",
+          "verdict": "大单落地",
+          "verdictTone": "solid",
+          "originalNews": "云南锗业公告，控股子公司云南鑫耀与客户签订磷化铟晶片供货协议，合同金额5.7-8.55亿元，占公司2025年营收的53.48%-80.23%。",
+          "originalSource": "云南锗业公告",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://static.cninfo.com.cn/",
+          "whatHappened": "云南锗业子公司签订磷化铟晶片（衬底，光通信和射频芯片的关键材料）供货协议，金额5.7-8.55亿元。",
+          "whyThisAction": "AI算力建设带动光通信需求爆发，磷化铟作为光芯片核心衬底材料供不应求。",
+          "governmentIntent": "公司事实：合同金额占2025年营收53%-80%，履行期2026年8月至2027年12月。ORI-LIN分析：大额长单锁定未来一年半收入，但客户信息未披露存在集中度风险。",
+          "whatItMeans": "半导体材料国产化进程加速，但单一客户依赖度高，需关注合同执行进度。",
+          "essence": "磷化铟是光通信芯片的'地基'，这份大单验证了下游AI数据中心对光芯片的强劲需求。",
+          "upCondition": "合同按期执行，光通信芯片需求持续高增。",
+          "downCondition": "客户违约或光通信需求不及预期。",
+          "stocks": [
+            {
+              "name": "云南锗业",
+              "ticker": "002428.SZ",
+              "direction": "利好",
+              "reason": "直接标的，大单占去年营收53%-80%，磷化铟晶片是光通信核心材料。",
+              "evidence": "公司公告：合同金额5.7-8.55亿元，履行期至2027年12月",
+              "trigger": "合同执行进度和客户交付验收",
+              "invalidCondition": "合同执行不及预期或客户违约"
+            }
+          ],
+          "watchNext": "合同执行进度、光通信芯片行业需求数据。",
+          "oriCall": "大单锁定未来收入；若光通信周期见顶则失效。",
+          "sources": [
+            {
+              "label": "一手原文：云南锗业公告",
+              "url": "https://static.cninfo.com.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-05",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "钢铁/产业投资",
+          "title": "河钢股份子公司拟投资79.67亿元建设宽厚板项目",
+          "verdict": "产能升级",
+          "verdictTone": "watch",
+          "originalNews": "河钢股份公告，控股子公司河钢乐亭钢铁计划投资79.67亿元建设5600mm热轧宽厚板生产线，年产合格成品242万吨。",
+          "originalSource": "河钢股份公告",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://static.cninfo.com.cn/",
+          "whatHappened": "河钢股份子公司拟投资79.67亿元新建宽厚板生产线，年产242万吨，优化产品结构。",
+          "whyThisAction": "宽厚板用于船舶、能源装备、军工等高端制造，升级产品结构提升附加值。",
+          "governmentIntent": "公司事实：投资79.67亿，项目建成后年产242万吨。ORI-LIN分析：钢铁行业整体过剩，但高端板材仍有结构性机会。",
+          "whatItMeans": "钢铁龙头向高端产品转型，但巨额资本开支在钢铁行业低利润时期有财务压力。",
+          "essence": "钢铁产能过剩背景下，高端化是唯一出路，但79亿投资规模不小。",
+          "upCondition": "高端宽厚板需求旺盛，项目达产后毛利率高于普通钢材。",
+          "downCondition": "钢铁行业持续低迷，项目回报不及预期。",
+          "stocks": [
+            {
+              "name": "河钢股份",
+              "ticker": "000709.SZ",
+              "direction": "暂不明确",
+              "reason": "直接标的，大额投资升级产品结构，但钢铁行业整体承压。",
+              "evidence": "公司公告：投资79.67亿元建设宽厚板项目",
+              "trigger": "项目投产进度和宽厚板价格走势",
+              "invalidCondition": "钢铁行业景气度进一步下滑"
+            }
+          ],
+          "watchNext": "项目审批和建设进度、宽厚板市场价格。",
+          "oriCall": "高端化转型方向正确；若钢铁周期继续下行则短期承压。",
+          "sources": [
+            {
+              "label": "一手原文：河钢股份公告",
+              "url": "https://static.cninfo.com.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-06",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "产业政策",
+          "title": "工信部组织开展国家级零碳工厂、零碳算力设施建设",
+          "verdict": "绿色转型加速",
+          "verdictTone": "watch",
+          "originalNews": "工信部发布通知，组织开展国家级零碳工厂、零碳算力设施建设工作，在规定期限内完成建设目标的制造型企业、算力设施择优纳入国家级零碳工厂建设名单。",
+          "originalSource": "工信部",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.miit.gov.cn/",
+          "whatHappened": "工信部启动国家级零碳工厂和零碳算力设施建设，达标企业纳入国家级名单。",
+          "whyThisAction": "双碳目标下，制造业和数据中心是高耗能领域，通过政策引导绿色转型。",
+          "governmentIntent": "官方目标：推动制造业和算力设施绿色低碳转型，实现双碳目标。ORI-LIN分析：零碳认证将成为企业获取订单和融资的加分项，但短期内增加企业成本。",
+          "whatItMeans": "绿色制造和绿色算力成为政策主线，利好新能源、储能、节能设备供应商。",
+          "essence": "零碳工厂是制造业的'绿色通行证'，算力设施的零碳化将重塑数据中心选址逻辑。",
+          "upCondition": "配套补贴和绿色金融政策落地，企业积极性提升。",
+          "downCondition": "标准过于严格或补贴不到位，企业参与意愿低。",
+          "stocks": [
+            {
+              "name": "阳光电源",
+              "ticker": "300274.SZ",
+              "direction": "利好",
+              "reason": "光伏+储能龙头，零碳工厂和算力设施绿电化直接利好公司新能源解决方案。",
+              "evidence": "工信部零碳工厂政策+阳光电源已布局新能源电站基金",
+              "trigger": "零碳工厂建设进度和光伏/储能招标量",
+              "invalidCondition": "光伏价格战加剧"
+            }
+          ],
+          "watchNext": "零碳工厂认定标准细则、首批入选名单。",
+          "oriCall": "绿色转型政策方向明确；若补贴不及预期则推进速度放缓。",
+          "sources": [
+            {
+              "label": "一手原文：工信部通知",
+              "url": "https://www.miit.gov.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-07",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "能源政策",
+          "title": "发改委能源局印发《可再生能源发展'十五五'规划》",
+          "verdict": "新能源定调",
+          "verdictTone": "solid",
+          "originalNews": "国家发改委、国家能源局印发《可再生能源发展'十五五'规划》，提出推动新能源汽车'绿车充绿电'，引导新建数据中心与可再生能源协同布局，适度超前推进电网基础设施建设。",
+          "originalSource": "国家发改委/国家能源局",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.ndrc.gov.cn/",
+          "whatHappened": "《可再生能源发展'十五五'规划》发布，明确新能源重卡、绿车充绿电、数据中心绿电化等方向。",
+          "whyThisAction": "双碳目标下，可再生能源是未来五年能源结构转型的核心抓手，政策提前定调。",
+          "governmentIntent": "官方目标：到2030年可再生能源消费比重持续提升，新型电力系统建设为核心主线。ORI-LIN分析：规划首次将新型电力系统建设作为核心主线，电网和储能迎来确定性增长。",
+          "whatItMeans": "新能源发电、储能、特高压、智能电网迎来五年级别政策红利期。",
+          "essence": "十五五能源规划的核心是'新型电力系统'，风光储网四大环节都有增量空间。",
+          "upCondition": "规划配套项目清单和补贴陆续落地。",
+          "downCondition": "电网消纳能力不足或地方财政制约投资。",
+          "stocks": [
+            {
+              "name": "宁德时代",
+              "ticker": "300750.SZ",
+              "direction": "利好",
+              "reason": "储能龙头，规划明确储能是新型电力系统核心环节。",
+              "evidence": "《可再生能源发展十五五规划》将储能列为重点",
+              "trigger": "储能招标量和电池排产数据",
+              "invalidCondition": "储能价格战导致毛利率大幅下滑"
+            }
+          ],
+          "watchNext": "规划配套实施方案、各省可再生能源装机目标分解。",
+          "oriCall": "政策红利确定性强；若电网消纳瓶颈未解则装机增速受限。",
+          "sources": [
+            {
+              "label": "一手原文：发改委能源局规划",
+              "url": "https://www.ndrc.gov.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-08",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "医药政策",
+          "title": "第十二批国家药品集采发布，65个品种近600亿元市场",
+          "verdict": "集采扩围",
+          "verdictTone": "watch",
+          "originalNews": "第十二批国家组织药品集中带量采购文件发布，涉及65个品种，对应市场规模近600亿元，将于7月31日在上海开标。",
+          "originalSource": "国家医保局",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.nhsa.gov.cn/",
+          "whatHappened": "第十二批国采启动，65个品种纳入，市场规模近600亿元，7月31日开标。",
+          "whyThisAction": "国家通过集采降低药价、节约医保支出，同时推动仿制药替代原研药。",
+          "governmentIntent": "官方目标：降低药品价格，减轻患者负担。ORI-LIN分析：集采对中标企业是量换价，对未中标企业是失去市场；创新药不在集采范围内，分化加剧。",
+          "whatItMeans": "仿制药企业利润空间继续压缩，创新药企业不受直接影响，行业分化加深。",
+          "essence": "集采是仿制药的'价格绞肉机'，创新药才是医药行业的避风港。",
+          "upCondition": "创新药企业受益于集采挤压仿制药、腾出医保空间。",
+          "downCondition": "集采品种涉及创新药或降价幅度超预期。",
+          "stocks": [
+            {
+              "name": "华海药业",
+              "ticker": "600521.SH",
+              "direction": "暂不明确",
+              "reason": "仿制药龙头，集采中标有利有弊；同日获琥珀酸亚铁片注册证书。",
+              "evidence": "华海药业获琥珀酸亚铁片药品注册证书，2025年该药品国内市场约4.08亿元",
+              "trigger": "第十二批集采中标结果",
+              "invalidCondition": "核心品种集采丢标或降价超预期"
+            }
+          ],
+          "watchNext": "7月31日开标结果、各品种降价幅度。",
+          "oriCall": "集采对仿制药是压力测试；创新药才是长期方向。",
+          "sources": [
+            {
+              "label": "一手原文：国家药品集采文件",
+              "url": "https://www.nhsa.gov.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-09",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "资本市场",
+          "title": "北京国资运营公司累计投入近百亿元布局股票市场",
+          "verdict": "国家队入场",
+          "verdictTone": "solid",
+          "originalNews": "北京国有资本运营管理有限公司发文称，已统筹自有资金累计投入近百亿元布局股票市场，下一步将持续增持上市公司股票，支持北交所建设。",
+          "originalSource": "北京国资运营公司",
+          "publishedAt": "2026-07-22",
+          "originalUrl": "https://www.bjsam.com/",
+          "whatHappened": "北京国资运营公司公告已累计投入近百亿元布局A股，并承诺持续增持，支持北交所。",
+          "whyThisAction": "市场调整后，国有资本以真金白银入场稳定市场预期，体现对核心资产价值的认可。",
+          "governmentIntent": "官方目标：维护上市企业核心资产战略价值，稳定资本市场。ORI-LIN分析：国资入场是政策底信号之一，但百亿元规模对2.6万亿日成交的A股影响有限，更多是信心层面。",
+          "whatItMeans": "政策底逐步确认，但市场底通常滞后于政策底，需等待更多增量资金。",
+          "essence": "国资入场是'政策底'的标志性动作，但扭转趋势需要资金面持续配合。",
+          "upCondition": "更多地方国资和长期资金跟进入场。",
+          "downCondition": "入场后缺乏持续性，市场信心再度转弱。",
+          "stocks": [
+            {
+              "name": "北京银行",
+              "ticker": "601169.SH",
+              "direction": "暂不明确",
+              "reason": "北京国资背景，可能受益于国资增持和地方金融支持政策。",
+              "evidence": "北京国资运营公司投入近百亿布局股市",
+              "trigger": "北交所交易量提升和北京本地股活跃度",
+              "invalidCondition": "市场持续缩量调整"
+            }
+          ],
+          "watchNext": "其他省市国资是否跟进、北交所交易量和新增开户数。",
+          "oriCall": "政策底信号明确；若缺乏后续资金跟进则短期效果有限。",
+          "sources": [
+            {
+              "label": "一手原文：北京国资运营公司公告",
+              "url": "https://www.bjsam.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-cn-10",
+          "group": "国内社会金融",
+          "region": "国内",
+          "category": "业绩预告",
+          "title": "普冉股份上半年净利预增1925%，通用存储芯片量价齐升",
+          "verdict": "业绩爆发",
+          "verdictTone": "solid",
+          "originalNews": "普冉股份公告，预计2026年上半年归母净利润约8.25亿元，同比增长1925.36%。受益于AI算力建设，存储芯片行业供给格局优化，产品价格维持上涨。",
+          "originalSource": "普冉股份公告",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://static.cninfo.com.cn/",
+          "whatHappened": "普冉股份上半年净利预增1925%，AI算力建设带动存储芯片量价齐升，MCU等新产品渗透工业控制和AIoT领域。",
+          "whyThisAction": "全球AI算力建设拉动存储需求，行业供给格局优化，通用存储芯片价格持续上涨。",
+          "governmentIntent": "公司事实：H1净利润8.25亿元，同比增1925%，MCU和Driver新产品实现规模出货。ORI-LIN分析：存储周期向上+新品类扩张，是双击逻辑。",
+          "whatItMeans": "存储芯片行业处于强景气周期，但1925%的增速基数效应明显，后续增速将回落。",
+          "essence": "存储芯片是AI算力的'粮草'，普冉的爆发是整个存储周期的缩影。",
+          "upCondition": "存储价格持续上涨，新品类渗透率提升。",
+          "downCondition": "存储价格见顶回落或AI需求增速放缓。",
+          "stocks": [
+            {
+              "name": "普冉股份",
+              "ticker": "688766.SH",
+              "direction": "利好",
+              "reason": "直接标的，上半年净利预增1925%，存储+MCU双轮驱动。",
+              "evidence": "公司公告：预计H1净利润8.25亿元，同比增长1925.36%",
+              "trigger": "中报正式披露和Q3存储价格走势",
+              "invalidCondition": "存储价格Q2-Q3涨幅低于预期"
+            }
+          ],
+          "watchNext": "中报正式披露、Q3存储芯片合同价格、AI资本开支数据。",
+          "oriCall": "存储周期向上+新品扩张是双击；存储价格见顶时失效。",
+          "sources": [
+            {
+              "label": "一手原文：普冉股份业绩预告",
+              "url": "https://static.cninfo.com.cn/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-01",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "美股",
+          "title": "美股三大指数集体收跌，纳指跌2.15%，特斯拉暴跌14%",
+          "verdict": "财报冲击",
+          "verdictTone": "watch",
+          "originalNews": "7月23日美股收盘：道指-0.97%报51711.65点，标普500-1.21%报7408.30点，纳指-2.15%报25137.69点。特斯拉跌14.52%，谷歌A跌7.13%，亚马逊跌超4%。",
+          "originalSource": "纽交所/纳斯达克收盘数据",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.nasdaq.com/",
+          "whatHappened": "美股三大指数集体下跌，纳指跌2.15%。特斯拉暴跌14%，谷歌跌近7%，两大巨头财报后市值合计蒸发约5000亿美元。",
+          "whyThisAction": "特斯拉和谷歌财报不及预期，AI资本支出飙升但现金流转负，市场对AI泡沫担忧加剧。",
+          "governmentIntent": "市场事实：特斯拉Q2交付约45万辆，汽车毛利率可能降至15%以下；谷歌资本支出指引上修至1950-2050亿美元。ORI-LIN分析：AI投入激增但回报未现，市场对科技巨头估值重估。",
+          "whatItMeans": "AI资本开支热潮遭遇质疑，科技股高估值需要业绩持续兑现来支撑。",
+          "essence": "特斯拉和谷歌的财报是AI投资热潮的' Reality Check（现实检验）'。",
+          "upCondition": "后续科技巨头财报超预期，AI收入开始兑现。",
+          "downCondition": "更多科技巨头财报不及预期，AI资本开支收缩。",
+          "stocks": [
+            {
+              "name": "特斯拉",
+              "ticker": "TSLA",
+              "direction": "利空",
+              "reason": "Q2财报后暴跌14%，交付量约45万辆，毛利率承压，现金流转负。",
+              "evidence": "7/23特斯拉收跌14.52%，财报不及预期",
+              "trigger": "后续季度交付量和毛利率变化",
+              "invalidCondition": "新车型和自动驾驶技术取得突破"
+            },
+            {
+              "name": "谷歌-A",
+              "ticker": "GOOGL",
+              "direction": "利空",
+              "reason": "财报后跌7%，资本支出上修至1950-2050亿美元，现金流转负，Gemini延迟引发竞争担忧。",
+              "evidence": "7/23谷歌A跌7.13%，C跌6.89%",
+              "trigger": "AI搜索变现进度和云服务收入增速",
+              "invalidCondition": "AI资本开支开始产生正向回报"
+            }
+          ],
+          "watchNext": "微软、Meta、苹果等后续财报中的AI资本开支指引。",
+          "oriCall": "科技股估值承压；若AI收入兑现则悲观情绪逆转。",
+          "sources": [
+            {
+              "label": "一手数据：纳斯达克收盘",
+              "url": "https://www.nasdaq.com/"
+            },
+            {
+              "label": "特斯拉/谷歌财报",
+              "url": "https://ir.tesla.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-02",
+          "group": "国际重大一手新闻",
+          "region": "全球",
+          "category": "能源/地缘",
+          "title": "布伦特原油破100美元，WTI涨6.17%，中东局势急剧升级",
+          "verdict": "地缘溢价飙升",
+          "verdictTone": "watch",
+          "originalNews": "7月23日布伦特原油大涨7.04%报100.69美元/桶，WTI涨6.17%报92.19美元/桶。特朗普称正认真考虑重启对伊朗大规模作战行动。",
+          "originalSource": "NYMEX/ICE期货交易所",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.cmegroup.com/",
+          "whatHappened": "中东局势急剧升级，布伦特原油突破100美元，WTI报92.19美元。特朗普考虑重启对伊朗大规模作战，伊朗称已做好地面入侵应对准备。",
+          "whyThisAction": "美伊谈判破裂，霍尔木兹海峡通航受阻，胡塞武装袭击沙特油轮，供应中断风险骤升。",
+          "governmentIntent": "市场事实：布油涨7.04%至100.69美元，为5月22日以来首次破百。ORI-LIN分析：地缘溢价是油价飙升主因，实际供应尚未完全中断。",
+          "whatItMeans": "油价飙升将推升全球通胀，美联储降息预期降温，甚至转向加息预期。",
+          "essence": "100美元的布油是通胀的'红色警报'，美联储政策空间被进一步压缩。",
+          "upCondition": "中东冲突升级导致实际供应中断。",
+          "downCondition": "美伊谈判恢复或霍尔木兹海峡通航正常化。",
+          "stocks": [
+            {
+              "name": "埃克森美孚",
+              "ticker": "XOM",
+              "direction": "利好",
+              "reason": "油价飙升直接利好上游油气开采利润。",
+              "evidence": "布伦特原油突破100美元/桶",
+              "trigger": "油价能否维持高位及Q3财报",
+              "invalidCondition": "油价快速回落至80美元以下"
+            }
+          ],
+          "watchNext": "美伊谈判进展、霍尔木兹海峡通航情况、OPEC+产量政策。",
+          "oriCall": "地缘溢价支撑油价；若冲突缓和则快速回吐涨幅。",
+          "sources": [
+            {
+              "label": "一手数据：NYMEX/ICE收盘",
+              "url": "https://www.cmegroup.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-03",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "科技/AI",
+          "title": "谷歌资本支出上修至1950-2050亿美元，现金流转负引发担忧",
+          "verdict": "AI投入过热",
+          "verdictTone": "watch",
+          "originalNews": "谷歌Q2财报后高管表示，2026年资本支出预计1950-2050亿美元，此前指引1800-1900亿美元。公司现金流转负，Gemini 3.5 Pro延迟发布。",
+          "originalSource": "Alphabet财报/业绩会",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://abc.xyz/",
+          "whatHappened": "谷歌将全年资本支出指引上修至1950-2050亿美元，现金流转负，AI投资回报率引发市场质疑。",
+          "whyThisAction": "谷歌在AI军备竞赛中被迫加大投入以追赶OpenAI和微软，但商业化进度不及预期。",
+          "governmentIntent": "公司事实：资本支出上修至最高2050亿美元，现金流转负，Gemini延迟。ORI-LIN分析：AI投资的'烧钱换未来'逻辑正在经受考验。",
+          "whatItMeans": "科技巨头AI资本开支竞赛可能已过热，投资者开始要求看到实际回报。",
+          "essence": "谷歌的财报是市场对AI投资从'信仰驱动'转向'回报驱动'的转折点。",
+          "upCondition": "Gemini后续版本发布带动AI搜索和云收入加速增长。",
+          "downCondition": "AI收入增长持续不及预期，资本开支进一步压缩利润率。",
+          "stocks": [
+            {
+              "name": "谷歌-A",
+              "ticker": "GOOGL",
+              "direction": "利空",
+              "reason": "直接标的，资本支出上修、现金流转负、AI产品延迟，市场担忧加剧。",
+              "evidence": "7/23谷歌A跌7.13%，财报后市值蒸发约3000亿美元",
+              "trigger": "AI搜索变现进度和云收入增速",
+              "invalidCondition": "AI收入超预期增长"
+            }
+          ],
+          "watchNext": "微软/Meta财报中的AI资本开支指引、Gemini发布时间表。",
+          "oriCall": "AI投资过热信号显现；若AI收入兑现则担忧解除。",
+          "sources": [
+            {
+              "label": "一手原文：Alphabet Q2财报",
+              "url": "https://abc.xyz/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-04",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "半导体投资",
+          "title": "美光科技宣布2035年前在美投资超2500亿美元",
+          "verdict": "产能扩张",
+          "verdictTone": "solid",
+          "originalNews": "美光科技宣布，公司在美国的投资将在2035年前增至2500亿美元以上，高于此前2000亿美元目标，计划将约40%的DRAM产能放在美国生产。",
+          "originalSource": "美光科技公告",
+          "publishedAt": "2026-07-09",
+          "originalUrl": "https://investors.micron.com/",
+          "whatHappened": "美光科技上调在美投资计划至2500亿美元（2035年前），目标将40% DRAM产能放在美国，创造大量高薪岗位。",
+          "whyThisAction": "受益于《芯片法案》补贴和AI数据中心存储需求爆发，美光加速在美建厂以满足本土需求。",
+          "governmentIntent": "公司事实：投资上调500亿至2500亿美元，40% DRAM产能美国化。ORI-LIN分析：存储芯片短缺预期下，美光选择在美国扩产以锁定政策和订单双重红利。",
+          "whatItMeans": "AI存储需求确定性高，美光以大规模资本开支锁定未来市场份额，但巨额投资对现金流有压力。",
+          "essence": "2500亿投资是美光对AI存储周期的' All-in（全押）'。",
+          "upCondition": "AI数据中心存储需求持续高增，美国工厂如期投产。",
+          "downCondition": "存储周期见顶或美国工厂建设成本超预期。",
+          "stocks": [
+            {
+              "name": "美光科技",
+              "ticker": "MU",
+              "direction": "利好",
+              "reason": "直接标的，2500亿投资计划+AI存储需求爆发，长期产能锁定。",
+              "evidence": "美光宣布2035年前在美投资超2500亿美元",
+              "trigger": "美国工厂建设进度和Q3存储价格",
+              "invalidCondition": "存储价格大幅下跌"
+            }
+          ],
+          "watchNext": "美光美国工厂建设进度、美国商务部补贴发放情况。",
+          "oriCall": "存储周期向上+政策补贴是双引擎；存储需求崩塌时失效。",
+          "sources": [
+            {
+              "label": "一手原文：美光科技公告",
+              "url": "https://investors.micron.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-05",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "AI/半导体",
+          "title": "AMD与Anthropic签署数百亿美元AI服务器采购协议",
+          "verdict": "AI算力竞逐",
+          "verdictTone": "solid",
+          "originalNews": "AMD与Anthropic签署规模达数百亿美元的AI服务器采购协议，Anthropic将自2027年上半年起采购最多2吉瓦搭载AMD MI450芯片的AI服务器，AMD将投资最高50亿美元。",
+          "originalSource": "AMD/Anthropic公告",
+          "publishedAt": "2026-07-22",
+          "originalUrl": "https://www.amd.com/",
+          "whatHappened": "AMD与AI公司Anthropic签署数百亿美元协议，后者将采购AMD MI450芯片的AI服务器，AMD投资最高50亿美元。",
+          "whyThisAction": "AMD试图打破英伟达在AI芯片领域的垄断，以MI系列芯片+大额投资绑定核心AI客户。",
+          "governmentIntent": "公司事实：协议规模数百亿美元，2吉瓦AI算力部署。ORI-LIN分析：AMD在AI芯片市场的份额有望提升，但英伟达生态壁垒深厚。",
+          "whatItMeans": "AI芯片市场竞争加剧， Anthropic选择AMD有助于降低对英伟达的依赖，但软件生态差距仍是AMD的挑战。",
+          "essence": "这是AMD挑战英伟达AI霸主地位的'关键一役'。",
+          "upCondition": "MI450性能达标，Anthropic部署顺利，更多客户跟进。",
+          "downCondition": "MI450性能不及预期或英伟达推出更强竞品。",
+          "stocks": [
+            {
+              "name": "AMD",
+              "ticker": "AMD",
+              "direction": "利好",
+              "reason": "直接标的，数百亿美元大单绑定Anthropic，AI芯片业务取得重大突破。",
+              "evidence": "AMD与Anthropic签署数百亿美元AI服务器采购协议",
+              "trigger": "MI450出货量和客户拓展",
+              "invalidCondition": "MI450性能不及预期"
+            }
+          ],
+          "watchNext": "MI450芯片量产时间、Anthropic部署进展、AMD数据中心业务收入增速。",
+          "oriCall": "AMD在AI芯片市场取得突破；若MI450竞争力不足则难撼动英伟达。",
+          "sources": [
+            {
+              "label": "一手原文：AMD公告",
+              "url": "https://www.amd.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-06",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "贸易政策",
+          "title": "美国大幅放宽阿联酋芯片出口限制，允许免许可进口AI芯片",
+          "verdict": "出口管制松动",
+          "verdictTone": "watch",
+          "originalNews": "美国商务部BIS发布最终规则，将阿联酋移入A:5国家组，允许阿联酋政府及获批企业免许可证进口先进AI芯片和服务器。",
+          "originalSource": "美国商务部BIS",
+          "publishedAt": "2026-07-10",
+          "originalUrl": "https://www.bis.doc.gov/",
+          "whatHappened": "美国商务部将阿联酋列入A:5国家组，允许其政府及获批企业免许可证采购英伟达、AMD、Cerebras等先进AI芯片。",
+          "whyThisAction": "奖励阿联酋在美伊战争中的配合，同时推动美国AI数字基础设施投资回流。",
+          "governmentIntent": "官方目标：加强与阿联酋在AI领域的战略合作，防止技术流向竞争对手。ORI-LIN分析：阿联酋G42和Core42是主要受益方，但270天后需'成为美国公司'的条款含混不清。",
+          "whatItMeans": "AI芯片出口管制出现松动迹象，但仅限于战略盟友，对中国等竞争对手的限制未变。",
+          "essence": "阿联酋独享的'芯片绿色通道'是美国科技外交的工具，不是全面放宽出口管制。",
+          "upCondition": "更多美国盟友获得类似待遇，扩大AI芯片出口市场。",
+          "downCondition": "条款执行争议或技术转移风险导致政策回调。",
+          "stocks": [
+            {
+              "name": "英伟达",
+              "ticker": "NVDA",
+              "direction": "暂不明确",
+              "reason": "阿联酋市场打开利好订单，但全球出口管制整体未放松。",
+              "evidence": "BIS将阿联酋列入A:5国家组，允许免许可进口AI芯片",
+              "trigger": "阿联酋AI芯片采购规模和英伟达数据中心收入",
+              "invalidCondition": "出口管制政策收紧"
+            }
+          ],
+          "watchNext": "阿联酋企业实际采购规模、BIS对其他国家出口政策动向。",
+          "oriCall": "战略盟友享受芯片出口松动；但对中国出口限制未变。",
+          "sources": [
+            {
+              "label": "一手原文：美国商务部BIS公告",
+              "url": "https://www.bis.doc.gov/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-07",
+          "group": "国际重大一手新闻",
+          "region": "美国",
+          "category": "制裁",
+          "title": "美国财政部撤销伊朗石油制裁豁免GL X，以GL X1替代",
+          "verdict": "制裁收紧",
+          "verdictTone": "watch",
+          "originalNews": "OFAC撤销General License X，以GL X1替代，仅授权在7月17日前完成此前GL X交易的风-down。新交易不再被授权。",
+          "originalSource": "美国财政部OFAC",
+          "publishedAt": "2026-07-07",
+          "originalUrl": "https://ofac.treasury.gov/",
+          "whatHappened": "美国财政部撤销对伊朗石油的60天制裁豁免GL X，以GL X1替代，仅允许已有交易在7月17日前完成风-down，新交易全面禁止。",
+          "whyThisAction": "美伊谈判破裂，美国重新收紧对伊朗石油出口制裁，切断其外汇收入来源。",
+          "governmentIntent": "官方目标：通过经济制裁施压伊朗回到谈判桌。ORI-LIN分析：制裁收紧将减少伊朗石油出口，加剧全球供应紧张。",
+          "whatItMeans": "伊朗石油出口受限，全球原油供应进一步收紧，油价获得额外支撑。",
+          "essence": "制裁是油价的'供给侧杀手'，GL X的撤销意味着伊朗石油更难进入国际市场。",
+          "upCondition": "伊朗石油出口实际减少，全球原油库存下降。",
+          "downCondition": "美伊恢复谈判或制裁执行不力。",
+          "stocks": [],
+          "watchNext": "美伊谈判进展、伊朗石油出口量变化、全球原油库存数据。",
+          "oriCall": "制裁收紧支撑油价；若美伊恢复谈判则制裁可能再度松动。",
+          "sources": [
+            {
+              "label": "一手原文：OFAC公告",
+              "url": "https://ofac.treasury.gov/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-08",
+          "group": "国际重大一手新闻",
+          "region": "欧洲",
+          "category": "欧股",
+          "title": "欧股集体收跌，德DAX-1.56%，法CAC-1.64%",
+          "verdict": "地缘拖累",
+          "verdictTone": "watch",
+          "originalNews": "7月23日欧股收盘：德国DAX30跌1.56%报24763.12点，法国CAC40跌1.64%报8299.09点，英国富时100跌0.73%报10639.17点，欧洲斯托克50跌1.69%。",
+          "originalSource": "欧洲各交易所",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.deutsche-boerse.com/",
+          "whatHappened": "欧股全线下跌，中东局势升级和油价飙升拖累市场情绪，欧洲作为能源进口大户受冲击最大。",
+          "whyThisAction": "欧洲依赖中东原油进口，油价破百直接冲击欧元区通胀和经济增长预期。",
+          "governmentIntent": "市场事实：欧股跌幅大于美股，能源进口依赖度高的经济体承压更重。ORI-LIN分析：欧洲央行7月加息紧迫性下降，但9月是否加息仍取决于油价走势。",
+          "whatItMeans": "高油价对欧洲经济的冲击大于美国，欧央行货币政策空间被压缩。",
+          "essence": "欧洲是油价破百的'最大输家'，通胀和增长同时承压。",
+          "upCondition": "油价回落，中东局势缓和。",
+          "downCondition": "油价持续高企，欧元区通胀反弹。",
+          "stocks": [],
+          "watchNext": "欧洲央行利率决议、欧元区通胀数据、油价走势。",
+          "oriCall": "地缘风险拖累欧股；局势缓和时反弹空间最大。",
+          "sources": [
+            {
+              "label": "一手数据：德交所/泛欧交易所",
+              "url": "https://www.deutsche-boerse.com/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-09",
+          "group": "国际重大一手新闻",
+          "region": "韩国",
+          "category": "央行政策",
+          "title": "韩国央行加息25基点至2.75%，为三年半来首次",
+          "verdict": "紧缩启动",
+          "verdictTone": "watch",
+          "originalNews": "韩国央行7月16日将基准利率上调25个基点至2.75%，为时隔三年半来首次加息。行长申铉松称可能在8月上调增长预测。",
+          "originalSource": "韩国央行",
+          "publishedAt": "2026-07-16",
+          "originalUrl": "https://www.bok.or.kr/",
+          "whatHappened": "韩国央行加息25基点至2.75%，为2023年1月以来首次加息，行长暗示可能继续上调增长预测。",
+          "whyThisAction": "韩国通胀高于目标区间，经济活动预计增强，央行减少货币刺激以推动通胀回归2%目标。",
+          "governmentIntent": "官方目标：抑制通胀，推动通胀回归2%目标中点。ORI-LIN分析：韩国开启加息周期，美韩利差缩小对韩元汇率和韩股构成压力。",
+          "whatItMeans": "亚太地区货币政策分化加剧，韩国率先加息，马来西亚维持不变，以色列继续降息。",
+          "essence": "韩国是亚太紧缩的'先行者'，韩元资产面临汇率和估值双重考验。",
+          "upCondition": "加息有效抑制通胀，韩元汇率企稳。",
+          "downCondition": "美韩利差逆转导致资本外流，韩股承压。",
+          "stocks": [],
+          "watchNext": "韩国8月利率决议、美韩利差变化、韩元汇率走势。",
+          "oriCall": "韩国进入紧缩周期；若美联储同步加息则压力更大。",
+          "sources": [
+            {
+              "label": "一手原文：韩国央行利率决议",
+              "url": "https://www.bok.or.kr/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        },
+        {
+          "id": "2026-07-24-intl-10",
+          "group": "国际重大一手新闻",
+          "region": "中东",
+          "category": "地缘政治",
+          "title": "美英轰炸机群进入高度戒备，特朗普考虑重启对伊朗大规模作战",
+          "verdict": "地缘风险急升",
+          "verdictTone": "watch",
+          "originalNews": "7月23日特朗普称正认真考虑重启对伊朗大规模作战行动。美国向中东快速增兵，多支特种部队和战斗机中队部署到位，美英轰炸机群进入高度戒备。",
+          "originalSource": "白宫/美国国防部",
+          "publishedAt": "2026-07-23",
+          "originalUrl": "https://www.whitehouse.gov/",
+          "whatHappened": "特朗普称考虑重启对伊朗大规模作战，美英轰炸机群高度戒备。伊朗称已完成所有美军进攻场景推演，若打击核设施将强力反击。",
+          "whyThisAction": "美伊谈判彻底破裂，伊朗封锁霍尔木兹海峡，美国以军事威胁迫使其让步。",
+          "governmentIntent": "官方目标：通过军事施压迫使伊朗回到谈判桌，保障石油通道安全。ORI-LIN分析：冲突升级风险极高，霍尔木兹海峡若完全封锁，全球20%石油供应将中断。",
+          "whatItMeans": "地缘风险是当下全球市场最大变量，油价、股市、黄金都将剧烈波动。",
+          "essence": "霍尔木兹海峡是全球石油的'咽喉'，封锁一天就可能引发能源危机。",
+          "upCondition": "美伊恢复谈判，军事冲突避免。",
+          "downCondition": "美伊爆发直接军事冲突，霍尔木兹海峡通航中断。",
+          "stocks": [
+            {
+              "name": "西方石油",
+              "ticker": "OXY",
+              "direction": "利好",
+              "reason": "油价飙升直接利好页岩油生产商，巴菲特重仓标的。",
+              "evidence": "WTI涨6.17%至92.19美元，布油破100美元",
+              "trigger": "油价能否维持高位",
+              "invalidCondition": "地缘冲突缓和导致油价回落"
+            }
+          ],
+          "watchNext": "美伊谈判进展、霍尔木兹海峡通航情况、美军部署动向。",
+          "oriCall": "地缘风险是最大不确定性；冲突缓和则风险溢价快速消退。",
+          "sources": [
+            {
+              "label": "一手信息：白宫/五角大楼声明",
+              "url": "https://www.whitehouse.gov/"
+            }
+          ],
+          "tracking": {
+            "status": "active",
+            "verdict": "跟踪中",
+            "createdAt": "2026-07-24",
+            "baselineAt": "2026-07-24",
+            "reviewSchedule": [
+              "D+1",
+              "D+7",
+              "D+30",
+              "D+90"
+            ],
+            "nextReviewAt": "2026-07-25",
+            "reviews": []
+          }
+        }
+      ]
+    },
     {
       "date": "2026-07-22",
       "title": "今天20条：LPR按兵不动、存储芯片爆发、关税再升级与油价破91",
